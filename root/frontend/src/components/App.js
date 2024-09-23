@@ -1,6 +1,7 @@
 import Navbar from "./Navbar";
 import Home from "../pages/Home";
 import About from "../pages/About"
+import Admin from "../pages/Admin"
 import Archive from "../pages/Archive"
 import Contact from "../pages/Contact"
 import Events from "../pages/Events"
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="/archive" element={<Archive />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/events" element={<Events />} />

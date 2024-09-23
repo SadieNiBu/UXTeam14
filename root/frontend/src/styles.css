@@ -47,3 +47,7 @@ body {
 .nav li:hover {
     background-color: #777;
 }
+
+.admin {
+    padding: 0 1.2rem;
+}
