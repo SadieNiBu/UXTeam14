@@ -5,7 +5,6 @@ const mongoose = require('mongoose');
 const memberRoutes = require('./routes/members');
 const eventRoutes = require('./routes/events');
 
-
 const app = express();
 
 // Middleware

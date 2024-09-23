@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react'
 // components
 import MemberDetails from '../components/MemberDetails'
 import EventDetails from '../components/EventDetails'
+import MemberForm from '../components/MemberForm'
+import EventForm from '../components/EventForm'
 
 const Admin = () => {
     const [members, setMembers] = useState(null)
@@ -36,15 +38,19 @@ const Admin = () => {
     return (
         <div className='admin'>
             <div className='members'>
+                <h2>Roster</h2>
                 {members && members.map((member) => (
                     <MemberDetails key={member._id} member={member}/>
                 ))}
             </div>
+            <MemberForm />
             <div className='events'>
+                <h2>Events</h2>
                 {events && events.map((event) => (
                     <EventDetails key={event._id} event={event}/>
                 ))}
             </div>
+            <EventForm />
         </div>
     )
 }
