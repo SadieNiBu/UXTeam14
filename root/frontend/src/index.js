@@ -4,12 +4,18 @@ import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import "./styles.css"
 import { BrowserRouter } from 'react-router-dom';
+import { EventContextProvider } from './context/EventContext';
+import { MemberContextProvider } from './context/MemberContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <EventContextProvider>
+      <MemberContextProvider>
+        <App />
+      </MemberContextProvider>
+      </EventContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

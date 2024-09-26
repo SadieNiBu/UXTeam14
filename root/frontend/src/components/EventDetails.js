@@ -1,4 +1,7 @@
+import { useEventContext } from "../hooks/useEventContext";
+
 const EventDetails = ({ event }) => {
+    const { dispatch } = useEventContext()
     
     const performDelete = async () => {
         const response = await fetch ('api/events/' + event._id, {
@@ -6,6 +9,10 @@ const EventDetails = ({ event }) => {
         })
 
         const json = await response.json();
+
+        if (response.ok) {
+            dispatch({type: 'DELETE_EVENT', payload: json})
+        }
     }
     
     return (

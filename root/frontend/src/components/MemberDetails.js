@@ -1,4 +1,7 @@
+import { useMemberContext } from "../hooks/useMemberContext"
+
 const MemberDetails = ({ member }) => {
+    const { dispatch } = useMemberContext()
 
     const performDelete = async () => {
         const response = await fetch('/api/members/' + member._id, {
@@ -6,6 +9,10 @@ const MemberDetails = ({ member }) => {
         })
 
         const json = await response.json()
+
+        if (response.ok) {
+            dispatch({type: 'DELETE_MEMBER', payload: json})
+        }
     }
 
     return (

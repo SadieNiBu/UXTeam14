@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
+import { useEventContext } from '../hooks/useEventContext'
+import { useMemberContext } from '../hooks/useMemberContext'
 
 // components
 import MemberDetails from '../components/MemberDetails'
@@ -7,8 +9,8 @@ import MemberForm from '../components/MemberForm'
 import EventForm from '../components/EventForm'
 
 const Admin = () => {
-    const [members, setMembers] = useState(null)
-    const [events, setEvents] = useState(null)
+    const {events, dispatch: eventDispatch} = useEventContext()
+    const {members, dispatch: memberDispatch} = useMemberContext()
 
     useEffect ( () => {
         document.title = "CCDC Team @ UCF | Admin"
@@ -18,7 +20,7 @@ const Admin = () => {
             const json = await response.json()
 
             if (response.ok) {
-                setMembers(json)
+                memberDispatch({type: 'SET_MEMBERS', payload: json})
             }
         }
 
@@ -27,7 +29,7 @@ const Admin = () => {
             const json = await response.json()
 
             if (response.ok) {
-                setEvents(json)
+                eventDispatch({type: 'SET_EVENTS', payload: json})
             }
         }
 

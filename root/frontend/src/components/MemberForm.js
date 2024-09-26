@@ -1,6 +1,9 @@
 import { useState } from "react"
+import { useMemberContext } from '../hooks/useMemberContext'
 
 const MemberForm = () => {
+    const { dispatch } = useMemberContext()
+
     const [name, setName] = useState('')
     const [role, setRole] = useState('')
     const [error, setError] = useState(null)
@@ -28,6 +31,7 @@ const MemberForm = () => {
             setRole('')
             setError(null)
             console.log('new member added', json)
+            dispatch({type: 'CREATE_MEMBER', payload: json})
         }
     }
 

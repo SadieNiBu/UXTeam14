@@ -1,6 +1,9 @@
 import { useState } from "react"
+import { useEventContext } from "../hooks/useEventContext"
 
 const EventForm = () => {
+    const { dispatch } = useEventContext()
+
     const [description, setDescription] = useState('')
     const [title, setTitle] = useState('')
     const [date, setDate] = useState('')
@@ -30,6 +33,7 @@ const EventForm = () => {
             setDate('')
             setError(null)
             console.log('new event added', json)
+            dispatch({type: 'CREATE_EVENT', payload: json})
         }
     }
 
