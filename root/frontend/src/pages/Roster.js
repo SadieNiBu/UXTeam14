@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 const Roster = () => {
 
   useEffect ( () => {
-    document.title = "CCDC Team @ UCF | Roster"
+    document.title = "C3 Team @ UCF | Roster"
   })
 
   return (

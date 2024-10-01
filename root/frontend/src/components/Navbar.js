@@ -2,31 +2,39 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Navbar() {
     return <nav className="nav">
-        <Link to="/" className="site-title">Home</Link>
+        <Link to="/" className="site-logo">[logo img]</Link>
         <ul>
+            <li>
+                <Link to="/">Home</Link>
+            </li>
             <li>
                 <CustomLink to="/about">About</CustomLink>
             </li>
             <li>
-                <CustomLink to="/archive">Archive</CustomLink>
+                <CustomLink to="/roster">Team Roster</CustomLink>
+            </li>
+            <li>
+                <CustomLink to="/competition">Competition</CustomLink>
+            </li>
+            <li>
+                <CustomLink to="/press">Press</CustomLink>
+            </li>
+            <li>
+                <CustomLink to="/gallery">Gallery</CustomLink>
+            </li>
+            <li>
+                <CustomLink to="/faq">FAQ</CustomLink>
+            </li>
+            <li>
+                <CustomLink to="/support">Support</CustomLink>
             </li>
             <li>
                 <CustomLink to="/contact">Contact</CustomLink>
             </li>
-            <li>
-                <CustomLink to="/events">Events</CustomLink>
-            </li>
-            <li>
-                <CustomLink to="/media">Media</CustomLink>
-            </li>
-            <li>
-                <CustomLink to="/roster">Roster</CustomLink>
-            </li>
-            <li>
-                <CustomLink to="/testimonials">Testimonials</CustomLink>
-            </li>
         </ul>
     </nav>
+
+    
 }
 
 function CustomLink({ to, children, ...props }) {

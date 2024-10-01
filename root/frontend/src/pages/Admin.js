@@ -13,7 +13,7 @@ const Admin = () => {
     const {members, dispatch: memberDispatch} = useMemberContext()
 
     useEffect ( () => {
-        document.title = "CCDC Team @ UCF | Admin"
+        document.title = "C3 Team @ UCF | Admin"
 
         const fetchMembers = async () => {
             const response = await fetch('/api/members')

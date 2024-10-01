@@ -3,11 +3,29 @@ import React, { useEffect } from 'react'
 const Home = () => {
 
   useEffect ( () => {
-    document.title = "CCDC Team @ UCF"
+    document.title = "C3 Team @ UCF"
   })
 
   return (
     <div className="Home" style={{textAlign: "center", fontSize: 35}}>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
+        <h1>UX Team 14 Project</h1>
         <h1>UX Team 14 Project</h1>
         <h1>UX Team 14 Project</h1>
         <h1>UX Team 14 Project</h1>
