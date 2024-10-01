@@ -1,4 +1,6 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import ChevronIcon from "./ChevronIcon"
+import SearchIcon from "./SearchIcon"
 
 export default function Navbar() {
     return <nav className="nav">
@@ -8,13 +10,13 @@ export default function Navbar() {
                 <Link to="/">Home</Link>
             </li>
             <li>
-                <CustomLink to="/about">About</CustomLink>
+                <CustomLink to="/about">About <ChevronIcon className="chevron-icon" /></CustomLink>
             </li>
             <li>
-                <CustomLink to="/roster">Team Roster</CustomLink>
+                <CustomLink to="/roster">Team Roster <ChevronIcon className="chevron-icon" /></CustomLink>
             </li>
             <li>
-                <CustomLink to="/competition">Competition</CustomLink>
+                <CustomLink to="/competition">Competition <ChevronIcon className="chevron-icon" /></CustomLink>
             </li>
             <li>
                 <CustomLink to="/press">Press</CustomLink>
@@ -32,6 +34,7 @@ export default function Navbar() {
                 <CustomLink to="/contact">Contact</CustomLink>
             </li>
         </ul>
+        <SearchIcon className="search-icon"/>
     </nav>
 
     

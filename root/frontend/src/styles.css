@@ -1,35 +1,46 @@
 * {
- 
-}
-
-body {
-
+    overscroll-behavior: none;
 }
 
 .nav {
-
-
+    background-color: black;
+    justify-content: space-between;
 }
 
 .site-logo {
 
 }
 
+.search-icon {
+
+}
+
+.chevron.icon {
+
+}
+
 .nav ul {
     list-style: none;
+    display: flex;
+    font-weight: 300;
     gap: 40px;
 }
 
 .nav a {
+    color: white;
     text-decoration: none;
 }
 
 .nav li.active {
-
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #FFC904;
 }
 
 .nav li:hover {
-
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: #FFC904;
 }
 
 .admin {
