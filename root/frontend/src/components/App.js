@@ -1,4 +1,5 @@
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 import Home from "../pages/Home";
 import About from "../pages/About"
 import Admin from "../pages/Admin"
@@ -29,6 +30,7 @@ function App() {
           <Route path="/support" element={<Support />}/>
         </Routes>
       </div>
+      <Footer />
     </>
   )
 }
