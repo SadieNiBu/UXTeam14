@@ -14,14 +14,14 @@ export default function Navbar() {
                         <CustomLink to="/about">About <ChevronIcon className="chevron-icon" /></CustomLink>
                     </div>
                     <div className="dropdown-content">
-                        <li className="first-element" id="element">
-                             <CustomLink to="/about">Scholarships</CustomLink>
+                        <li className="first-element" id="navelement">
+                             <CustomLink to="">Scholarships</CustomLink>
                         </li>
-                        <li id="element">
-                            <CustomLink to="/about">Policies</CustomLink>
+                        <li id="navelement">
+                            <CustomLink to="">Policies</CustomLink>
                         </li>
-                        <li id="element">
-                            <CustomLink to="/about">Grants</CustomLink>
+                        <li id="navelement">
+                            <CustomLink to="">Grants</CustomLink>
                         </li>
                     </div>
                 </div>
@@ -30,14 +30,14 @@ export default function Navbar() {
                     <CustomLink to="/roster">Team Roster <ChevronIcon className="chevron-icon" /></CustomLink>
                 </div>
                 <div className="dropdown-content">
-                    <li className="first-element" id="element">
-                        <CustomLink to="/roster">Coaches</CustomLink>
+                    <li className="first-element" id="navelement">
+                        <CustomLink to="">Coaches</CustomLink>
                     </li>
-                    <li id="element">
-                        <CustomLink to="/roster">Members</CustomLink>
+                    <li id="navelement">
+                        <CustomLink to="">Members</CustomLink>
                     </li>
-                    <li id="element">
-                        <CustomLink to="/roster">Success Stories</CustomLink>
+                    <li id="navelement">
+                        <CustomLink to="">Success Stories</CustomLink>
                     </li>
                 </div>
             </div>
@@ -46,11 +46,11 @@ export default function Navbar() {
                     <CustomLink to="/competition">Competition <ChevronIcon className="chevron-icon" /></CustomLink>
                 </div>
                 <div className="dropdown-content">
-                    <li className="first-element" id="element">
-                        <CustomLink to="/competition">Schedule</CustomLink>
+                    <li className="first-element" id="navelement">
+                        <CustomLink to="">Schedule</CustomLink>
                     </li>
-                    <li id="element">
-                        <CustomLink to="/competition">Past Awards</CustomLink>
+                    <li id="navelement">
+                        <CustomLink to="">Past Awards</CustomLink>
                     </li>
                 </div>
             </div>

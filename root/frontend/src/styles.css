@@ -2,6 +2,10 @@
     overscroll-behavior: none;
 }
 
+body {
+    background: var(--UCF-White, #FFFFFF);
+}
+
 .nav {
     top: 0;
     position: sticky;
@@ -46,7 +50,7 @@
 .dropdown-content {
     width: 172px;
     list-style: none;
-    padding-top: 30px;
+    padding-top: 29px;
     position: absolute;
     background-color: black;
     border: 1px solid #000000;
@@ -68,7 +72,7 @@
 }
 
 .nav ul{
-    padding-top: 29px;
+    padding-top: 30px;
     line-height: 21.82px;
     list-style: none;
     font-weight: 400;
@@ -81,27 +85,19 @@
     text-decoration: none;
 }
 
-.nav #element a:not(.active):hover {
-    padding-bottom: 6px;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #FFC904;
-    -webkit-text-stroke: 0.5px white;
-}
-
-.nav li:not(:hover).active {
-    padding-bottom: 6px;
-    border-bottom-width: 2px;
-    border-bottom-style: solid;
-    border-bottom-color: #FFC904;
-    -webkit-text-stroke: 0.5px white;
-}
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
-.dropdown:not(.active):hover #dropbtn{
+.dropdown #navelement a:not(.active):hover, .nav #element a:not(.active):hover, .dropdown:not(.active):hover #dropbtn{
+    padding-bottom: 6px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFC904;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.dropdown #navelement li a:not(:hover).active, .nav #element li:not(:hover).active, .dropdown:not(:hover) #dropbtn li:not(:hover).active{
     padding-bottom: 6px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
