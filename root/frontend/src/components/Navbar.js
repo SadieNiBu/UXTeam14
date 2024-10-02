@@ -7,12 +7,27 @@ export default function Navbar() {
         <Link to="/" className="site-logo">[logo img]</Link>
         <ul>
             <li>
-                <Link to="/">Home</Link>
+                <CustomLink to="/">Home</CustomLink>
             </li>
             <li>
-                <CustomLink to="/about">About <ChevronIcon className="chevron-icon" /></CustomLink>
+                <div className="dropdown">
+                    <div className="dropbtn">
+                        <CustomLink to="/about">About <ChevronIcon className="chevron-icon" /></CustomLink>
+                    </div>
+                    <div className="dropdown-content">
+                        <li className="first-element">
+                             <CustomLink to="/about">Scholarships</CustomLink>
+                        </li>
+                        <li>
+                            <CustomLink to="/about">Policies</CustomLink>
+                        </li>
+                        <li>
+                            <CustomLink to="/about">Grants</CustomLink>
+                        </li>
+                    </div>
+                </div>
             </li>
-            <li>
+            <li style={{zIndex: "1"}}>
                 <CustomLink to="/roster">Team Roster <ChevronIcon className="chevron-icon" /></CustomLink>
             </li>
             <li>
@@ -34,7 +49,7 @@ export default function Navbar() {
                 <CustomLink to="/contact">Contact</CustomLink>
             </li>
         </ul>
-        <SearchIcon className="search-icon"/>
+        <div className="search-button"><SearchIcon className="search-icon"/></div>
     </nav>
 
     

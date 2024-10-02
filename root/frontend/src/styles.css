@@ -3,12 +3,17 @@
 }
 
 .nav {
+    top: 0;
+    position: sticky;
     height: 90px;
     background-color: black;
     justify-content: space-between;
 }
 
 .site-logo {
+    padding-left: 50px;
+    padding-top: 20px;
+    text-wrap: nowrap;
     line-height: 44px;
     font-weight: 400;
     font-size: 24px;
@@ -21,6 +26,11 @@
     height: 16px;
 }
 
+.search-button {
+    padding-right: 50px;
+    padding-top: 29px;
+}
+
 .chevron-icon {
     top: 4.5px;
     left: 1.5px;
@@ -28,7 +38,37 @@
     height: 7px;
 }
 
-.nav ul {
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    width: 172px;
+    list-style: none;
+    padding-top: 35px;
+    position: absolute;
+    background-color: black;
+    border: 1px solid #000000;
+    flex-direction: column;
+    display: flex;
+    display: none;
+    z-index: 0;
+}
+
+.dropdown-content li{
+    display: block;
+    padding: 5px 5px 5px 5px;
+}
+
+.first-element {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #3D8BFD;
+}
+
+.nav ul{
+    padding-top: 29px;
     line-height: 21.82px;
     list-style: none;
     font-weight: 400;
@@ -39,7 +79,6 @@
 .nav a {
     color: white;
     text-decoration: none;
-
 }
 
 .nav li a:hover:not(:active) {
@@ -55,7 +94,15 @@
     border-bottom-width: 2px;
     border-bottom-style: solid;
     border-bottom-color: #FFC904;
-    -webkit-text-stroke: 0.7px white;
+    -webkit-text-stroke: 0.5px white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content:hover {
+    display: block;
 }
 
 .admin {
