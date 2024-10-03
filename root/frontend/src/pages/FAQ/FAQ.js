@@ -19,6 +19,11 @@ const FAQ = () => {
             nec aliquet id ullamcorper venenatis. Fermentum
             sulla craspor ttitore ismod nulla.
           </p>
+          <div className='divider'>
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
+          </svg>
+          </div>
         </div>
       </header>
       <faq>
