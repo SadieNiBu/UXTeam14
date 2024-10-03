@@ -1,4 +1,6 @@
-import { Container, Row, Col, Image } from "react-bootstrap"
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import { Container, Row, Col, Image, Nav } from "react-bootstrap"
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Footer () {
     return <footer className="footer">
@@ -14,11 +16,24 @@ export default function Footer () {
                     </div>
                </Col> 
                <Col>
-                    C2
+                    <Nav className='footer-icons'>
+                        <a href='https://www.linkedin.com/'><i class="bi bi-linkedin"></i></a>
+                        <a href='https://discord.com/'><i class="bi bi-discord"></i></a>
+                        <a href='https://www.instagram.com/?hl=en'><i class="bi bi-instagram"></i></a>
+                        <a href='https://www.facebook.com/'><i class="bi bi-facebook"></i></a>
+                        <a href='https://github.com/'><i class="bi bi-github"></i></a>
+                    </Nav>
+                    <Nav className="footer-nav">
+                        <CustomLink to="/about">About</CustomLink>
+                        <CustomLink to="/about">Benefits</CustomLink>
+                        <CustomLink to="/support">Donate</CustomLink>
+                        <CustomLink to="/gallary">Gallary</CustomLink>
+                        <CustomLink to="/roster">Team</CustomLink>
+                    </Nav>
                </Col>
                <Col>
                     <div className="footer-btn">
-                        <button>Contact Us</button>
+                        <button><CustomLink to="/contact">Contact Us</CustomLink></button>
                     </ div>
                </Col> 
             </Row>
@@ -28,4 +43,17 @@ export default function Footer () {
             </div>
         </Container>
     </footer>
+}
+
+function CustomLink({ to, children, ...props }) {
+    const resolvedPath = useResolvedPath(to)
+    const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+    return (
+        <li className={isActive ? "active" : ""}>
+            <Link to={to} {...props}>
+                {children}
+            </Link>
+        </li>
+    )
 }
