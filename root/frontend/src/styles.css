@@ -107,8 +107,46 @@ body {
 
 .footer {
     background-color: #000000;
+    border: #FFFFFF;
+    border-width: 1px;
     color: #FFFFFF;
     height: 300px;
+    width: 100%;
+    bottom: 0;
+}
+
+.ucf-logo {
+    width: 175px;
+    height: 75px;
+    padding-top: 92px;
+    padding-left: 122px;
+}
+
+.footer-btn {
+    padding-left: 250px;
+    padding-top: 100px;
+}
+
+.footer-btn button {
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18.75px;
+    padding: 13px 40px;
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    gap: 10px;
+    border: 0;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.footer-cr {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 50px;
+    opacity: 0.8;
 }
 
 .admin {
