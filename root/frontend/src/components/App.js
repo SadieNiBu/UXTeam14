@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import About from "../pages/About"
 import Admin from "../pages/Admin"
 import FAQ from "../pages/FAQ/FAQ"
-import Contact from "../pages/Contact"
+import Contact from "../pages/Contact/Contact"
 import Competition from "../pages/Competition"
 import Press from "../pages/Press"
 import Roster from "../pages/Roster"
