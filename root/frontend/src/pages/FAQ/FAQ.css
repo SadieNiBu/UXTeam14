@@ -39,13 +39,6 @@ header .wrapper p {
     line-height: 28px; /* 175% */
 }
 
-header .wrapper .divider {
-    width: 100px;
-    height: 5px;
-
-    fill: var(--UCF-Bright-Gold, #FFC904);
-}
-
 faq {
     display: flex;
     height: 711px;
