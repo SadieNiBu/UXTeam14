@@ -3,28 +3,27 @@ body {
 }
 
 body .divider {
-/* Line */
-position: absolute;
-width: 72px;
-height: 0px;
-left: 110px;
-top: 195.5px;
+    /* Line */
+    position: absolute;
+    width: 72px;
+    height: 0px;
+    left: 110px;
+    top: 195.5px;
 
-/* Primary text */
-border: 1px solid #1D2130;
+    /* Primary text */
+    border: 1px solid #1D2130;
 
-/* Line */
-position: absolute;
-width: 72px;
-height: 0px;
-left: 110px;
-top: 195.5px;
-
+    /* Line */
+    position: absolute;
+    width: 72px;
+    height: 0px;
+    left: 160px;
+    top: 195.5px;
 }
 
 body .contact p {
     top: 178px;
-    left: 206px;
+    left: 256px;
     width: 115px;
     height: 36px;
     font: #1D2130;
@@ -37,7 +36,7 @@ body .contact p {
 
 body .message h3 {
     top: 237px;
-    left: 206px;
+    left: 256px;
     height: 140px;
     font-size: 58px;
     width: 480.45px;
@@ -45,5 +44,132 @@ body .message h3 {
     line-height: 70.19px;
     font-family: 'Roboto', sans-serif;
     position: absolute;
-
 }
+
+body .message p {
+    font: #1D2130;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    width: 480.45px;
+    opacity: 0.7;
+    height: 56px;
+    top: 387px;
+    left: 256px;
+}
+
+body .info h5 {
+    font: #1D2130;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24.2px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    width: 115px;
+    height: 24px;
+    top: 196px;
+    left: 955px;
+}
+
+body .info p {
+    font: #1D2130;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+}
+
+body .info .number p {
+    width: 158px;
+    height: 28px;
+    top: 234px;
+    left: 955px;
+}
+
+body .info .email p {
+    width: 182px;
+    height: 28px;
+    top: 234px;
+    left: 1133px;
+}
+
+body .info .info-divider {
+    /* Line */
+    position: absolute;
+    width: 355px;
+    height: 0px;
+    left: 955px;
+    top: 278px;
+
+    /* Border */
+    border: 1px solid #E5E5E5;
+    transform: rotate(0.16deg);
+}
+
+body .address h5 {
+    font: #1D2130;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    line-height: 24.2px;
+    font-family: 'Roboto', sans-serif;
+    width: 164.32px;
+    height: 24px;
+    top: 311px;
+    left: 955px;
+}
+
+body .address p {
+    font: #1D2130;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    width: 354.47px;
+    height: 28px;
+    top: 349px;
+    left: 955px;
+}
+
+body .university h5 {
+    font: #1D2130;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    line-height: 24.2px;
+    font-family: 'Roboto', sans-serif;
+    width: 355px;
+    height: 24px;
+    top: 431px;
+    left: 955px;
+}
+
+body .university p {
+    font: #1D2130;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    width: 355px;
+    height: 28px;
+    top: 469px;
+    left: 955px;
+}
+
+body .socials a{
+    margin: 7px;
+    opacity: 0.8;
+    color: #1D2130;
+    font-size: 20px;
+}
+
+.socials {
+    padding-top: 470px;
+    padding-left: 81px;
+}
+  
