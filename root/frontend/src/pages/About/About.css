@@ -22,7 +22,7 @@ header .tagline .lead {
     color: var(--Gray-700, #495057);
 
     /* Lead/Text - Regular */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 21px;
     font-style: normal;
     font-weight: 400;
@@ -39,7 +39,7 @@ header .wrapper h4 {
     color: var(--Color, #031B30);
 
     /* Diplay / Heading-4 - Semibold */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -56,7 +56,7 @@ header .wrapper h5 {
     color: var(--UCF-Black, #000);
 
     /* Semi-Bold / H5 Heading */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -73,7 +73,7 @@ header .wrapper .description {
     color: var(--Color-2, #343A40);
 
     /* Body/ Base text */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -124,7 +124,7 @@ header .picture {
     color: var(--Gray-800, #343A40);
 
     /* Body/blockquote */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -135,7 +135,7 @@ header .picture {
     color: var(--Default-Black, #000);
 
     /* Bold/H1 Heading */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 40px;
     font-style: normal;
     font-weight: 700;
@@ -164,7 +164,7 @@ header .picture {
     color: var(--Secondary-color, #6C757D);
 
     /* Body/ Base text */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -192,9 +192,241 @@ header .picture {
     color: var(--Gray-800, #343A40);
 
     /* Body/ Base text */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 28px; /* 175% */
+}
+
+.tabs button {
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    width: 122px;
+    height: 34px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 6px;
+    background: var(--UCF-Bright-Gold, #FFC904);
+
+    color: var(--Gray-Text, #444);
+    align-items: center;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.tabs button:hover {
+    background: var(--UCF-Dark-Gold, #FFB400);
+}
+
+.grants {
+    display: flex;
+    width: 1500px;
+    padding: 110px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    background: var(--colors-blue-blue-600, #0A58CA);
+}
+
+.grants .wrapper {
+    width: 1280px;
+    height: 426px;
+}
+
+.grants .headline {
+    width: 441px;
+    height: 82px;
+    flex-shrink: 0;
+}
+
+.grants .headline p {
+    color: var(--Gray-300, #DEE2E6);
+
+    /* Body/blockquote */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.grants .headline h1 {
+    color: var(--Default-White, #FFF);
+
+    /* Bold/H1 Heading */
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.grants .features {
+    display: flex;
+    width: 1280px;
+    height: 270px;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+    gap: 30px 64px;
+}
+
+.grants .feature {
+    align-items: center;
+    padding-top: 74px;
+    width: 384px;
+    height: 120px;
+    flex-shrink: 0;
+}
+
+.feature img {
+    margin-bottom: 8.5px;
+}
+
+.feature h4 {
+    display: inline-flex;
+    padding-left: var(--Spacing-24, 24px);
+    color: var(--Default-White, #FFF);
+
+    /* Bold / H4 Heading */
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.feature p {
+    margin-left: 52px;
+    width: 332px;
+    color: var(--Gray-200, #E9ECEF);
+
+    /* Body/ Base text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.pricing {
+    display: flex;
+    width: 1500px;
+    padding: 110px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+    flex: 1 0 0;
+    background: #FFF;
+}
+
+.pricing .headline {
+    display: flex;
+    width: 1280px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.pricing .headline h1 {
+    color: var(--UCF-Black, #000);
+
+    /* Bold/H1 Heading */
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.pricing .headline .line {
+    width: 1280px;
+    height: 2px;
+    background: #979797;
+}
+
+.pricing .breakdown {
+    display: flex;
+    width: 1096px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+}
+
+.pricing .breakdown h2 {
+    color: #000;
+    text-align: center;
+
+    /* Bold / H2 Heading */
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.pricing .breakdown .table {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.pricing .breakdown .table .row {
+    height: 80px;
+    align-self: stretch;
+    background: #EDEDED;
+}
+
+.pricing .breakdown .table .row .text {
+    padding: 0;
+    margin-top: 24px;
+    margin-left: 58px;
+    width: 1004px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.pricing .breakdown .table .row .text p {
+    padding: 0;
+    width: 336px;
+    color: #000;
+    font-family: Overpass;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 160% */
+    background: inherit;
+}
+
+.pricing .breakdown .table .row .line {
+    margin-top: 20px;
+    width: 1096px;
+    height: 1px;
+    opacity: 0.3;
+    background: #1C1C1C;
+}
+
+.pricing .breakdown .table .row .line2 {
+    margin-top: 20px;
+    width: 1280px;
+    height: 2px;
+    background: #979797;
 }

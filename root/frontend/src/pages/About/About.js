@@ -1,6 +1,12 @@
 import React, { useEffect } from 'react'
 import './About.css'
 import teamPhoto from './Team.png'
+import building from './Icons/Building.svg'
+import waves from './Icons/Waves.svg'
+import hand from './Icons/Hand.svg'
+import droplet from './Icons/Droplet.svg'
+import cat from './Icons/Cat.svg'
+import plant from './Icons/Plant.svg'
 
 const About = () => {
 
@@ -17,6 +23,7 @@ const About = () => {
           <path d="M-182.408 61L1648 447.087V400.13L-182.408 1V61ZM-182.408 61L1648 601L-232 303.609L-182.408 61Z" stroke="#0A58CA"/>
         </svg>
       </div>
+
       <header>
         <div className='wrapper'>
           <div className='tagline'>
@@ -37,6 +44,7 @@ const About = () => {
             <img src={teamPhoto} class="picture" alt='UCF CCDC Team' />
         </div>
       </header>
+
       <div className='scholar'>
         <div className='wrapper'>
           <div className='left'>
@@ -66,7 +74,6 @@ const About = () => {
                 <a class="nav-link custom-tab-link" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false" style={{ color: '#525560' }}>Scholarship 3</a>
               </li>
             </ul>
-
             <div class="tab-content custom-tab-content" id="tab-content">
               <div class="tab-pane active" id="simple-tabpanel-0" role="tabpanel" aria-labelledby="simple-tab-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. 
@@ -74,6 +81,85 @@ const About = () => {
               </div>
               <div class="tab-pane" id="simple-tabpanel-1" role="tabpanel" aria-labelledby="simple-tab-1">Tab 2 selected</div>
               <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-2">Tab 3 selected</div>
+            </div>
+            <button type="button" class="btn btn-primary">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div className='grants'>
+        <div className='wrapper'>
+          <div className='headline'>
+            <p>ABOUT STUDENT BENEFITS</p>
+            <h1>GRANTS AND AWARDS</h1>
+          </div>
+          <div className='features'>
+            <div className='feature'>
+              <img src={building} class="picture" alt='Buildings'/>
+              <h4>Grant 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <div className='feature'>
+              <img src={waves} class="picture" alt='Buildings'/>
+              <h4>Grant 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <div className='feature'>
+              <img src={hand} class="picture" alt='Buildings'/>
+              <h4>Grant 3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <div className='feature'>
+              <img src={droplet} class="picture" alt='Buildings'/>
+              <h4>Grant 4</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <div className='feature'>
+              <img src={cat} class="picture" alt='Buildings'/>
+              <h4>Grant 5</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <div className='feature'>
+              <img src={plant} class="picture" alt='Buildings'/>
+              <h4>Grant 6</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className='pricing'>
+        <div className='wrapper'>
+          <div className='headline'>
+            <h1>Total Estimated Yearly Cost: <span style={{color: 'var(--colors-blue-blue-600, #0A58CA)'}}>$176</span></h1>
+            <div className='line'></div>
+          </div>
+          <div className='breakdown'>
+            <h2>Out-of-state Cost Breakdown</h2>
+            <div className='table'>
+              <div className='row'>
+                <div className='text'>
+                  <p>Tuition</p>
+                </div>
+                <div className='line'></div>
+              </div>
+              <div className='row'>
+                <div className='text'>
+                    <p>Housing</p>
+                  </div>
+                  <div className='line'></div>
+              </div>
+              <div className='row'>
+                <div className='text'>
+                    <p>Fees, books, etc.</p>
+                  </div>
+                  <div className='line2'></div>
+              </div>
+              <div className='row'>
+                <div className='text'>
+                    <p>Total Cost</p>
+                  </div>
+              </div>
             </div>
           </div>
         </div>

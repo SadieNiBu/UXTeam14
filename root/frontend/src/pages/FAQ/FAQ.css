@@ -20,7 +20,7 @@ header .wrapper h3 {
     color: var(--dark-000000, #000);
 
     /* Diplay / Heading-3 - Semibold */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 58px;
     font-style: normal;
     font-weight: 700;
@@ -32,7 +32,7 @@ header .wrapper p {
     color: var(--Text-txt-secondary, rgba(60, 60, 67, 0.85));
 
     /* Body/ Base text */
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -79,7 +79,7 @@ faq .wrapper .questions {
 .accordion-button {
     color: var(--Text-txt-primary, #000);
 
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
