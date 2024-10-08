@@ -1,5 +1,5 @@
 body {
-    height: 1168px;
+    height: 1300px;
 }
 
 body .divider {
@@ -169,7 +169,79 @@ body .socials a{
 }
 
 .socials {
-    padding-top: 470px;
-    padding-left: 231px;
+    position: absolute;
+    top: 570px;
+    width: 100px;
+    left: 1100px;
 }
+
+.contact_form .first_input_col{
+    position: absolute;
+    top: 674px;
+    left: 210px;
+}
+
+.contact_form .second_input_col{
+    position: absolute;
+    top: 674px;
+    left: 995px;
+}
+
+.contact_form input {
+    border: none;
+    width: 530px;
+    height: 57px;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.contact_form input:focus {
+    outline: none;
+}
+
+.contact_form .message textarea {
+    position: absolute;
+    top: 950px;
+    left: 210px;
+    resize: none;
+    border: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: #1D2130;
+}
+
+.contact_form .message textarea:focus {
+    outline: none;
+}
+
+.contact_form .message p {
+    position: absolute;
+    top: 910px;
+    left: 210px;
+    opacity: 60%;
+    font-size: 12px;
+    margin-top: 10px;
+    color: #1D2130;
+    line-height: 19.2px;
+}
+
+.contact_form .message button {
+    position: absolute;
+    top: 1235px;
+    left: 760px;
+    height: 51px;
+    width: 208px;
+    border: none;
+    border-radius: 4px;
+    background-color: #FFC904;
+}
+
+.contact_form p {
+    margin-top: 10px;
+    opacity: 60%;
+    font-size: 12px;
+    color: #1D2130;
+    line-height: 19.2px;
+}
+
   

@@ -1,9 +1,26 @@
 import './Contact.css'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 import React, { useEffect } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
 
 
 const Contact = () => {
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('SERVICE_ID', 'template_dyv226x', form.current, 'PUBLIC_KEY')
+    .then((result) => {
+        console.log(result.text)
+    }, (error) => {
+        console.log(error.text)
+    })
+
+    e.target.reset()
+
+  }
 
   useEffect ( () => {
     document.title = "C3 Team @ UCF | Contact"
@@ -57,6 +74,46 @@ const Contact = () => {
       </Row>
       <Row>
         <Col>
+          <form ref={form} onSubmit={sendEmail}
+          className='contact_form'>
+            <Col className='first_input_col'>
+            <p>First Name</p>
+              <input
+              type='text'
+              name='first_name'
+              required
+              />
+            <p>Email</p>
+              <input
+              type='text'
+              name='email'
+              required
+              />
+            </Col>
+            <Col className='second_input_col'>
+            <p>Last Name</p>
+              <input
+              type='text'
+              name='last_name'
+              required
+              />
+            <p>Subject</p>
+              <input
+              type='text'
+              name='subject'
+              required 
+              />
+            </Col>
+            <div className='message'>
+              <p>Message</p>
+              <textarea
+              name='message_box'
+              cols={129}
+              rows={10}
+              />
+              <button type='submit'>Send Email</button>
+            </div>
+          </form>
         </Col>
       </Row>
     </Container>
