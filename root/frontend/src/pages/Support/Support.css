@@ -1,5 +1,5 @@
 .support_body {
-    height: 1500px;
+    height: 3000px;
 }
 
 .header {
@@ -48,10 +48,204 @@
     margin-left: calc(-50vw + 50%);
 }
 
+.contributions_line {
+    top: 635px;
+    left: 220px;
+    position: absolute;
+}
+
+.contributions_title {
+    top: 630px;
+    left: 315px;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 36px;
+    position: absolute;
+}
+
+.contributions_photo {
+    top: 675px;
+    left: 1000px;
+    position: absolute;
+}
+
+.contributions_header h1{
+    top: 695px;
+    left: 220px;
+    color: white;
+    font-size: 40px;
+    font-weight: 400;
+    text-wrap: nowrap;
+    line-height: 48px;
+    position: absolute;
+}
+
+.contributions_bio {
+    top: 775px;
+    left: 220px;
+    color: #ABB5BE;
+    font-size: 16px;
+    font-weight: 400;
+    text-wrap: nowrap;
+    line-height: 28px;
+    position: absolute;
+}
+
 .bottom_line_decor {
-    top: 1505px;
+    top: 1508px;
     left: 220px;
     height: 28px;
     min-width: 1494px;
+    position: absolute;
+}
+
+.contributions_divider {
+    top: 900px;
+    left: 220px;
+    position: absolute;
+}
+
+.contributions_icons {
+    top: 855px;
+    left: 245px;
+    display: flex;
+    gap: 85px;
+    margin-top: 50px;
+    position: absolute;
+    flex-direction: column;
+}
+
+.contributions_text {
+    top: 900px;
+    left: 300px;
+    display: flex;
+    gap: 4px;
+    position: absolute;
+    flex-direction: column;
+}
+
+.contributions_text h4 {
+    line-height: 29px;
+    font-weight: 700;
+    font-size: 24px;
+    color: white;
+}
+
+.contributions_text p {
+    text-wrap: nowrap;
+    line-height: 25px;
+    font-weight: 400;
+    color: #ABB5BE;
+    font-size: 16px;
+}
+
+.help {
+    height: 1000px;
+}
+
+.help_title h2{
+    position: absolute;
+    line-height: 57px;
+    text-wrap: nowrap;
+    font-weight: 600;
+    color: #000000;
+    font-size: 48px;
+    top: 1650px;
+    left: 355px;
+}
+
+.help_bio1 p {
+    position: absolute;
+    line-height: 28px;
+    text-wrap: nowrap;
+    font-weight: 400;
+    color: #6C757D;
+    font-size: 16px;
+    top: 1750px;
+    left: 355px;
+}
+
+.help_photo {
+    position: absolute;
+    top: 1950px;
+    left: 355px;
+}
+
+.help_bio2 p{
+    position: absolute;
+    line-height: 28px;
+    text-wrap: nowrap;
+    font-weight: 400;
+    color: #6C757D;
+    font-size: 16px;
+    top: 2350px;
+    left: 355px;
+}
+
+.donation {
+    height: 800px;
+}
+
+.donation_line {
+    top: 2600px;
+    left: 220px;
+    color: #6C757D;
+    position: absolute;
+}
+
+.donation_header p{
+    top: 2595px;
+    left: 315px;
+    font-size: 21px;
+    color: #6C757D;
+    font-weight: 400;
+    line-height: 36px;
+    text-wrap: nowrap;
+    position: absolute;
+}
+
+.donation_title h1{
+    top: 2670px;
+    left: 220px;
+    font-size: 40px;
+    color: #000000;
+    font-weight: 600;
+    line-height: 48px;
+    text-wrap: nowrap;
+    position: absolute;
+}
+
+.donation_bio p{
+    top: 2760px;
+    left: 220px;
+    font-size: 16px;
+    color: #6C757D;
+    font-weight: 400;
+    line-height: 28px;
+    text-wrap: nowrap;
+    position: absolute;
+}
+
+.donation_btn {
+    top: 2900px;
+    left: 220px;
+    position: absolute;
+}
+
+.donation_btn button {
+    width: 119px;
+    height: 54px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    border-radius: 4px;
+    background-color: #FFC904;
+}
+
+.donation_photo {
+    top: 2510px;
+    left: 1140px;
     position: absolute;
 }
