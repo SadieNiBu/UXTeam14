@@ -9,7 +9,7 @@ import Competition from "../pages/Competition"
 import Press from "../pages/Press"
 import Roster from "../pages/Roster"
 import Gallery from "../pages/Gallery"
-import Support from "../pages/Support";
+import Support from "../pages/Support/Support";
 import { Route, Routes } from "react-router-dom";
 
 function App() {

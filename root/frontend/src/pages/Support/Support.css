@@ -1,0 +1,57 @@
+.support_body {
+    height: 1500px;
+}
+
+.header {
+    height: 420px;
+}
+
+.header_title h3{
+    line-height: 70px;
+    font-weight: 700;
+    font-size: 58px;
+    position: absolute;
+    text-wrap: nowrap;
+    left: 220px;
+    top: 190px;
+}
+
+.header_bio p {
+    opacity: 0.8;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    position: absolute;
+    text-wrap: nowrap;
+    left: 220px;
+    top: 285px;
+}
+
+.header_line {
+    position: absolute;
+    text-wrap: nowrap;
+    left: 220px;
+    top: 370px;
+}
+
+.top_line_decor {
+    top: 485px;
+    left: 220px;
+    min-width: 1494px;
+    position: absolute;
+}
+
+.contributions {
+    width: 100vw;
+    height: 1000px;
+    background: #0A58CA;
+    margin-left: calc(-50vw + 50%);
+}
+
+.bottom_line_decor {
+    top: 1505px;
+    left: 220px;
+    height: 28px;
+    min-width: 1494px;
+    position: absolute;
+}
