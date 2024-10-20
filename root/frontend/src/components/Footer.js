@@ -4,12 +4,12 @@ import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
 export default function Footer () {
     return <footer className="footer">
-        <Container fluid>
+        <Container>
             <Row>
                <Col>
-                    <div className="ucf-logo">
+                    <div className="ucf-logo text-center">
                         <Image
-                            src="https://s3-alpha-sig.figma.com/img/f5d0/df6f/c5a2251b3677f0aafb664d87c98e079c?Expires=1728864000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fpVcFZUUb4R8utQQKHitRxCfpkMHpbprqWZuxVX~gJxr7EZiYmJxFfyHyOmxeLh~Kwc4eIIde3YB~-W~5ojc4-pccVbs2AKKjQhkhDbaMJ5R1jal1UF2cNdruRYEHw5BEYbEZhTvees2Xa7wFkZcHJ8umRVcSrH1yVZc9SyldpdoKOYdtbbwBapT0Zj9WSJS8AzqxilYM4YP~qsjj4uuueroanPgMw4kp9xwy5otZl36hvkOP09KhOTmCf2PGwo3A5PADgC6Fn6yBmiBIiWG2FQv0wwnHhKqWnTm3viKdfiugQ0TG6sEDxzbN-6Rdd7EbYJgDzlLfncpwZCAnGM4Iw__"
+                            src="https://www.figma.com/file/2L36TR8aaRu4XXQscodojz/image/f5d0df6fc5a2251b3677f0aafb664d87c98e079c"
                             width={169}
                             height={60}
                         />
@@ -32,7 +32,7 @@ export default function Footer () {
                     </Nav>
                </Col>
                <Col>
-                    <div className="footer-btn">
+                    <div className="footer-btn text-center">
                         <button><CustomLink to="/contact">Contact Us</CustomLink></button>
                     </ div>
                </Col> 

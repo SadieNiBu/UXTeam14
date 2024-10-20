@@ -1,12 +1,19 @@
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import { Link, useMatch, useResolvedPath} from "react-router-dom"
 import ChevronIcon from "./ChevronIcon"
 import SearchIcon from "./SearchIcon"
 
 export default function Navbar() {
-    return <nav className="nav">
+    return <div className="nav-container">
+        <nav className="navbar"> 
         <Link to="/" className="site-logo">[logo img]</Link>
-        <ul>
-            <li id="element">
+        <div className="navbar-toggle">
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+        </div>
+        <ul className="navbar-menu">
+            <li id="element" className="first-toggle">
+                <div className="toggle-border"></div>
                 <CustomLink to="/">Home</CustomLink>
             </li>
                 <div className="dropdown">
@@ -72,8 +79,7 @@ export default function Navbar() {
         </ul>
         <div className="search-button"><SearchIcon className="search-icon"/></div>
     </nav>
-
-    
+    </div>
 }
 
 function CustomLink({ to, children, ...props }) {

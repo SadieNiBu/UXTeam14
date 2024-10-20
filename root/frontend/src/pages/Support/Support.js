@@ -27,7 +27,7 @@ const Support = () => {
         </Col>
       </Row>
       <Row className='top_line_decor'>
-        <svg width="1494" height="25" viewBox="0 0 1494 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="1" height="25" viewBox="0 0 1494 26" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M0 26L358 0L486 20.3538L528 26H250H0Z" fill="#0A58CA"/>
         <path d="M1276 16.2359L1494 26H994H744H528L578 20.3538L643 14.3L780 20.3538L1019 23.4189L1276 16.2359Z" fill="#0A58CA"/>
         </svg>
@@ -108,7 +108,7 @@ const Support = () => {
         </Col>
       </Row>
       <Row className='bottom_line_decor'>
-        <svg width="1494" height="28" viewBox="0 0 1494 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="1" height="28" viewBox="0 0 1494 28" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1494 0L1056 18L1008 8.68649L966 0H1244H1494Z" fill="#0A58CA"/>
         <path d="M218 28L0 0H500H750H966L916 8.68649L851 18L714 8.68649L475 3.97097L218 28Z" fill="#0A58CA"/>
         </svg>
@@ -149,7 +149,7 @@ const Support = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in<br />eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim<br />in eros. Lorem ipsum dolor sit amet, conse</p>
           </div>
           <div className='donation_btn'>
-            <a href='/'>
+            <a href=''>
             <button>
               Donate
             </button>
