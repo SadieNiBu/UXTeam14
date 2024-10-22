@@ -853,17 +853,17 @@ header .picture {
 }
 
 .topVector {
-    margin-top: 60px;
+    margin-top: 75px;
     width: 1568px;
     height: 52px;
     position: absolute;
-    right: -68px;
+    left: 5px;
     top: 1500px;
     fill: var(--colors-blue-blue-600, #0A58CA);
 }
 
 .bottomVector {
-    margin-top: 70px;
+    margin-top: 80px;
     width: 1500px;
     height: 31px;
     position: absolute;
