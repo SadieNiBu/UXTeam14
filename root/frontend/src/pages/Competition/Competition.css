@@ -1,0 +1,209 @@
+.top {
+    height: 604px;
+}
+
+.top-divider svg{
+    margin-top: 120px;
+    margin-left: -90px;
+}
+
+.top-divider-text p {
+    color: #444444;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 36px;
+    margin-top: -20px;
+}
+
+.top-competitions h3{
+    color: #000;
+    font-size: 58px;
+    font-weight: 700;
+    margin-top: 169px;
+    margin-left: -90px;
+}
+
+.top-competitions-text {
+    opacity: 0.8;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 28px;
+    margin-left: -85px;
+}
+
+.top-pic {
+    margin-right: -205px;
+}
+
+.top-pic img {
+    width: 602px;
+    height: 384px;
+    margin-top: 105px;
+}
+
+.youtube {
+    width: 100vw;
+    height: 1166px;
+    background-color: #CED4DA;
+    margin-left: calc(-50vw + 50%);
+}
+
+.youtube-vid iframe{
+    width: 1077px;
+    height: 486px;
+    margin-top: 105px;
+    margin-left: 300px;
+}
+
+.youtube-textbox {
+    width: 1077px;
+    height: 380px;
+    margin-left: 312px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.youtube-title h1 {
+    font-size: 40px;
+    margin-top: 50px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.youtube-date {
+    width: 125px;
+    height: 36px;
+}
+
+.youtube-date p {
+    font-size: 21px;
+    margin-top: 55px;
+    font-weight: 600;
+    margin-left: 330px;
+}
+
+.youtube-text p {
+    position: absolute;
+    opacity: 0.8;
+    font-size: 16px;
+    color: #54595e;
+    font-weight: 400;
+    line-height: 28px;
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 930px;
+}
+
+.youtube-btn button {
+    width: 178px;
+    border: none;
+    height: 58px;
+    font-size: 16px;
+    color: #343A40;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 155px;
+    background-color: #FFC904;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.more-than {
+    height: 681px;
+}
+
+.more-than .title h1{
+    font-size: 40px;
+    font-weight: 800;
+    margin-top: 80px;
+}
+
+.more-than .subscript p {
+    opacity: 0.8;
+    margin-top: 15px;
+    font-size: 21px;
+    font-weight: 300;
+    color: #6c757d;
+}
+
+.more-than .top-pyramid {
+    margin-top: 35px;
+}
+
+.more-than .top-pyramid img {
+    width: 244px;
+    height: 144px;
+}
+
+.more-than .mid-pyramid {
+    margin-top: 35px;
+}
+
+.more-than .mid-pyramid img {
+    width: 164px;
+    height: 94px;
+}
+
+.more-than .low-pyramid {
+    margin-top: 35px;
+}
+
+.more-than .low-pyramid img {
+    width: 104px;
+    height: 64px;
+}
+
+.top_line_decors {
+    top: 2516px;
+    left: 220px;
+    min-width: 1494px;
+    position: absolute;
+}
+
+.schedule {
+    width: 100vw;
+    height: 1298px;
+    background-color: black;
+    margin-left: calc(-50vw + 50%);
+}
+
+.schedule .title h1 {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+
+.schedule .sc-divider svg{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.schedule .sc-vid iframe {
+    width: 442px;
+    height: 406px;
+    margin-top: 275px;
+}
+
+.schedule .sc-img img {
+    width: 442px;
+    height: 406px;
+    margin-top: 120px;
+}
+
+.awards {
+    width: 100vw;
+    height: 660px;
+    background-color: #0A58CA;
+    margin-left: calc(-50vw + 50%);
+}
+
+.bottom_line_decors {
+    top: 3838px;
+    left: 220px;
+    height: 28px;
+    min-width: 1494px;
+    position: absolute;
+}
