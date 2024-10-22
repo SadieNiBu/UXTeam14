@@ -7,7 +7,7 @@ import FAQ from "../pages/FAQ/FAQ"
 import Contact from "../pages/Contact/Contact"
 import Competition from "../pages/Competition/Competition"
 import Press from "../pages/Press"
-import Roster from "../pages/Roster"
+import Roster from "../pages/Roster/Roster"
 import Gallery from "../pages/Gallery"
 import Support from "../pages/Support/Support";
 import { Route, Routes } from "react-router-dom";

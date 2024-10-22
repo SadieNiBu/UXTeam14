@@ -1,0 +1,275 @@
+header {
+    display: flex;
+    padding: 110px 100px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+header .wrapper {
+    height: 285px;
+    margin-left: -20px;
+}
+
+header .wrapper .tagline {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--Spacing-24, 24px);
+}
+
+header .wrapper .tagline .lead {
+    color: var(--Gray-Text, #444);
+
+    /* Lead/Text - Regular */
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 171.429% */
+}
+
+header .wrapper h4 {
+    padding-left: 20px;
+    width: 725px;
+    color: var(--Default-Black, #000);
+
+    /* Diplay / Heading-4 - Semibold */
+    font-family: Inter;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+header .wrapper h5 {
+    padding-left: 20px;
+    width: 465px;
+    color: var(--Default-Black, #000);
+
+    /* Semi-Bold / H5 Heading */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+header .wrapper .base {
+    margin-left: 835px;
+    margin-top: 35px;
+    width: 465px;
+    color: var(--Gray-800, #343A40);
+
+    /* Body/ Base text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    opacity: 0.7;
+}
+
+.full-bleed {
+    box-shadow: 0 0 0 100vmax var(--Gray-400, #CED4DA);
+    clip-path: inset(0 -100vmax);
+}
+
+.coaches {
+    display: flex;
+    height: 856px;
+    width: 100vw;
+    padding-top: 110px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 52px;
+    align-self: stretch;
+    background: var(--Gray-400, #CED4DA);
+}
+
+.coaches .header {
+    display: flex;
+    height: 48px;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.coaches .header h1 {
+    color: var(--Default-Black, #000);
+
+    /* Bold/H1 Heading */
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.coaches .header .line {
+    margin-top: 25px;
+    width: 1024px;
+    height: 1px;
+    background: #6C757D;
+}
+
+.coaches .members {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    gap: 50px;
+}
+
+.coaches .members .member {
+    height: 536px;
+    width: 393.33px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 19.898px;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.coaches .member .info {
+    width: 249.82px;
+    height: 118.144px;
+}
+
+.coaches .info .name {
+    width: 249.82px;
+    height: 39.796px;
+    flex-shrink: 0;
+
+    color: var(--Primary-text, #1D2130);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 32px */
+}
+
+.coaches .info .role {
+    margin: auto;
+    width: 70.741px;
+    height: 22.997px;
+    flex-shrink: 0;
+
+    color: var(--Primary-text, #1D2130);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 19.2px */
+    opacity: 0.6;
+}
+
+.coaches .info .social {
+    padding-top: 30.85px;
+    margin: auto;
+    width: 135.88px;
+    opacity: 0.8;
+}
+
+.students {
+    display: flex;
+    padding-top: 110px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 52px;
+    align-self: stretch;
+}
+
+.students .header {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.students .header h1 {
+    color: var(--Default-Black, #000);
+
+    /* Bold/H1 Heading */
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.students .header .line {
+    width: 1024px;
+    height: 1px;
+    background: #6C757D;
+}
+
+.students .members {
+    height: 944px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+    flex-wrap: wrap;
+    gap: 32px;
+    margin-bottom: 110px;
+}
+
+.students .members .member {
+    display: flex;
+    width: 296px;
+    height: 431px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-shrink: 0;
+}
+
+.students .member .info {
+    width: 188px;
+    height: 95px;
+    flex-shrink: 0;
+}
+
+.students .info .name {
+    color: var(--Primary-text, #1D2130);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 32px */
+}
+
+.students .info .role {
+    margin-top: 8px;
+    color: var(--Primary-text, #1D2130);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; /* 19.2px */
+    opacity: 0.6;
+}
+
+.students .info .social {
+    width: 120px;
+    height: 20px;
+    margin: auto;
+    flex-shrink: 0;
+    opacity: 0.8;
+}
+
+.students .info .social img {
+    margin-top: 16px;
+    width: 20px;
+    height: 20px;
+}
