@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import Home from "../pages/Home";
+import Home from "../pages/Home/Home";
 import About from "../pages/About/About"
 import Admin from "../pages/Admin"
 import FAQ from "../pages/FAQ/FAQ"

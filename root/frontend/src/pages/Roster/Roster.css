@@ -93,7 +93,7 @@ header .wrapper .base {
     background: var(--Gray-400, #CED4DA);
 }
 
-.coaches .header {
+.coaches .title {
     display: flex;
     width: 1300px;
     height: 48px;
@@ -101,7 +101,7 @@ header .wrapper .base {
     align-self: stretch;
 }
 
-.coaches .header h1 {
+.coaches .title h1 {
     color: var(--Default-Black, #000);
 
     /* Bold/H1 Heading */
@@ -113,7 +113,7 @@ header .wrapper .base {
     letter-spacing: -0.8px;
 }
 
-.coaches .header .line {
+.coaches .title .line {
     margin-top: 25px;
     width: 1024px;
     height: 1px;
@@ -190,7 +190,7 @@ header .wrapper .base {
     align-self: stretch;
 }
 
-.students .header {
+.students .title {
     display: flex;
     align-items: center;
     height: 48px;
@@ -198,7 +198,7 @@ header .wrapper .base {
     align-self: stretch;
 }
 
-.students .header h1 {
+.students .title h1 {
     color: var(--Default-Black, #000);
 
     /* Bold/H1 Heading */
@@ -210,7 +210,7 @@ header .wrapper .base {
     letter-spacing: -0.8px;
 }
 
-.students .header .line {
+.students .title .line {
     width: 1024px;
     height: 1px;
     background: #6C757D;

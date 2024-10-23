@@ -33,7 +33,7 @@ const Roster = () => {
         </div>
       </header>
       <div className='coaches full-bleed'>
-        <div className='header'>
+        <div className='title'>
           <h1>COACHES</h1>
           <div className='line'></div>
         </div>
@@ -77,7 +77,7 @@ const Roster = () => {
         </div>
       </div>
       <div className='students'>
-        <div className='header'>
+        <div className='title'>
           <h1>MEMBERS</h1>
           <div className='line'></div>
         </div>
