@@ -1,0 +1,19 @@
+.article-header {
+    height: 650px;
+}
+
+.articles  {
+    height: 1857px;
+}
+
+.articles h1 {
+    margin-top: 50px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+}
+
+.article-div svg {
+    margin-bottom: 1695px;
+    padding-left: 3.5px;
+}
