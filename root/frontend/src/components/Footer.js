@@ -27,7 +27,7 @@ export default function Footer () {
                         <CustomLink to="/about">About</CustomLink>
                         <CustomLink to="/about">Benefits</CustomLink>
                         <CustomLink to="/support">Donate</CustomLink>
-                        <CustomLink to="/gallary">Gallary</CustomLink>
+                        <CustomLink to="/gallery">Gallery</CustomLink>
                         <CustomLink to="/roster">Team</CustomLink>
                     </Nav>
                </Col>

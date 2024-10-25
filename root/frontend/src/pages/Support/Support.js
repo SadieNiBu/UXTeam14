@@ -11,7 +11,7 @@ const Support = () => {
   return (
     <body className='support_body'>
     <Container>
-      <Row className='header'>
+      <Row className='support_header'>
         <Col>
           <div className='header_title'>
             <h3>Become a supporter for our team</h3>
