@@ -1,3 +1,20 @@
+a {
+    /* Remove default underline for links */
+    text-decoration: none;
+}
+
+.full-bleed {
+    --full-bleed-color: var(--Gray-400, #CED4DA);
+    box-shadow: 0 0 0 100vmax var(--full-bleed-color);
+    clip-path: inset(0 -100vmax);
+}
+
+.full-bleed--black {
+    --full-bleed-color--black: var(--Default-Black, #000);
+    box-shadow: 0 0 0 100vmax var(--full-bleed-color--black);
+    clip-path: inset(0 -100vmax);
+}
+
 .hero {
     position: relative;
     display: inline-block;
@@ -144,4 +161,362 @@
     font-weight: 400;
     line-height: 28px; /* 175% */
     opacity: 0.7;
+}
+
+.sponsors {
+    background-color: var(--full-bleed-color);
+    display: flex;
+    height: 370.017px;
+    padding-top: 100px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.sponsors h1 {
+    color: var(--Gray-900, #212529);
+
+    /* Extrabold / H1 Heading */
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-bottom: 45px;
+}
+
+.logos {
+    margin-top: 46px;
+    display: flex;
+    align-items: center;
+    gap: 96px;
+    align-self: stretch;
+}
+
+.competitions {
+    display: flex;
+    padding: 100px;
+    padding-left: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+    align-self: stretch;
+    background: #000;
+}
+
+.competitions .top {
+    width: 1300px;
+    height: 156px;
+    align-content: center;
+}
+
+.competitions .top p {
+    margin-bottom: 0px;
+    color: var(--Default-White, #FFF);
+
+    /* Lead/Text - Regular */
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 171.429% */
+}
+
+.competitions .top h1 {
+    color: #FFF;
+    width: 490px;
+
+    /* Bold/H1 Heading */
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.competitions .top button {
+    margin-top: -8.3%;
+    float: right;
+    height: 48px;
+    width: 184px;
+    border: none;
+    border-radius: 0px;
+    background: var(--UCF-Bright-Gold, #FFC904);
+
+    color: var(--Default-Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 28px; /* 175% */
+}
+
+.competitions .list {
+    display: flex;
+    width: 1298px;
+    height: 463px;
+}
+
+.competitions .list .main {
+    width: 490px;
+    height: 463px;
+}
+
+.competitions .list .main img {
+    z-index: -1;
+}
+
+.competitions .list .main .date {
+    position: absolute;
+    z-index: 10;
+    margin-top: -351px;
+    display: flex;
+    width: 93.432px;
+    padding: var(--Spacing-8, 8px) var(--Spacing-24, 24px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-8, 8px);
+    background: var(--UCF-Bright-Gold, #FFC904);
+
+    color: var(--Default-Black, #000);
+    text-align: center;
+    /* Body/blockquote */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.competitions .list .main .description {
+    width: 490px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-8, 8px);
+}
+
+.competitions .list .main .description h5 {
+    margin-top: 25px;
+    color: #FFF;
+
+    /* Bold / H5 Heading */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.competitions .list .main .description p {
+    color: var(--Default-White, #FFF);
+
+    /* Body/ Base text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.competitions .list .others {
+    margin-left: 182px;
+    float: right;
+    display: inline-flex;
+    width: 624px;
+    height: 456px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.competitions .list .others .item {
+    height: 152px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 32px 0px;
+    align-items: center;
+    gap: 46px;
+    border-bottom: 1px solid var(--Default-White, #FFF);
+}
+
+.competitions .list .others .item .date {
+    display: flex;
+    width: 88px;
+    height: 88px;
+    padding: var(--Spacing-8, 8px) var(--Spacing-24, 24px);
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-8, 8px);
+    background: #DFDFDF;
+
+    color: var(--Default-Black, #000);
+    text-align: center;
+    /* Body/blockquote */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.competitions .list .others .item h5 {
+    width: 490px;
+    margin-top: -55px;
+    color: var(--Default-White, #FFF);
+
+    /* Bold / H5 Heading */
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.competitions .list .others .item p {
+    width: 490px;
+    margin-left: 134px;
+    margin-top: -125px;
+    color: var(--Default-White, #FFF);
+
+    /* Body/ Base text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+}
+
+.news {
+    display: flex;
+    padding: 100px;
+    padding-left: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 45px;
+}
+
+.news__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--Spacing-24, 24px);
+}
+
+.news__header__tagline {
+    display: flex;
+    align-items: center;
+    gap: var(--Spacing-24, 24px);
+}
+
+.news__header__tagline__text {
+    color: var(--Gray-700, #495057);
+    /* Lead/Text - Regular */
+    font-family: Inter;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 171.429% */
+}
+
+.news__header__text {
+    color: var(--Gray-800, #343A40);
+    /* Bold/H1 Heading */
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.news__articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    align-self: stretch;
+}
+
+.news__article {
+    width: 410px;
+    height: 534px;
+    flex-shrink: 0;
+    fill: var(--Light-Base-Color-White, #FFF);
+    border: 1px solid var(--Gray-500, #ADB5BD);
+}
+
+.news__article__image {
+    width: 100%;
+    height: 312px;
+    border-bottom: 1px solid var(--Gray-500, #ADB5BD);
+}
+
+.news__article__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news__article__title {
+    margin-top: 16px;
+    margin-left: 22px;
+    width: 365.676px;
+    color: var(--Text-Title-Text, #333);
+    /* Bold / H4 Heading */
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.news__article__info {
+    display: flex;
+    gap: 30px;
+    margin-top: 10px;
+    margin-left: 22px;
+    width: 206.385px;
+    height: 15px;
+    flex-shrink: 0;
+}
+
+.news__article__info__author {
+    color: var(--Gray-600, #6C757D);
+    /* Body/Small */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.news__article__info__date {
+    color: var(--Gray-600, #6C757D);
+    /* Body/Small */
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.news__article__button {
+    margin-top: 44px;
+    margin-left: 22px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.news__article__button__text {
+    color: var(--colors-blue-blue-600, #0A58CA);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
