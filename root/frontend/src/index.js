@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.js'
 import App from './components/App';
+import ScrollToTop from './components/ScrollToTop';
 import reportWebVitals from './reportWebVitals';
 import "./styles.css"
 import { BrowserRouter } from 'react-router-dom';
@@ -15,6 +16,7 @@ root.render(
     <BrowserRouter>
       <EventContextProvider>
       <MemberContextProvider>
+        <ScrollToTop />
         <App />
       </MemberContextProvider>
       </EventContextProvider>
