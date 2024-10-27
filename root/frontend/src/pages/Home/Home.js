@@ -92,6 +92,19 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div className='news__svg--black'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="36" viewBox="0 0 1500 36" fill="none">
+            <path d="M0 2.30889e-05L454 24.2105L544 0L0 2.30889e-05Z" fill="black"/>
+            <path d="M1292 24.2105L1500 0L1014 1.0678L544 0L664 36L796 14L1032 0L1292 24.2105Z" fill="black"/>
+        </svg>
+      </div>
+      <div className='news__svg--blue'>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="511" viewBox="0 0 1500 511" fill="none">
+          <path d="M-1066.93 510L1857 1L-1727 510H-1066.93Z" fill="#0A58CA"/>
+          <path d="M1857 1L-483.237 510H-101.38L1857 1Z" fill="#0A58CA"/>
+          <path d="M1857 1L-1066.93 510H-1727L1857 1ZM1857 1L-483.237 510H-101.38L1857 1Z" stroke="#0A58CA"/>
+        </svg>
+      </div>
       <div className='news'>
         <div className='news__header'>
           <div className='news__header__tagline'>
@@ -165,7 +178,47 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+      <div className='photos full-bleed--blue'>
+        <div className='photos__header'>
+          <p>Media Feature</p>
+          <h1>Photo Gallery</h1>
+        </div>
+        <div className='photos__main'>
+          <div className='photos__main__row'>
+            <img src={placeholder} class="photo" alt='Placeholder' />
+            <img src={placeholder} class="photo" alt='Placeholder' />
+          </div>
+          <div className='photos__main__row'>
+            <img src={placeholder} class="photo" alt='Placeholder' />
+            <img src={placeholder} class="photo" alt='Placeholder' />
+          </div>
+        </div>
+      </div>
+      <div className='medium'>
+        <div className='medium__yt'>
+          <iframe width="640" height="491" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Bohemian Rhapsody | Muppet Music Video | The Muppets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div className='medium__text'>
+          <h1>Medium Video Layout</h1>
+          <p>Commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="6" viewBox="0 0 100 6" fill="none">
+            <path d="M0 0.0175781H100V5.01758H0V0.0175781Z" fill="#FFC904"/>
+          </svg>
+        </div>
+      </div>
+      <div className='large full-bleed--black'>
+        <div className='large__header'>
+          <p>Media Feature</p>
+          <h1>Large Video Layout</h1>
+          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="6" viewBox="0 0 100 6" fill="none">
+            <path d="M0 0.0175781H100V5.01758H0V0.0175781Z" fill="#FFC904"/>
+          </svg>
+        </div>
+        <div className='large__yt'>
+          <iframe width="1260" height="568" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Bohemian Rhapsody | Muppet Music Video | The Muppets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      </div>
   )
 }
 
