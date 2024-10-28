@@ -119,6 +119,47 @@ a {
     color: white;
 }
 
+/* Phone only */
+@media screen and (max-width: 600px) {
+    .hero .header h3 {
+        font-size: 35px;
+    }
+    .hero .header p {
+        margin-top: -6px;
+    }
+    .hero .header button {
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding-left: 10%;
+    }
+    .hero .header p {
+        font-size: 16px;
+    }
+    .hero .header button {
+        width: 150px;
+    }
+}
+
+/* Tablet only */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .hero .header h3 {
+        font-size: 38px;
+    }
+    .hero .header button {
+        margin-top: -20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1500px) {
+    .header {
+        padding-left: 5%;
+    }
+}
+
 .section-1 {
     display: flex;
     width: 100vw;
@@ -157,7 +198,8 @@ a {
 
 .section-1 .wrapper .text {
     display: flex;
-    width: 496px;
+    width: 100%;
+    max-width: 496px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
@@ -188,7 +230,8 @@ a {
 }
 
 .section-1 .wrapper .text p {
-    width: 486px;
+    width: 100%;
+    max-width: 486px;
     color: var(--Secondary-Dark-Color, #54595E);
 
     /* Body/ Base text */
@@ -198,6 +241,15 @@ a {
     font-weight: 400;
     line-height: 28px; /* 175% */
     opacity: 0.7;
+}
+
+@media screen and (max-width: 600px) {
+    .section-1 .wrapper img {
+        padding: 5%;
+    }
+    .section-1 .wrapper .text {
+        padding: 10%;
+    }
 }
 
 .sponsors {
@@ -304,6 +356,13 @@ a {
     color: white;
 }
 
+@media screen and (max-width: 991px) {
+    .competitions .top button {
+        float: left;
+        margin-top: 0%;
+    }
+}
+
 .competitions .list {
     display: flex;
     flex-wrap: wrap;
@@ -314,6 +373,13 @@ a {
 }
 
 .competitions .list .main {
+    display: grid;
+    grid-template-areas: 
+      "date"
+      "image"
+      "description";
+    grid-template-rows: auto 1fr auto;
+    position: relative;
     width: 100%;
     height: 100%;
     max-width: 490px;
@@ -321,33 +387,29 @@ a {
 }
 
 .competitions .list .main img {
-    z-index: -1;
+    grid-area: image;
+    width: 100%;
+    height: auto;
+    z-index: 0;
 }
 
 .competitions .list .main .date {
-    position: absolute;
-    z-index: 10;
-    margin-top: -351px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 93.432px;
+    grid-area: image;
+    height: 78px;
+    width: 93.43px;
     padding: var(--Spacing-8, 8px) var(--Spacing-24, 24px);
-    justify-content: center;
-    align-items: center;
-    gap: var(--Spacing-8, 8px);
     background: var(--UCF-Bright-Gold, #FFC904);
-
     color: var(--Default-Black, #000);
     text-align: center;
-    /* Body/blockquote */
     font-family: Inter;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    z-index: 1;
 }
 
+
 .competitions .list .main .description {
+    grid-area: description;
     width: 100%;
     height: 100%;
     max-width: 490px;
@@ -362,7 +424,6 @@ a {
 .competitions .list .main .description h5 {
     margin-top: 25px;
     color: #FFF;
-
     /* Bold / H5 Heading */
     font-family: Inter;
     font-size: 20px;
@@ -373,7 +434,6 @@ a {
 
 .competitions .list .main .description p {
     color: var(--Default-White, #FFF);
-
     /* Body/ Base text */
     font-family: Inter;
     font-size: 16px;
@@ -675,10 +735,14 @@ a {
     .photos__main__row {
         flex-wrap: wrap;
     }
+    .photos__main__row img {
+        width: 100%;
+    }
 }
 
 .medium {
-    padding: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
     display: flex;
     width: 100%;
     max-width: 1300px;
@@ -698,6 +762,7 @@ a {
     margin-left: 82px;
     display: flex;
     height: 303px;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     gap: 10px;
