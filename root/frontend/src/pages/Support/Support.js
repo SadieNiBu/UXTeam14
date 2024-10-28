@@ -149,11 +149,9 @@ const Support = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in<br />eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim<br />in eros. Lorem ipsum dolor sit amet, conse</p>
           </div>
           <div className='donation_btn'>
-            <a href=''>
-            <button>
-              Donate
+            <button class='btn btn-primary'>
+             <a href='https://foundation.ucf.edu/givenow'>Donate</a>
             </button>
-            </a>
           </div>
         </Col>
         <Col>

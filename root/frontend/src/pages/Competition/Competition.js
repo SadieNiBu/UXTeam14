@@ -62,7 +62,7 @@ const Competition = () => {
               <p>Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis.<br />Fermentum. Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper<br />venenatis. Fermentum.</p>
             </div>
             <div className='youtube-btn'>
-              <button>Our YouTube</button>
+              <button class='btn btn-primary'><a href='https://www.youtube.com/watch?v=PLNluCohtZ4&t=58s'>Our YouTube</a></button>
             </div>
           </Col>
           <Col className='youtube-date'>
@@ -107,7 +107,7 @@ const Competition = () => {
         <path d="M1276 16.2359L1494 26H994H744H528L578 20.3538L643 14.3L780 20.3538L1019 23.4189L1276 16.2359Z" fill="#000"/>
         </svg>
       </Row>
-      <Row className='schedule'>
+      <Row className='schedule' id='schedule-anchor'>
         <Col>
           <div className='title'>
             <h1>FALL 2024 COMPETITION<br />SCHEDULE</h1>
@@ -135,7 +135,7 @@ const Competition = () => {
         <path d="M218 28L0 0H500H750H966L916 8.68649L851 18L714 8.68649L475 3.97097L218 28Z" fill="#000"/>
         </svg>
       </Row>
-      <Row className='awards'>
+      <Row className='awards' id='awards-anchor'>
         <Col>
           <div className='awards-title'>
             <h1>AWARDS AND RECOGNITIONS</h1>

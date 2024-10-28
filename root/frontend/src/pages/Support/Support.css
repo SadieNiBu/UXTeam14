@@ -245,6 +245,15 @@
     background-color: #FFC904;
 }
 
+.donation_btn button:hover a{
+    color: white;
+}
+
+.donation_btn a {
+    color: black;
+    text-decoration: none;
+}
+
 .donation_photo {
     top: 2510px;
     left: 1140px;

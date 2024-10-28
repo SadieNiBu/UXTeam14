@@ -1,6 +1,7 @@
 a {
     /* Remove default underline for links */
     text-decoration: none;
+    color: black;
 }
 
 .full-bleed {
@@ -107,6 +108,15 @@ a {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    list-style: none;
+}
+
+.hero .header button:hover {
+    background-color: #0A58CA;
+}
+
+.hero .header button:hover a{
+    color: white;
 }
 
 .section-1 {
@@ -273,7 +283,7 @@ a {
     height: 48px;
     width: 184px;
     border: none;
-    border-radius: 0px;
+    border-radius: 4px;
     background: var(--UCF-Bright-Gold, #FFC904);
 
     color: var(--Default-Black, #000);
@@ -282,7 +292,16 @@ a {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
+    list-style: none;
     line-height: 28px; /* 175% */
+}
+
+.competitions .top button:hover {
+    background-color: #0A58CA;
+}
+
+.competitions .top button:hover a {
+    color: white;
 }
 
 .competitions .list {

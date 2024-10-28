@@ -1,4 +1,5 @@
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import { HashLink } from 'react-router-hash-link'
 import { Container, Row, Col, Image, Nav } from "react-bootstrap"
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 
@@ -17,11 +18,11 @@ export default function Footer () {
                </Col> 
                <Col>
                     <Nav className='footer-icons'>
-                        <a href='https://www.linkedin.com/'><i class="bi bi-linkedin"></i></a>
-                        <a href='https://discord.com/'><i class="bi bi-discord"></i></a>
-                        <a href='https://www.instagram.com/?hl=en'><i class="bi bi-instagram"></i></a>
-                        <a href='https://www.facebook.com/'><i class="bi bi-facebook"></i></a>
-                        <a href='https://github.com/'><i class="bi bi-github"></i></a>
+                        <a href='https://www.linkedin.com/company/collegiate-cyber-defense-club-at-ucf'><i class="bi bi-linkedin"></i></a>
+                        <a href='https://discord.com/invite/dqFtKgMqkJ'><i class="bi bi-discord"></i></a>
+                        <a href='https://www.instagram.com/hack_ucf/?hl=en'><i class="bi bi-instagram"></i></a>
+                        <a href='https://www.facebook.com/HackUCF/'><i class="bi bi-facebook"></i></a>
+                        <a href='https://github.com/HackUCF'><i class="bi bi-github"></i></a>
                     </Nav>
                     <Nav className="footer-nav">
                         <CustomLink to="/about">About</CustomLink>
@@ -33,7 +34,7 @@ export default function Footer () {
                </Col>
                <Col>
                     <div className="footer-btn text-center">
-                        <button><CustomLink to="/contact">Contact Us</CustomLink></button>
+                        <button><HashLink smooth to="/contact/#contact-anchor">Contact Us</HashLink></button>
                     </ div>
                </Col> 
             </Row>

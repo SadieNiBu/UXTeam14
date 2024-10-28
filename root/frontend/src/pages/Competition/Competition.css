@@ -109,6 +109,15 @@
     border-radius: 4px 4px 4px 4px;
 }
 
+.youtube-btn button:hover a{
+    color: white;
+}
+
+.youtube-btn a{
+    color: black;
+    text-decoration: none;
+}
+
 .more-than {
     height: 681px;
 }

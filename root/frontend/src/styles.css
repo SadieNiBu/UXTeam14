@@ -76,7 +76,14 @@ body {
 
 .dropdown-content li{
     display: block;
-    padding: 5px 5px 5px 5px;
+    padding: 4px 4px 4px 4px;
+}
+
+.dropdown-content li a{
+    padding-bottom: 6px;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: transparent;
 }
 
 .first-element {

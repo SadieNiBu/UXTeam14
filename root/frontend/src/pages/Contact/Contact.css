@@ -233,7 +233,13 @@ body .socials a{
     width: 208px;
     border: none;
     border-radius: 4px;
+    color: black;
     background-color: #FFC904;
+}
+
+.contact_form .message button:hover {
+    color: white;
+    background-color: #0A58CA;
 }
 
 .contact_form p {

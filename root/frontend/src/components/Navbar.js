@@ -1,4 +1,5 @@
 import { Link, useMatch, useResolvedPath} from "react-router-dom"
+import { HashLink } from 'react-router-hash-link'
 import ChevronIcon from "./ChevronIcon"
 import SearchIcon from "./SearchIcon"
 
@@ -22,13 +23,13 @@ export default function Navbar() {
                     </div>
                     <div className="dropdown-content">
                         <li className="first-element" id="navelement">
-                             <CustomLink to="">Scholarships</CustomLink>
+                             <HashLink to="/about/#scholar-anchor">Scholarships</HashLink>
                         </li>
                         <li id="navelement">
-                            <CustomLink to="">Policies</CustomLink>
+                            <HashLink to="/about/#policies-anchor">Policies</HashLink>
                         </li>
                         <li id="navelement">
-                            <CustomLink to="">Grants</CustomLink>
+                            <HashLink to="/about/#grants-anchor">Grants</HashLink>
                         </li>
                     </div>
                 </div>
@@ -38,13 +39,13 @@ export default function Navbar() {
                 </div>
                 <div className="dropdown-content">
                     <li className="first-element" id="navelement">
-                        <CustomLink to="">Coaches</CustomLink>
+                        <HashLink to="/roster/#coaches-anchor">Coaches</HashLink>
                     </li>
                     <li id="navelement">
-                        <CustomLink to="">Members</CustomLink>
+                        <HashLink to="/roster/#members-anchor">Members</HashLink>
                     </li>
                     <li id="navelement">
-                        <CustomLink to="">Success Stories</CustomLink>
+                        <HashLink to="/roster/#story-anchor">Success Stories</HashLink>
                     </li>
                 </div>
             </div>
@@ -54,10 +55,10 @@ export default function Navbar() {
                 </div>
                 <div className="dropdown-content">
                     <li className="first-element" id="navelement">
-                        <CustomLink to="">Schedule</CustomLink>
+                        <HashLink to="/competition/#schedule-anchor">Schedule</HashLink>
                     </li>
                     <li id="navelement">
-                        <CustomLink to="">Past Awards</CustomLink>
+                        <HashLink to="/competition/#awards-anchor">Past Awards</HashLink>
                     </li>
                 </div>
             </div>

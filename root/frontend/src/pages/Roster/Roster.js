@@ -34,7 +34,7 @@ const Roster = () => {
       </header>
       <div className='coaches full-bleed'>
         <div className='title'>
-          <h1>COACHES</h1>
+          <h1 id='coaches-anchor'>COACHES</h1>
           <div className='line'></div>
         </div>
         <div className='members'>
@@ -78,7 +78,7 @@ const Roster = () => {
       </div>
       <div className='students'>
         <div className='title'>
-          <h1>MEMBERS</h1>
+          <h1 id='members-anchor'>MEMBERS</h1>
           <div className='line'></div>
         </div>
         <div className='members'>
@@ -194,7 +194,7 @@ const Roster = () => {
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
           </svg>
         </div>
-        <div className='wrapper'>
+        <div className='wrapper' id='story-anchor'>
           <div className='story'>
             <div className='content'>
               <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>

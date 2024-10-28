@@ -9,6 +9,7 @@ import logo4 from './Images/Logo4.svg'
 import logo5 from './Images/Logo5.svg'
 import logo6 from './Images/Logo6.svg'
 import placeholder from './Images/placeholder.jpg'
+import { Link, useMatch, useResolvedPath} from "react-router-dom"
 
 const Home = () => {
 
@@ -23,7 +24,7 @@ const Home = () => {
         <div className='header'>
           <h3>Meet UCF's Collegiate Cyber Defense Team</h3>
           <p>Some subtext goes here and looks cool. </p>
-          <a href='about'><button type="button" class="btn btn-primary">See More</button></a>
+          <button type="button" class="btn btn-primary"><CustomLink to='/about'>See More</CustomLink></button>
         </div>
       </div>
       <div className='section-1'>
@@ -62,7 +63,7 @@ const Home = () => {
         <div className='top'>
           <p>Upcoming Competitions</p>
           <h1>12 Competitions This Season</h1>
-          <a href='competition'><button type="button" class="btn btn-primary">See More</button></a>
+          <button type="button" class="btn btn-primary"><CustomLink to='competition'>See More</CustomLink></button>
         </div>
         <div className='list'>
           <div className='main'>
@@ -221,5 +222,19 @@ const Home = () => {
       </div>
   )
 }
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+  return (
+      <li className={isActive ? "active" : ""}>
+          <Link to={to} {...props}>
+              {children}
+          </Link>
+      </li>
+  )
+}
+
 
 export default Home

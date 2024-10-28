@@ -27,7 +27,7 @@ const Contact = () => {
   })
 
   return (
-    <body>
+    <body id='contact-anchor'>
     <Container>
       <Row>
         <Col>
@@ -66,9 +66,9 @@ const Contact = () => {
             <p>888 Somplace Drive, Orlando, Florida</p>
           </div>
           <div className='socials'>
-            <a href='https://www.facebook.com/' className='facebook'><i class="bi bi-facebook"></i></a>
-            <a href='https://x.com/?lang=en'><i class="bi bi-twitter-x"></i></a>
-            <a href='https://www.linkedin.com/'><i class="bi bi-linkedin"></i></a>
+            <a href='https://www.facebook.com/HackUCF/' className='facebook'><i class="bi bi-facebook"></i></a>
+            <a href='https://twitter.com/hackucf'><i class="bi bi-twitter-x"></i></a>
+            <a href='https://www.linkedin.com/company/collegiate-cyber-defense-club-at-ucf'><i class="bi bi-linkedin"></i></a>
           </div>
         </Col>
       </Row>
@@ -111,7 +111,9 @@ const Contact = () => {
               cols={129}
               rows={10}
               />
-              <button type='submit'>Send Email</button>
+              <button type='submit' class="btn btn-primary">
+              Send Email
+              </button>
             </div>
           </form>
         </Col>

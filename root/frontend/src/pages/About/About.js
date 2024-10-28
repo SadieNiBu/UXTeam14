@@ -77,7 +77,7 @@ const About = () => {
         </div>
       </header>
 
-      <div className='scholar'>
+      <div className='scholar' id='scholar-anchor'>
         <div className='wrapper'>
           <div className='left'>
             <div className='text'>
@@ -119,7 +119,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='topVector'>
+      <div className='topVector' id='grants-anchor'>
         <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="52" viewBox="0 0 1500 52" fill="none">
           <path d="M0 43.3961L474.581 0L524.757 26.9057L557.163 43.3961H0Z" fill="#0A58CA"/>
           <path d="M1350.57 8.60385L1568 52L1059.97 50.086L557.163 43.3961L598.976 40.5283L688.875 0L832.085 26.9057L1081.92 40.5283L1350.57 8.60385Z" fill="#0A58CA"/>
@@ -322,7 +322,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className='policies'>
+          <div className='policies' id='policies-anchor'>
             <div className='policy'>
               <div className='lead'>ABOUT OUR TRAVEL POLICY</div>
               <h3>Heading which concerns travel policy for competitions.</h3>
