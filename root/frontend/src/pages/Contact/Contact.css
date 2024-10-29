@@ -14,11 +14,10 @@ body .divider {
     border: 1px solid #1D2130;
 
     /* Line */
-    position: absolute;
-    width: 72px;
-    height: 0px;
-    left: 210px;
-    top: 195.5px;
+    position: relative;
+    text-align: left;
+    margin-top: -90px;
+    margin-left: -115px;
 }
 
 body .contact p {
@@ -30,7 +29,8 @@ body .contact p {
     font-size: 21px;
     font-weight: 400;
     line-height: 36px;
-    position: absolute;
+    position: relative;
+    margin-left: -220px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -39,11 +39,13 @@ body .message h3 {
     left: 306px;
     height: 140px;
     font-size: 58px;
-    width: 480.45px;
+    width: 400.45px;
     font-weight: 700;
     line-height: 70.19px;
     font-family: 'Roboto', sans-serif;
-    position: absolute;
+    position: relative;
+    margin-top: -65px;
+    margin-left: -220px;
 }
 
 body .message p {
@@ -51,9 +53,11 @@ body .message p {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    position: absolute;
+    position: relative;
+    margin-top: -140px;
+    margin-left: -220px;
     font-family: 'Roboto', sans-serif;
-    width: 480.45px;
+    width: 390.45px;
     opacity: 0.7;
     height: 56px;
     top: 387px;
@@ -65,12 +69,12 @@ body .info h5 {
     font-size: 20px;
     font-weight: 700;
     line-height: 24.2px;
-    position: absolute;
+    position: relative;
+    margin-top: 110px;
+    margin-left: 125px;
     font-family: 'Roboto', sans-serif;
     width: 115px;
     height: 24px;
-    top: 196px;
-    left: 1105px;
 }
 
 body .info p {
@@ -78,31 +82,30 @@ body .info p {
     font-size: 16px;
     line-height: 28px;
     font-weight: 400;
-    position: absolute;
+    position: relative;
+    margin-top: 11px;
     font-family: 'Roboto', sans-serif;
 }
 
 body .info .number p {
     width: 158px;
     height: 28px;
-    top: 234px;
-    left: 1105px;
+    margin-left: 125px;
 }
 
 body .info .email p {
     width: 182px;
     height: 28px;
-    top: 234px;
-    left: 1283px;
+    margin-left: 299px;
+    margin-top: -43px;
 }
 
 body .info .info-divider {
     /* Line */
-    position: absolute;
+    position: relative;
+    margin-left: 125px;
     width: 355px;
     height: 0px;
-    left: 1105px;
-    top: 278px;
 
     /* Border */
     border: 1px solid #E5E5E5;
@@ -113,13 +116,13 @@ body .address h5 {
     font: #1D2130;
     font-size: 20px;
     font-weight: 700;
-    position: absolute;
+    position: relative;
+    margin-left: 125px;
+    margin-top: 30px;
     line-height: 24.2px;
     font-family: 'Roboto', sans-serif;
     width: 164.32px;
     height: 24px;
-    top: 311px;
-    left: 1105px;
 }
 
 body .address p {
@@ -127,25 +130,25 @@ body .address p {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    position: absolute;
+    position: relative;
+    margin-left: 125px;
+    margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     width: 354.47px;
     height: 28px;
-    top: 349px;
-    left: 1105px;
 }
 
 body .university h5 {
     font: #1D2130;
     font-size: 20px;
     font-weight: 700;
-    position: absolute;
+    position: relative;
+    margin-left: 125px;
+    margin-top: 40px;
     line-height: 24.2px;
     font-family: 'Roboto', sans-serif;
     width: 355px;
     height: 24px;
-    top: 431px;
-    left: 1105px;
 }
 
 body .university p {
@@ -153,12 +156,12 @@ body .university p {
     font-size: 16px;
     font-weight: 400;
     line-height: 28px;
-    position: absolute;
+    position: relative;
+    margin-left: 125px;
+    margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     width: 355px;
     height: 28px;
-    top: 469px;
-    left: 1105px;
 }
 
 body .socials a{
@@ -169,22 +172,22 @@ body .socials a{
 }
 
 .socials {
-    position: absolute;
-    top: 570px;
+    position: relative;
+    margin-left: 120px;
+    margin-top: 40px;
     width: 100px;
-    left: 1100px;
 }
 
 .contact_form .first_input_col{
-    position: absolute;
-    top: 674px;
-    left: 210px;
+    position: relative;
+    margin-top: 140px;
+    margin-left: -5px;
 }
 
 .contact_form .second_input_col{
-    position: absolute;
-    top: 674px;
-    left: 995px;
+    position: relative;
+    margin-top: -205px;
+    margin-left: 775px;
 }
 
 .contact_form input {
@@ -199,10 +202,10 @@ body .socials a{
     outline: none;
 }
 
-.contact_form .message textarea {
-    position: absolute;
-    top: 950px;
-    left: 210px;
+.contact_form .text-message textarea {
+    position: relative;
+    margin-top: 20px;
+    margin-left: -8px;
     resize: none;
     border: solid;
     border-width: 1px;
@@ -210,14 +213,15 @@ body .socials a{
     border-color: #1D2130;
 }
 
-.contact_form .message textarea:focus {
+.contact_form .text-message textarea:focus {
     outline: none;
 }
 
-.contact_form .message p {
-    position: absolute;
-    top: 910px;
-    left: 210px;
+.contact_form .text-message p {
+    position: relative;
+    margin-bottom: -10px;
+    padding-top: 20px;
+    margin-left: -6px;
     opacity: 60%;
     font-size: 12px;
     margin-top: 10px;
@@ -225,10 +229,10 @@ body .socials a{
     line-height: 19.2px;
 }
 
-.contact_form .message button {
-    position: absolute;
-    top: 1235px;
-    left: 760px;
+.contact_form .text-message button {
+    position: relative;
+    margin-left: 547px;
+    margin-top: 40px;
     height: 51px;
     width: 208px;
     border: none;
@@ -237,7 +241,7 @@ body .socials a{
     background-color: #FFC904;
 }
 
-.contact_form .message button:hover {
+.contact_form .text-message button:hover {
     color: white;
     background-color: #0A58CA;
 }
@@ -250,4 +254,596 @@ body .socials a{
     line-height: 19.2px;
 }
 
+@media (max-width: 1399px) {
+    .info-div {
+        position: relative;
+        margin-left: -165px;
+    }
+
+    .contact_form .second_input_col{
+        position: relative;
+        margin-top: -205px;
+        margin-left: 600px !important;
+    }
+
+    .contact_form .text-message textarea {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -8px;
+        resize: none;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: #1D2130;
+        width: 1140px;
+    }
+
+    .contact_form .text-message button {
+        position: relative;
+        margin-left: 455px;
+        margin-top: 40px;
+        height: 51px;
+        width: 208px;
+        border: none;
+        border-radius: 4px;
+        color: black;
+        background-color: #FFC904;
+    }
+}
+
+@media (max-width: 1199px) {
+    .info-div {
+        position: relative;
+        margin-right: -105px;
+    }
+
+    .contact_form input {
+        border: none;
+        width: 400px;
+        height: 57px;
+        border-bottom: solid;
+        border-width: 1px;
+    }
+
+    .contact_form .second_input_col{
+        position: relative;
+        margin-top: -205px;
+        margin-left: 500px !important;
+    }
+
+    .contact_form .text-message textarea {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -8px;
+        resize: none;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: #1D2130;
+        width: 915px;
+    }
+
+    .contact_form .text-message button {
+        position: relative;
+        margin-left: 340px;
+        margin-top: 40px;
+        height: 51px;
+        width: 208px;
+        border: none;
+        border-radius: 4px;
+        color: black;
+        background-color: #FFC904;
+    }
+}
+
+@media (max-width: 991px) {
+    body .divider {
+        /* Line */
+        position: absolute;
+        width: 72px;
+        height: 0px;
+        left: 110px;
+        top: 195.5px;
+    
+        /* Primary text */
+        border: 1px solid #1D2130;
+    
+        /* Line */
+        position: relative;
+        text-align: left;
+        margin-top: -90px;
+        margin-left: -215px;
+    }
+    
+    body .contact p {
+        top: 178px;
+        left: 306px;
+        width: 115px;
+        height: 36px;
+        font: #1D2130;
+        font-size: 21px;
+        font-weight: 400;
+        line-height: 36px;
+        position: relative;
+        margin-left: -320px;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    body .message h3 {
+        top: 237px;
+        left: 306px;
+        height: 140px;
+        font-size: 58px;
+        width: 480.45px;
+        font-weight: 700;
+        line-height: 70.19px;
+        font-family: 'Roboto', sans-serif;
+        position: relative;
+        margin-top: -65px;
+        margin-left: -320px;
+    }
+    
+    body .message p {
+        font: #1D2130;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        position: relative;
+        margin-top: -140px;
+        margin-left: -320px;
+        font-family: 'Roboto', sans-serif;
+        width: 350px;
+        opacity: 0.7;
+        height: 56px;
+        top: 387px;
+        left: 306px;
+    }
+    
+    .info-div {
+        position: relative;
+        margin-right: -105px;
+    }
+
+    .contact_form input {
+        border: none;
+        width: 400px;
+        height: 57px;
+        border-bottom: solid;
+        border-width: 1px;
+    }
+
+    .contact_form .first_input_col{
+        position: relative;
+        margin-top: 140px;
+        margin-left: -100px;
+    }
+
+    .contact_form .second_input_col{
+        position: relative;
+        margin-top: -205px;
+        margin-left: 360px !important;
+    }
+
+    .contact_form .text-message p {
+        position: relative;
+        margin-bottom: -10px;
+        padding-top: 20px;
+        margin-left: -100px;
+        opacity: 60%;
+        font-size: 12px;
+        margin-top: 10px;
+        color: #1D2130;
+        line-height: 19.2px;
+    }
+
+    .contact_form .text-message textarea {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -100px;
+        resize: none;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: #1D2130;
+        width: 865px;
+    }
+
+    .contact_form .text-message button {
+        position: relative;
+        margin-left: 220px;
+        margin-top: 40px;
+        height: 51px;
+        width: 208px;
+        border: none;
+        border-radius: 4px;
+        color: black;
+        background-color: #FFC904;
+    }
+}
+
+@media (max-width: 893px) {
+    body {
+        height: 1650px;
+    }
+    
+    .contact-div {
+        margin-left: 0px;
+        margin-top: -85px;
+    }
+
+    body .divider {
+        /* Line */
+        position: absolute;
+        width: 72px;
+        height: 0px;
+        left: 110px;
+        top: 195.5px;
+    
+        /* Primary text */
+        border: 1px solid #1D2130;
+    
+        /* Line */
+        position: relative;
+        text-align: left;
+        margin-top: -90px;
+        margin-left: -115px;
+        display: none;
+    }
+
+    .info-div {
+        margin-top: 360px;
+        margin-right: 190px;
+        padding-left: 40px;
+    }
+
+    .form-div {
+        margin-top: 0px;
+    }
+
+    .contact_form input {
+        border: none;
+        width: 300px;
+        height: 57px;
+        border-bottom: solid;
+        border-width: 1px;
+    }
+
+    .contact_form .first_input_col{
+        position: relative;
+        margin-top: 140px;
+        margin-left: -10px;
+    }
+
+    .contact_form .second_input_col{
+        position: relative;
+        margin-top: -205px;
+        margin-left: 360px !important;
+    }
+
+    .contact_form .text-message p {
+        position: relative;
+        margin-bottom: -10px;
+        padding-top: 20px;
+        margin-left: -10px;
+        opacity: 60%;
+        font-size: 12px;
+        margin-top: 10px;
+        color: #1D2130;
+        line-height: 19.2px;
+    }
+
+    .contact_form .text-message textarea {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -10px;
+        resize: none;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: #1D2130;
+        width: 670px;
+    }
+
+    .contact_form .text-message button {
+        position: relative;
+        margin-left: 220px;
+        margin-top: 40px;
+        height: 51px;
+        width: 208px;
+        border: none;
+        border-radius: 4px;
+        color: black;
+        background-color: #FFC904;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        height: 1650px;
+    }
+    
+    .contact-div {
+        margin-left: -40px;
+        margin-top: -95px;
+    }
+
+    body .divider {
+        /* Line */
+        position: absolute;
+        width: 72px;
+        height: 0px;
+        left: 110px;
+        top: 195.5px;
+    
+        /* Primary text */
+        border: 1px solid #1D2130;
+    
+        /* Line */
+        position: relative;
+        text-align: left;
+        margin-top: -90px;
+        margin-left: -115px;
+        display: none;
+    }
+
+    .info-div {
+        margin-top: 360px;
+        margin-right: 190px;
+        padding-left: 0px;
+    }
+
+    .form-div {
+        margin-top: 0px;
+    }
+
+    .contact_form input {
+        border: none;
+        width: 260px;
+        height: 57px;
+        border-bottom: solid;
+        border-width: 1px;
+    }
+
+    .contact_form .first_input_col{
+        position: relative;
+        margin-top: 140px;
+        margin-left: -50px;
+    }
+
+    .contact_form .second_input_col{
+        position: relative;
+        margin-top: -205px;
+        margin-left: 280px !important;
+    }
+
+    .contact_form .text-message p {
+        position: relative;
+        margin-bottom: -10px;
+        padding-top: 20px;
+        margin-left: -50px;
+        opacity: 60%;
+        font-size: 12px;
+        margin-top: 10px;
+        color: #1D2130;
+        line-height: 19.2px;
+    }
+
+    .contact_form .text-message textarea {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -50px;
+        resize: none;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: #1D2130;
+        width: 590px;
+    }
+
+    .contact_form .text-message button {
+        position: relative;
+        margin-left: 140px;
+        margin-top: 40px;
+        height: 51px;
+        width: 208px;
+        border: none;
+        border-radius: 4px;
+        color: black;
+        background-color: #FFC904;
+    }
+}
+
+@media (max-width: 666px) {
+    body {
+        height: 1650px;
+    }
+    
+    .contact-div {
+        margin-left: -10px;
+        margin-top: -95px;
+    }
+
+    body .divider {
+        /* Line */
+        position: absolute;
+        width: 72px;
+        height: 0px;
+        left: 110px;
+        top: 195.5px;
+    
+        /* Primary text */
+        border: 1px solid #1D2130;
+    
+        /* Line */
+        position: relative;
+        text-align: left;
+        margin-top: -90px;
+        margin-left: -115px;
+        display: none;
+    }
+
+    .info-div {
+        margin-top: 360px;
+        margin-right: 190px;
+        padding-left: 30px;
+    }
+
+    .form-div {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+
+    .contact_form input {
+        border: none;
+        width: 230px;
+        height: 57px;
+        border-bottom: solid;
+        border-width: 1px;
+    }
+
+    .contact_form .first_input_col{
+        position: relative;
+        margin-top: 140px;
+        margin-left: -50px;
+    }
+
+    .contact_form .second_input_col{
+        position: relative;
+        margin-top: -205px;
+        margin-left: 250px !important;
+    }
+
+    .contact_form .text-message p {
+        position: relative;
+        margin-bottom: -10px;
+        padding-top: 20px;
+        margin-left: -50px;
+        opacity: 60%;
+        font-size: 12px;
+        margin-top: 10px;
+        color: #1D2130;
+        line-height: 19.2px;
+    }
+
+    .contact_form .text-message textarea {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -50px;
+        resize: none;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: #1D2130;
+        width: 530px;
+    }
+
+    .contact_form .text-message button {
+        position: relative;
+        margin-left: 105px;
+        margin-top: 40px;
+        height: 51px;
+        width: 208px;
+        border: none;
+        border-radius: 4px;
+        color: black;
+        background-color: #FFC904;
+    }
+}
+
+@media (max-width: 574px) {
+    body {
+        height: 1650px;
+    }
+    
+    .contact-div {
+        margin-left: 30px;
+        margin-top: -95px;
+    }
+
+    body .divider {
+        /* Line */
+        position: absolute;
+        width: 72px;
+        height: 0px;
+        left: 110px;
+        top: 195.5px;
+    
+        /* Primary text */
+        border: 1px solid #1D2130;
+    
+        /* Line */
+        position: relative;
+        text-align: left;
+        margin-top: -90px;
+        margin-left: -115px;
+        display: none;
+    }
+
+    .info-div {
+        margin-top: 360px;
+        margin-right: 190px;
+        padding-left: 70px;
+    }
+
+    .form-div {
+        margin-top: 0px;
+        margin-left: 70px;
+    }
+
+    .contact_form input {
+        border: none;
+        width: 180px;
+        height: 57px;
+        border-bottom: solid;
+        border-width: 1px;
+    }
+
+    .contact_form .first_input_col{
+        position: relative;
+        margin-top: 140px;
+        margin-left: -50px;
+    }
+
+    .contact_form .second_input_col{
+        position: relative;
+        margin-top: -205px;
+        margin-left: 190px !important;
+    }
+
+    .contact_form .text-message p {
+        position: relative;
+        margin-bottom: -10px;
+        padding-top: 20px;
+        margin-left: -50px;
+        opacity: 60%;
+        font-size: 12px;
+        margin-top: 10px;
+        color: #1D2130;
+        line-height: 19.2px;
+    }
+
+    .contact_form .text-message textarea {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -50px;
+        resize: none;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: #1D2130;
+        width: 425px;
+    }
+
+    .contact_form .text-message button {
+        position: relative;
+        margin-left: 45px;
+        margin-top: 40px;
+        height: 51px;
+        width: 208px;
+        border: none;
+        border-radius: 4px;
+        color: black;
+        background-color: #FFC904;
+    }
+}
   

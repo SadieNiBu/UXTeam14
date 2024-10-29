@@ -30,7 +30,7 @@ const Contact = () => {
     <body id='contact-anchor'>
     <Container>
       <Row>
-        <Col>
+        <Col className='contact-div'>
           <div className='contact'>
             <div className='divider'>
               <svg xmlns="http://www.w3.org/2000/svg" />
@@ -40,11 +40,11 @@ const Contact = () => {
           <div className='message'>
             <h3>We'd love to <br /> hear from you</h3>
             <p>Have any questions in mind? Please feel free to contact us 
-              <br />through the form below or the following details.
+              through the form below or the following details.
             </p>
           </div>
         </Col>
-        <Col>
+        <Col className='info-div'>
           <div className='info'>
             <h5>Let's talk!</h5>
             <div className='number'>
@@ -73,7 +73,7 @@ const Contact = () => {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <Col className='form-div'>
           <form ref={form} onSubmit={sendEmail}
           className='contact_form'>
             <Col className='first_input_col'>
@@ -104,7 +104,7 @@ const Contact = () => {
               required 
               />
             </Col>
-            <div className='message'>
+            <div className='text-message'>
               <p>Message</p>
               <textarea
               name='message_box'
