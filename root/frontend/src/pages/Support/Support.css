@@ -1,6 +1,5 @@
-
 .support_body {
-    height: 3000px;
+    height: 3200px;
 }
 
 .support_header {
@@ -23,9 +22,10 @@
     font-size: 16px;
     line-height: 28px;
     position: absolute;
-    text-wrap: nowrap;
+    text-wrap: wrap;
     left: 220px;
     top: 285px;
+    width: 750px;
 }
 
 .header_line {
@@ -65,10 +65,18 @@
     position: absolute;
 }
 
+.contributions-div {
+    position: relative;
+    margin-top: -495px;
+    margin-left: -60px;
+}
+
 .contributions_photo {
-    top: 675px;
-    left: 1000px;
-    position: absolute;
+    position: relative;
+    margin-top: 170px;
+    margin-left: 50px;
+    padding-left: 120px;
+    padding-right: 40px;
 }
 
 .contributions_header h1{
@@ -145,6 +153,12 @@
     height: 1000px;
 }
 
+.help-div {
+    position: relative;
+    margin-top: -1500px;
+    margin-left: -205px;
+}
+
 .help_title h2{
     position: absolute;
     line-height: 57px;
@@ -153,7 +167,7 @@
     color: #000000;
     font-size: 48px;
     top: 1650px;
-    left: 355px;
+    left: 340px;
 }
 
 .help_bio1 p {
@@ -164,13 +178,13 @@
     color: #6C757D;
     font-size: 16px;
     top: 1750px;
-    left: 355px;
+    left: 340px;
 }
 
 .help_photo {
     position: absolute;
     top: 1950px;
-    left: 355px;
+    left: 340px;
 }
 
 .help_bio2 p{
@@ -181,11 +195,17 @@
     color: #6C757D;
     font-size: 16px;
     top: 2350px;
-    left: 355px;
+    left: 340px;
 }
 
 .donation {
-    height: 800px;
+    height: 900px;
+}
+
+.donation-div {
+    position: relative;
+    margin-top: -2400px;
+    margin-left: -270px;
 }
 
 .donation_line {
@@ -255,7 +275,329 @@
 }
 
 .donation_photo {
-    top: 2510px;
-    left: 1140px;
-    position: absolute;
+    position: relative;
+    margin-top: 130px;
+    margin-left: 360px;
+    padding-left: 550px;
 }
+
+@media (max-width: 1350px) {
+    .support_header {
+        position: relative;
+        margin-left: -130px;
+        top: -90px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .support_header {
+        position: relative;
+        margin-left: -200px;
+        top: -90px;
+    }
+}
+
+@media (max-width: 991px) {
+    .support_header {
+        position: relative;
+        margin-left: -320px;
+        top: -90px;
+    }
+}
+
+@media (max-width: 960px) {
+    .support_header {
+        position: relative;
+        margin-left: -240px;
+        top: -90px;
+    }
+
+    .support_header .header_title h3 {
+        text-wrap: wrap;
+    }
+
+    .support_header .header_bio p {
+        width: 650px;
+        margin-top: 60px;
+    }
+
+    .header_line {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .support_header {
+        position: relative;
+        margin-left: -240px;
+        height: 540px;
+        top: -90px;
+    }
+
+    .support_header .header_title h3 {
+        text-wrap: wrap;
+    }
+
+    .support_header .header_bio p {
+        width: 500px;
+        margin-top: 130px;
+    }
+
+    .header_line {
+        margin-top: 150px;
+    }
+
+    .top_line_decor {
+        top: 605px;
+        left: 220px;
+        min-width: 1494px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 575px) {
+    .support_header {
+        position: relative;
+        margin-left: -200px;
+        height: 540px;
+        top: -90px;
+    }
+
+    .support_header .header_title h3 {
+        text-wrap: wrap;
+    }
+
+    .support_header .header_bio p {
+        width: 400px;
+        margin-top: 130px;
+    }
+
+    .header_line {
+        margin-top: 170px;
+    }
+}
+
+@media (max-width: 1595px) {
+    .contributions-div {
+        margin-left: -120px;
+    }
+}
+
+@media (max-width: 1299px) {
+    .contributions_photo {
+        margin-top: 210px;
+        margin-left: 50px;
+        padding-left: 120px;
+        padding-right: 40px;
+    }
+
+    .contributions_photo svg{
+        width: 500px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 1220px) {
+    .contributions_photo {
+        margin-top: 350px;
+        margin-left: 50px;
+        padding-left: 120px;
+        padding-right: 40px;
+    }
+
+    .contributions_photo svg{
+        width: 400px;
+        height: 550px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .contributions-div {
+        margin-left: -170px;
+    }
+
+    .contributions_photo {
+        margin-top: 400px;
+        margin-left: 50px;
+        padding-left: 120px;
+        padding-right: 40px;
+    }
+
+    .contributions_photo svg{
+        width: 300px;
+        height: 450px;
+    }
+}
+
+@media (max-width: 850px) {
+    .contributions-div {
+        margin-left: -170px;
+    }
+
+    .contributions_photo {
+        margin-top: 430px;
+        margin-left: -50px;
+        padding-right: 20px;
+    }
+
+    .contributions_photo svg{
+        width: 550px;
+        height: 600px;
+        margin-top: 500px;
+        margin-left: -270px;
+    }
+
+    .contributions {
+        width: 100vw;
+        height: 1650px;
+        background: #0A58CA;
+        margin-left: calc(-50vw + 50%);
+    }
+
+    .bottom_line_decor {
+        top: 2159px;
+        left: 220px;
+        height: 28px;
+        min-width: 1494px;
+        position: absolute;
+    }
+
+    .support_body {
+        height: 4000px;
+    }
+
+    .help-div {
+        position: relative;
+        margin-top: -1500px;
+    }
+}
+
+@media (max-width: 767px) {
+    .bottom_line_decor {
+        top: 2279px;
+        left: 220px;
+        height: 28px;
+        min-width: 1494px;
+        position: absolute;
+    }
+}
+
+@media (max-width: 625px) {
+    .contributions_photo svg{
+        width: 350px;
+        height: 450px;
+        margin-top: 520px;
+        margin-left: -180px;
+    }
+
+    .contributions_header h1 {
+        position: relative;
+        text-wrap: wrap;
+        margin-left: -10px;
+    }
+
+    .contributions_bio p {
+        position: relative;
+        margin-top: 40px;
+        text-wrap: wrap;
+        width: 400px;
+    }
+
+    .contri-icon-div {
+        position: relative;
+        margin-top: -60px;
+        margin-left: -10px;
+    }
+
+    .contributions {
+        width: 100vw;
+        height: 1500px;
+        background: #0A58CA;
+        margin-left: calc(-50vw + 50%);
+    }
+
+    .bottom_line_decor {
+        top: 2129px;
+        left: 220px;
+        height: 28px;
+        min-width: 1494px;
+        position: absolute;
+    }
+
+    .support_body {
+        height: 3800px;
+    }
+}
+
+@media (max-width: 1401px) {
+    .help-div {
+        margin-left: -310px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .help-div {
+        margin-left: -410px;
+    }
+}
+
+@media (max-width: 1104px) {
+    .help-div {
+        margin-left: -380px;
+    }
+
+    .help_title h2{
+        position: relative;
+        text-wrap: wrap;
+        margin-left: 120px;
+    }
+    
+    .help_bio1 p {
+        position: relative;
+        text-wrap: wrap;
+        margin-top: -70px;
+        margin-left: 120px;
+    }
+
+    .help_photo {
+        position: relative;
+        margin-top: -205px;
+        margin-left: 120px;
+    }
+    
+    .help_photo svg{
+        width: 800px;
+    }
+    
+    .help_bio2 p{
+        position: relative;
+        text-wrap: wrap;
+        margin-top: -400px;
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 991px) {
+    .help_photo svg{
+        width: 550px;
+    }
+}
+
+@media (max-width: 767px) {
+    .help_photo svg{
+        width: 390px;
+    }
+}
+
+@media (max-width: 541px) {
+    .help_photo svg{
+        width: 350px;
+    }
+}
+
+@media (max-width: 467px) {
+    .help_photo svg{
+        width: 300px;
+    }
+}
+

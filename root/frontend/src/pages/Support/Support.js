@@ -17,7 +17,7 @@ const Support = () => {
             <h3>Become a supporter for our team</h3>
           </div>
           <div className='header_bio'>
-            <p>Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst necaliquetid ullamcorper venenatis.<br />Fermentum sulla craspor ttitore ismod nulla</p>
+            <p>Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst necaliquetid ullamcorper venenatis. Fermentum sulla craspor ttitore ismod nulla</p>
           </div>
           <div className='header_line'>
             <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,7 +33,7 @@ const Support = () => {
         </svg>
       </Row>
       <Row className='contributions'>
-        <Col>
+        <Col className='contributions-div'>
          <div className='contributions_line'>
             <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 1H72" stroke="#FFC904" stroke-width="2"/>
@@ -50,7 +50,7 @@ const Support = () => {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius<br />enim in eros elementum tristique.</p>
           </div>
          </div>
-         <div>
+         <div className='contri-icon-div'>
             <div className='contributions_divider'>
               <svg width="2" height="441" viewBox="0 0 2 441" fill="none" xmlns="http://www.w3.org/2000/svg">
               <line x1="1" y1="-4.37114e-08" x2="1.00002" y2="441" stroke="#E5E5E5" stroke-width="2"/>
@@ -114,7 +114,7 @@ const Support = () => {
         </svg>
       </Row>
       <Row className='help'>
-        <Col>
+        <Col className='help-div'>
           <div className='help_title'>
             <h2>HOW YOUR CONTRIBUTION HELPS OUR TEAM</h2>
           </div>
@@ -133,7 +133,7 @@ const Support = () => {
         </Col>
       </Row>
       <Row className='donation'>
-        <Col>
+        <Col className='donation-div'>
           <div className='donation_line'>
             <svg width="72" height="2" viewBox="0 0 72 2" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 1H72" stroke="#6C757D" stroke-width="2"/>
