@@ -31,6 +31,7 @@
     font-weight: 600;
     line-height: 48px;
     margin-left: 90px;
+    text-wrap: nowrap;
 }
 
 .group-1-header p {
@@ -41,6 +42,7 @@
     color: #FFFFFF;
     line-height: 28px;
     margin-left: 90px;
+    text-wrap: nowrap;
 }
 
 .group-1-header svg {
@@ -54,6 +56,7 @@
     color: #FFFFFF;
     margin-top: 50px;
     margin-left: 600px;
+    text-wrap: nowrap;
 }
 
 .photo-group-2 {
@@ -70,6 +73,7 @@
     font-weight: 600;
     line-height: 48px;
     margin-left: 90px;
+    text-wrap: nowrap;
 }
 
 .group-2-header p {
@@ -80,6 +84,7 @@
     color: #FFFFFF;
     line-height: 28px;
     margin-left: 90px;
+    text-wrap: nowrap;
 }
 
 .group-2-header svg {
@@ -93,6 +98,7 @@
     color: #FFFFFF;
     margin-top: 50px;
     margin-left: 600px;
+    text-wrap: nowrap;
 }
 
 .video-group {
@@ -109,6 +115,7 @@
     font-weight: 600;
     line-height: 48px;
     margin-left: 90px;
+    text-wrap: nowrap;
 }
 
 .video-group-header p {
@@ -119,6 +126,7 @@
     color: #FFFFFF;
     line-height: 28px;
     margin-left: 90px;
+    text-wrap: nowrap;
 }
 
 .video-group-header svg {
@@ -132,6 +140,7 @@
     color: #FFFFFF;
     margin-top: 50px;
     margin-left: 600px;
+    text-wrap: nowrap;
 }
 
 .video-1 iframe {
@@ -159,6 +168,7 @@
     font-weight: 600;
     line-height: 48px;
     margin-left: 90px;
+    text-wrap: nowrap;
 }
 
 .group-3-header p {
@@ -169,6 +179,7 @@
     color: #FFFFFF;
     line-height: 28px;
     margin-left: 90px;
+    text-wrap: nowrap;
 }
 
 .group-3-header svg {
@@ -181,5 +192,402 @@
     font-weight: 600;
     color: #FFFFFF;
     margin-top: 50px;
-    margin-left: 600px;
+    margin-left: 595px;
+    text-wrap: nowrap;
+}
+
+@media (max-width: 1642px) {
+    .video-1 iframe {
+        width: 850px;
+        height: 564px;
+        margin-left: 90px;
+    }
+    
+    .video-2 iframe {
+        width: 530px;
+        height: 564px;
+    }
+}
+
+@media (max-width: 1541px) {
+    .video-1 iframe {
+        width: 800px;
+        height: 564px;
+        margin-left: 90px;
+    }
+    
+    .video-2 iframe {
+        width: 480px;
+        height: 564px;
+    }
+}
+
+@media (max-width: 1441px) {
+    .video-1 iframe {
+        width: 750px;
+        height: 564px;
+        margin-left: 90px;
+    }
+    
+    .video-2 iframe {
+        width: 430px;
+        height: 564px;
+    }
+}
+
+@media (max-width: 1341px) {
+    .video-1 iframe {
+        width: 700px;
+        height: 564px;
+        margin-left: 90px;
+    }
+    
+    .video-2 iframe {
+        width: 380px;
+        height: 564px;
+    }
+}
+
+@media (max-width: 1241px) {
+    .video-1 iframe {
+        width: 650px;
+        height: 564px;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 1191px) {
+    .video-1 iframe {
+        width: 580px;
+        height: 564px;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 1121px) {
+    .video-1 iframe {
+        width: 520px;
+        height: 564px;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 1061px) {
+    .video-1 iframe {
+        width: 450px;
+        height: 564px;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 991px) {
+    .video-1 iframe {
+        width: 380px;
+        height: 564px;
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 921px) {
+    .video-1 iframe {
+        width: 710px;
+        height: 564px;
+        margin-left: 90px;
+        margin-top: 60px;
+    }
+
+    .video-2 iframe {
+        width: 710px;
+        height: 564px;
+        margin-top: 60px;
+        margin-left: 90px;
+    }
+
+    .photo-group-3 {
+        padding-top: 600px;
+    }
+
+    .video-group-date p {
+        margin-top: -222px;
+        padding-top: 40px;
+    }
+
+    .group-3-date p {
+        padding-top: 300px;
+    }
+}
+
+@media (max-width: 850px) {
+    .video-1 iframe {
+        width: 640px;
+    }
+
+    .video-2 iframe {
+        width: 640px;
+    }
+}
+
+@media (max-width: 774px) {
+    .video-1 iframe {
+        width: 600px;
+    }
+
+    .video-2 iframe {
+        width: 400px;
+    }
+}
+
+@media (max-width: 736px) {
+    .video-1 iframe {
+        width: 550px;
+    }
+
+    .video-2 iframe {
+        width: 550px;
+    }
+}
+
+@media (max-width: 684px) {
+    .video-1 iframe {
+        width: 500px;
+    }
+
+    .video-2 iframe {
+        width: 500px;
+    }
+}
+
+@media (max-width: 631px) {
+    .video-1 iframe {
+        width: 450px;
+    }
+
+    .video-2 iframe {
+        width: 450px;
+    }
+
+    .photo-group-3 {
+        padding-top: 600px;
+    }
+}
+
+@media (max-width: 578px) {
+    .video-1 iframe {
+        width: 400px;
+    }
+
+    .video-2 iframe {
+        width: 400px;
+    }
+}
+
+@media (max-width: 537px) {
+    .video-1 iframe {
+        width: 350px;
+    }
+
+    .video-2 iframe {
+        width: 350px;
+    }
+}
+
+@media (max-width: 1495px) {
+    .group-1-date p {
+        display: flex;
+        margin-top: -855px;
+        padding-right: 50px;
+        justify-content: end;
+    }
+
+    .group-2-date p {
+        display: flex;
+        margin-top: -593px;
+        padding-right: 50px;
+        justify-content: end;
+    }
+
+    .video-group-date p {
+        display: flex;
+        margin-top: -263px;
+        padding-right: 50px;
+        justify-content: end;
+    }
+
+    .group-3-date p {
+        display: flex;
+        margin-top: -837px;
+        padding-right: 50px;
+        justify-content: end;
+    }
+}
+
+@media (max-width: 835px) {
+    .group-1-date p {
+        margin-top: -683px;
+    }
+
+    .group-2-date p {
+        margin-top: -390px;
+    }
+
+    .video-group-date p {
+        margin-top: -27px;
+        padding-top: 0px;
+    }
+
+    .group-3-date p {
+        margin-top: -639px;
+        padding-top: 300px;
+    }
+}
+
+@media (max-width: 697px) {
+    .group-1-header h1 {
+        text-wrap: wrap;
+    }
+
+    .group-1-header p {
+        text-wrap: wrap;
+        width: 500px;
+    }
+
+    .group-1-date p {
+       position: absolute;
+       margin-left: 230px;
+       margin-top: -670px;
+    }
+
+    .group-2-header h1 {
+        text-wrap: wrap;
+    }
+
+    .group-2-header p {
+        text-wrap: wrap;
+        width: 500px;
+    }
+
+    .group-2-date p {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -365px;
+    }
+
+    .video-group-header h1 {
+        text-wrap: wrap;
+    }
+
+    .video-group-header p {
+        text-wrap: wrap;
+        width: 500px;
+    }
+
+    .video-group-date p {
+        position: absolute;
+        margin-left: 230px;
+    }
+
+    .group-3-header h1 {
+        text-wrap: wrap;
+    }
+
+    .group-3-header p {
+        text-wrap: wrap;
+        width: 500px;
+    }
+
+    .group-3-date p {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -610px;
+    }
+}
+
+@media (max-width: 622px) {
+    .group-1-header p {
+        text-wrap: wrap;
+        width: 360px;
+    }
+
+    .group-1-date p {
+       position: absolute;
+       margin-left: 230px;
+       margin-top: -645px;
+    }
+
+    .group-2-header p {
+        text-wrap: wrap;
+        width: 360px;
+    }
+
+    .group-2-date p {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -325px;
+    }
+
+    .video-group-header p {
+        text-wrap: wrap;
+        width: 360px;
+    }
+
+    .video-group-date p {
+        position: absolute;
+        margin-left: 230px;
+    }
+
+    .group-3-header p {
+        text-wrap: wrap;
+        width: 360px;
+    }
+
+    .group-3-date p {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -575px;
+    }
+}
+
+@media (max-width: 458px) {
+    .group-1-header p {
+        text-wrap: wrap;
+        width: 300px;
+    }
+
+    .group-1-date p {
+       position: absolute;
+       margin-left: 230px;
+       margin-top: -620px;
+    }
+
+    .group-2-header p {
+        text-wrap: wrap;
+        width: 300px;
+    }
+
+    .group-2-date p {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -300px;
+    }
+
+    .video-group-header p {
+        text-wrap: wrap;
+        width: 300px;
+    }
+
+    .video-group-date p {
+        position: absolute;
+        margin-left: 230px;
+    }
+
+    .group-3-header p {
+        text-wrap: wrap;
+        width: 300px;
+    }
+
+    .group-3-date p {
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -575px;
+    }
 }

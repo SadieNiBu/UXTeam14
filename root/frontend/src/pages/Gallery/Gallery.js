@@ -9,7 +9,7 @@ const Gallery = () => {
   })
 
   return (
-    <Container>
+    <Container className='gallery-div'>
       <Row className='gallery-header text-center'>
         <h1>Photo Gallery</h1>
         <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">

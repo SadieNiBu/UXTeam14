@@ -205,7 +205,7 @@
 .donation-div {
     position: relative;
     margin-top: -2400px;
-    margin-left: -270px;
+    margin-left: -250px;
 }
 
 .donation_line {
@@ -601,3 +601,327 @@
     }
 }
 
+@media (max-width: 1550px) {
+    .donation-div {
+        position: relative;
+        margin-top: -2400px;
+        margin-left: -200px;
+    }
+
+    .donation_photo svg {
+        position: relative;
+        margin-left: -60px;
+    }
+}
+
+@media (max-width: 1405px) {
+    .donation-div {
+        margin-left: -250px;
+    }
+
+    .donation_photo svg {
+        margin-left: -200px;
+    }
+}
+
+@media (max-width: 1235px) {
+    .donation-div {
+        margin-left: -210px;
+    }
+
+    .donation_photo svg {
+        margin-left: -230px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .donation-div {
+        margin-left: -270px;
+    }
+
+    .donation_photo svg {
+        margin-left: -250px;
+        margin-top: 35px;
+        width: 328px;
+        height: 416px;
+    }
+}
+
+@media (max-width: 1102px) {
+    .donation-div {
+        margin-left: -230px;
+    }
+
+    .donation_photo svg {
+        margin-left: -270px;
+        margin-top: 35px;
+        width: 298px;
+        height: 416px;
+    }
+}
+
+@media (max-width: 991px) {
+    .support_body {
+        height: 3650px;
+    }
+
+    .donation {
+        height: 1450px;
+    }
+
+    .donation-div {
+        margin-left: -130px;
+    }
+
+    .donation_photo svg {
+        margin-left: -800px;
+        margin-top: 500px;
+        width: 498px;
+        height: 516px;
+    }
+}
+
+@media (max-width: 850px) {
+    .support_body {
+        height: 4350px;
+    }
+
+    .donation {
+        height: 1450px;
+    }
+
+    .donation_bio p {
+        text-wrap: wrap;
+        width: 540px;
+    }
+
+    .donation_btn {
+        margin-top: 45px;
+    }
+
+    .donation-div {
+        margin-left: -130px;
+    }
+
+    .donation_photo svg {
+        margin-left: -815px;
+        margin-top: 550px;
+        width: 498px;
+        height: 516px;
+    }
+}
+
+@media (max-width: 767px) {
+    .support_body {
+        height: 4820px;
+    }
+
+    .donation {
+        height: 1450px;
+    }
+
+    .donation_bio p {
+        text-wrap: wrap;
+        width: 540px;
+    }
+
+    .donation_btn {
+        margin-top: 45px;
+    }
+
+    .donation-div {
+        margin-left: -200px;
+        margin-top: -2070px;
+    }
+
+    .donation_photo svg {
+        margin-left: -900px;
+        margin-top: 895px;
+        width: 498px;
+        height: 516px;
+    }
+}
+
+@media (max-width: 669px) {
+    .support_body {
+        height: 4820px;
+    }
+
+    .donation {
+        height: 1450px;
+    }
+
+    .donation_bio p {
+        text-wrap: wrap;
+        width: 440px;
+    }
+
+    .donation-div {
+        margin-left: -160px;
+        margin-top: -2070px;
+    }
+
+    .donation_btn {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 625px) {
+    .support_body {
+        height: 4680px;
+    }
+}
+
+@media (max-width: 575px) {
+    .support_body {
+        height: 4560px;
+    }
+
+    .donation-div {
+        margin-left: -150px;
+        margin-top: -2190px;
+    }
+
+    .donation_photo svg {
+        margin-left: -900px;
+        margin-top: 780px;
+        width: 498px;
+        height: 516px;
+    }
+}
+
+@media (max-width: 566px) {
+    .support_body {
+        height: 4600px;
+    }
+
+    .donation-div {
+        margin-left: -150px;
+        margin-top: -2140px;
+    }
+
+    .donation_photo svg {
+        margin-left: -900px;
+        margin-top: 820px;
+        width: 498px;
+        height: 516px;
+    }
+}
+
+@media (max-width: 541px) {
+    .support_body {
+        height: 4530px;
+    }
+
+    .donation-div {
+        margin-top: -2100px;
+    }
+
+    .donation_photo svg {
+        margin-top: 850px;
+        margin-left: -860px;
+        width: 398px;
+        height: 416px;
+    }
+}
+
+@media (max-width: 536px) {
+    .support_body {
+        height: 4550px;
+    }
+
+    .donation-div {
+        margin-top: -2050px;
+    }
+
+    .donation_photo svg {
+        margin-top: 890px;
+        margin-left: -860px;
+        width: 398px;
+        height: 416px;
+    }
+}
+
+@media (max-width: 521px) {
+    .support_body {
+        height: 4550px;
+    }
+
+    .donation-div {
+        margin-top: -2050px;
+        margin-left: -130px;
+    }
+
+    .donation_title h1 {
+        text-wrap: wrap;
+        margin-top: -25px;
+    }
+
+    .donation_bio p {
+        width: 350px;
+        margin-top: 5px;
+    }
+
+    .donation_photo svg {
+        margin-top: 890px;
+        margin-left: -885px;
+        width: 398px;
+        height: 416px;
+    }
+}
+
+@media (max-width: 510px) {
+    .support_body {
+        height: 4600px;
+    }
+
+    .donation-div {
+        margin-top: -2000px;
+        margin-left: -130px;
+    }
+
+    .donation_title h1 {
+        text-wrap: wrap;
+        margin-top: -25px;
+    }
+
+    .donation_bio p {
+        width: 350px;
+        margin-top: 5px;
+    }
+
+    .donation_photo svg {
+        margin-top: 940px;
+        margin-left: -885px;
+        width: 398px;
+        height: 416px;
+    }
+}
+
+@media (max-width: 487px) {
+    .support_body {
+        height: 4500px;
+    }
+
+    .donation-div {
+        margin-top: -2000px;
+        margin-left: -130px;
+    }
+
+    .donation_title h1 {
+        text-wrap: wrap;
+        margin-top: -25px;
+    }
+
+    .donation_bio p {
+        width: 350px;
+        margin-top: 5px;
+    }
+
+    .donation_photo svg {
+        margin-top: 940px;
+        margin-left: -840px;
+        width: 298px;
+        height: 316px;
+    }
+}
