@@ -54,14 +54,12 @@
     width: 1077px;
     height: 486px;
     margin-top: 105px;
-    margin-left: 300px;
 }
 
 .youtube-textbox {
-    width: 1077px;
+    width: 1083px;
     height: 380px;
-    margin-left: 312px;
-    margin-bottom: 30px;
+    margin-inline: auto;
     background-color: white;
 }
 
@@ -525,4 +523,492 @@
     font-weight: 600;
     margin-top: 90px;
     margin-left: 100px;
+}
+
+@media (max-width: 1495px) {
+    .top-title {
+        display: flex;
+        justify-content: start;
+        padding-left: 0px;
+    }
+
+    .top-competitions-div {
+        margin-left: -110px;
+        margin-top: 140px;
+    }
+
+    .top-title svg {
+        display: flex;
+        justify-content: start;
+        margin-left: 15px;
+    }
+
+    .top-divider-text p {
+        display: flex;
+        justify-content: start;
+        margin-left: 100px;
+        text-wrap: nowrap;
+    }
+
+    .top-competitions-text p {
+        text-wrap: nowrap;
+    }
+
+    .top-pic img {
+        display: flex;
+        justify-content: end;
+        margin-top: 120px;
+        width: 572px;
+        height: 364px;
+    }
+}
+
+@media (max-width: 1422px) {
+    .top-pic img {
+        margin-top: 130px;
+        width: 532px;
+        height: 334px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .top-title {
+        display: flex;
+        justify-content: start;
+        margin-left: -50px;
+    }
+
+    .top-pic img {
+        margin-top: 130px;
+        width: 532px;
+        height: 334px;
+    }
+}
+
+@media (max-width: 1254px) {
+    .top-title {
+        display: flex;
+        justify-content: start;
+        margin-left: -20px;
+    }
+
+    .top-pic img {
+        margin-top: 150px;
+        width: 502px;
+        height: 304px;
+    }
+}
+
+@media (max-width: 1221px) {
+    .top-pic img {
+        margin-top: 155px;
+        width: 492px;
+        height: 294px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .top-competitions-div {
+        margin-left: -110px;
+        margin-top: 0px;
+    }
+
+    .top-pic {
+        margin-top: 250px;
+        margin-left: -850px;
+    }
+
+    .top-pic img {
+        width: 802px;
+        height: 454px;
+    }
+
+    .top {
+        height: 954px;
+    }
+}
+
+@media (max-width: 991px) {
+    .top-title {
+        margin-left: -90px;
+    }
+
+    .top-pic {
+        margin-top: 250px;
+        margin-left: -670px;
+    }
+
+    .top-pic img {
+        width: 802px;
+        height: 454px;
+    }
+}
+
+@media (max-width: 883px) {
+    .top-title {
+        margin-left: -40px;
+    }
+
+    .top-pic {
+        margin-top: 250px;
+        margin-left: -680px;
+    }
+
+    .top-pic img {
+        width: 732px;
+        height: 414px;
+    }
+
+    .top {
+        height: 894px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-title {
+        margin-left: -90px;
+    }
+
+    .top-pic {
+        margin-top: 250px;
+        margin-left: -510px;
+    }
+
+    .top-pic img {
+        width: 662px;
+        height: 384px;
+    }
+
+    .top {
+        height: 874px;
+    }
+}
+
+@media (max-width: 686px) {
+    .top-title {
+        margin-left: -50px;
+    }
+
+    .top-pic {
+        margin-top: 250px;
+        margin-left: -510px;
+    }
+
+    .top-pic img {
+        width: 582px;
+        height: 354px;
+    }
+
+    .top {
+        height: 844px;
+    }
+}
+
+@media (max-width: 616px) {
+    .top-title {
+        margin-left: 0px;
+    }
+
+    .top-competitions-text p {
+        text-wrap: wrap;
+    }
+
+    .top-pic {
+        margin-top: 300px;
+        margin-left: -535px;
+    }
+
+    .top-pic img {
+        width: 522px;
+        height: 330px;
+    }
+
+    .top {
+        height: 864px;
+    }
+}
+
+@media (max-width: 575px) {
+    .top-pic {
+        position: absolute;
+        margin-top: 300px;
+        margin-left: 25px;
+    }
+
+    .top-pic img {
+        width: 452px;
+        height: 300px;
+    }
+
+    .top {
+        height: 834px;
+    }
+}
+
+@media (max-width: 552px) {
+    .top-pic {
+        margin-left: 45px;
+    }
+
+    .top-pic img {
+        width: 402px;
+        height: 270px;
+    }
+
+    .top {
+        height: 804px;
+    }
+}
+
+@media (max-width: 536px) {
+    .top-pic {
+        margin-left: 35px;
+    }
+}
+
+@media (max-width: 531px) {
+    .top-pic {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 526px) {
+    .top-pic {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 511px) {
+    .top-pic {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 505px) {
+    .top-pic {
+        margin-left: 15px;
+    }
+}
+
+@media (max-width: 495px) {
+    .top-pic {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 485px) {
+    .top-pic {
+        margin-left: 5px;
+    }
+}
+
+@media (max-width: 475px) {
+    .top-pic {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1108px) {
+    .youtube-vid iframe{
+        width: 877px;
+        height: 386px;
+        margin-top: 105px;
+    }
+
+    .youtube-textbox {
+        width: 883px;
+        height: 420px;
+    }
+
+    .youtube-textbox p {
+        width: 800px;
+    }
+
+    .youtube-date p {
+        margin-left: 250px;
+    }
+
+    .youtube-btn button {
+        margin-top: 205px;
+    }
+}
+
+@media (max-width: 909px) {
+    .youtube-vid iframe{
+        width: 677px;
+        height: 386px;
+        margin-top: 105px;
+    }
+
+    .youtube-textbox {
+        width: 683px;
+        height: 460px;
+    }
+
+    .youtube-textbox p {
+        width: 600px;
+    }
+
+    .youtube-date p {
+        margin-left: 160px;
+    }
+
+    .youtube-btn button {
+        margin-top: 205px;
+    }
+}
+
+@media (max-width: 702px) {
+    .youtube-vid iframe{
+        width: 477px;
+        height: 396px;
+        margin-top: 80px;
+    }
+
+    .youtube-textbox {
+        width: 483px;
+        height: 550px;
+    }
+
+    .youtube-textbox p {
+        width: 400px;
+    }
+
+    .youtube-date p {
+        margin-left: 60px;
+    }
+
+    .youtube-btn button {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 504px) {
+    .youtube-vid iframe{
+        width: 427px;
+        height: 396px;
+        margin-top: 80px;
+    }
+
+    .youtube-textbox {
+        width: 435px;
+        height: 550px;
+    }
+
+    .youtube-textbox p {
+        width: 370px;
+    }
+
+    .youtube-date p {
+        margin-left: 40px;
+    }
+
+    .youtube-btn button {
+        margin-top: 250px;
+    }
+}
+
+@media (max-width: 1399px) {
+    .more-than .top-pyramid img {
+        width: 194px;
+        height: 110px;
+    }
+    
+    .more-than .mid-pyramid img {
+        width: 144px;
+        height: 84px;
+    }
+    
+    .more-than .low-pyramid img {
+        width: 104px;
+        height: 64px;
+    }
+
+    .more-than {
+        height: 641px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .more-than .top-pyramid img {
+        width: 174px;
+        height: 110px;
+    }
+    
+    .more-than .mid-pyramid img {
+        width: 134px;
+        height: 84px;
+    }
+    
+    .more-than .low-pyramid img {
+        width: 94px;
+        height: 64px;
+    }
+
+    .more-than {
+        height: 621px;
+    }
+}
+
+@media (max-width: 991px) {
+    .more-than .top-pyramid img {
+        width: 134px;
+        height: 81px;
+    }
+    
+    .more-than .mid-pyramid img {
+        width: 104px;
+        height: 61px;
+    }
+    
+    .more-than .low-pyramid img {
+        width: 84px;
+        height: 51px;
+    }
+
+    .more-than {
+        height: 551px;
+    }
+}
+
+@media (max-width: 767px) {
+    .more-than .top-pyramid img {
+        width: 98px;
+        height: 61px;
+    }
+    
+    .more-than .mid-pyramid img {
+        width: 80px;
+        height: 51px;
+    }
+    
+    .more-than .low-pyramid img {
+        width: 65px;
+        height: 41px;
+    }
+
+    .more-than {
+        height: 561px;
+    }
+}
+
+@media (max-width: 537px) {
+    .more-than .top-pyramid img {
+        width: 78px;
+        height: 51px;
+    }
+    
+    .more-than .mid-pyramid img {
+        width: 70px;
+        height: 45px;
+    }
+    
+    .more-than .low-pyramid img {
+        width: 55px;
+        height: 35px;
+    }
+
+    .more-than {
+        height: 521px;
+    }
 }

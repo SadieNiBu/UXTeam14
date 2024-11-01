@@ -34,7 +34,7 @@ const Competition = () => {
               <p>What we do</p>
             </div>
           </div>
-          <div>
+          <div className='top-competitions-div'>
             <div className='top-competitions'>
               <h3>Competitions</h3>
             </div>
@@ -48,7 +48,7 @@ const Competition = () => {
         </Col>
       </Row>
       <Row className='youtube'>
-        <Col className='youtube-vid'>
+        <Col className='youtube-vid text-center'>
           <iframe
           src="https://www.youtube.com/embed/tgbNymZ7vqY">
           </iframe>
