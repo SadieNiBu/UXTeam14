@@ -15,7 +15,7 @@ const Roster = () => {
 
   return (
     <div>
-      <header>
+      <div className='roster__header'>
         <div className='wrapper'>
           <div className='tagline'>
             <svg xmlns="http://www.w3.org/2000/svg" width="72" height="2" viewBox="0 0 72 2" fill="none">
@@ -23,15 +23,21 @@ const Roster = () => {
             </svg>
             <div className='lead'>Our Team</div>
           </div>
-          <h4>UCF Collegiate Cyber Defense Competition Team</h4>
-          <h5>A nationally recognized powerhouse in cybersecurity defense.</h5>
-          <div className='base'>
-            Established in 2013, our team consistently excels in high-pressure environments, 
-            defending against complex cyber threats while managing real-world business tasks. UCF's CCDC team 
-            continues to set standards in cybersecurity, preparing students for the challenges of tomorrow.
+        </div>
+        <div className='main-content'>
+          <div className='left-column'>
+            <h4>UCF Collegiate Cyber Defense Competition Team</h4>
+          </div>
+          <div className='right-column'>
+            <h5>A nationally recognized powerhouse in cybersecurity defense.</h5>
+            <div className='base'>
+              Established in 2013, our team consistently excels in high-pressure environments, 
+              defending against complex cyber threats while managing real-world business tasks. UCF's CCDC team 
+              continues to set standards in cybersecurity, preparing students for the challenges of tomorrow.
+            </div>
           </div>
         </div>
-      </header>
+      </div>
       <div className='coaches full-bleed'>
         <div className='title'>
           <h1 id='coaches-anchor'>COACHES</h1>
@@ -181,14 +187,14 @@ const Roster = () => {
         </div>
       </div>
 
-      <div className='stories full-bleed'>
+      <div className='stories full-background'>
         <div className='top-vector'>
           <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="39" viewBox="0 0 1500 39" fill="none">
             <path d="M-58 -6.06519L421.121 39L471.777 11.0595L504.493 -6.06519H-58Z" fill="white"/>
             <path d="M1305.49 30.0652L1525 -15L1012.11 -13.0124L504.493 -6.06519L546.706 -3.0871L637.465 39L782.045 11.0595L1034.27 -3.0871L1305.49 30.0652Z" fill="white"/>
           </svg>
         </div>
-        <div className='header'>
+        <div className='stories__header'>
           <h1>STUDENT SUCCESS STORIES</h1>
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="5" viewBox="0 0 100 5" fill="none">
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
