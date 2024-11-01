@@ -43,6 +43,12 @@ header .wrapper p {
     align-self: stretch;
 }
 
+@media screen and (max-width: 768px) {
+    .faq .wrapper {
+        padding: 65px 24px;
+    }
+}
+
 .faq .wrapper .questions {
     display: flex;
     align-items: flex-start;
