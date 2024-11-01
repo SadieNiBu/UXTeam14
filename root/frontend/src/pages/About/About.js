@@ -48,34 +48,34 @@ const About = () => {
 
   return (
     <div>
-      <div className='background'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="1880" height="600" viewBox="0 0 1880 600" fill="none">
-          <path d="M1648 601L-182.408 61L-232 303.609L1648 601Z" fill="#0A58CA"/>
-          <path d="M1648 400.13L-182.408 1V61L1648 447.087V400.13Z" fill="#0A58CA"/>
-          <path d="M-182.408 61L1648 447.087V400.13L-182.408 1V61ZM-182.408 61L1648 601L-232 303.609L-182.408 61Z" stroke="#0A58CA"/>
-        </svg>
-      </div>
-
-      <header>
-        <div className='wrapper'>
-          <div className='tagline'>
+      <div className='about__header'>
+        <div className="wrapper">
+          <div className="tagline">
             <svg xmlns="http://www.w3.org/2000/svg" width="72" height="2" viewBox="0 0 72 2" fill="none">
-              <path d="M0 1H72" stroke="#495057" stroke-width="2"/>
-            </svg> 
-            <div className='lead'>About Us</div>
+              <path d="M0 1H72" stroke="#495057" strokeWidth="2" />
+            </svg>
+            <div className="lead">About Us</div>
           </div>
-          <h4>UCF Collegiate Cyber Defense Competition Team</h4>
-          <h5>A nationally recognized powerhouse in cybersecurity defense.</h5>
-          <p className='description'>
-            Established in 2013, our team consistently excels in high-pressure environments, defending 
-            against complex cyber threats while managing real-world business tasks. UCF's CCDC team 
-            continues to set standards in cybersecurity, preparing students for the challenges of tomorrow.
-          </p>
         </div>
-        <div className='picture'>
-            <img src={teamPhoto} class="picture" alt='UCF CCDC Team' />
+
+        <div className="main-content">
+          <div className="left-column">
+            <h4>UCF Collegiate Cyber Defense Competition Team</h4>
+          </div>
+          <div className="right-column">
+            <h5>A nationally recognized powerhouse in cybersecurity defense.</h5>
+            <p className="description">
+              Established in 2013, our team consistently excels in high-pressure environments, defending 
+              against complex cyber threats while managing real-world business tasks. UCF's CCDC team 
+              continues to set standards in cybersecurity, preparing students for the challenges of tomorrow.
+            </p>
+          </div>
         </div>
-      </header>
+        
+        <div className="picture">
+          <img src={teamPhoto} className="picture" alt="UCF CCDC Team" />
+        </div>
+      </div>
 
       <div className='scholar' id='scholar-anchor'>
         <div className='wrapper'>
@@ -119,13 +119,6 @@ const About = () => {
         </div>
       </div>
 
-      <div className='topVector' id='grants-anchor'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="52" viewBox="0 0 1500 52" fill="none">
-          <path d="M0 43.3961L474.581 0L524.757 26.9057L557.163 43.3961H0Z" fill="#0A58CA"/>
-          <path d="M1350.57 8.60385L1568 52L1059.97 50.086L557.163 43.3961L598.976 40.5283L688.875 0L832.085 26.9057L1081.92 40.5283L1350.57 8.60385Z" fill="#0A58CA"/>
-        </svg>
-      </div>
-
       <div className='grants full-bleed--blue'>
         <div className='wrapper'>
           <div className='headline'>
@@ -165,13 +158,6 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className='bottomVector'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="1495" height="31" viewBox="0 0 1495 31" fill="none">
-          <path d="M0 5.12924L454 31L502 14.9601L533 5.12924H0Z" fill="#0A58CA"/>
-          <path d="M1292 25.8708L1500 0L1014 1.14102L533 5.12924L573 6.83889L659 31L796 14.9601L1035 6.83889L1292 25.8708Z" fill="#0A58CA"/>
-        </svg>
       </div>
 
       <div className='pricing full-bleed--black'>
