@@ -16,6 +16,12 @@ export const memberReducer = (state, action) => {
             return {
                 members: state.members.filter((e) => e._id !== action.payload._id)
             }
+        case 'UPDATE_MEMBER':
+            return {
+                members: state.members.map((member) =>
+                    member._id === action.payload._id ? action.payload : member
+                )
+            };
         default:
             return state
     }

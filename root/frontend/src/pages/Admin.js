@@ -12,6 +12,15 @@ const Admin = () => {
     const {events, dispatch: eventDispatch} = useEventContext()
     const {members, dispatch: memberDispatch} = useMemberContext()
 
+    const fetchMembers = async () => {
+        const response = await fetch('/api/members');
+        const json = await response.json();
+
+        if (response.ok) {
+            memberDispatch({ type: 'SET_MEMBERS', payload: json });
+        }
+    };
+
     useEffect ( () => {
         document.title = "C3 Team @ UCF | Admin"
 
@@ -42,7 +51,7 @@ const Admin = () => {
             <div className='members'>
                 <h2>Roster</h2>
                 {members && members.map((member) => (
-                    <MemberDetails key={member._id} member={member}/>
+                    <MemberDetails key={member._id} member={member} refetchMembers={fetchMembers} />
                 ))}
             </div>
             <MemberForm />
