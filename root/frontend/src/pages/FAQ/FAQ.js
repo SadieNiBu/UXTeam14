@@ -26,7 +26,7 @@ const FAQ = () => {
           </div>
         </div>
       </header>
-      <faq>
+      <div className='faq'>
         <div className='wrapper'>
           <div className='questions'>
             <Accordion flush>
@@ -117,7 +117,7 @@ const FAQ = () => {
             </Accordion>
           </div>
         </div>
-      </faq>
+      </div>
     </div>
   )
 }

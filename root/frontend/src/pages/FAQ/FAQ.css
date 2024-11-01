@@ -1,36 +1,22 @@
-header {
-    display: flex;
-    padding: 110px;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%); /* Center the width */
-}
-
 header .wrapper {
+    padding-top: 110px;
     display: flex;
-    padding: 4px 0px;
     flex-direction: column;
-    align-items: flex-start;
     gap: 30px;
 }
 
 header .wrapper h3 {
     color: var(--dark-000000, #000);
-
     /* Diplay / Heading-3 - Semibold */
     font-family: Inter;
     font-size: 58px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
 }
 
 header .wrapper p {
-    width: 540px;
+    max-width: 540px;
     color: var(--Text-txt-secondary, rgba(60, 60, 67, 0.85));
-
     /* Body/ Base text */
     font-family: Inter;
     font-size: 16px;
@@ -39,20 +25,17 @@ header .wrapper p {
     line-height: 28px; /* 175% */
 }
 
-faq {
+.faq {
     display: flex;
-    height: 711px;
+    min-height: 711px;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
-    align-self: stretch;
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-
     background: var(--Gray-400, #CED4DA);
 }
 
-faq .wrapper {
+.faq .wrapper {
     padding: 65px 110px;
     display: flex;
     align-items: center;
@@ -60,7 +43,7 @@ faq .wrapper {
     align-self: stretch;
 }
 
-faq .wrapper .questions {
+.faq .wrapper .questions {
     display: flex;
     align-items: flex-start;
     gap: 10px;
@@ -69,19 +52,17 @@ faq .wrapper .questions {
 
 .accordion {
     display: flex;
-    height: 558px;
+    min-height: 558px;
     flex-direction: column;
-    align-items: stretch;
     gap: 14px;
     flex: 1 0 0;
+    z-index: 0;
 }
 
 .accordion-button {
     color: var(--Text-txt-primary, #000);
-
     font-family: Inter;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
 
