@@ -684,6 +684,13 @@ a {
     background: var(--colors-blue-blue-600, #0A58CA);
 }
 
+@media screen and (max-width: 991px) {
+    .photos {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
 .photos__header {
     display: flex;
     width: 255px;

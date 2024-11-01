@@ -35,7 +35,7 @@ const About = () => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'right',
+        position: 'left',
         labels: {
           boxWidth: 11,
         }
@@ -126,7 +126,7 @@ const About = () => {
         </svg>
       </div>
 
-      <div className='grants'>
+      <div className='grants full-bleed--blue'>
         <div className='wrapper'>
           <div className='headline'>
             <p>ABOUT STUDENT BENEFITS</p>
@@ -174,94 +174,8 @@ const About = () => {
         </svg>
       </div>
 
-      <div className='pricing'>
+      <div className='pricing full-bleed--black'>
         <div className='wrapper'>
-          <div className='headline'>
-            <h1>Total Estimated Yearly Cost: <span style={{color: 'var(--colors-blue-blue-600, #0A58CA)'}}>$176</span></h1>
-            <div className='line'></div>
-          </div>
-          <div className='breakdown'>
-            <h2>Out-of-state Cost Breakdown</h2>
-            <div className='table'>
-              <div className='row'>
-                <div className='text'>
-                  <p>Tuition</p>
-                </div>
-                <div className='line'></div>
-              </div>
-              <div className='row'>
-                <div className='text'>
-                    <p>Housing</p>
-                  </div>
-                  <div className='line'></div>
-              </div>
-              <div className='row'>
-                <div className='text'>
-                    <p>Fees, books, etc.</p>
-                  </div>
-                  <div className='line2'></div>
-              </div>
-              <div className='row' style={{background: '#FFC904'}}>
-                <div className='text'>
-                    <p style={{fontWeight: '600'}}>Total Cost</p>
-                  </div>
-              </div>
-            </div>
-          </div>
-          <div className='graph'>
-            <div className='title'>
-              <h2>Cost of Attendance</h2>
-            </div>
-            <div className='amount'>
-              <p>1M</p>
-              <p style={{marginTop: '81.3px'}}>500k</p>
-              <p style={{marginTop: '81.3px'}}>200k</p>
-              <p style={{marginTop: '81.3px'}}>100k</p>
-              <p style={{marginTop: '81.3px'}}>50k</p>
-              <p style={{marginTop: '81.3px'}}>0</p>
-            </div>
-            <div className='lines'>
-              <div className='line'></div>
-              <div className='line' style={{marginTop: '111.33px'}}></div>
-              <div className='line' style={{marginTop: '111.33px'}}></div>
-              <div className='line' style={{marginTop: '111.33px'}}></div>
-              <div className='line' style={{marginTop: '111.33px'}}></div>
-            </div>
-            <div className='guides'>
-              <div className='y'></div>
-              <div className='x'></div>
-            </div>
-            <div className='schools'>
-              <div className='UCF'>UCF</div>
-              <div className='other'>OUT-OF-STATE COLLEGE</div>
-            </div>
-            <div className='key'>
-              <div className='label'>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
-                  <circle cx="7.10791" cy="8" r="7.10791" fill="#052C65"/>
-                </svg>
-                <p>Tuition</p>
-              </div>
-              <div className='label' style={{width: '125.216px'}}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
-                  <circle cx="7.32373" cy="8" r="7.10791" fill="#0A58CA"/>
-                </svg>
-                <p>Books & Fees</p>
-              </div>
-              <div className='label' style={{width: '86.216px'}}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
-                  <circle cx="7.53955" cy="8" r="7.10791" fill="#3D8BFD"/>
-                </svg>
-                <p>Housing</p>
-              </div>
-              <div className='label' style={{width: '160.216px'}}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
-                  <circle cx="7.75537" cy="8" r="7.10791" fill="#9EC5FE"/>
-                </svg>
-                <p>Another Category</p>
-              </div>
-            </div>
-          </div>
           <div className='statistics'>
             <div className='text'>
               <h1>We Want You To Make The Best Decision</h1>
@@ -322,7 +236,9 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className='policies' id='policies-anchor'>
+        </div>
+      </div>
+      <div className='policies' id='policies-anchor'>
             <div className='policy'>
               <div className='lead'>ABOUT OUR TRAVEL POLICY</div>
               <h3>Heading which concerns travel policy for competitions.</h3>
@@ -334,8 +250,6 @@ const About = () => {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
             </div>
           </div>
-        </div>
-      </div>
     </div>
   )
 }
