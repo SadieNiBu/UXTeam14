@@ -118,7 +118,7 @@ const Competition = () => {
             </svg>
           </div>
         </Col>
-        <Col>
+        <Col className='sc-media'>
           <div className='sc-vid text-center'>
             <iframe
             src="https://www.youtube.com/embed/tgbNymZ7vqY">
