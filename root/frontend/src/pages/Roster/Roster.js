@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Roster.css'
 import memberPhoto from './Images/Member.png'
 import smallMember from './Images/Member_Small.png'
@@ -8,10 +8,21 @@ import twIcon from './Images/Twitter.svg'
 import story1 from './Images/Story1.png'
 
 const Roster = () => {
+  const [members, setMembers] = useState(null)
 
   useEffect ( () => {
     document.title = "C3 Team @ UCF | Roster"
-  })
+
+    const fetchMembers = async () => {
+      const response = await fetch('/api/members')
+      const json = await response.json()
+      if (response.ok) {
+        setMembers(json)
+      }
+    }
+
+    fetchMembers()
+  }, [])
 
   return (
     <div>
@@ -91,8 +102,12 @@ const Roster = () => {
           <div className='member'>
             <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Cofounder, CEO</div>
+              {members && members.length > 0 && (
+                <div>
+                  <div className='name'>{members[0].name}</div>
+                  <div className='role'>{members[0].role}</div>
+                </div>
+              )}
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -103,8 +118,12 @@ const Roster = () => {
           <div className='member'>
             <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Cofounder, CEO</div>
+              {members && members.length > 1 && (
+                <div>
+                  <div className='name'>{members[1].name}</div>
+                  <div className='role'>{members[1].role}</div>
+                </div>
+              )}
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -115,8 +134,12 @@ const Roster = () => {
           <div className='member'>
             <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Cofounder, CEO</div>
+              {members && members.length > 2 && (
+                <div>
+                  <div className='name'>{members[2].name}</div>
+                  <div className='role'>{members[2].role}</div>
+                </div>
+              )}
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -127,8 +150,12 @@ const Roster = () => {
           <div className='member'>
             <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Cofounder, CEO</div>
+              {members && members.length > 3 && (
+                <div>
+                  <div className='name'>{members[3].name}</div>
+                  <div className='role'>{members[3].role}</div>
+                </div>
+              )}
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -139,8 +166,12 @@ const Roster = () => {
           <div className='member'>
             <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Cofounder, CEO</div>
+              {members && members.length > 4 && (
+                <div>
+                  <div className='name'>{members[4].name}</div>
+                  <div className='role'>{members[4].role}</div>
+                </div>
+              )}
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -151,8 +182,12 @@ const Roster = () => {
           <div className='member'>
             <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Cofounder, CEO</div>
+              {members && members.length > 5 && (
+                <div>
+                  <div className='name'>{members[5].name}</div>
+                  <div className='role'>{members[5].role}</div>
+                </div>
+              )}
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -163,8 +198,12 @@ const Roster = () => {
           <div className='member'>
             <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Cofounder, CEO</div>
+              {members && members.length > 6 && (
+                <div>
+                  <div className='name'>{members[6].name}</div>
+                  <div className='role'>{members[6].role}</div>
+                </div>
+              )}
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -175,8 +214,12 @@ const Roster = () => {
           <div className='member'>
             <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Cofounder, CEO</div>
+              {members && members.length > 7 && (
+                <div>
+                  <div className='name'>{members[7].name}</div>
+                  <div className='role'>{members[7].role}</div>
+                </div>
+              )}
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
