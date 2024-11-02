@@ -11,6 +11,10 @@ const memberSchema = new Schema({
         type: String,
         required: true
     },
+    image: {
+        type: String,
+        required: false
+    }
 }, { timestamps: true });
 
 module.exports = mongoose.model('Member', memberSchema);

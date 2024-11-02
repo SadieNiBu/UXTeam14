@@ -18,6 +18,7 @@ app.use((req, res, next) => {
 // Routes
 app.use('/api/members', memberRoutes);
 app.use('/api/events', eventRoutes);
+app.use('/uploads', express.static('uploads'));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI)

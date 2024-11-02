@@ -100,14 +100,22 @@ const Roster = () => {
         </div>
         <div className='members'>
           <div className='member'>
-            <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              {members && members.length > 0 && (
-                <div>
-                  <div className='name'>{members[0].name}</div>
-                  <div className='role'>{members[0].role}</div>
+              <div>
+                <div className='member__photo'>
+                  <img 
+                    src={members && members[0]?.image ? `/${members[0].image}` : smallMember} 
+                    className="picture" 
+                    alt={members && members[0] ? `${members[0].name}'s profile` : 'Default profile picture'} 
+                  />
                 </div>
-              )}
+                <div className='name'>
+                    {members && members[0] ? members[0].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {members && members[0] ? members[0].role : 'Default Role'}
+                </div>
+              </div>
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -116,14 +124,22 @@ const Roster = () => {
             </div>
           </div>
           <div className='member'>
-            <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              {members && members.length > 1 && (
-                <div>
-                  <div className='name'>{members[1].name}</div>
-                  <div className='role'>{members[1].role}</div>
+              <div>
+                <div className='member__photo'>
+                  <img 
+                    src={members && members[1]?.image ? `/${members[1].image}` : smallMember} 
+                    className="picture" 
+                    alt={members && members[1] ? `${members[1].name}'s profile` : 'Default profile picture'} 
+                  />
                 </div>
-              )}
+                <div className='name'>
+                    {members && members[1] ? members[1].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {members && members[1] ? members[1].role : 'Default Role'}
+                </div>
+              </div>
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -132,14 +148,22 @@ const Roster = () => {
             </div>
           </div>
           <div className='member'>
-            <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              {members && members.length > 2 && (
-                <div>
-                  <div className='name'>{members[2].name}</div>
-                  <div className='role'>{members[2].role}</div>
+              <div>
+                <div className='member__photo'>
+                  <img 
+                    src={members && members[2]?.image ? `/${members[2].image}` : smallMember} 
+                    className="picture" 
+                    alt={members && members[2] ? `${members[2].name}'s profile` : 'Default profile picture'} 
+                  />
                 </div>
-              )}
+                <div className='name'>
+                    {members && members[2] ? members[2].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {members && members[2] ? members[2].role : 'Default Role'}
+                </div>
+              </div>
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -148,14 +172,22 @@ const Roster = () => {
             </div>
           </div>
           <div className='member'>
-            <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              {members && members.length > 3 && (
-                <div>
-                  <div className='name'>{members[3].name}</div>
-                  <div className='role'>{members[3].role}</div>
+              <div>
+                <div className='member__photo'>
+                  <img 
+                    src={members && members[3]?.image ? `/${members[3].image}` : smallMember} 
+                    className="picture" 
+                    alt={members && members[3] ? `${members[3].name}'s profile` : 'Default profile picture'} 
+                  />
                 </div>
-              )}
+                <div className='name'>
+                    {members && members[3] ? members[3].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {members && members[3] ? members[3].role : 'Default Role'}
+                </div>
+              </div>
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -164,14 +196,22 @@ const Roster = () => {
             </div>
           </div>
           <div className='member'>
-            <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              {members && members.length > 4 && (
-                <div>
-                  <div className='name'>{members[4].name}</div>
-                  <div className='role'>{members[4].role}</div>
+              <div>
+                <div className='member__photo'>
+                  <img 
+                    src={members && members[4]?.image ? `/${members[4].image}` : smallMember} 
+                    className="picture" 
+                    alt={members && members[4] ? `${members[4].name}'s profile` : 'Default profile picture'} 
+                  />
                 </div>
-              )}
+                <div className='name'>
+                    {members && members[4] ? members[4].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {members && members[4] ? members[4].role : 'Default Role'}
+                </div>
+              </div>
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -180,14 +220,22 @@ const Roster = () => {
             </div>
           </div>
           <div className='member'>
-            <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              {members && members.length > 5 && (
-                <div>
-                  <div className='name'>{members[5].name}</div>
-                  <div className='role'>{members[5].role}</div>
+              <div>
+                <div className='member__photo'>
+                  <img 
+                    src={members && members[5]?.image ? `/${members[5].image}` : smallMember} 
+                    className="picture" 
+                    alt={members && members[5] ? `${members[5].name}'s profile` : 'Default profile picture'} 
+                  />
                 </div>
-              )}
+                <div className='name'>
+                    {members && members[5] ? members[5].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {members && members[5] ? members[5].role : 'Default Role'}
+                </div>
+              </div>
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -196,14 +244,22 @@ const Roster = () => {
             </div>
           </div>
           <div className='member'>
-            <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              {members && members.length > 6 && (
-                <div>
-                  <div className='name'>{members[6].name}</div>
-                  <div className='role'>{members[6].role}</div>
+              <div>
+                <div className='member__photo'>
+                  <img 
+                    src={members && members[6]?.image ? `/${members[6].image}` : smallMember} 
+                    className="picture" 
+                    alt={members && members[6] ? `${members[6].name}'s profile` : 'Default profile picture'} 
+                  />
                 </div>
-              )}
+                <div className='name'>
+                    {members && members[6] ? members[6].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {members && members[6] ? members[6].role : 'Default Role'}
+                </div>
+              </div>
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
@@ -212,14 +268,22 @@ const Roster = () => {
             </div>
           </div>
           <div className='member'>
-            <img src={smallMember} class="picture" alt='Team Member' />
             <div className='info'>
-              {members && members.length > 7 && (
-                <div>
-                  <div className='name'>{members[7].name}</div>
-                  <div className='role'>{members[7].role}</div>
+              <div>
+                <div className='member__photo'>
+                  <img 
+                    src={members && members[7]?.image ? `/${members[7].image}` : smallMember} 
+                    className="picture" 
+                    alt={members && members[7] ? `${members[7].name}'s profile` : 'Default profile picture'} 
+                  />
                 </div>
-              )}
+                <div className='name'>
+                    {members && members[7] ? members[7].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {members && members[7] ? members[7].role : 'Default Role'}
+                </div>
+              </div>
               <div className='social'>
                 <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
                 <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />

@@ -54,7 +54,7 @@ const Admin = () => {
                     <MemberDetails key={member._id} member={member} refetchMembers={fetchMembers} />
                 ))}
             </div>
-            <MemberForm />
+            <MemberForm refetchMembers={fetchMembers} />
             <div className='events'>
                 <h2>Events</h2>
                 {events && events.map((event) => (

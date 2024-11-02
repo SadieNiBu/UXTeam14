@@ -1,5 +1,7 @@
 const Member = require('../models/Member');
 const mongoose = require('mongoose');
+const path = require('path');
+const fs = require('fs');
 
 // Get all members
 const getMembers = async (req, res) => {
@@ -27,12 +29,13 @@ const getMember = async (req, res) => {
 // Create a new member
 const createMember = async (req, res) => {
     const { name, role } = req.body;
+    const image = req.file ? req.file.path : null; // Save file path if an image was uploaded
     
     try {
-        const member = await Member.create({ name, role });
+        const member = await Member.create({ name, role, image });
         res.status(200).json(member);
-    }   catch (error) {
-        res.status(400).json({error: error.message});
+    } catch (error) {
+        res.status(400).json({ error: error.message });
     }
 };
 
@@ -45,6 +48,17 @@ const deleteMember = async (req, res) => {
     }
 
     const member = await Member.findOneAndDelete({ _id: id });
+
+    if (member.image) {
+        const imagePath = path.join(__dirname, '..', member.image);
+        fs.unlink(imagePath, (err) => {
+            if (err) {
+                console.error('Error deleting image file:', err);
+            } else {
+                console.log('Image file deleted successfully');
+            }
+        });
+    }
 
     if (!member) {
         return res.status(404).json({ error: 'Member not found' });
@@ -61,9 +75,13 @@ const updateMember = async (req, res) => {
         return res.status(404).json({ error: 'Member not found' });
     }
 
-    const member = await Member.findOneAndUpdate({ _id: id }, {
-        ...req.body
-    })
+    const { name, role } = req.body;
+    const image = req.file ? req.file.path : undefined; // Use image file path if uploaded
+    
+    const updateData = { name, role };
+    if (image) updateData.image = image; // Only update image if a new file is uploaded
+
+    const member = await Member.findOneAndUpdate({ _id: id }, updateData, { new: true });
 
     if (!member) {
         return res.status(404).json({ error: 'Member not found' });
@@ -71,7 +89,6 @@ const updateMember = async (req, res) => {
 
     res.status(200).json(member);
 };
-
 
 module.exports = {
     getMembers,
