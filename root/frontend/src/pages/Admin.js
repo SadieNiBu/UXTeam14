@@ -33,7 +33,11 @@ const Admin = () => {
         document.title = "C3 Team @ UCF | Admin"
 
         const fetchMembers = async () => {
-            const response = await fetch('/api/members')
+            const response = await fetch('/api/members', {
+                headers: {
+                    Authorization: `Bearer ${admin.token}`
+                }
+            })
             const json = await response.json()
 
             if (response.ok) {

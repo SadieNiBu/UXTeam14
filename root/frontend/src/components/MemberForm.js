@@ -1,8 +1,10 @@
 import { useState } from "react";
 import { useMemberContext } from '../hooks/useMemberContext';
+import { useAuthContext } from '../hooks/useAuthContext';
 
 const MemberForm = ({ refetchMembers }) => {
     const { dispatch } = useMemberContext();
+    const { admin } = useAuthContext();
     const [name, setName] = useState('');
     const [role, setRole] = useState('');
     const [image, setImage] = useState(null);
@@ -15,6 +17,11 @@ const MemberForm = ({ refetchMembers }) => {
     const performSubmit = async (e) => {
         e.preventDefault();
 
+        if (!admin) {
+            setError('You must be logged in');
+            return;
+        }
+
         const formData = new FormData();
         formData.append('name', name);
         formData.append('role', role);
@@ -22,7 +29,10 @@ const MemberForm = ({ refetchMembers }) => {
 
         const response = await fetch('/api/members', {
             method: 'POST',
-            body: formData // For mixed data (text + file)
+            body: formData, // For mixed data (text + file)
+            headers: {
+                'Authorization': `Bearer ${admin.token}`
+            }
         });
 
         const json = await response.json();

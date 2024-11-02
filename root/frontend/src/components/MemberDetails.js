@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
 import { useMemberContext } from "../hooks/useMemberContext";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 const MemberDetails = ({ member, refetchMembers }) => {
     const { dispatch } = useMemberContext();
+    const { admin } = useAuthContext();
     const [isEditing, setIsEditing] = useState(false);
     const [name, setName] = useState(member.name);
     const [role, setRole] = useState(member.role);
@@ -22,8 +24,12 @@ const MemberDetails = ({ member, refetchMembers }) => {
     };
 
     const performDelete = async () => {
+        if (!admin) return;
         const response = await fetch('/api/members/' + member._id, {
-            method: 'DELETE'
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${admin.token}`
+            }
         });
 
         const json = await response.json();
@@ -36,6 +42,8 @@ const MemberDetails = ({ member, refetchMembers }) => {
     const performUpdate = async (e) => { 
         e.preventDefault();
 
+        if (!admin) return;
+
         const formData = new FormData();
         formData.append('name', name);
         formData.append('role', role);
@@ -43,7 +51,10 @@ const MemberDetails = ({ member, refetchMembers }) => {
 
         const response = await fetch('/api/members/' + member._id, {
             method: 'PATCH',
-            body: formData
+            body: formData,
+            headers: {
+                'Authorization': `Bearer ${admin.token}`
+            }
         });
 
         const json = await response.json();

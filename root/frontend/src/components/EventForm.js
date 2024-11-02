@@ -1,9 +1,10 @@
 import { useState } from "react"
 import { useEventContext } from "../hooks/useEventContext"
+import { useAuthContext } from "../hooks/useAuthContext"
 
 const EventForm = () => {
     const { dispatch } = useEventContext()
-
+    const { admin } = useAuthContext()
     const [description, setDescription] = useState('')
     const [title, setTitle] = useState('')
     const [date, setDate] = useState('')
@@ -12,13 +13,19 @@ const EventForm = () => {
     const performSubmit = async (e) => {
         e.preventDefault()
 
+        if (!admin) {
+            setError('You must be logged in');
+            return;
+        }
+
         const event = {title, date, description}
 
         const response = await fetch('api/events', {
             method: 'POST',
             body: JSON.stringify(event),
             headers: {
-                'Content-type': 'application/json'
+                'Content-type': 'application/json',
+                'Authorization': `Bearer ${admin.token}`
             }
         })
 
