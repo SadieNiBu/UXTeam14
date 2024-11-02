@@ -203,7 +203,7 @@ const Competition = () => {
       </Row>
       <Row className='timeline'>
         <Col className='col-1'>
-          <h1>CCDC@UCF OVER RECENT YEARS</h1>
+          <h1 className='col-1-title'>CCDC@UCF OVER RECENT YEARS</h1>
           <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
           </svg>
@@ -227,7 +227,7 @@ const Competition = () => {
               </iframe>
           </div>
         </Col>
-        <Col>
+        <Col className='timeline'>
           <div className='twenty-four text-center'>
             <img src={TwentyFour} />
           </div>
