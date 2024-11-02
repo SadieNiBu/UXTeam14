@@ -9,18 +9,21 @@ import "./styles.css"
 import { BrowserRouter } from 'react-router-dom';
 import { EventContextProvider } from './context/EventContext';
 import { MemberContextProvider } from './context/MemberContext';
+import { AuthContextProvider } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <EventContextProvider>
-      <MemberContextProvider>
-        <ScrollToTop />
-        <App />
-      </MemberContextProvider>
-      </EventContextProvider>
-    </BrowserRouter>
+    <AuthContextProvider>
+      <BrowserRouter>
+        <EventContextProvider>
+        <MemberContextProvider>
+          <ScrollToTop />
+          <App />
+        </MemberContextProvider>
+        </EventContextProvider>
+      </BrowserRouter>
+    </AuthContextProvider>
   </React.StrictMode>
 );
 

@@ -4,6 +4,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const memberRoutes = require('./routes/members');
 const eventRoutes = require('./routes/events');
+const adminRoutes = require('./routes/admin');
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use((req, res, next) => {
 // Routes
 app.use('/api/members', memberRoutes);
 app.use('/api/events', eventRoutes);
+app.use('/api/admin', adminRoutes);
 app.use('/uploads', express.static('uploads'));
 
 // Connect to MongoDB

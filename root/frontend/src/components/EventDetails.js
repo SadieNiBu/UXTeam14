@@ -1,11 +1,18 @@
 import { useEventContext } from "../hooks/useEventContext";
+import { useAuthContext } from "../hooks/useAuthContext";
 
 const EventDetails = ({ event }) => {
     const { dispatch } = useEventContext()
+    const { admin } = useAuthContext()
     
     const performDelete = async () => {
+        if (!admin) return;
+        
         const response = await fetch ('api/events/' + event._id, {
-            method: 'DELETE'
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${admin.token}`
+            }
         })
 
         const json = await response.json();

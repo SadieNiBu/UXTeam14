@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useEventContext } from '../hooks/useEventContext'
 import { useMemberContext } from '../hooks/useMemberContext'
+import { useAuthContext } from '../hooks/useAuthContext'
+import { useLogout } from '../hooks/useLogout'
 
 // components
 import MemberDetails from '../components/MemberDetails'
@@ -9,8 +11,10 @@ import MemberForm from '../components/MemberForm'
 import EventForm from '../components/EventForm'
 
 const Admin = () => {
-    const {events, dispatch: eventDispatch} = useEventContext()
-    const {members, dispatch: memberDispatch} = useMemberContext()
+    const { events, dispatch: eventDispatch } = useEventContext()
+    const { members, dispatch: memberDispatch } = useMemberContext()
+    const { logout } = useLogout()
+    const { admin } = useAuthContext()
 
     const fetchMembers = async () => {
         const response = await fetch('/api/members');
@@ -20,6 +24,10 @@ const Admin = () => {
             memberDispatch({ type: 'SET_MEMBERS', payload: json });
         }
     };
+
+    const handleClick = () => {
+        logout();
+    }
 
     useEffect ( () => {
         document.title = "C3 Team @ UCF | Admin"
@@ -41,13 +49,21 @@ const Admin = () => {
                 eventDispatch({type: 'SET_EVENTS', payload: json})
             }
         }
-
-        fetchMembers()
-        fetchEvents()
-    }, [])
+        
+        if (admin) {
+            fetchMembers()
+            fetchEvents()
+        }
+    }, [admin])
 
     return (
         <div className='admin'>
+            {admin && (
+                <div>
+                    <span>{admin.email}</span>
+                    <button onClick={handleClick}>Log out</button>
+                </div>
+            )}
             <div className='members'>
                 <h2>Roster</h2>
                 {members && members.map((member) => (
