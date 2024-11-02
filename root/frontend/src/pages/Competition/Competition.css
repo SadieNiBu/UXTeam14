@@ -220,7 +220,7 @@
     font-size: 40px;
     font-weight: 700;
     margin-top: 150px;
-    margin-left: 200px;
+    margin-left: 13vw;
 }
 
 .champs-num h1 {
@@ -598,6 +598,14 @@
         min-width: 1494px;
         position: absolute;
     }
+
+    .bottom_line_decors {
+        top: 3798px;
+        left: 220px;
+        height: 28px;
+        min-width: 1494px;
+        position: absolute;
+    }
 }
 
 @media (max-width: 1254px) {
@@ -655,6 +663,14 @@
         min-width: 1494px;
         position: absolute;
     }
+
+    .bottom_line_decors svg {
+        top: 70px;
+        left: 220px;
+        height: 28px;
+        min-width: 1494px;
+        position: absolute;
+    }
 }
 
 @media (max-width: 991px) {
@@ -675,6 +691,14 @@
     .top_line_decors {
         top: 2736px;
         left: 220px;
+        min-width: 1494px;
+        position: absolute;
+    }
+
+    .bottom_line_decors svg {
+        top: 0px;
+        left: 220px;
+        height: 28px;
         min-width: 1494px;
         position: absolute;
     }
@@ -705,6 +729,14 @@
         min-width: 1494px;
         position: absolute;
     }
+
+    .bottom_line_decors svg {
+        top: -60px;
+        left: 220px;
+        height: 28px;
+        min-width: 1494px;
+        position: absolute;
+    }
 }
 
 @media (max-width: 767px) {
@@ -732,6 +764,16 @@
         min-width: 1494px;
         position: absolute;
     }
+
+    .bottom_line_decors svg {
+        top: -70px;
+        left: 220px;
+        height: 28px;
+        min-width: 1494px;
+        position: absolute;
+    }
+
+    
 }
 
 @media (max-width: 686px) {
@@ -756,6 +798,14 @@
     .top_line_decors {
         top: 2636px;
         left: 220px;
+        min-width: 1494px;
+        position: absolute;
+    }
+
+    .bottom_line_decors svg {
+        top: -100px;
+        left: 220px;
+        height: 28px;
         min-width: 1494px;
         position: absolute;
     }
@@ -790,6 +840,14 @@
         min-width: 1494px;
         position: absolute;
     }
+
+    .bottom_line_decors svg {
+        top: -80px;
+        left: 220px;
+        height: 28px;
+        min-width: 1494px;
+        position: absolute;
+    }
 }
 
 @media (max-width: 575px) {
@@ -811,6 +869,14 @@
     .top_line_decors {
         top: 2626px;
         left: 220px;
+        min-width: 1494px;
+        position: absolute;
+    }
+
+    .bottom_line_decors svg {
+        top: -110px;
+        left: 220px;
+        height: 28px;
         min-width: 1494px;
         position: absolute;
     }
@@ -836,6 +902,14 @@
         min-width: 1494px;
         position: absolute;
     }
+
+    .bottom_line_decors svg {
+        top: -140px;
+        left: 220px;
+        height: 28px;
+        min-width: 1494px;
+        position: absolute;
+    }
 }
 
 @media (max-width: 536px) {
@@ -847,6 +921,14 @@
     .top_line_decors {
         top: 2556px;
         left: 220px;
+        min-width: 1494px;
+        position: absolute;
+    }
+
+    .bottom_line_decors svg {
+        top: -180px;
+        left: 220px;
+        height: 28px;
         min-width: 1494px;
         position: absolute;
     }
@@ -1034,6 +1116,14 @@
     .more-than {
         height: 621px;
     }
+
+    .bottom_line_decors {
+    top: 4058px;
+    left: 220px;
+    height: 28px;
+    min-width: 1494px;
+    position: absolute;
+}
 }
 
 @media (max-width: 991px) {
@@ -1122,5 +1212,19 @@
         height: 40vw;
         margin-top: 0px;
         margin-left: 10vw;
+    }
+}
+
+@media (max-width: 1025px) {
+    .awards-title h1 {
+        margin-left: 3vw;
+    }
+
+    .runner-up-1 {
+        margin-left: 0px;
+    }
+    
+    .runner-up-2 {
+        margin-left: 0px;
     }
 }
