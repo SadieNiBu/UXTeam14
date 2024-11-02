@@ -23,7 +23,7 @@ const Home = () => {
         <img src={hero} class="picture" alt='UCF C3 Team' />
         <div className='header'>
           <h3>Meet UCF's Collegiate Cyber Defense Team</h3>
-          <p>Some subtext goes here and looks cool. </p>
+          <p>Where the best hackers go</p>
           <button type="button" class="btn btn-primary"><CustomLink to='/about'>See More</CustomLink></button>
         </div>
       </div>

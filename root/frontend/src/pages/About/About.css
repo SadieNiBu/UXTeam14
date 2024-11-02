@@ -186,9 +186,8 @@
     line-height: 28px; /* 175% */
 }
 
-.tabs button {
-    margin-left: 20px;
-    margin-top: 10px;
+.tabs .tab-button a {
+    margin-top: 30px;
     display: flex;
     width: 122px;
     height: 34px;
@@ -207,7 +206,7 @@
     line-height: normal;
 }
 
-.tabs button:hover {
+.tabs .tab-button a:hover {
     background: var(--UCF-Dark-Gold, #FFB400);
 }
 
@@ -403,6 +402,10 @@
 .pricing .statistics .charts .heading .frame {
     display: flex;
     gap: 8px var(--Spacing-8, 8px);
+}
+
+.pricing .statistics .frame .time {
+    font-style: italic;
 }
 
 .pricing .statistics .frame .metric {
