@@ -9,6 +9,7 @@ import "./styles.css"
 import { BrowserRouter } from 'react-router-dom';
 import { EventContextProvider } from './context/EventContext';
 import { MemberContextProvider } from './context/MemberContext';
+import { PhotoContextProvider } from './context/PhotoContext';
 import { AuthContextProvider } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,8 +19,10 @@ root.render(
       <BrowserRouter>
         <EventContextProvider>
         <MemberContextProvider>
+        <PhotoContextProvider>
           <ScrollToTop />
           <App />
+        </PhotoContextProvider>
         </MemberContextProvider>
         </EventContextProvider>
       </BrowserRouter>

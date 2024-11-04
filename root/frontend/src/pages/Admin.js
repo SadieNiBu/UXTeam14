@@ -1,18 +1,22 @@
 import React, { useEffect } from 'react'
 import { useEventContext } from '../hooks/useEventContext'
 import { useMemberContext } from '../hooks/useMemberContext'
+import { usePhotoContext } from '../hooks/usePhotoContext'
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useLogout } from '../hooks/useLogout'
 
 // components
 import MemberDetails from '../components/MemberDetails'
 import EventDetails from '../components/EventDetails'
+import PhotoDetails from '../components/PhotoDetails'
 import MemberForm from '../components/MemberForm'
 import EventForm from '../components/EventForm'
+import PhotoForm from '../components/PhotoForm'
 
 const Admin = () => {
     const { events, dispatch: eventDispatch } = useEventContext()
     const { members, dispatch: memberDispatch } = useMemberContext()
+    const { photos, dispatch: photoDispatch } = usePhotoContext()
     const { logout } = useLogout()
     const { admin } = useAuthContext()
 
@@ -22,6 +26,15 @@ const Admin = () => {
 
         if (response.ok) {
             memberDispatch({ type: 'SET_MEMBERS', payload: json });
+        }
+    };
+
+    const fetchPhotos = async () => {
+        const response = await fetch('/api/photos');
+        const json = await response.json();
+
+        if (response.ok) {
+            photoDispatch({ type: 'SET_PHOTOS', payload: json });
         }
     };
 
@@ -45,6 +58,19 @@ const Admin = () => {
             }
         }
 
+        const fetchPhotos = async () => {
+            const response = await fetch('/api/photos', {
+                headers: {
+                    Authorization: `Bearer ${admin.token}`
+                }
+            })
+            const json = await response.json()
+
+            if (response.ok) {
+                photoDispatch({type: 'SET_PHOTOS', payload: json})
+            }
+        }
+
         const fetchEvents = async () => {
             const response = await fetch('/api/events')
             const json = await response.json()
@@ -57,6 +83,7 @@ const Admin = () => {
         if (admin) {
             fetchMembers()
             fetchEvents()
+            fetchPhotos()
         }
     }, [admin])
 
@@ -82,6 +109,13 @@ const Admin = () => {
                 ))}
             </div>
             <EventForm />
+            <div className='gallery-photos'>
+                <h2>Gallery</h2>
+                {photos && photos.map((photo) => (
+                    <PhotoDetails key={photo._id} photo={photo}/>
+                ))}
+            </div>
+            <PhotoForm refetchPhotos={fetchPhotos} />
         </div>
     )
 }
