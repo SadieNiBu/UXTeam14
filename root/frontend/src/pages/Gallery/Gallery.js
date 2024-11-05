@@ -1,6 +1,9 @@
 import './Gallery.css'
+import 'swiper/swiper-bundle.css'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
+import { Navigation, Pagination } from 'swiper/modules'
 
 const Gallery = () => {
   const [ photos, setPhotos ] = useState(null)
@@ -141,6 +144,23 @@ const Gallery = () => {
         <Col className='group-3-date'>
           <p>July 26, 2024</p>
         </Col>
+        <Row className='swiper-row'>
+          {photos && photos.length > 0 && (
+            <Swiper
+            navigation
+            pagination={{ type: 'fraction' }}
+            modules={[Navigation, Pagination]}
+            >
+          {photos.map((photo, index) => (
+          <SwiperSlide key={index}>
+            <div className='swiper-photo'>
+            <img src={photo.image} alt={`Slide ${index + 1}`} />
+            </div>
+          </SwiperSlide>
+          ))}
+          </Swiper>
+        )}
+        </Row>
       </Row>
     </Container>
   )
