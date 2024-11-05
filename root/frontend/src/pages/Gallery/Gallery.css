@@ -196,6 +196,56 @@
     text-wrap: nowrap;
 }
 
+.col-1-photo-group {
+    margin-left: 90px;
+    margin-top: 95px;
+    position: absolute;
+}
+
+.col-1-photo-1 img {
+    width: 43vw;
+    height: 27vw;
+}
+
+.col-1-photo-2 img {
+    width: 32.5vw;
+    height: 38.7vw;
+    margin-top: 20px;
+}
+
+.col-2-photo-group {
+    position: absolute;
+    margin-top: 245px;
+}
+
+.col-2-photo-1 img {
+    width: 42.5vw;
+    height: 27vw;
+    margin-left: -3px;
+}
+
+.col-2-photo-2 img {
+    width: 53vw;
+    height: 38.6vw;
+    margin-top: 20px;
+    margin-left: -180px;
+}
+
+.group-2-photos {
+    margin-left: 80px;
+}
+
+.col-3-photo img {
+    width: 43vw;
+    height: 35vw;
+}
+
+.col-4-photo img {
+    width: 43vw;
+    height: 35vw;
+    margin-left: -70px;
+}
+
 @media (max-width: 1642px) {
     .video-1 iframe {
         width: 850px;
