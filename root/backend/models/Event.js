@@ -15,6 +15,14 @@ const eventSchema = new Schema({
         type: String,
         required: true
     },
+    result: {
+        type: String,
+        required: false
+    },
+    article: {
+        type: String,
+        required: false
+    },
 }, { timestamps: true });
 
 module.exports = mongoose.model('Event', eventSchema);

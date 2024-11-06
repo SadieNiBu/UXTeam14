@@ -11,14 +11,55 @@ import firstPlace from './1st-place.png'
 import thirdPlace from './3rd-place.png'
 import secondPlace from './2nd-place.png'
 import CompPhoto from './competitionlogo.png'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
 
 const Competition = () => {
+  const [ events, setEvents ] = useState(null)
+  const [ currentPage, setCurrentPage ] = useState(1)
+  const [selectedYear, setSelectedYear] = useState('')
+  const [ sortOption, setSortOption ] = useState("date")
+  const [ sortedEvents, setSortedEvents ] = useState([])
+  
+  const eventsPerPage = 9
 
   useEffect ( () => {
     document.title = "C3 Team @ UCF | Competition"
-  })
+
+    const fetchEvents = async () => {
+      const response = await fetch('/api/events')
+      const json = await response.json()
+      if (response.ok) {
+        setEvents(json)
+      }
+    }
+    
+    fetchEvents()
+  }, [])
+
+  useEffect(() => {
+    if (events) {
+      const filtered = selectedYear ? events.filter(event => new Date(event.date).getFullYear() === parseInt(selectedYear)) : events
+      
+      const sorted = filtered.sort((a, b) => {
+        if (sortOption === "year") {
+          const yearA = new Date(a.date).getFullYear()
+          const yearB = new Date(b.date).getFullYear()
+          return yearA - yearB;
+        } else {
+          return new Date(a.date) - new Date(b.date)
+      }
+    })
+      setSortedEvents(sorted)
+    }
+  }, [events, sortOption, selectedYear])
+
+  const lastIndex = currentPage * eventsPerPage
+  const firstIndex = lastIndex - eventsPerPage
+  const numPages = events ? Math.ceil(sortedEvents.length / eventsPerPage) : 0
+  const numbers = [...Array(numPages + 1).keys()].slice(1)
+  const eventsSlice = events ? sortedEvents.slice(firstIndex, lastIndex) : []
+  const years = events ? [...new Set(events.map(event => new Date(event.date).getFullYear()))] : []
 
   return (
     <Container>
@@ -285,6 +326,66 @@ const Competition = () => {
             <h1>MORE COMPETITION HISTORY</h1>
           </div>
         </Col>
+        <Row>
+        <div className='year-buttons'>
+          <button 
+            onClick={() => setSelectedYear('')} 
+            className={selectedYear === '' ? 'active' : ''}
+           >
+          All Years
+          </button>
+          {years.map(year => (
+            <button 
+              key={year} 
+              onClick={() => setSelectedYear(year)} 
+              className={selectedYear === year ? 'active' : ''} >
+              {year}
+            </button>
+          ))}
+        </div>
+        <div className='competitions-div text-center'>
+        <svg width="1280" height="1" viewBox="0 0 1280 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <line y1="0.5" x2="1280" y2="0.5" stroke="#343A40"/>
+        </svg>
+        </div>
+          <table id='comp-table'>
+            <thead className='table-head'>
+              <tr>
+                <th scope='col'>Date</th>
+                <th scope='col'>Competition</th>
+                <th scope='col'>Results</th>
+                <th scope='col'>News Articles</th>
+              </tr>
+            </thead>
+            <tbody className='table-body'>
+          {eventsSlice.length > 0 ? (
+            eventsSlice.map((event, index) => (
+              <tr key={index}>
+                <td>{event.date}</td>
+                <td>{event.title}</td>
+                <td>{event.result}</td>
+                <td>{event.article}</td>
+              </tr>
+            ))
+          ) : (
+            <tr>
+              <td colSpan="4">Loading...</td>
+            </tr>
+          )}
+        </tbody>
+          </table>
+          <div className="pagination">
+            {numbers.map((number) => (
+            <button
+              key={number}
+              onClick={() => setCurrentPage(number)}
+              className={number === currentPage ? 'active' : ''}
+            >
+            {number}
+          </button>
+        ))}
+        </div>
+        </Row>
       </Row>
     </Container>
   )

@@ -527,7 +527,7 @@
 
 .history {
     width: 100vw;
-    height: 1049px;
+    height: 959px;
     background-color: #E9E9E9;
     margin-left: calc(-50vw + 50%);
 }
@@ -537,6 +537,47 @@
     font-weight: 600;
     margin-top: 90px;
     margin-left: 100px;
+}
+
+#comp-table {
+    width: 1280px;
+    height: 580px;
+    margin-inline: auto;
+    border-collapse: collapse;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: auto;
+    margin-bottom: 30px;
+}
+
+.year-buttons {
+    margin-left: 11.1vw;
+    margin-bottom: 10px;
+}
+
+.competitions-div svg {
+    margin-bottom: 25px;
+}
+
+.table-head{
+    background-color: #0A58CA;
+    color: white;
+}
+
+.table-head tr th{
+    padding-left: 10px;
+}
+
+tbody tr{
+    background-color: white;
+    border-bottom: 1pt solid #E1E1E1;
+}
+
+tbody tr td {
+    padding-left: 10px;
 }
 
 @media (max-width: 1495px) {

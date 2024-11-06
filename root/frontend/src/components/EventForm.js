@@ -8,6 +8,8 @@ const EventForm = () => {
     const [description, setDescription] = useState('')
     const [title, setTitle] = useState('')
     const [date, setDate] = useState('')
+    const [result, setResult] = useState('')
+    const [article, setArticle] = useState('')
     const [error, setError] = useState(null)
 
     const performSubmit = async (e) => {
@@ -18,7 +20,7 @@ const EventForm = () => {
             return;
         }
 
-        const event = {title, date, description}
+        const event = {title, date, description, result, article}
 
         const response = await fetch('api/events', {
             method: 'POST',
@@ -38,6 +40,8 @@ const EventForm = () => {
             setDescription('')
             setTitle('')
             setDate('')
+            setResult('')
+            setArticle('')
             setError(null)
             console.log('new event added', json)
             dispatch({type: 'CREATE_EVENT', payload: json})
@@ -67,6 +71,20 @@ const EventForm = () => {
             type="text"
             onChange={(e) => setDescription(e.target.value)}
             value={description}
+            />
+
+            <label>Event Result: </label>
+            <input
+            type="text"
+            onChange={(e) => setResult(e.target.value)}
+            value={result}
+            />
+
+            <label>Event Article: </label>
+            <input
+            type="text"
+            onChange={(e) => setArticle(e.target.value)}
+            value={article}
             />
 
             <button>Add Event</button>
