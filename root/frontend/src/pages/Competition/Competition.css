@@ -188,6 +188,68 @@
     margin-left: 100px;
 }
 
+.comp-schedule-events {
+    margin-left: 100px;
+}
+
+.comp-schedule-events .date{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.comp-schedule-events .info h5 {
+    line-height: 24px;
+    text-wrap: nowrap;
+    font-weight: 700;
+    margin-top: 52px;
+    font-size: 20px;
+    color: white;
+}
+
+.comp-schedule-events .info p{
+    margin-left: 125px;
+    line-height: 28px;
+    color: #DEE2E6;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 0px;
+    opacity: 0.7;
+}
+
+.competition-buttons {
+    margin-top: 20px;
+}
+
+.competition-buttons button {
+    width: 90px;
+    height: 40px;
+    border: none;
+    color: #343A40;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #FFC904;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.competition-buttons button:hover a{
+    color: white;
+}
+
+.competition-buttons a{
+    color: black;
+    text-decoration: none;
+}
+
+.page-num {
+    color: white;
+}
+
 .sc-media {
     margin-top: auto;
     margin-bottom: auto;
@@ -550,12 +612,49 @@
     display: flex;
     justify-content: center;
     margin-bottom: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    width: 24px;
+    height: 32px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 9px 9px 9px 9px;
+}
+
+.pagination button:hover {
+    background-color: #F9FAFC;
+}
+
+.pagination button.active {
+    background-color: #F9FAFC;
 }
 
 .year-buttons {
-    margin-left: 11.1vw;
-    margin-bottom: 10px;
+    margin-left: 10.6vw;
+    margin-bottom: 8px;
+}
+
+.year-buttons button {
+    border: none;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.year-buttons button:hover {
+    background-color: transparent;
+    font-weight: 600;
+}
+
+.year-buttons button.active {
+    font-weight: 600;
 }
 
 .competitions-div svg {
@@ -565,6 +664,10 @@
 .table-head{
     background-color: #0A58CA;
     color: white;
+}
+
+.table-head tr {
+    height: 55px;
 }
 
 .table-head tr th{

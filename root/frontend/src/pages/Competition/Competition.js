@@ -13,11 +13,13 @@ import secondPlace from './2nd-place.png'
 import CompPhoto from './competitionlogo.png'
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
+import CompetitionSchedule from './CompetitionSchedule'
+
 
 const Competition = () => {
   const [ events, setEvents ] = useState(null)
   const [ currentPage, setCurrentPage ] = useState(1)
-  const [selectedYear, setSelectedYear] = useState('')
+  const [ selectedYear, setSelectedYear ] = useState('')
   const [ sortOption, setSortOption ] = useState("date")
   const [ sortedEvents, setSortedEvents ] = useState([])
   
@@ -45,9 +47,9 @@ const Competition = () => {
         if (sortOption === "year") {
           const yearA = new Date(a.date).getFullYear()
           const yearB = new Date(b.date).getFullYear()
-          return yearA - yearB;
+          return yearB - yearA;
         } else {
-          return new Date(a.date) - new Date(b.date)
+          return new Date(b.date) - new Date(a.date)
       }
     })
       setSortedEvents(sorted)
@@ -158,6 +160,7 @@ const Competition = () => {
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
             </svg>
           </div>
+        <CompetitionSchedule />
         </Col>
         <Col className='sc-media'>
           <div className='sc-vid text-center'>
@@ -361,7 +364,7 @@ const Competition = () => {
           {eventsSlice.length > 0 ? (
             eventsSlice.map((event, index) => (
               <tr key={index}>
-                <td>{event.date}</td>
+                <td>{new Date(event.date).toLocaleDateString('en-CA')}</td>
                 <td>{event.title}</td>
                 <td>{event.result}</td>
                 <td>{event.article}</td>
