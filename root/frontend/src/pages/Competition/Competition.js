@@ -367,7 +367,13 @@ const Competition = () => {
                 <td>{new Date(event.date).toLocaleDateString('en-CA')}</td>
                 <td>{event.title}</td>
                 <td>{event.result}</td>
-                <td>{event.article}</td>
+                <td className='article-td'>
+                  {event.article ? (
+                    <a href={event.article}>Provided Article</a>
+                  ) : (
+                    "N/A"
+                  )}
+                  </td>
               </tr>
             ))
           ) : (

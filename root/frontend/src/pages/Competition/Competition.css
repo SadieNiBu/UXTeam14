@@ -195,7 +195,7 @@
 .comp-schedule-events .date{
     color: white;
     font-size: 20px;
-    margin-top: 10px;
+    margin-top: 15px;
     font-weight: 500;
     line-height: 24px;
     margin-left: 20px;
@@ -244,6 +244,11 @@
 .competition-buttons a{
     color: black;
     text-decoration: none;
+}
+
+.article-td a {
+    color: #0059C1;
+    text-decoration: underline;
 }
 
 .page-num {
@@ -602,9 +607,9 @@
 }
 
 #comp-table {
-    width: 1280px;
+    width: 77vw;
     height: 580px;
-    margin-inline: auto;
+    margin-left: 11vw;
     border-collapse: collapse;
 }
 
@@ -659,6 +664,7 @@
 
 .competitions-div svg {
     margin-bottom: 25px;
+    width: 74.8vw;
 }
 
 .table-head{
@@ -1339,14 +1345,13 @@ tbody tr td {
     }
 }
 
-@media (max-width: 910px) {
+@media (max-width: 1301px) {
     .sc-media {
-        margin-top: 950px;
+        margin-top: 80px;
         margin-bottom: 10px;
         display: flex;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 600px;
     }
 
     .schedule .sc-vid iframe {
@@ -1362,6 +1367,120 @@ tbody tr td {
         height: 40vw;
         margin-top: 0px;
         margin-left: 10vw;
+    }
+
+    .schedule {
+        height: 1800px;
+    }
+
+    .bottom_line_decors {
+        top: 4298px;
+    }
+
+    .competition-buttons {
+        position: absolute;
+        margin-left: 300px;
+    }
+
+    .comp-schedule-events .info p {
+        width: 550px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .bottom_line_decors {
+        top: 4558px;
+    }
+
+    .competition-buttons {
+        margin-top: 35px;
+    }
+}
+
+@media (max-width: 972px) {
+    .comp-schedule-events svg {
+        width: 80vw;
+    }
+
+    .competition-buttons {
+        position: absolute;
+        margin-left: 23vw;
+    }
+
+    .schedule .sc-vid iframe {
+        margin-left: 4vw;
+    }
+
+    .schedule .sc-img img {
+        margin-left: 10vw;
+    }
+
+    .schedule .title h1 {
+        margin-left: 50px;
+    }
+
+    .sc-divider {
+        margin-left: -50px;
+    }
+
+    .comp-schedule-events {
+        margin-left: 50px;
+    }
+
+    .comp-schedule-events .info p {
+        width: 400px;
+    }
+}
+
+@media (max-width: 651px) {
+    .competition-buttons {
+        position: absolute;
+        margin-left: 17vw;
+    }
+
+    .comp-schedule-events .info p {
+        width: 300px;
+    }
+}
+
+@media (max-width: 552px) {
+    .schedule {
+        height: 2000px;
+    }
+
+    .bottom_line_decors {
+        top: 4758px;
+    }
+
+    .comp-schedule-events .info h5 {
+        width: 200px;
+        text-wrap: wrap;
+        margin-bottom: 40px;
+    }
+
+    .comp-schedule-events .info p {
+        width: 260px;
+    }
+}
+
+@media (max-width: 548px) {
+    .competition-buttons {
+        position: absolute;
+        margin-left: 13vw;
+    }
+}
+
+@media (max-width: 910px) {
+    .history-title h1 {
+        margin-left: 10vw;
+    }
+
+    .year-buttons {
+        margin-left: 9vw;
+    }
+
+    .competitions-div {
+        margin-left: 1vw;
     }
 }
 
@@ -2286,5 +2405,66 @@ tbody tr td {
         width: 40vw;
         height: 124vw;
         margin-left: -70.5vw;
+    }
+}
+
+@media (max-width: 654px) {
+    .history {
+        height: 1059px;
+    }
+
+    .history-title h1 {
+        height: 0px;
+    }
+
+    #comp-table {
+        margin-top: -30px;
+    }
+
+    .year-buttons {
+        margin-bottom: -15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .history-title h1 {
+        height: 90px;
+    }
+
+    #comp-table {
+        margin-top: -10px;
+    }
+
+    .year-buttons {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 468px) {
+    .history {
+        height: 1359px;
+    }
+
+    .history-title h1 {
+        height: 50px;
+    }
+
+    #comp-table {
+        margin-top: -10px;
+    }
+
+    .competitions-div {
+        margin-left: 2vw;
+    }
+
+    .year-buttons {
+        margin-bottom: 0px;
+        margin-left: 8vw;
+    }
+}
+
+@media (max-width: 459px) {
+    .history-title h1 {
+        height: 120px;
     }
 }
