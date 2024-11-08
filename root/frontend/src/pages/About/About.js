@@ -187,7 +187,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className='grants full-bleed--blue'>
+      <div className='grants full-bleed--blue' id='grants-anchor'>
         <div className='wrapper'>
           <div className='headline'>
             <p>ABOUT STUDENT BENEFITS</p>
