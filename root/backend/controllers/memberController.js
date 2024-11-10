@@ -28,11 +28,11 @@ const getMember = async (req, res) => {
 
 // Create a new member
 const createMember = async (req, res) => {
-    const { name, role } = req.body;
+    const { name, role, classification } = req.body;
     const image = req.file ? req.file.path : null; // Save file path if an image was uploaded
     
     try {
-        const member = await Member.create({ name, role, image });
+        const member = await Member.create({ name, role, classification, image });
         res.status(200).json(member);
     } catch (error) {
         res.status(400).json({ error: error.message });
@@ -75,10 +75,10 @@ const updateMember = async (req, res) => {
         return res.status(404).json({ error: 'Member not found' });
     }
 
-    const { name, role } = req.body;
+    const { name, role, classification } = req.body;
     const image = req.file ? req.file.path : undefined; // Use image file path if uploaded
     
-    const updateData = { name, role };
+    const updateData = { name, role, classification };
     if (image) updateData.image = image; // Only update image if a new file is uploaded
 
     const member = await Member.findOneAndUpdate({ _id: id }, updateData, { new: true });

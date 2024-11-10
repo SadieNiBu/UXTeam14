@@ -11,6 +11,11 @@ const memberSchema = new Schema({
         type: String,
         required: true
     },
+    classification: {
+        type: String,
+        enum: ['Student', 'Coach'],
+        required: true
+    },
     image: {
         type: String,
         required: false

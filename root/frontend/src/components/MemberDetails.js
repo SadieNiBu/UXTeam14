@@ -8,12 +8,14 @@ const MemberDetails = ({ member, refetchMembers }) => {
     const [isEditing, setIsEditing] = useState(false);
     const [name, setName] = useState(member.name);
     const [role, setRole] = useState(member.role);
+    const [classification, setClassification] = useState(member.classification || 'Student'); // Default to student
     const [image, setImage] = useState(null);
     const [preview, setPreview] = useState(member.image ? `/${member.image}` : null); // For image preview
 
     useEffect(() => {
         setName(member.name);
         setRole(member.role);
+        setClassification(member.classification || 'Student');
         setPreview(member.image ? `/${member.image}` : null); // Update preview if member image changes
     }, [member]);
 
@@ -47,6 +49,7 @@ const MemberDetails = ({ member, refetchMembers }) => {
         const formData = new FormData();
         formData.append('name', name);
         formData.append('role', role);
+        formData.append('classification', classification);
         if (image) formData.append('image', image); // Attach image file if selected
 
         const response = await fetch('/api/members/' + member._id, {
@@ -84,6 +87,14 @@ const MemberDetails = ({ member, refetchMembers }) => {
                         onChange={(e) => setRole(e.target.value)}
                     />
 
+                    <label>Classification: </label>
+                    <select
+                        value={classification}
+                        onChange={(e) => setClassification(e.target.value)}
+                    >
+                        <option value="Student">Student</option>
+                        <option value="Coach">Coach</option>
+                    </select>
                     <label>Image: </label>
                     <input 
                         type="file"
@@ -99,6 +110,7 @@ const MemberDetails = ({ member, refetchMembers }) => {
                 <>
                     <p><strong>Name: </strong>{name}</p>
                     <p><strong>Role: </strong>{role}</p>
+                    <p><strong>Classification: </strong>{classification}</p>
                     {preview && <img src={preview} alt={name} style={{ width: '100px' }} />} {/* Display current image */}
                     <button onClick={() => setIsEditing(true)}>Edit</button>
                     <span onClick={performDelete}>

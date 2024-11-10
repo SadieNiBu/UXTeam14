@@ -7,6 +7,7 @@ const MemberForm = ({ refetchMembers }) => {
     const { admin } = useAuthContext();
     const [name, setName] = useState('');
     const [role, setRole] = useState('');
+    const [classification, setClassification] = useState('Student');
     const [image, setImage] = useState(null);
     const [error, setError] = useState(null);
 
@@ -25,6 +26,7 @@ const MemberForm = ({ refetchMembers }) => {
         const formData = new FormData();
         formData.append('name', name);
         formData.append('role', role);
+        formData.append('classification', classification);
         if (image) formData.append('image', image); // Attach image if selected
 
         const response = await fetch('/api/members', {
@@ -43,6 +45,7 @@ const MemberForm = ({ refetchMembers }) => {
         if (response.ok) {
             setName('');
             setRole('');
+            setClassification('Student');
             setImage(null);
             setError(null);
             dispatch({ type: 'CREATE_MEMBER', payload: json });
@@ -67,6 +70,15 @@ const MemberForm = ({ refetchMembers }) => {
                 onChange={(e) => setRole(e.target.value)}
                 value={role}
             />
+
+            <label>Member Classification: </label>
+            <select
+                value={classification}
+                onChange={(e) => setClassification(e.target.value)}
+            >
+                <option value="Student">Student</option>
+                <option value="Coach">Coach</option>
+            </select>
 
             <label>Member Image: </label>
             <input 

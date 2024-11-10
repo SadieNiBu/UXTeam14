@@ -24,6 +24,10 @@ const Roster = () => {
     fetchMembers()
   }, [])
 
+  const coachMembers = members ? members.filter(member => member.classification === 'Coach') : [];
+  const studentMembers = members ? members.filter(member => member.classification === 'Student') : [];
+  console.log(members)
+
   return (
     <div>
       <div className='roster__header'>
@@ -56,38 +60,74 @@ const Roster = () => {
         </div>
         <div className='members'>
           <div className='member'>
-            <img src={memberPhoto} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Head Coach</div>
-              <div className='social'>
-                <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
-                <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
-                <img src={liIcon} class="picture" alt='LinkedIn Icon' />
+              <div>
+                <div className='coach__photo'>
+                  <img 
+                    src={coachMembers && coachMembers[0]?.image ? `/${coachMembers[0].image}` : smallMember} 
+                    className="picture" 
+                    alt={coachMembers && coachMembers[0] ? `${coachMembers[0].name}'s profile` : 'Default profile picture'} 
+                  />
+                </div>
+                <div className='name'>
+                    {coachMembers && coachMembers[0] ? coachMembers[0].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {coachMembers && coachMembers[0] ? coachMembers[0].role : 'Default Role'}
+                </div>
+                <div className='social'>
+                  <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
+                  <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
+                  <img src={liIcon} class="picture" alt='LinkedIn Icon' />
+                </div>
               </div>
             </div>
           </div>
           <div className='member'>
-            <img src={memberPhoto} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Head Coach</div>
-              <div className='social'>
-                <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
-                <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
-                <img src={liIcon} class="picture" alt='LinkedIn Icon' />
+              <div>
+                <div className='coach__photo'>
+                  <img 
+                    src={coachMembers && coachMembers[1]?.image ? `/${coachMembers[1].image}` : smallMember} 
+                    className="picture" 
+                    alt={coachMembers && coachMembers[1] ? `${coachMembers[1].name}'s profile` : 'Default profile picture'} 
+                  />
+                </div>
+                <div className='name'>
+                    {coachMembers && coachMembers[1] ? coachMembers[1].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {coachMembers && coachMembers[1] ? coachMembers[1].role : 'Default Role'}
+                </div>
+                <div className='social'>
+                  <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
+                  <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
+                  <img src={liIcon} class="picture" alt='LinkedIn Icon' />
+                </div>
               </div>
             </div>
           </div>
           <div className='member'>
-            <img src={memberPhoto} class="picture" alt='Team Member' />
             <div className='info'>
-              <div className='name'>Leonard John Davies</div>
-              <div className='role'>Head Coach</div>
-              <div className='social'>
-                <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
-                <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
-                <img src={liIcon} class="picture" alt='LinkedIn Icon' />
+              <div>
+                <div className='coach__photo'>
+                  <img 
+                    src={coachMembers && coachMembers[2]?.image ? `/${coachMembers[2].image}` : smallMember} 
+                    className="picture" 
+                    alt={coachMembers && coachMembers[2] ? `${coachMembers[2].name}'s profile` : 'Default profile picture'} 
+                  />
+                </div>
+                <div className='name'>
+                    {coachMembers && coachMembers[2] ? coachMembers[2].name : 'Default Name'}
+                </div>
+                <div className='role'>
+                    {coachMembers && coachMembers[2] ? coachMembers[2].role : 'Default Role'}
+                </div>
+                <div className='social'>
+                  <img src={fbIcon} class="picture" alt='Facebook Icon' style={{ marginRight: '26.577px' }} />
+                  <img src={twIcon} class="picture" alt='Twitter Icon' style={{ marginRight: '26.577px' }} />
+                  <img src={liIcon} class="picture" alt='LinkedIn Icon' />
+                </div>
               </div>
             </div>
           </div>
@@ -104,16 +144,16 @@ const Roster = () => {
               <div>
                 <div className='member__photo'>
                   <img 
-                    src={members && members[0]?.image ? `/${members[0].image}` : smallMember} 
+                    src={studentMembers && studentMembers[0]?.image ? `/${studentMembers[0].image}` : smallMember} 
                     className="picture" 
-                    alt={members && members[0] ? `${members[0].name}'s profile` : 'Default profile picture'} 
+                    alt={studentMembers && studentMembers[0] ? `${studentMembers[0].name}'s profile` : 'Default profile picture'} 
                   />
                 </div>
                 <div className='name'>
-                    {members && members[0] ? members[0].name : 'Default Name'}
+                    {studentMembers && studentMembers[0] ? studentMembers[0].name : 'Default Name'}
                 </div>
                 <div className='role'>
-                    {members && members[0] ? members[0].role : 'Default Role'}
+                    {studentMembers && studentMembers[0] ? studentMembers[0].role : 'Default Role'}
                 </div>
               </div>
               <div className='social'>
@@ -128,16 +168,16 @@ const Roster = () => {
               <div>
                 <div className='member__photo'>
                   <img 
-                    src={members && members[1]?.image ? `/${members[1].image}` : smallMember} 
+                    src={studentMembers && studentMembers[1]?.image ? `/${studentMembers[1].image}` : smallMember} 
                     className="picture" 
-                    alt={members && members[1] ? `${members[1].name}'s profile` : 'Default profile picture'} 
+                    alt={studentMembers && studentMembers[1] ? `${studentMembers[1].name}'s profile` : 'Default profile picture'} 
                   />
                 </div>
                 <div className='name'>
-                    {members && members[1] ? members[1].name : 'Default Name'}
+                    {studentMembers && studentMembers[1] ? studentMembers[1].name : 'Default Name'}
                 </div>
                 <div className='role'>
-                    {members && members[1] ? members[1].role : 'Default Role'}
+                    {studentMembers && studentMembers[1] ? studentMembers[1].role : 'Default Role'}
                 </div>
               </div>
               <div className='social'>
@@ -152,16 +192,16 @@ const Roster = () => {
               <div>
                 <div className='member__photo'>
                   <img 
-                    src={members && members[2]?.image ? `/${members[2].image}` : smallMember} 
+                    src={studentMembers && studentMembers[2]?.image ? `/${studentMembers[2].image}` : smallMember} 
                     className="picture" 
-                    alt={members && members[2] ? `${members[2].name}'s profile` : 'Default profile picture'} 
+                    alt={studentMembers && studentMembers[2] ? `${studentMembers[2].name}'s profile` : 'Default profile picture'} 
                   />
                 </div>
                 <div className='name'>
-                    {members && members[2] ? members[2].name : 'Default Name'}
+                    {studentMembers && studentMembers[2] ? studentMembers[2].name : 'Default Name'}
                 </div>
                 <div className='role'>
-                    {members && members[2] ? members[2].role : 'Default Role'}
+                    {studentMembers && studentMembers[2] ? studentMembers[2].role : 'Default Role'}
                 </div>
               </div>
               <div className='social'>
@@ -176,16 +216,16 @@ const Roster = () => {
               <div>
                 <div className='member__photo'>
                   <img 
-                    src={members && members[3]?.image ? `/${members[3].image}` : smallMember} 
+                    src={studentMembers && studentMembers[3]?.image ? `/${studentMembers[3].image}` : smallMember} 
                     className="picture" 
-                    alt={members && members[3] ? `${members[3].name}'s profile` : 'Default profile picture'} 
+                    alt={studentMembers && studentMembers[3] ? `${studentMembers[3].name}'s profile` : 'Default profile picture'} 
                   />
                 </div>
                 <div className='name'>
-                    {members && members[3] ? members[3].name : 'Default Name'}
+                    {studentMembers && studentMembers[3] ? studentMembers[3].name : 'Default Name'}
                 </div>
                 <div className='role'>
-                    {members && members[3] ? members[3].role : 'Default Role'}
+                    {studentMembers && studentMembers[3] ? studentMembers[3].role : 'Default Role'}
                 </div>
               </div>
               <div className='social'>
@@ -200,16 +240,16 @@ const Roster = () => {
               <div>
                 <div className='member__photo'>
                   <img 
-                    src={members && members[4]?.image ? `/${members[4].image}` : smallMember} 
+                    src={studentMembers && studentMembers[4]?.image ? `/${studentMembers[4].image}` : smallMember} 
                     className="picture" 
-                    alt={members && members[4] ? `${members[4].name}'s profile` : 'Default profile picture'} 
+                    alt={studentMembers && studentMembers[4] ? `${studentMembers[4].name}'s profile` : 'Default profile picture'} 
                   />
                 </div>
                 <div className='name'>
-                    {members && members[4] ? members[4].name : 'Default Name'}
+                    {studentMembers && studentMembers[4] ? studentMembers[4].name : 'Default Name'}
                 </div>
                 <div className='role'>
-                    {members && members[4] ? members[4].role : 'Default Role'}
+                    {studentMembers && studentMembers[4] ? studentMembers[4].role : 'Default Role'}
                 </div>
               </div>
               <div className='social'>
@@ -224,16 +264,16 @@ const Roster = () => {
               <div>
                 <div className='member__photo'>
                   <img 
-                    src={members && members[5]?.image ? `/${members[5].image}` : smallMember} 
+                    src={studentMembers && studentMembers[5]?.image ? `/${studentMembers[5].image}` : smallMember} 
                     className="picture" 
-                    alt={members && members[5] ? `${members[5].name}'s profile` : 'Default profile picture'} 
+                    alt={studentMembers && studentMembers[5] ? `${studentMembers[5].name}'s profile` : 'Default profile picture'} 
                   />
                 </div>
                 <div className='name'>
-                    {members && members[5] ? members[5].name : 'Default Name'}
+                    {studentMembers && studentMembers[5] ? studentMembers[5].name : 'Default Name'}
                 </div>
                 <div className='role'>
-                    {members && members[5] ? members[5].role : 'Default Role'}
+                    {studentMembers && studentMembers[5] ? studentMembers[5].role : 'Default Role'}
                 </div>
               </div>
               <div className='social'>
@@ -248,16 +288,16 @@ const Roster = () => {
               <div>
                 <div className='member__photo'>
                   <img 
-                    src={members && members[6]?.image ? `/${members[6].image}` : smallMember} 
+                    src={studentMembers && studentMembers[6]?.image ? `/${studentMembers[6].image}` : smallMember} 
                     className="picture" 
-                    alt={members && members[6] ? `${members[6].name}'s profile` : 'Default profile picture'} 
+                    alt={studentMembers && studentMembers[6] ? `${studentMembers[6].name}'s profile` : 'Default profile picture'} 
                   />
                 </div>
                 <div className='name'>
-                    {members && members[6] ? members[6].name : 'Default Name'}
+                    {studentMembers && studentMembers[6] ? studentMembers[6].name : 'Default Name'}
                 </div>
                 <div className='role'>
-                    {members && members[6] ? members[6].role : 'Default Role'}
+                    {studentMembers && studentMembers[6] ? studentMembers[6].role : 'Default Role'}
                 </div>
               </div>
               <div className='social'>
@@ -272,16 +312,16 @@ const Roster = () => {
               <div>
                 <div className='member__photo'>
                   <img 
-                    src={members && members[7]?.image ? `/${members[7].image}` : smallMember} 
+                    src={studentMembers && studentMembers[7]?.image ? `/${studentMembers[7].image}` : smallMember} 
                     className="picture" 
-                    alt={members && members[7] ? `${members[7].name}'s profile` : 'Default profile picture'} 
+                    alt={studentMembers && studentMembers[7] ? `${studentMembers[7].name}'s profile` : 'Default profile picture'} 
                   />
                 </div>
                 <div className='name'>
-                    {members && members[7] ? members[7].name : 'Default Name'}
+                    {studentMembers && studentMembers[7] ? studentMembers[7].name : 'Default Name'}
                 </div>
                 <div className='role'>
-                    {members && members[7] ? members[7].role : 'Default Role'}
+                    {studentMembers && studentMembers[7] ? studentMembers[7].role : 'Default Role'}
                 </div>
               </div>
               <div className='social'>
