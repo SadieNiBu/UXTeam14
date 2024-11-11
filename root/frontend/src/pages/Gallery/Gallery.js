@@ -7,7 +7,7 @@ import { Navigation, Pagination } from 'swiper/modules'
 
 const Gallery = () => {
   const [ photos, setPhotos ] = useState(null)
-  const col1Photo1Id = "672947f6c57713e1168b3c8a"
+  const col1Photo1Id = "67321e9fecd81c154c11eb9d"
   const col1Photo2Id = "67294852c57713e1168b3c8e"
   const col2Photo1Id = "67294918c57713e1168b3c98"
   const col2Photo2Id = "67294912c57713e1168b3c94"
