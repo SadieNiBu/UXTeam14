@@ -27,11 +27,11 @@ body .contact p {
     height: 36px;
     font: #1D2130;
     font-size: 21px;
-    font-weight: 400;
-    line-height: 36px;
+    font-weight: 370;
+    line-height: 30px;
     position: relative;
     margin-left: -220px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
 }
 
 body .message h3 {
@@ -42,7 +42,7 @@ body .message h3 {
     width: 400.45px;
     font-weight: 700;
     line-height: 70.19px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     position: relative;
     margin-top: -65px;
     margin-left: -220px;
@@ -56,7 +56,7 @@ body .message p {
     position: relative;
     margin-top: -140px;
     margin-left: -220px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     width: 390.45px;
     opacity: 0.7;
     height: 56px;
@@ -72,7 +72,7 @@ body .info h5 {
     position: relative;
     margin-top: 110px;
     margin-left: 125px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     width: 115px;
     height: 24px;
 }
@@ -84,7 +84,7 @@ body .info p {
     font-weight: 400;
     position: relative;
     margin-top: 11px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
 }
 
 body .info .number p {
@@ -96,7 +96,7 @@ body .info .number p {
 body .info .email p {
     width: 182px;
     height: 28px;
-    margin-left: 299px;
+    margin-left: 295px;
     margin-top: -43px;
 }
 
@@ -120,7 +120,7 @@ body .address h5 {
     margin-left: 125px;
     margin-top: 30px;
     line-height: 24.2px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     width: 164.32px;
     height: 24px;
 }
@@ -133,7 +133,7 @@ body .address p {
     position: relative;
     margin-left: 125px;
     margin-top: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     width: 354.47px;
     height: 28px;
 }
@@ -146,7 +146,7 @@ body .university h5 {
     margin-left: 125px;
     margin-top: 40px;
     line-height: 24.2px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     width: 355px;
     height: 24px;
 }
@@ -159,7 +159,7 @@ body .university p {
     position: relative;
     margin-left: 125px;
     margin-top: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Inter;
     width: 355px;
     height: 28px;
 }
@@ -227,6 +227,7 @@ body .socials a{
     margin-top: 10px;
     color: #1D2130;
     line-height: 19.2px;
+    font-family: Inter;
 }
 
 .contact_form .text-message button {
@@ -238,6 +239,7 @@ body .socials a{
     border: none;
     border-radius: 4px;
     color: black;
+    font-family: Inter;
     background-color: #FFC904;
 }
 
@@ -252,6 +254,7 @@ body .socials a{
     font-size: 12px;
     color: #1D2130;
     line-height: 19.2px;
+    font-family: Inter;
 }
 
 @media (max-width: 1399px) {

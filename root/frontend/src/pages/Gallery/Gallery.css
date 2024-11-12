@@ -1,6 +1,7 @@
 .gallery-header {
     width: 100vw;
     height: 324px;
+    font-family: Inter;
     background-color: black;
     margin-left: calc(-50vw + 50%);
 }
@@ -20,6 +21,7 @@
 .photo-group-1 {
     width: 100vw;
     height: 1562px;
+    font-family: Inter;
     background-color: black;
     margin-left: calc(-50vw + 50%);
 }
@@ -62,6 +64,7 @@
 .photo-group-2 {
     width: 100vw;
     height: 907px;
+    font-family: Inter;
     background-color: black;
     margin-left: calc(-50vw + 50%);
 }
@@ -104,6 +107,7 @@
 .video-group {
     width: 100vw;
     height: 1008px;
+    font-family: Inter;
     background-color: black;
     margin-left: calc(-50vw + 50%);
 }
@@ -157,6 +161,7 @@
 .photo-group-3 {
     width: 100vw;
     height: 1370px;
+    font-family: Inter;
     background-color: black;
     margin-left: calc(-50vw + 50%);
 }

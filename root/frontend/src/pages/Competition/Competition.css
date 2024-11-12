@@ -1,5 +1,6 @@
 .top {
     height: 604px;
+    font-family: Inter;
 }
 
 .top-divider svg{
@@ -10,7 +11,7 @@
 .top-divider-text p {
     color: #444444;
     font-size: 21px;
-    font-weight: 300;
+    font-weight: 370;
     line-height: 36px;
     margin-top: -20px;
 }
@@ -68,6 +69,7 @@
     margin-top: 50px;
     font-weight: 700;
     margin-left: 30px;
+    font-family: Inter;
 }
 
 .youtube-date {
@@ -103,6 +105,7 @@
     font-weight: 500;
     margin-left: 30px;
     margin-top: 155px;
+    font-family: Inter;
     background-color: #FFC904;
     border-radius: 4px 4px 4px 4px;
 }
@@ -118,11 +121,12 @@
 
 .more-than {
     height: 681px;
+    font-family: Inter;
 }
 
 .more-than .title h1{
     font-size: 40px;
-    font-weight: 800;
+    font-weight: 700;
     margin-top: 80px;
 }
 
@@ -171,6 +175,7 @@
 .schedule {
     width: 100vw;
     height: 1298px;
+    font-family: Inter;
     background-color: black;
     margin-left: calc(-50vw + 50%);
 }
@@ -278,6 +283,7 @@
 .awards {
     width: 100vw;
     height: 660px;
+    font-family: Inter;
     background-color: #0A58CA;
     margin-left: calc(-50vw + 50%);
 }
@@ -355,6 +361,7 @@
 }
 
 .timeline {
+    font-family: Inter;
     height: 2800px;
 }
 
@@ -595,6 +602,7 @@
 .history {
     width: 100vw;
     height: 959px;
+    font-family: Inter;
     background-color: #E9E9E9;
     margin-left: calc(-50vw + 50%);
 }
