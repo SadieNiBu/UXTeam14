@@ -1,14 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useEventContext } from '../hooks/useEventContext'
+import { useSemesterContext } from '../hooks/useSemesterContext'
 import { useMemberContext } from '../hooks/useMemberContext'
 import { usePhotoContext } from '../hooks/usePhotoContext'
 import { useAuthContext } from '../hooks/useAuthContext'
 import { useLogout } from '../hooks/useLogout'
 
 // components
+import SemesterDetails from '../components/SemesterDetails'
 import MemberDetails from '../components/MemberDetails'
 import EventDetails from '../components/EventDetails'
 import PhotoDetails from '../components/PhotoDetails'
+import SemesterForm from '../components/SemesterForm'
 import MemberForm from '../components/MemberForm'
 import EventForm from '../components/EventForm'
 import PhotoForm from '../components/PhotoForm'
@@ -17,9 +20,10 @@ const Admin = () => {
     const { events, dispatch: eventDispatch } = useEventContext()
     const { members, dispatch: memberDispatch } = useMemberContext()
     const { photos, dispatch: photoDispatch } = usePhotoContext()
+    const { semesters, dispatch: semesterDispatch } = useSemesterContext()
     const { logout } = useLogout()
     const { admin } = useAuthContext()
-
+    
     const fetchMembers = async () => {
         const response = await fetch('/api/members');
         const json = await response.json();
@@ -79,11 +83,21 @@ const Admin = () => {
                 eventDispatch({type: 'SET_EVENTS', payload: json})
             }
         }
+
+        const fetchSemesters = async () => {
+            const response = await fetch('/api/semesters')
+            const json = await response.json()
+
+            if (response.ok) {
+                semesterDispatch({type: 'SET_SEMESTERS', payload: json})
+            }
+        }
         
         if (admin) {
             fetchMembers()
             fetchEvents()
             fetchPhotos()
+            fetchSemesters()
         }
     }, [admin])
 
@@ -116,6 +130,13 @@ const Admin = () => {
                 ))}
             </div>
             <PhotoForm refetchPhotos={fetchPhotos} />
+            <div className='semester-info'>
+                <h2>Semester Info</h2>
+                {semesters && semesters.map((semester) => (
+                    <SemesterDetails  key={semester._id} semester={semester}/>
+                ))}
+            </div>
+            <SemesterForm />
         </div>
     )
 }

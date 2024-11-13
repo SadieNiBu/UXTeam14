@@ -10,6 +10,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { EventContextProvider } from './context/EventContext';
 import { MemberContextProvider } from './context/MemberContext';
 import { PhotoContextProvider } from './context/PhotoContext';
+import { SemesterContextProvider } from './context/SemesterContext';
 import { AuthContextProvider } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -20,8 +21,10 @@ root.render(
         <EventContextProvider>
         <MemberContextProvider>
         <PhotoContextProvider>
+        <SemesterContextProvider>
           <ScrollToTop />
           <App />
+        </SemesterContextProvider>
         </PhotoContextProvider>
         </MemberContextProvider>
         </EventContextProvider>
