@@ -18,6 +18,7 @@ import CompetitionSchedule from './CompetitionSchedule'
 
 const Competition = () => {
   const [ events, setEvents ] = useState(null)
+  const [ semesters, setSemesters ] = useState(null)
   const [ currentPage, setCurrentPage ] = useState(1)
   const [ selectedYear, setSelectedYear ] = useState('')
   const [ sortOption, setSortOption ] = useState("date")
@@ -31,12 +32,23 @@ const Competition = () => {
     const fetchEvents = async () => {
       const response = await fetch('/api/events')
       const json = await response.json()
+
       if (response.ok) {
         setEvents(json)
       }
     }
+
+    const fetchSemesters = async () => {
+      const response = await fetch('/api/semesters')
+      const json = await response.json()
+
+      if (response.ok) {
+        setSemesters(json)
+      }
+    }
     
     fetchEvents()
+    fetchSemesters()
   }, [])
 
   useEffect(() => {
@@ -153,7 +165,7 @@ const Competition = () => {
       <Row className='schedule' id='schedule-anchor'>
         <Col>
           <div className='title'>
-            <h1>FALL 2024 COMPETITION<br />SCHEDULE</h1>
+            <h1>{semesters && semesters[0] ? semesters[0].sem : ''}  {semesters && semesters[0] ? semesters[0].year : ''} COMPETITION<br />SCHEDULE</h1>
           </div>
           <div className='sc-divider'>
             <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">

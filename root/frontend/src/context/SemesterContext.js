@@ -14,7 +14,7 @@ export const semesterReducer = (state, action) => {
             }
         case 'DELETE_SEMESTER':
             return {
-                events: state.semesters.filter((e) => e._id !== action.payload._id)
+                semesters: state.semesters.filter((e) => e._id !== action.payload._id)
             }
         default:
             return state
