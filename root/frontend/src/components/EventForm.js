@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useEventContext } from "../hooks/useEventContext"
 import { useAuthContext } from "../hooks/useAuthContext"
 
-const EventForm = () => {
+const EventForm = ({ refetchEvents }) => {
     const { dispatch } = useEventContext()
     const { admin } = useAuthContext()
     const [description, setDescription] = useState('')
@@ -45,6 +45,7 @@ const EventForm = () => {
             setError(null)
             console.log('new event added', json)
             dispatch({type: 'CREATE_EVENT', payload: json})
+            refetchEvents()
         }
     }
 

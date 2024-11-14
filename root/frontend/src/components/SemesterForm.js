@@ -2,7 +2,7 @@ import { useState } from "react"
 import { useSemesterContext } from "../hooks/useSemesterContext"
 import { useAuthContext } from "../hooks/useAuthContext"
 
-const SemesterForm = () => {
+const SemesterForm = ({ refetchSemesters }) => {
     const { dispatch } = useSemesterContext()
     const { admin } = useAuthContext()
     const [sem, setSem] = useState('')
@@ -39,6 +39,7 @@ const SemesterForm = () => {
             setError(null)
             console.log('new semester added', json)
             dispatch({type: 'CREATE_SEMESTER', payload: json})
+            refetchSemesters()
         }
     }
 
@@ -61,6 +62,7 @@ const SemesterForm = () => {
             />
 
             <button>Add Semester</button>
+            {error && <p>{error}</p>}
         </form>
     )
 }

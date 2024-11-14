@@ -16,6 +16,12 @@ export const semesterReducer = (state, action) => {
             return {
                 semesters: state.semesters.filter((e) => e._id !== action.payload._id)
             }
+        case 'UPDATE_SEMESTER':
+            return {
+                semesters: state.semesters.map((semester) =>
+                    semester._id === action.payload._id ? action.payload : semester
+                )
+            };
         default:
             return state
     }
