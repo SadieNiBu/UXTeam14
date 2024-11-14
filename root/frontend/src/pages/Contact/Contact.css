@@ -176,6 +176,7 @@ body .socials a{
     margin-left: 120px;
     margin-top: 40px;
     width: 100px;
+    text-wrap: nowrap;
 }
 
 .contact_form .first_input_col{
@@ -206,6 +207,7 @@ body .socials a{
     position: relative;
     margin-top: 20px;
     margin-left: -8px;
+    width: 103%;
     resize: none;
     border: solid;
     border-width: 1px;
