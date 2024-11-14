@@ -197,7 +197,7 @@ const Home = () => {
       </div>
       <div className='medium'>
         <div className='medium__yt'>
-          <iframe width="640" height="491" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Bohemian Rhapsody | Muppet Music Video | The Muppets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <iframe width="640" height="491" src="https://www.youtube.com/embed/PLNluCohtZ4" title="Aspiring to Accomplished: UCF Student’s Cybersecurity Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div className='medium__text'>
           <h1>Medium Video Layout</h1>
