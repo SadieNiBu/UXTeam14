@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from 'react'
-import { useEventContext } from '../hooks/useEventContext'
-import { useSemesterContext } from '../hooks/useSemesterContext'
-import { useMemberContext } from '../hooks/useMemberContext'
-import { usePhotoContext } from '../hooks/usePhotoContext'
-import { useAuthContext } from '../hooks/useAuthContext'
-import { useLogout } from '../hooks/useLogout'
+import './Admin.css'
+import { useEventContext } from '../../hooks/useEventContext'
+import { useSemesterContext } from '../../hooks/useSemesterContext'
+import { useMemberContext } from '../../hooks/useMemberContext'
+import { usePhotoContext } from '../../hooks/usePhotoContext'
+import { useAuthContext } from '../../hooks/useAuthContext'
+import { useLogout } from '../../hooks/useLogout'
 
 // components
-import SemesterDetails from '../components/SemesterDetails'
-import MemberDetails from '../components/MemberDetails'
-import EventDetails from '../components/EventDetails'
-import PhotoDetails from '../components/PhotoDetails'
-import SemesterForm from '../components/SemesterForm'
-import MemberForm from '../components/MemberForm'
-import EventForm from '../components/EventForm'
-import PhotoForm from '../components/PhotoForm'
+import SemesterDetails from '../../components/SemesterDetails'
+import MemberDetails from '../../components/MemberDetails'
+import EventDetails from '../../components/EventDetails'
+import PhotoDetails from '../../components/PhotoDetails'
+import SemesterForm from '../../components/SemesterForm'
+import MemberForm from '../../components/MemberForm'
+import EventForm from '../../components/EventForm'
+import PhotoForm from '../../components/PhotoForm'
 
 const Admin = () => {
     const { events, dispatch: eventDispatch } = useEventContext()
@@ -128,35 +129,35 @@ const Admin = () => {
     }, [admin])
 
     return (
-        <div className='admin'>
+        <div className='admin-page'>
             {admin && (
                 <div>
                     <span>{admin.email}</span>
                     <button onClick={handleClick}>Log out</button>
                 </div>
             )}
-            <div className='members'>
+            <div className='admin-members'>
                 <h2>Roster</h2>
                 {members && members.map((member) => (
                     <MemberDetails key={member._id} member={member} refetchMembers={fetchMembers} />
                 ))}
             </div>
             <MemberForm refetchMembers={fetchMembers} />
-            <div className='events'>
+            <div className='admin-events'>
                 <h2>Events</h2>
                 {events && events.map((event) => (
                     <EventDetails key={event._id} event={event} refetchEvents={fetchEvents} />
                 ))}
             </div>
             <EventForm refetchEvents={fetchEvents} />
-            <div className='gallery-photos'>
+            <div className='admin-gallery-photos'>
                 <h2>Gallery</h2>
                 {photos && photos.map((photo) => (
                     <PhotoDetails key={photo._id} photo={photo}/>
                 ))}
             </div>
             <PhotoForm refetchPhotos={fetchPhotos} />
-            <div className='semester-info'>
+            <div className='admin-semester-info'>
                 <h2>Semester Info</h2>
                 {semesters && semesters.map((semester) => (
                     <SemesterDetails key={semester._id} semester={semester} refetchSemesters={fetchSemesters}/>

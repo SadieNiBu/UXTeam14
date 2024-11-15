@@ -50,7 +50,7 @@ const EventForm = ({ refetchEvents }) => {
     }
 
     return (
-        <form className="adminForm" onSubmit={performSubmit}>
+        <form className="admin-form" onSubmit={performSubmit}>
             <h3>Input a New Event to Your Event List</h3>
 
             <label>Event Name: </label>

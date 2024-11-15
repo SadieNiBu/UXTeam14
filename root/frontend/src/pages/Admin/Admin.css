@@ -1,0 +1,123 @@
+.admin-page {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.admin-page > div {
+    margin-bottom: 20px;
+}
+
+/* Header Section */
+.admin-page > div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.admin-page span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.admin-page button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: 16px;
+    background: var(--colors-blue-blue-600, #0A58CA);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.admin-page button:hover {
+    background: var(--Default-Black, #000);
+}
+
+/* Section Headers */
+.admin-members h2, .admin-events h2, .admin-gallery-photos h2, .admin-semester-info h2 {
+    font-size: 24px;
+    color: #444;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: block;
+}
+
+/* Forms Styling */
+.admin-form {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-form input, .admin-form textarea, .admin-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.admin-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.admin-form button:hover {
+    background: #4cae4c;
+}
+
+/* Cards Styling */
+.admin-members, .admin-events, .admin-gallery-photos, .admin-semester-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.admin-members > div, .admin-events > div, .admin-gallery-photos > div, .admin-semester-info > div {
+    flex: 1 1 calc(50% - 20px);
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.admin-members > div:hover, .admin-events > div:hover, .admin-gallery-photos > div:hover, .admin-semester-info > div:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .admin-members > div, .admin-events > div, .admin-gallery-photos > div, .admin-semester-info > div {
+        flex: 1 1 100%;
+    }
+
+    .admin-page > div:first-child {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-page button {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

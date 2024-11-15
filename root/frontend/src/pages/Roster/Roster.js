@@ -47,7 +47,7 @@ const Roster = () => {
             <h5>A nationally recognized powerhouse in cybersecurity defense.</h5>
             <div className='base'>
               Established in 2013, our team consistently excels in high-pressure environments, 
-              defending against complex cyber threats while managing real-world business tasks. UCF's CCDC team 
+              defending against complex cyber threats while managing real-world business tasks. UCF's C3 team 
               continues to set standards in cybersecurity, preparing students for the challenges of tomorrow.
             </div>
           </div>

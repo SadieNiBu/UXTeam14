@@ -31,7 +31,7 @@ const FAQ = () => {
           <div className='questions'>
             <Accordion flush>
               <Accordion.Item eventKey="0">
-                <Accordion.Header>What is CCDC?</Accordion.Header>
+                <Accordion.Header>What is C3?</Accordion.Header>
                 <Accordion.Body>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                   eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

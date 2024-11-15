@@ -45,7 +45,7 @@ const PhotoForm = ({ refetchPhotos }) => {
     };
 
     return (
-        <form className="adminForm" onSubmit={performSubmit} encType="multipart/form-data">
+        <form className="admin-form" onSubmit={performSubmit} encType="multipart/form-data">
             <h3>Input a New Image for Your Gallery</h3>
 
             <label>Image: </label>

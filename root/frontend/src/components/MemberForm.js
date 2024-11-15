@@ -54,7 +54,7 @@ const MemberForm = ({ refetchMembers }) => {
     };
 
     return (
-        <form className="adminForm" onSubmit={performSubmit} encType="multipart/form-data">
+        <form className="admin-form" onSubmit={performSubmit} encType="multipart/form-data">
             <h3>Input a New Member to Your Roster</h3>
 
             <label>Member Name: </label>
