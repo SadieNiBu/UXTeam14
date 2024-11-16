@@ -376,7 +376,7 @@ const Competition = () => {
           {eventsSlice.length > 0 ? (
             eventsSlice.map((event, index) => (
               <tr key={index}>
-                <td>{new Date(event.date).toLocaleDateString('en-CA')}</td>
+                <td>{new Date (new Date(event.date).setDate(new Date(event.date).getDate() + 1)).toLocaleDateString('en-US')}</td>
                 <td>{event.title}</td>
                 <td>{event.result}</td>
                 <td className='article-td'>

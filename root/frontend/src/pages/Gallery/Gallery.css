@@ -56,9 +56,11 @@
     font-size: 21px;
     font-weight: 600;
     color: #FFFFFF;
-    margin-top: 50px;
-    margin-left: 600px;
     text-wrap: nowrap;
+    display: flex;
+    margin-top: -850px;
+    padding-right: 60px;
+    justify-content: end;
 }
 
 .photo-group-2 {
@@ -202,38 +204,47 @@
 }
 
 .col-1-photo-group {
-    margin-left: 90px;
-    margin-top: 95px;
-    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 20px;
+    width: 99vw;
+    margin-top: 50px;
+    padding-left: 91px;
+    padding-right: 91px;
 }
 
 .col-1-photo-1 img {
-    width: 43vw;
-    height: 27vw;
+    width: 844px;
+    height: 562px;
 }
 
 .col-1-photo-2 img {
-    width: 32.5vw;
-    height: 38.7vw;
-    margin-top: 20px;
+    width: 844px;
+    height: 562px;
 }
 
 .col-2-photo-group {
-    position: absolute;
-    margin-top: 245px;
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    gap: 20px;
+    width: 99vw;
+    padding-left: 105px;
+    padding-right: 70px;
+    margin-top: -50px;
 }
 
 .col-2-photo-1 img {
-    width: 42.5vw;
-    height: 27vw;
-    margin-left: -3px;
+    margin-top: 0px;
+    height: 650px;
+    width: 40vw;
 }
 
 .col-2-photo-2 img {
-    width: 53vw;
-    height: 38.6vw;
-    margin-top: 20px;
-    margin-left: -180px;
+    margin-top: 0px;
+    height: 650px;
+    width: 61vw;
 }
 
 .group-2-photos {
@@ -285,7 +296,7 @@
     color: white !important;
     margin-bottom: 0px;
     font-size: 18px;
-    margin-left: 14.2px;
+    margin-left: 0.8vw
 }
 
 .swiper-button-prev {
@@ -382,6 +393,11 @@
         width: 380px;
         height: 564px;
         margin-left: 90px;
+    }
+
+    .swiper-pagination-fraction {
+        margin-bottom: -6px;
+        margin-left: 2.5vw;
     }
 }
 
@@ -500,8 +516,8 @@
 @media (max-width: 1495px) {
     .group-1-date p {
         display: flex;
-        margin-top: -0px;
-        padding-right: 50px;
+        margin-top: -845px;
+        padding-right: 55px;
         justify-content: end;
     }
 
@@ -541,7 +557,7 @@
 
 @media (max-width: 835px) {
     .group-1-date p {
-        margin-top: -683px;
+        margin-top: -1630px !important;
     }
 
     .group-2-date p {
@@ -554,8 +570,10 @@
     }
 
     .group-3-date p {
-        margin-top: -369px;
-        padding-top: 300px;
+        display: flex;
+        margin-top: -355px !important;
+        padding-right: 80px !important;
+        justify-content: end;
     }
 }
 
@@ -572,7 +590,15 @@
     .group-1-date p {
        position: absolute;
        margin-left: 230px;
-       margin-top: -670px;
+       margin-top: -1615px !important;
+    }
+
+    .col-2-photo-1 img {
+        margin-top: -780px !important;
+    }
+
+    .col-2-photo-2 img {
+        margin-top: -200px !important;
     }
 
     .group-2-header h1 {
@@ -621,6 +647,20 @@
         position: absolute;
         margin-left: 230px;
         margin-top: -365px;
+    }
+}
+
+@media (max-width: 627px) {
+    .group-1-date p {
+        margin-top: -1600px !important;
+     }
+
+    .col-2-photo-1 img {
+        margin-top: -750px !important;
+    }
+
+    .col-2-photo-2 img {
+        margin-top: -170px !important;
     }
 }
 
@@ -680,10 +720,8 @@
     }
 
     .group-1-date p {
-       position: absolute;
-       margin-left: 230px;
-       margin-top: -620px;
-    }
+        margin-top: -1620px !important;
+     }
 
     .group-2-header p {
         text-wrap: wrap;
@@ -723,6 +761,72 @@
 }
 
 @media (max-width: 1050px) {
+    .group-1-date p {
+        margin-top: -1800px;
+    }
+
+    .photo-group-1 {
+        height: 2662px;
+    }
+
+    .col-1-photo-group {
+        display: flex;
+        align-items: normal;
+        align-self: normal;
+        gap: 0px;
+        width: 99vw;
+        margin-top: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .col-1-photo-1 img {
+        width: 99vw;
+        height: 562px;
+        position: absolute;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    
+    .col-1-photo-2 img {
+        height: 562px;
+        width: 99vw;
+        margin-top: 580px;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    
+    .col-2-photo-group {
+        display: flex;
+        align-items: normal;
+        align-self: normal;
+        gap: 0px;
+        width: 99vw;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 0px;
+    }
+    
+    .col-2-photo-1 img {
+        width: 99vw;
+        height: 562px;
+        margin-left: 10px;
+        margin-top: -800px;
+        position: absolute;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+    
+    .col-2-photo-2 img {
+        width: 99vw;
+        height: 562px;
+        margin-left: 10px;
+        margin-top: -220px;
+        position: absolute;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
     .photo-group-2 {
         height: 1407px;
     }
@@ -763,28 +867,48 @@
 @media (max-width: 921px) {
     .photo-group-3 {
         width: 100vw;
-        height: 1690px;
+        height: 1700px;
     }
 
     .swiper-photo {
-        margin-top: 10px;
+        margin-bottom: 80px;
     }
 
     .swiper-pagination-fraction {
-        margin-bottom: -15px;
-        margin-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .group-3-date p {
+        display: flex;
+        margin-top: -555px;
+        padding-right: 50px;
+        justify-content: end;
     }
 }
 
 @media (max-width: 677px) {
     .swiper-button-prev {
-        margin-left: 5px;
+        margin-left: 25px;
         padding-right: 0px;
     }
 
     .swiper-photo {
+        padding-top: 80px;
+        margin-left: 30px;
         padding-left: 50px;
         padding-right: 50px;
+    }
+
+    .swiper-pagination-fraction {
+        margin-bottom: -15px;
+        margin-right: -10px;
+    }
+
+    .group-3-date p {
+        display: flex;
+        margin-top: -325px !important;
+        padding-right: 50px;
+        justify-content: end;
     }
 }
 
@@ -805,5 +929,19 @@
     .swiper-pagination-fraction {
         margin-bottom: -15px;
         margin-left: 10px;
+    }
+}
+
+@media (max-width: 455.5px) {
+    .photo-group-1 {
+        height: 2762px;
+    }
+    
+    .col-2-photo-1 img {
+        margin-top: -780px !important;
+    }
+
+    .col-2-photo-2 img {
+        margin-top: -200px !important;
     }
 }

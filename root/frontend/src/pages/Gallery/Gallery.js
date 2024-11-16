@@ -59,8 +59,8 @@ const Gallery = () => {
                 />
               </div>
               <div className='col-1-photo-2'>
-                <img
-                src={col1Photo2 ? col1Photo2.image : ''}
+                <img 
+                src={col2Photo1 ? col2Photo1.image : ''}
                 className="img-fluid"
                 />
               </div>
@@ -68,10 +68,11 @@ const Gallery = () => {
           </Col>
           <Col className='group-1-date'>
             <p>July 26, 2024</p>
-            <div className='col-2-photo-group'>
+          </Col>
+          <div className='col-2-photo-group'>
               <div className='col-2-photo-1'>
-                <img 
-                src={col2Photo1 ? col2Photo1.image : ''}
+                <img
+                src={col1Photo2 ? col1Photo2.image : ''}
                 className="img-fluid"
                 />
               </div>
@@ -82,7 +83,6 @@ const Gallery = () => {
                 />
               </div>
             </div>
-          </Col>
         </Row>
       </Row>
       <Row className='photo-group-2'>
