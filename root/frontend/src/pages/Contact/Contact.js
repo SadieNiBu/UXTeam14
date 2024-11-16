@@ -48,10 +48,10 @@ const Contact = () => {
           <div className='info'>
             <h5>Let's talk!</h5>
             <div className='number'>
-              <p>+1 (123) 456 7890</p>
+              <p>+1 (407) 823 0408</p>
             </div>
             <div className='email'>
-              <p>hello@somedomain.com</p>
+              <p>thomas.nedorost@ucf.edu</p>
             </div>
             <div className='info-divider'>
               <svg xmlns="http://www.w3.org/2000/svg" />
@@ -59,11 +59,11 @@ const Contact = () => {
           </div>
           <div className='address'>
             <h5>CECS Office</h5>
-            <p>888 Somplace Drive, Orlando, Florida</p>
+            <p>4328 Scorpius Street, Orlando, Florida</p>
           </div>
           <div className='university'>
             <h5>University of Central Florida</h5>
-            <p>888 Somplace Drive, Orlando, Florida</p>
+            <p>4000 Central Florida Blvd, Orlando, Florida</p>
           </div>
           <div className='socials'>
             <a href='https://www.facebook.com/HackUCF/' className='facebook'><i class="bi bi-facebook"></i></a>

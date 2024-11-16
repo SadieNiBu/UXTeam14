@@ -96,7 +96,7 @@ body .info .number p {
 body .info .email p {
     width: 182px;
     height: 28px;
-    margin-left: 295px;
+    margin-left: 280px;
     margin-top: -43px;
 }
 
@@ -473,7 +473,11 @@ body .socials a{
     
     .contact-div {
         margin-left: 0px;
-        margin-top: -85px;
+        margin-top: -5px;
+    }
+
+    body .contact p {
+        margin-left: -220px;
     }
 
     body .divider {
@@ -492,7 +496,6 @@ body .socials a{
         text-align: left;
         margin-top: -90px;
         margin-left: -115px;
-        display: none;
     }
 
     .info-div {
@@ -569,7 +572,7 @@ body .socials a{
     
     .contact-div {
         margin-left: -40px;
-        margin-top: -95px;
+        margin-top: -5px;
     }
 
     body .divider {
@@ -588,7 +591,7 @@ body .socials a{
         text-align: left;
         margin-top: -90px;
         margin-left: -115px;
-        display: none;
+
     }
 
     .info-div {
@@ -665,7 +668,7 @@ body .socials a{
     
     .contact-div {
         margin-left: -10px;
-        margin-top: -95px;
+        margin-top: -5px;
     }
 
     body .divider {
@@ -684,7 +687,7 @@ body .socials a{
         text-align: left;
         margin-top: -90px;
         margin-left: -115px;
-        display: none;
+
     }
 
     .info-div {
@@ -762,7 +765,7 @@ body .socials a{
     
     .contact-div {
         margin-left: 30px;
-        margin-top: -95px;
+        margin-top: -5px;
     }
 
     body .divider {
@@ -781,7 +784,7 @@ body .socials a{
         text-align: left;
         margin-top: -90px;
         margin-left: -115px;
-        display: none;
+
     }
 
     .info-div {
@@ -842,6 +845,44 @@ body .socials a{
     .contact_form .text-message button {
         position: relative;
         margin-left: 45px;
+        margin-top: 40px;
+        height: 51px;
+        width: 208px;
+        border: none;
+        border-radius: 4px;
+        color: black;
+        background-color: #FFC904;
+    }
+}
+  
+@media (max-width: 513px) {
+    body {
+        height: 1650px;
+    }
+
+    .contact_form input {
+        border: none;
+        width: 140px;
+        height: 57px;
+        border-bottom: solid;
+        border-width: 1px;
+    }
+
+    .contact_form .text-message textarea {
+        position: relative;
+        margin-top: 20px;
+        margin-left: -50px;
+        resize: none;
+        border: solid;
+        border-width: 1px;
+        border-radius: 4px;
+        border-color: #1D2130;
+        width: 380px;
+    }
+
+    .contact_form .text-message button {
+        position: relative;
+        margin-left: 20px;
         margin-top: 40px;
         height: 51px;
         width: 208px;

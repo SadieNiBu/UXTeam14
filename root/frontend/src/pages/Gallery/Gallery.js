@@ -55,11 +55,13 @@ const Gallery = () => {
               <div className='col-1-photo-1'>
                 <img 
                 src={col1Photo1 ? col1Photo1.image : ''}
+                className="img-fluid"
                 />
               </div>
               <div className='col-1-photo-2'>
                 <img
                 src={col1Photo2 ? col1Photo2.image : ''}
+                className="img-fluid"
                 />
               </div>
             </div>
@@ -70,11 +72,13 @@ const Gallery = () => {
               <div className='col-2-photo-1'>
                 <img 
                 src={col2Photo1 ? col2Photo1.image : ''}
+                className="img-fluid"
                 />
               </div>
               <div className='col-2-photo-2'>
                 <img 
                 src={col2Photo2 ? col2Photo2.image : ''}
+                className="img-fluid"
                 />
               </div>
             </div>
@@ -94,16 +98,20 @@ const Gallery = () => {
             <p>July 26, 2024</p>
           </Col>
           <Row className='group-2-photos'>
-            <Col className='col-3-photo'>
+            <div className='group-2-container'>
+            <Col className='col-3-photo' >
               <img 
               src={col3Photo ? col3Photo.image : ''}
+              className="img-fluid"
               />
             </Col>
-            <Col className='col-4-photo'>
+            <Col className='col-4-photo' >
               <img 
               src={col4Photo ? col4Photo.image : ''}
+              className="img-fluid"
               />
             </Col>
+            </div>
           </Row>
         </Row>
       </Row>
@@ -154,7 +162,7 @@ const Gallery = () => {
           {photos.map((photo, index) => (
           <SwiperSlide key={index}>
             <div className='swiper-photo'>
-            <img src={photo.image} alt={`Slide ${index + 1}`} />
+            <img src={photo.image} alt={`Slide ${index + 1}`} className="img-fluid" />
             </div>
           </SwiperSlide>
           ))}
