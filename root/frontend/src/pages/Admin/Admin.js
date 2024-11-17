@@ -4,6 +4,7 @@ import { useEventContext } from '../../hooks/useEventContext'
 import { useSemesterContext } from '../../hooks/useSemesterContext'
 import { useMemberContext } from '../../hooks/useMemberContext'
 import { usePhotoContext } from '../../hooks/usePhotoContext'
+import { useArticleContext } from '../../hooks/useArticleContext'
 import { useAuthContext } from '../../hooks/useAuthContext'
 import { useLogout } from '../../hooks/useLogout'
 
@@ -12,16 +13,19 @@ import SemesterDetails from '../../components/SemesterDetails'
 import MemberDetails from '../../components/MemberDetails'
 import EventDetails from '../../components/EventDetails'
 import PhotoDetails from '../../components/PhotoDetails'
+import ArticleDetails from '../../components/ArticleDetails'
 import SemesterForm from '../../components/SemesterForm'
 import MemberForm from '../../components/MemberForm'
 import EventForm from '../../components/EventForm'
 import PhotoForm from '../../components/PhotoForm'
+import ArticleForm from '../../components/ArticleForm'
 
 const Admin = () => {
     const { events, dispatch: eventDispatch } = useEventContext()
     const { members, dispatch: memberDispatch } = useMemberContext()
     const { photos, dispatch: photoDispatch } = usePhotoContext()
     const { semesters, dispatch: semesterDispatch } = useSemesterContext()
+    const { articles, dispatch: articleDispatch } = useArticleContext()
     const { logout } = useLogout()
     const { admin } = useAuthContext()
     
@@ -60,6 +64,15 @@ const Admin = () => {
             eventDispatch({type: 'SET_EVENTS', payload: json})
         }
     };
+
+    const fetchArticles = async () => {
+        const response = await fetch('/api/articles');
+        const json = await response.json();
+
+        if (response.ok) {
+            articleDispatch({ type: 'SET_ARTICLES', payload: json });
+        }
+    }
 
     const handleClick = () => {
         logout();
@@ -119,12 +132,26 @@ const Admin = () => {
                 semesterDispatch({type: 'SET_SEMESTERS', payload: json})
             }
         }
+
+        const fetchArticles = async () => {
+            const response = await fetch('/api/articles', {
+                headers: {
+                    Authorization: `Bearer ${admin.token}`
+                }
+            })
+            const json = await response.json()
+
+            if (response.ok) {
+                articleDispatch({type: 'SET_ARTICLES', payload: json})
+            }
+        }
         
         if (admin) {
             fetchMembers()
             fetchEvents()
             fetchPhotos()
             fetchSemesters()
+            fetchArticles()
         }
     }, [admin])
 
@@ -163,6 +190,14 @@ const Admin = () => {
                     <SemesterDetails key={semester._id} semester={semester} refetchSemesters={fetchSemesters}/>
                 ))}
             </div>
+            
+            <div className='admin-articles'>
+                <h2>Articles</h2>
+                {articles && articles.map((article) => (
+                    <ArticleDetails key={article._id} article={article} refetchArticles={fetchArticles}/>
+                ))}
+            </div>
+            <ArticleForm refetchArticles={fetchArticles} />
         </div>
     )
 }

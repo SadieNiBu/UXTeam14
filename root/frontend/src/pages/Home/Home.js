@@ -12,10 +12,29 @@ import placeholder from './Images/placeholder.jpg'
 import { Link, useMatch, useResolvedPath} from "react-router-dom"
 
 const Home = () => {
+  const [articles, setArticles] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
 
-  useEffect ( () => {
-    document.title = "C3 Team @ UCF"
-  })
+  useEffect(() => {
+    document.title = "C3 Team @ UCF";
+
+    const fetchArticles = async () => {
+      try {
+        const response = await fetch('/api/articles');
+        const data = await response.json();
+
+        if (response.ok) {
+          setArticles(data.slice(0, 3)); // Get the latest three articles
+        }
+      } catch (error) {
+        console.error('Failed to fetch articles:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchArticles();
+  }, []);
 
   return (
     <div>
@@ -117,66 +136,30 @@ const Home = () => {
           <div className='news__header__text'>Articles About Us</div>
         </div>
         <div className='news__articles'>
-          <div className='news__article'>
-            <div className='news__article__image'>
-              <img src={placeholder} class="photo" alt='Placeholder' />
-            </div> 
-            <div className='news__article__title'>
-              UCF CCDC Team Wins Some Competition
-            </div>
-            <div className='news__article__info'>
-              <div className='news___article__info__author'>Floyd Miles</div>
-              <div className='news___article__info__date'>3 Days Ago</div>
-            </div>
-            <a href='press'>
-              <div className='news__article__button'>
-                <div className='news__article__button__text'>Read More</div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M11.4429 10.0031L5.83921 4.61586C5.68491 4.46787 5.60003 4.27002 5.60003 4.05906C5.60003 3.84797 5.68491 3.65024 5.83921 3.50202L6.33023 3.03022C6.48429 2.88177 6.69022 2.80005 6.90967 2.80005C7.12913 2.80005 7.33482 2.88177 7.48899 3.03022L14.1611 9.44418C14.3159 9.59287 14.4006 9.79154 14.4 10.0027C14.4006 10.2149 14.316 10.4133 14.1611 10.5621L7.49521 16.9699C7.34103 17.1183 7.13534 17.2 6.91576 17.2C6.69631 17.2 6.49062 17.1183 6.33632 16.9699L5.84542 16.4981C5.52598 16.191 5.52598 15.6911 5.84542 15.3841L11.4429 10.0031Z" fill="#0A58CA"/>
-                </svg>
+          {loading && <p>Loading articles...</p>}
+          {!loading && articles.length === 0 && <p>No recent news available at the moment.</p>}
+          {!loading && articles.map((article) => (
+            <div className='news__article' key={article._id}>
+              <div className='news__article__image'>
+                <img src={article.image || placeholder} className="photo" alt={article.title} />
               </div>
-            </a>
-          </div>
-          <div className='news__article'>
-            <div className='news__article__image'>
-              <img src={placeholder} class="photo" alt='Placeholder' />
-            </div> 
-            <div className='news__article__title'>
-              UCF CCDC Team Wins Some Competition
-            </div>
-            <div className='news__article__info'>
-              <div className='news___article__info__author'>Floyd Miles</div>
-              <div className='news___article__info__date'>3 Days Ago</div>
-            </div>
-            <a href='press'>
-              <div className='news__article__button'>
-                <div className='news__article__button__text'>Read More</div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M11.4429 10.0031L5.83921 4.61586C5.68491 4.46787 5.60003 4.27002 5.60003 4.05906C5.60003 3.84797 5.68491 3.65024 5.83921 3.50202L6.33023 3.03022C6.48429 2.88177 6.69022 2.80005 6.90967 2.80005C7.12913 2.80005 7.33482 2.88177 7.48899 3.03022L14.1611 9.44418C14.3159 9.59287 14.4006 9.79154 14.4 10.0027C14.4006 10.2149 14.316 10.4133 14.1611 10.5621L7.49521 16.9699C7.34103 17.1183 7.13534 17.2 6.91576 17.2C6.69631 17.2 6.49062 17.1183 6.33632 16.9699L5.84542 16.4981C5.52598 16.191 5.52598 15.6911 5.84542 15.3841L11.4429 10.0031Z" fill="#0A58CA"/>
-                </svg>
+              <div className='news__article__title'>{article.title}</div>
+              <div className='news__article__info'>
+                <div className='news__article__info__author'>{article.author}</div>
               </div>
-            </a>
-          </div>
-          <div className='news__article'>
-            <div className='news__article__image'>
-              <img src={placeholder} class="photo" alt='Placeholder' />
-            </div> 
-            <div className='news__article__title'>
-              UCF CCDC Team Wins Some Competition
+              <div className='news__article__info__date'>
+                  {new Date(article.date).toLocaleDateString(undefined, { timeZone: 'UTC' })}
+                </div>
+              <a href={article.url} target="_blank" rel="noopener noreferrer">
+                <div className='news__article__button'>
+                  <div className='news__article__button__text'>Read More</div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M11.4429 10.0031L5.83921 4.61586C5.68491 4.46787 5.60003 4.27002 5.60003 4.05906C5.60003 3.84797 5.68491 3.65024 5.83921 3.50202L6.33023 3.03022C6.48429 2.88177 6.69022 2.80005 6.90967 2.80005C7.12913 2.80005 7.33482 2.88177 7.48899 3.03022L14.1611 9.44418C14.3159 9.59287 14.4006 9.79154 14.4 10.0027C14.4006 10.2149 14.316 10.4133 14.1611 10.5621L7.49521 16.9699C7.34103 17.1183 7.13534 17.2 6.91576 17.2C6.69631 17.2 6.49062 17.1183 6.33632 16.9699L5.84542 16.4981C5.52598 16.191 5.52598 15.6911 5.84542 15.3841L11.4429 10.0031Z" fill="#0A58CA" />
+                  </svg>
+                </div>
+              </a>
             </div>
-            <div className='news__article__info'>
-              <div className='news___article__info__author'>Floyd Miles</div>
-              <div className='news___article__info__date'>3 Days Ago</div>
-            </div>
-            <a href='press'>
-              <div className='news__article__button'>
-                <div className='news__article__button__text'>Read More</div>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                  <path d="M11.4429 10.0031L5.83921 4.61586C5.68491 4.46787 5.60003 4.27002 5.60003 4.05906C5.60003 3.84797 5.68491 3.65024 5.83921 3.50202L6.33023 3.03022C6.48429 2.88177 6.69022 2.80005 6.90967 2.80005C7.12913 2.80005 7.33482 2.88177 7.48899 3.03022L14.1611 9.44418C14.3159 9.59287 14.4006 9.79154 14.4 10.0027C14.4006 10.2149 14.316 10.4133 14.1611 10.5621L7.49521 16.9699C7.34103 17.1183 7.13534 17.2 6.91576 17.2C6.69631 17.2 6.49062 17.1183 6.33632 16.9699L5.84542 16.4981C5.52598 16.191 5.52598 15.6911 5.84542 15.3841L11.4429 10.0031Z" fill="#0A58CA"/>
-                </svg>
-              </div>
-            </a>
-          </div>
+          ))}
         </div>
       </div>
       <div className='photos full-bleed--blue'>
@@ -207,19 +190,7 @@ const Home = () => {
           </svg>
         </div>
       </div>
-      <div className='large full-bleed--black'>
-        <div className='large__header'>
-          <p>Media Feature</p>
-          <h1>Large Video Layout</h1>
-          <svg xmlns="http://www.w3.org/2000/svg" width="100" height="6" viewBox="0 0 100 6" fill="none">
-            <path d="M0 0.0175781H100V5.01758H0V0.0175781Z" fill="#FFC904"/>
-          </svg>
-        </div>
-        <div className='large__yt'>
-          <iframe width="1260" height="568" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="Bohemian Rhapsody | Muppet Music Video | The Muppets" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-      </div>
-      </div>
+    </div>
   )
 }
 

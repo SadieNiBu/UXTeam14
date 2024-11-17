@@ -11,6 +11,7 @@ import { EventContextProvider } from './context/EventContext';
 import { MemberContextProvider } from './context/MemberContext';
 import { PhotoContextProvider } from './context/PhotoContext';
 import { SemesterContextProvider } from './context/SemesterContext';
+import { ArticleContextProvider } from './context/ArticleContext';
 import { AuthContextProvider } from './context/AuthContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -22,8 +23,10 @@ root.render(
         <MemberContextProvider>
         <PhotoContextProvider>
         <SemesterContextProvider>
+        <ArticleContextProvider>
           <ScrollToTop />
           <App />
+        </ArticleContextProvider>
         </SemesterContextProvider>
         </PhotoContextProvider>
         </MemberContextProvider>

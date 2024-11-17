@@ -41,7 +41,7 @@
 }
 
 /* Section Headers */
-.admin-members h2, .admin-events h2, .admin-gallery-photos h2, .admin-semester-info h2 {
+.admin-members h2, .admin-events h2, .admin-gallery-photos h2, .admin-semester-info h2, .admin-articles h2 {
     font-size: 24px;
     color: #444;
     border-bottom: 2px solid #ddd;
@@ -86,13 +86,13 @@
 }
 
 /* Cards Styling */
-.admin-members, .admin-events, .admin-gallery-photos, .admin-semester-info {
+.admin-members, .admin-events, .admin-gallery-photos, .admin-semester-info, .admin-articles {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-.admin-members > div, .admin-events > div, .admin-gallery-photos > div, .admin-semester-info > div {
+.admin-members > div, .admin-events > div, .admin-gallery-photos > div, .admin-semester-info > div, .admin-articles > div {
     flex: 1 1 calc(50% - 20px);
     background: #fff;
     border: 1px solid #ddd;
@@ -101,13 +101,13 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.admin-members > div:hover, .admin-events > div:hover, .admin-gallery-photos > div:hover, .admin-semester-info > div:hover {
+.admin-members > div:hover, .admin-events > div:hover, .admin-gallery-photos > div:hover, .admin-semester-info > div:hover, .admin-articles > div:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .admin-members > div, .admin-events > div, .admin-gallery-photos > div, .admin-semester-info > div {
+    .admin-members > div, .admin-events > div, .admin-gallery-photos > div, .admin-semester-info > div, .admin-articles > div {
         flex: 1 1 100%;
     }
 
