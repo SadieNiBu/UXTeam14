@@ -1,2 +1,4 @@
 root/backend/.env
+root/backend/node_modules
+root/backend/node_modules/
 .DS_Store
