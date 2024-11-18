@@ -6,8 +6,8 @@ html {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding-top: 142px;
-    padding-bottom: 142px;
+    padding-top: 50px;
+    padding-bottom: 75px;
 }
 
 .roster__header .wrapper {
@@ -38,6 +38,12 @@ html {
     font-size: 52px;
     font-weight: 700;
     line-height: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .roster__header .main-content h4 {
+        font-size: 33px;
+    }
 }
 
 .roster__header .main-content h5 {
@@ -134,18 +140,13 @@ html {
 
 .coaches .info .name {
     margin-top: 20px;
-    justify-self: center;
-    width: 249.82px;
-    height: 39.796px;
-    flex-shrink: 0;
+    margin-bottom: 10px;
 
     color: var(--Primary-text, #1D2130);
     text-align: center;
     font-family: Roboto;
     font-size: 20px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 160%; /* 32px */
 }
 
 .coaches .info .role {
