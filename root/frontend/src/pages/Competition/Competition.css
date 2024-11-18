@@ -1486,11 +1486,11 @@ tbody tr td {
     }
 
     .year-buttons {
-        margin-left: 9vw;
+        margin-left: 10vw;
     }
 
     .competitions-div {
-        margin-left: 1vw;
+        margin-left: 0vw;
     }
 }
 
@@ -1508,7 +1508,7 @@ tbody tr td {
     }
 }
 
-@media (max-width: 1519px) {
+@media (max-width: 1563px) {
     .col-1-video {
         height: 39vw;
     }
@@ -1701,7 +1701,7 @@ tbody tr td {
     }
 }
 
-@media (max-width: 1184px) {
+@media (max-width: 1217px) {
     .col-1-video {
         height: 44vw;
     }
@@ -1803,34 +1803,7 @@ tbody tr td {
     }
 }
 
-@media (max-width: 879px) {
-    .col-1-video {
-        height: 52vw;
-        margin-left: -6.5vw;
-    }
-
-    .col-2-video {
-        height: 52vw;
-        margin-left: -6.5vw;
-    }
-
-    .col-3-video {
-        height: 52vw;
-        margin-left: -6.5vw;
-    }
-
-    .col-4-video {
-        height: 52vw;
-        margin-left: -7.5vw;
-    }
-
-    .col-5-video {
-        height: 52vw;
-        margin-left: -7.5vw;
-    }
-}
-
-@media (max-width: 862px) {
+@media (max-width: 887px) {
     .col-1-video {
         height: 56vw;
         margin-left: -5.5vw;
@@ -1919,7 +1892,7 @@ tbody tr td {
     }
 }
 
-@media (max-width: 720px) {
+@media (max-width: 739px) {
     .col-1-video {
         height: 67vw;
         margin-left: -13.5vw;
@@ -2000,7 +1973,7 @@ tbody tr td {
     }
 }
 
-@media (max-width: 641px) {
+@media (max-width: 659px) {
     .col-1-video {
         height: 77vw;
         margin-left: -8.5vw;
@@ -2031,7 +2004,7 @@ tbody tr td {
     }
 }
 
-@media (max-width: 602px) {
+@media (max-width: 614px) {
     .col-1-video {
         height: 85vw;
         margin-left: -6vw;
@@ -2192,7 +2165,7 @@ tbody tr td {
     }
 }
 
-@media (max-width: 509px) {
+@media (max-width: 529px) {
     .col-1-video {
         width: 40vw;
         height: 107vw;
@@ -2340,7 +2313,7 @@ tbody tr td {
     }
 }
 
-@media (max-width: 481px) {
+@media (max-width: 494px) {
     .col-1-video {
         width: 40vw;
         height: 119vw;
@@ -2386,7 +2359,7 @@ tbody tr td {
     }
 }
 
-@media (max-width: 451px) {
+@media (max-width: 460px) {
     .col-1-video {
         width: 40vw;
         height: 129vw;
@@ -2476,5 +2449,11 @@ tbody tr td {
 @media (max-width: 459px) {
     .history-title h1 {
         height: 120px;
+    }
+}
+
+@media (max-width: 883px) {
+    .year-buttons {
+        width: 70vw;
     }
 }
