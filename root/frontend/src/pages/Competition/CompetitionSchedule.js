@@ -35,14 +35,10 @@ const CompetitionSchedule = () => {
         return <h1>Loading....</h1>
     }
 
-    const selectedYear = Number(semesters[0].year)
-    const filteredEvents = events.filter(event => new Date(event.date).getFullYear() === selectedYear)
-
-    const sortedEvents = filteredEvents.sort((a, b) => {
-        const yearA = new Date(a.date).getFullYear()
-        const yearB = new Date(b.date).getFullYear()
-        return yearA - yearB
-    })
+    const selectedYear = Number(semesters[0].year);
+    const filteredEvents = events.filter(event => new Date(event.date).getFullYear() === selectedYear);
+    
+    const sortedEvents = [...filteredEvents].sort((a, b) => new Date(a.date) - new Date(b.date));
 
     const startIndex = (currentPage - 1) * eventsPerPage
     const endIndex = startIndex + eventsPerPage
@@ -67,7 +63,7 @@ const CompetitionSchedule = () => {
                     slicedEvents.map((event, index) => (
                         <div key={index}>
                             <p className='date'>
-                                {new Date(event.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                                {new Date (new Date(event.date).setDate(new Date(event.date).getDate() + 1)).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
                             </p>
                             <div className='info'>
                                 <h5>{event.title}</h5>
