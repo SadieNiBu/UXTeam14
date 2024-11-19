@@ -124,9 +124,6 @@ const Gallery = () => {
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
             </svg>
           </Col>
-          <Col className='video-group-date'>
-            <p>July 26, 2024</p>
-          </Col>
         </Row>
         <Row>
           <Col className='video-1'>
@@ -148,9 +145,6 @@ const Gallery = () => {
           <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
           </ svg>
-        </Col>
-        <Col className='group-3-date'>
-          <p>July 26, 2024</p>
         </Col>
         <Row className='swiper-row'>
           {photos && photos.length > 0 && (
