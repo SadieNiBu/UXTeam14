@@ -206,11 +206,13 @@ body {
     }
 
     .toggle-border {
-        margin-left: -100px;
+        margin-left: -130px;
         padding-bottom: 15px;
         border-spacing: 10px;
         border-top-width: 1px;
         border-top-style: solid;
+        width: 170%;
+        max-width: none !important;
         border-top-color: #3D8BFD;
     }
 
@@ -224,6 +226,8 @@ body {
         padding-top: 100px;
         position: absolute;
         background: #000000;
+        padding-right: 15vw;
+        padding-left: 15vw;
         grid-template-columns: auto;
     }
 
@@ -241,7 +245,7 @@ body {
 
     .navbar-menu li {
         width: 100%;
-        margin-bottom: 5px;
+        margin-bottom: 3px;
         line-height: 15px;
         text-align: center;
         font-weight: 400;
@@ -475,7 +479,7 @@ body {
 @media (max-width: 767px) {
     .footer-btn {
         margin-top: 80px;
-        margin-left: 0px;
+        margin-left: 10px;
         position: absolute;
     }
 
@@ -485,6 +489,26 @@ body {
     
     .footer-icons {
         display: none !important;
+    }
+}
+
+@media (max-width: 570px) {
+    .footer-btn {
+        margin-top: 80px;
+        margin-left: 0px;
+        position: absolute;
+        padding-left: auto;
+        padding-right: 10px;
+    }
+}
+
+@media (max-width: 428px) {
+    .footer-btn {
+        margin-top: 80px;
+        margin-left: -9vw;
+        position: absolute;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 }
 

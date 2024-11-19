@@ -882,7 +882,7 @@ body .socials a{
 
     .contact_form .text-message button {
         position: relative;
-        margin-left: 20px;
+        margin-left: 30px;
         margin-top: 40px;
         height: 51px;
         width: 208px;
@@ -893,3 +893,47 @@ body .socials a{
     }
 }
   
+@media (max-width: 428px) {
+    body {
+        height: 1750px;
+    }
+
+    body .message h3 {
+        width: 80vw;
+    }
+        
+    body .message p {
+        margin-top: -4vw;
+        width: 80vw;
+    }
+
+    .contact_form .second_input_col{
+        position: relative;
+        margin-top: -205px;
+        margin-left: 41vw !important;
+    }
+
+    .contact_form input {
+        width: 25vw;
+    }
+
+    .contact_form .text-message textarea {
+        width: 80vw;
+    }
+
+    .contact_form .text-message button {
+        margin-left: 2vw;
+        width: 50vw;
+    }
+
+    body .info .info-divider {
+        width: 83vw;
+    }
+    
+    body .info .email p {
+        width: 182px;
+        height: 28px;
+        margin-left: 130px;
+        margin-top: -0px;
+    }
+}
