@@ -22,7 +22,7 @@ app.use((req, res, next) => {
 });
 
 app.use(cors({
-    origin: 'https://cs.ucf.edu',
+    origin: 'https://ucf-c3-team-website-api.onrender.com',
     optionsSuccessStatus: 200
 }));
 app.options('*', cors());
