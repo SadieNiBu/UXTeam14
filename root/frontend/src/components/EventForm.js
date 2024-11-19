@@ -22,7 +22,7 @@ const EventForm = ({ refetchEvents }) => {
 
         const event = {title, date, description, result, article}
 
-        const response = await fetch('api/events', {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/events', {
             method: 'POST',
             body: JSON.stringify(event),
             headers: {

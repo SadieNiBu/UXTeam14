@@ -17,7 +17,7 @@ const SemesterDetails = ({ semester, refetchSemesters }) => {
     const performDelete = async () => {
         if (!admin) return;
         
-        const response = await fetch('api/semesters/' + semester._id, {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/semesters/' + semester._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${admin.token}`
@@ -38,7 +38,7 @@ const SemesterDetails = ({ semester, refetchSemesters }) => {
 
         const updatedSemester = {sem, year}
 
-        const response = await fetch('/api/semesters/' + semester._id, {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/semesters/' + semester._id, {
             method: 'PATCH',
             body: JSON.stringify(updatedSemester),
             headers: {

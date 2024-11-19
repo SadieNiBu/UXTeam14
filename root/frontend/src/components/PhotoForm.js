@@ -23,7 +23,7 @@ const PhotoForm = ({ refetchPhotos }) => {
         const formData = new FormData();
         if (image) formData.append('image', image); // Attach image if selected
 
-        const response = await fetch('/api/photos', {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/photos', {
             method: 'POST',
             body: formData, // For mixed data (text + file)
             headers: {

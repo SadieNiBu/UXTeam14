@@ -19,7 +19,7 @@ const SemesterForm = ({ refetchSemesters }) => {
 
         const semester = {sem, year}
 
-        const response = await fetch('api/semesters', {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/semesters', {
             method: 'POST',
             body: JSON.stringify(semester),
             headers: {

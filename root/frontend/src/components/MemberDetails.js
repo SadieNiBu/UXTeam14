@@ -27,7 +27,7 @@ const MemberDetails = ({ member, refetchMembers }) => {
 
     const performDelete = async () => {
         if (!admin) return;
-        const response = await fetch('/api/members/' + member._id, {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/members/' + member._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${admin.token}`
@@ -52,7 +52,7 @@ const MemberDetails = ({ member, refetchMembers }) => {
         formData.append('classification', classification);
         if (image) formData.append('image', image); // Attach image file if selected
 
-        const response = await fetch('/api/members/' + member._id, {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/members/' + member._id, {
             method: 'PATCH',
             body: formData,
             headers: {

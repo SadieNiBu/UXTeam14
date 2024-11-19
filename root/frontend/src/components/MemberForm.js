@@ -29,7 +29,7 @@ const MemberForm = ({ refetchMembers }) => {
         formData.append('classification', classification);
         if (image) formData.append('image', image); // Attach image if selected
 
-        const response = await fetch('/api/members', {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/members', {
             method: 'POST',
             body: formData, // For mixed data (text + file)
             headers: {

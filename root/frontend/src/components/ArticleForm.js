@@ -21,7 +21,7 @@ const ArticleForm = ({ refetchArticles }) => {
 
         const article = { title, author, date, url };
 
-        const response = await fetch("/api/articles", {
+        const response = await fetch("https://ucf-c3-team-website-api.onrender.com/api/articles", {
             method: "POST",
             body: JSON.stringify(article),
             headers: {

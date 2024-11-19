@@ -23,7 +23,7 @@ const EventDetails = ({ event, refetchEvents }) => {
     const performDelete = async () => {
         if (!admin) return;
         
-        const response = await fetch ('api/events/' + event._id, {
+        const response = await fetch ('https://ucf-c3-team-website-api.onrender.com/api/events/' + event._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${admin.token}`
@@ -44,7 +44,7 @@ const EventDetails = ({ event, refetchEvents }) => {
 
         const updatedEvent = {title, date, description, result, article}
 
-        const response = await fetch('/api/events/' + event._id, {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/events/' + event._id, {
             method: 'PATCH',
             body: JSON.stringify(updatedEvent),
             headers: {

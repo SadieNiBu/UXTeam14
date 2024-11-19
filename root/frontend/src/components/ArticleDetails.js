@@ -21,7 +21,7 @@ const ArticleDetails = ({ article, refetchArticles }) => {
     const performDelete = async () => {
         if (!admin) return;
 
-        const response = await fetch(`/api/articles/${article._id}`, {
+        const response = await fetch(`https://ucf-c3-team-website-api.onrender.com/api/articles/${article._id}`, {
             method: "DELETE",
             headers: {
                 Authorization: `Bearer ${admin.token}`,
@@ -42,7 +42,7 @@ const ArticleDetails = ({ article, refetchArticles }) => {
 
         const updatedArticle = { title, author, date, url };
 
-        const response = await fetch(`/api/articles/${article._id}`, {
+        const response = await fetch(`https://ucf-c3-team-website-api.onrender.com/api/articles/${article._id}`, {
             method: "PATCH",
             body: JSON.stringify(updatedArticle),
             headers: {

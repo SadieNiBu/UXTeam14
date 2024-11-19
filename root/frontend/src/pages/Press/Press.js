@@ -12,7 +12,7 @@ const Press = () => {
 
     const fetchArticles = async () => {
       try {
-        const response = await fetch('/api/articles');
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/articles');
         const data = await response.json();
 
         if (response.ok) {
