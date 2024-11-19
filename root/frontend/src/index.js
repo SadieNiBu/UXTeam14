@@ -6,7 +6,7 @@ import App from './components/App';
 import ScrollToTop from './components/ScrollToTop';
 import reportWebVitals from './reportWebVitals';
 import "./styles.css"
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { EventContextProvider } from './context/EventContext';
 import { MemberContextProvider } from './context/MemberContext';
 import { PhotoContextProvider } from './context/PhotoContext';
@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <AuthContextProvider>
-      <BrowserRouter basename='/CyberCompetitionTeam'>
+      <HashRouter>
         <EventContextProvider>
         <MemberContextProvider>
         <PhotoContextProvider>
@@ -31,7 +31,7 @@ root.render(
         </PhotoContextProvider>
         </MemberContextProvider>
         </EventContextProvider>
-      </BrowserRouter>
+      </HashRouter>
     </AuthContextProvider>
   </React.StrictMode>
 );
