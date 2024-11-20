@@ -2457,3 +2457,176 @@ tbody tr td {
         width: 70vw;
     }
 }
+
+@media (max-width: 437px) {
+    .more-than .top-pyramid img {
+        width: 70px;
+    }
+
+    .more-than .mid-pyramid img {
+        width: 60px;
+    }
+
+    .more-than .low-pyramid img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 428px) {
+    .top-pic {
+        margin-left: -10px;
+    }
+
+    .youtube-vid {
+        margin-left: -11.5px;
+    }
+
+    .youtube-title h1 {
+        margin-left: 0px;
+    }
+    
+    .youtube-text p {
+        margin-left: 0px;
+    }
+    
+    .youtube-btn button {
+        margin-left: 0px;
+    }
+
+    .awards {
+        height: 860px;
+    }
+
+    .awards-title h1 {
+        margin-top: 100px;
+    }
+
+    .more-than .top-pyramid img {
+        width: 75px;
+    }
+
+    .more-than .mid-pyramid img {
+        width: 63px;
+    }
+
+    .more-than .low-pyramid img {
+        width: 50px;
+    }
+
+    .col-4-video {
+        margin-left: -79vw;
+    }
+
+    .col-5-video {
+        margin-left: -79vw;
+    }
+}
+
+@media (max-width: 414px) {
+    .top-pic {
+        margin-left: -18px;
+    }
+
+    .youtube-vid {
+        margin-left: -12px;
+    }
+
+    .more-than .top-pyramid img {
+        width: 72px;
+    }
+
+    .more-than .mid-pyramid img {
+        width: 60px;
+    }
+
+    .more-than .low-pyramid img {
+        width: 49px;
+    }
+
+    .col-4-video {
+        margin-left: -80vw;
+    }
+
+    .col-5-video {
+        margin-left: -80vw;
+    }
+
+    .col-1-video iframe {
+        width: 35vw;
+        height: 35vw;
+        margin-left: 2vw;
+    }
+
+    .col-2-video img {
+        width: 35vw;
+        height: 35vw;
+        margin-left: 2vw;
+    }
+
+    .col-3-video iframe {
+        width: 35vw;
+        height: 35vw;
+        margin-left: 2vw;
+    }
+
+    .col-4-video img {
+        width: 35vw;
+        height: 30vw;
+        margin-left: 2vw;
+    }
+
+    .col-5-video iframe {
+        width: 35vw;
+        height: 30vw;
+        margin-left: 2vw;
+    }
+}
+
+@media (max-width: 407px) {
+    .more-than .top-pyramid img {
+        width: 60px;
+    }
+
+    .more-than .mid-pyramid img {
+        width: 50px;
+    }
+
+    .more-than .low-pyramid img {
+        width: 40px;
+    }
+}
+
+@media (max-width: 375px) {
+    .top-competitions h3{
+        font-size: 50px;
+    }
+
+    .top-pic {
+        margin-top: 320px;
+        margin-left: -43px;
+    }
+
+    .youtube-vid iframe {
+        width: 375px;
+    }
+
+    .youtube-date p {
+        margin-left: 0px;
+    }
+
+    .youtube-textbox p {
+        width: 340px;
+    }
+
+    .more-than .top-pyramid img {
+        width: 60px;
+    }
+
+    .more-than .mid-pyramid img {
+        width: 50px;
+    }
+
+    .more-than .low-pyramid img {
+        width: 40px;
+    }
+}

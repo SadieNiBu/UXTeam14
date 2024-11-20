@@ -327,7 +327,7 @@
     }
 
     .header_line {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 }
 
@@ -802,12 +802,12 @@
 
     .donation-div {
         margin-left: -150px;
-        margin-top: -2140px;
+        margin-top: -2040px;
     }
 
     .donation_photo svg {
         margin-left: -900px;
-        margin-top: 820px;
+        margin-top: 880px;
         width: 498px;
         height: 516px;
     }
@@ -853,7 +853,7 @@
     }
 
     .donation-div {
-        margin-top: -2050px;
+        margin-top: -2000px;
         margin-left: -130px;
     }
 
@@ -864,11 +864,15 @@
 
     .donation_bio p {
         width: 350px;
-        margin-top: 5px;
+        margin-top: 60px;
+    }
+
+    .donation_btn {
+        margin-top: 80px;
     }
 
     .donation_photo svg {
-        margin-top: 890px;
+        margin-top: 930px;
         margin-left: -885px;
         width: 398px;
         height: 416px;
@@ -892,24 +896,28 @@
 
     .donation_bio p {
         width: 350px;
-        margin-top: 5px;
+        margin-top: 60px;
+    }
+
+    .donation_btn {
+        margin-top: 80px;
     }
 
     .donation_photo svg {
-        margin-top: 940px;
+        margin-top: 930px;
         margin-left: -885px;
         width: 398px;
         height: 416px;
     }
 }
 
-@media (max-width: 487px) {
+@media (max-width: 457px) {
     .support_body {
-        height: 4500px;
+        height: 4650px;
     }
 
     .donation-div {
-        margin-top: -2000px;
+        margin-top: -1950px;
         margin-left: -130px;
     }
 
@@ -920,13 +928,146 @@
 
     .donation_bio p {
         width: 350px;
-        margin-top: 5px;
+        margin-top: 60px;
+    }
+
+    .donation_btn {
+        margin-top: 80px;
     }
 
     .donation_photo svg {
-        margin-top: 940px;
-        margin-left: -840px;
-        width: 298px;
-        height: 316px;
+        margin-top: 1000px;
+        margin-left: -905px;
+        width: 398px;
+        height: 416px;
+    }
+}
+
+@media (max-width: 428px) {
+    .contributions {
+        height: 1700px;
+    }
+
+    .contributions_bio p {
+        margin-top: 30px;
+        text-wrap: wrap;
+        width: 300px;
+    }
+
+    .contributions_text p {
+        text-wrap: wrap;
+        width: 200px;
+    }
+
+    .contributions_divider svg{
+        height: 220px;
+        margin-top: 192px;
+    }
+    
+    .contributions_icons {
+        gap: 160px;
+    }
+
+    .contributions_photo svg{
+        margin-top: 800px;
+    }
+
+    .bottom_line_decor {
+        top: 2328px;
+    }
+
+    .help-div {
+        margin-left: -460px;
+    }
+
+    .help_photo {
+        position: relative;
+        margin-top: -205px;
+        margin-left: 150px;
+    }
+
+    .support_body {
+        height: 5050px;
+    }
+
+    .donation-div {
+        margin-top: -1800px;
+        margin-left: -200px;
+    }
+
+    .donation_photo svg {
+        margin-top: 1200px;
+        margin-left: -925px;
+    }
+}
+
+@media (max-width: 414px) {
+    .support_header .header_bio p {
+        width: 300px;
+        margin-top: 130px;
+    }
+
+    .header_line {
+        margin-top: 200px;
+    }
+
+    .support_body {
+        height: 5250px;
+    }
+
+    .donation-div {
+        margin-top: -1650px;
+        margin-left: -200px;
+    }
+
+    .donation_photo svg {
+        margin-top: 1350px;
+        margin-left: -925px;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .header_title h3{
+        top: 120px;
+    }
+
+    .contributions {
+        height: 1750px;
+    }
+
+    .contributions_bio p {
+        margin-top: 125px;
+    }
+
+    .contributions_photo svg{
+        margin-top: 860px;
+        margin-left: -70px;
+    }
+
+    .bottom_line_decor {
+        top: 2378px;
+    }
+
+    .help_title h2{
+        font-size: 44px;
+    }
+
+    .help_photo {
+        margin-top: -205px;
+        margin-left: 130px;
+    }
+
+    .support_body {
+        height: 5350px;
+    }
+
+    .donation-div {
+        margin-top: -1480px;
+    }
+
+    .donation_photo svg {
+        margin-top: 1500px;
+        margin-left: -945px;
     }
 }
