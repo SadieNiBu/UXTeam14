@@ -118,8 +118,8 @@ const Gallery = () => {
       <Row className='video-group'>
         <Row>
           <Col className='video-group-header'>
-            <h1>VIDEO GROUP HEADER</h1>
-            <p>Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.<br />Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor<br />ttitore ismod nulla. um sulla craspor ttitore ismod nulla.</p>
+            <h1>An Inside Look</h1>
+            <p>Competitions are the soul of everything we do here at C3. Get a look at what<br />competitions have in store for each of our members.</p>
             <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
             </svg>
@@ -128,12 +128,12 @@ const Gallery = () => {
         <Row>
           <Col className='video-1'>
             <iframe
-            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            src="https://www.youtube.com/embed/8CPYyUDzfp4?si=XLs0MbiG1YdRD3Mf">
             </iframe>
           </Col>
           <Col className='video-2'>
             <iframe
-            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            src="https://www.youtube.com/embed/hkiWMph4RsY?si=6gsd6AGHI1wvnc3S">
             </iframe>
           </Col>
         </Row>

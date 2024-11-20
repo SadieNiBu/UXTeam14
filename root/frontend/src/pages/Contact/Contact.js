@@ -59,7 +59,7 @@ const Contact = () => {
           </div>
           <div className='address'>
             <h5>CECS Office</h5>
-            <p>4328 Scorpius Street, Orlando, Florida</p>
+            <p>12760 Pegasus Drive, Bldg. 40, Room 107, Orlando, Florida</p>
           </div>
           <div className='university'>
             <h5>University of Central Florida</h5>

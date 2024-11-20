@@ -88,12 +88,14 @@ body .info p {
 }
 
 body .info .number p {
+    opacity: 0.7;
     width: 158px;
     height: 28px;
     margin-left: 125px;
 }
 
 body .info .email p {
+    opacity: 0.7;
     width: 182px;
     height: 28px;
     margin-left: 280px;
@@ -136,6 +138,7 @@ body .address p {
     font-family: Inter;
     width: 354.47px;
     height: 28px;
+    opacity: 0.7;
 }
 
 body .university h5 {
@@ -144,7 +147,7 @@ body .university h5 {
     font-weight: 700;
     position: relative;
     margin-left: 125px;
-    margin-top: 40px;
+    margin-top: 50px;
     line-height: 24.2px;
     font-family: Inter;
     width: 355px;
@@ -162,6 +165,7 @@ body .university p {
     font-family: Inter;
     width: 355px;
     height: 28px;
+    opacity: 0.7;
 }
 
 body .socials a{

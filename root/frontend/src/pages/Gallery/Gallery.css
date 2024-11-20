@@ -477,6 +477,16 @@
     }
 }
 
+@media (max-width: 450px) {
+    .video-1 iframe {
+        width: 300px;
+    }
+
+    .video-2 iframe {
+        width: 300px;
+    }
+}
+
 @media (max-width: 1511px) {
     .group-2-date p {
         display: flex;
