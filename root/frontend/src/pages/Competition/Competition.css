@@ -2458,6 +2458,16 @@ tbody tr td {
     }
 }
 
+@media (max-width: 450px) {
+    .col-4-video {
+        margin-left: -72vw;
+    }
+
+    .col-5-video {
+        margin-left: -72vw;
+    }
+}
+
 @media (max-width: 437px) {
     .more-than .top-pyramid img {
         width: 70px;
@@ -2469,6 +2479,16 @@ tbody tr td {
 
     .more-than .low-pyramid img {
         width: 50px;
+    }
+}
+
+@media (max-width: 440px) {
+    .col-4-video {
+        margin-left: -74vw;
+    }
+
+    .col-5-video {
+        margin-left: -74vw;
     }
 }
 
@@ -2519,6 +2539,26 @@ tbody tr td {
 
     .col-5-video {
         margin-left: -79vw;
+    }
+
+    .col-1-video iframe {
+        height: 38vw;
+    }
+
+    .col-2-video img {
+        height: 38vw;
+    }
+
+    .col-3-video iframe {
+        height: 38vw;
+    }
+
+    .col-4-video img {
+        height: 32vw;
+    }
+
+    .col-5-video iframe {
+        height: 32vw;
     }
 }
 
@@ -2582,6 +2622,16 @@ tbody tr td {
     }
 }
 
+@media (max-width: 410px) {
+    .col-4-video {
+        margin-left: -85vw;
+    }
+
+    .col-5-video {
+        margin-left: -85vw;
+    }
+}
+
 @media (max-width: 407px) {
     .more-than .top-pyramid img {
         width: 60px;
@@ -2595,6 +2645,131 @@ tbody tr td {
         width: 40px;
     }
 }
+
+@media (max-width: 404px) {
+    .col-1-video iframe {
+        width: 35vw;
+        height: 30vw;
+        margin-left: 2vw;
+    }
+
+    .col-2-video img {
+        width: 35vw;
+        height: 30vw;
+        margin-left: 2vw;
+    }
+
+    .col-3-video iframe {
+        width: 35vw;
+        height: 30vw;
+        margin-left: 2vw;
+    }
+
+    .col-4-video img {
+        width: 35vw;
+        height: 25vw;
+        margin-left: 2vw;
+    }
+
+    .col-5-video iframe {
+        width: 35vw;
+        height: 25vw;
+        margin-left: 2vw;
+    }
+
+    .col-4-video {
+        margin-left: -87vw;
+    }
+
+    .col-5-video {
+        margin-left: -87vw;
+    }
+}
+
+@media (max-width: 394px) {
+    .col-1-video iframe {
+        width: 35vw;
+        height: 20vw;
+        margin-left: 2vw;
+    }
+
+    .col-2-video img {
+        width: 35vw;
+        height: 20vw;
+        margin-left: 2vw;
+    }
+
+    .col-3-video iframe {
+        width: 35vw;
+        height: 20vw;
+        margin-left: 2vw;
+    }
+
+    .col-4-video img {
+        width: 35vw;
+        height: 15vw;
+        margin-left: 2vw;
+    }
+
+    .col-5-video iframe {
+        width: 35vw;
+        height: 15vw;
+        margin-left: 2vw;
+    }
+
+    .col-4-video {
+        margin-left: -91vw;
+    }
+
+    .col-5-video {
+        margin-left: -91vw;
+    }
+}
+
+@media (max-width: 390px) {
+    .top-pic {
+        margin-left: -28px;
+    }
+
+    .col-1-video iframe {
+        display: none;
+    }
+
+    .col-2-video img {
+        display: none;
+    }
+
+    .col-3-video iframe {
+        display: none;
+    }
+
+    .col-4-video img {
+        display: none;
+    }
+
+    .col-5-video iframe {
+        display: none;
+    }
+
+    .col-4-video {
+        margin-left: -91vw;
+    }
+
+    .col-5-video {
+        margin-left: -91vw;
+    }
+}
+
+@media (max-width: 382px) {
+    .col-4-video {
+        margin-left: -95vw;
+    }
+
+    .col-5-video {
+        margin-left: -95vw;
+    }
+}
+
 
 @media (max-width: 375px) {
     .top-competitions h3{
