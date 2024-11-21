@@ -87,3 +87,8 @@ header .wrapper p {
     align-self: stretch;
     flex: 1 0 0;
 }
+
+.certifications-link{
+    color: blue;
+    text-decoration: underline;
+}
