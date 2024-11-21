@@ -46,8 +46,8 @@ const Gallery = () => {
       <Row className='photo-group-1'>
         <Row>
           <Col className='group-1-header'>
-            <h1>PHOTO GROUP HEADER</h1>
-            <p>Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.<br />Orci, dictumst nec aliquet id </p>
+            <h1>ISTS 2024</h1>
+            <p>Winning comes natrual to UCF's C3 team. Take a glance at just one<br />victory from our trip to RIT for the 2024 Information<br />Security Talent Search Competition.</p>
             <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
             </svg>
@@ -67,7 +67,7 @@ const Gallery = () => {
             </div>
           </Col>
           <Col className='group-1-date'>
-            <p>July 26, 2024</p>
+            <p>March 1, 2024</p>
           </Col>
           <div className='col-2-photo-group'>
               <div className='col-2-photo-1'>
@@ -88,14 +88,14 @@ const Gallery = () => {
       <Row className='photo-group-2'>
         <Row>
           <Col className='group-2-header'>
-            <h1>PHOTO GROUP HEADER</h1>
-            <p>Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.<br />Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor<br />ttitore ismod nulla. um sulla craspor ttitore ismod nulla.</p>
+            <h1>NCCDC 2024</h1>
+            <p>In 2024, our C3 team had the honor of attending our 6th National Collegiate Cyber Defense<br />Competition. After the two day event concluded, we were able to successfully defend<br />our title as National Champion and return home with the Alamo Cup.</p>
             <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
             </svg>
           </Col>
           <Col className='group-2-date'>
-            <p>July 26, 2024</p>
+            <p>April 25, 2024</p>
           </Col>
           <Row className='group-2-photos'>
             <div className='group-2-container'>
@@ -140,8 +140,8 @@ const Gallery = () => {
       </Row>
       <Row className='photo-group-3'>
         <Col className='group-3-header'>
-          <h1>PHOTO GROUP HEADER</h1>
-          <p>Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla.<br />Orci, dictumst nec aliquet id ullamcorper venenatis. Fermentum sulla craspor<br />ttitore ismod nulla. um sulla craspor ttitore ismod nulla.</p>
+          <h1>Our Rich History</h1>
+          <p>Take a look through C3's illustrious past depicted through photos of our<br />team's best and brightest in their elemenet. Here at C3, we've established<br />a community of excellence that we hope reflects in these photos.</p>
           <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
           </ svg>

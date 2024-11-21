@@ -58,7 +58,7 @@
     color: #FFFFFF;
     text-wrap: nowrap;
     display: flex;
-    margin-top: -850px;
+    margin-top: -860px;
     padding-right: 60px;
     justify-content: end;
 }
@@ -487,6 +487,15 @@
     }
 }
 
+@media (max-width: 1623px) {
+    .group-2-date p {
+        display: flex;
+        margin-top: -270px;
+        padding-right: 50px;
+        justify-content: end;
+    }
+}
+
 @media (max-width: 1511px) {
     .group-2-date p {
         display: flex;
@@ -499,7 +508,7 @@
 @media (max-width: 1495px) {
     .group-1-date p {
         display: flex;
-        margin-top: -845px;
+        margin-top: -860px;
         padding-right: 55px;
         justify-content: end;
     }
@@ -519,7 +528,8 @@
 
 @media (max-width: 835px) {
     .group-1-date p {
-        margin-top: -1630px !important;
+        padding-top: 195px;
+        margin-top: -1620px;
     }
 
     .group-2-date p {
@@ -540,7 +550,8 @@
     .group-1-date p {
        position: absolute;
        margin-left: 230px;
-       margin-top: -1615px !important;
+       margin-top: -1000px;
+       padding-top: 205px;
     }
 
     .col-2-photo-1 img {
@@ -591,7 +602,7 @@
 
 @media (max-width: 627px) {
     .group-1-date p {
-        margin-top: -1600px !important;
+        margin-top: -1607px;
      }
 
     .col-2-photo-1 img {
@@ -610,10 +621,11 @@
     }
 
     .group-1-date p {
-       position: absolute;
-       margin-left: 230px;
-       margin-top: -645px;
-    }
+        position: absolute;
+        margin-left: 230px;
+        margin-top: -1000px;
+        padding-top: 210px;
+     }
 
     .group-2-header p {
         text-wrap: wrap;
@@ -623,7 +635,7 @@
     .group-2-date p {
         position: absolute;
         margin-left: -300px;
-        margin-top: 380px;
+        margin-top: 390px;
     }
 
     .photo-group-2 {
@@ -648,7 +660,7 @@
     }
 
     .group-1-date p {
-        margin-top: -1620px !important;
+        margin-top: -1620px;
      }
 
     .group-2-header p {
@@ -659,7 +671,7 @@
     .group-2-date p {
         position: absolute;
         margin-left: 230px;
-        margin-top: -27px;
+        margin-top: -32px;
     }
 
     .video-group-header p {
@@ -675,7 +687,7 @@
 
 @media (max-width: 1050px) {
     .group-1-date p {
-        margin-top: -1800px;
+        margin-top: -1810px;
     }
 
     .photo-group-1 {
@@ -835,6 +847,10 @@
     .photo-group-1 {
         height: 2762px;
     }
+
+    .group-1-date {
+        margin-top: -30px;
+     }
     
     .col-2-photo-1 img {
         margin-top: -780px !important;
@@ -852,13 +868,13 @@
 
     .group-1-date p {
         margin-left: 60vw;
-        margin-top: -1635px !important;
+        margin-top: -1810px;
      }
 
     .group-2-date p {
         position: absolute;
         margin-left: -30vw;
-        margin-top: 410px;
+        margin-top: 390px;
     }
 
     .group-1-header p {
@@ -1005,13 +1021,13 @@
 @media (max-width: 414px) {
     .group-1-date p {
         margin-left: 55vw;
-        margin-top: -1600px !important;
+        margin-top: -1805px;
      }
 
-    .group-2-date p {
+     .group-2-date p {
         position: absolute;
-        margin-left: 55vw;
-        margin-top: -25px;
+        margin-left: -30vw;
+        margin-top: 390px;
     }
 
     .col-2-photo-group {
@@ -1020,5 +1036,18 @@
 
     .photo-group-2 {
         height: 1557px !important;
+    }
+}
+
+@media (max-width: 375px) {
+    .group-1-date p {
+        margin-left: 55vw;
+        margin-top: -1795px;
+     }
+
+    .group-2-date p {
+        position: absolute;
+        margin-left: 200px;
+        margin-top: -50px;
     }
 }
