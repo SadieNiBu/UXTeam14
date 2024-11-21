@@ -35,6 +35,7 @@
     text-wrap: nowrap;
     left: 220px;
     top: 370px;
+    padding-top: 15px;
 }
 
 .top_line_decor {
@@ -80,6 +81,12 @@
     margin-left: 50px;
     padding-left: 120px;
     padding-right: 40px;
+}
+
+.contributions_photo img {
+    width: 566px;
+    height: 658px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
 }
 
 .contributions_header h1{
@@ -323,7 +330,7 @@
 
     .support_header .header_bio p {
         width: 650px;
-        margin-top: 60px;
+        margin-top: 70px;
     }
 
     .header_line {
@@ -379,6 +386,7 @@
 
     .header_line {
         margin-top: 170px;
+        padding-top: 25px;
     }
 }
 
@@ -396,7 +404,7 @@
         padding-right: 40px;
     }
 
-    .contributions_photo svg{
+    .contributions_photo img{
         width: 500px;
         height: 600px;
     }
@@ -410,7 +418,7 @@
         padding-right: 40px;
     }
 
-    .contributions_photo svg{
+    .contributions_photo img{
         width: 400px;
         height: 550px;
     }
@@ -428,7 +436,7 @@
         padding-right: 40px;
     }
 
-    .contributions_photo svg{
+    .contributions_photo img{
         width: 300px;
         height: 450px;
     }
@@ -445,7 +453,7 @@
         padding-right: 20px;
     }
 
-    .contributions_photo svg{
+    .contributions_photo img{
         width: 550px;
         height: 600px;
         margin-top: 500px;
@@ -488,10 +496,10 @@
 }
 
 @media (max-width: 625px) {
-    .contributions_photo svg{
+    .contributions_photo img{
         width: 350px;
         height: 450px;
-        margin-top: 520px;
+        margin-top: 750px;
         margin-left: -180px;
     }
 
@@ -516,13 +524,27 @@
 
     .contributions {
         width: 100vw;
-        height: 1500px;
+        height: 1700px;
         background: #0A58CA;
         margin-left: calc(-50vw + 50%);
     }
 
+    .contributions_text p {
+        text-wrap: wrap;
+        width: 250px;
+    }
+
+    .contributions_icons {
+        gap: 135px;
+    }
+
+    .contributions_divider svg{
+
+        margin-top: 42px;
+    }
+
     .bottom_line_decor {
-        top: 2129px;
+        top: 2329px;
         left: 220px;
         height: 28px;
         min-width: 1494px;
@@ -912,6 +934,12 @@
 }
 
 @media (max-width: 457px) {
+    .contributions_bio p {
+        margin-top: 40px;
+        text-wrap: wrap;
+        width: 300px;
+    }
+    
     .support_body {
         height: 4650px;
     }
@@ -948,12 +976,6 @@
         height: 1700px;
     }
 
-    .contributions_bio p {
-        margin-top: 30px;
-        text-wrap: wrap;
-        width: 300px;
-    }
-
     .contributions_text p {
         text-wrap: wrap;
         width: 200px;
@@ -968,8 +990,8 @@
         gap: 160px;
     }
 
-    .contributions_photo svg{
-        margin-top: 800px;
+    .contributions_photo img{
+        margin-top: 760px;
     }
 
     .bottom_line_decor {
@@ -1002,9 +1024,13 @@
 }
 
 @media (max-width: 414px) {
+    .header_title h3{
+        top: 120px;
+    }
+
     .support_header .header_bio p {
         width: 300px;
-        margin-top: 130px;
+        margin-top: 80px;
     }
 
     .header_line {
@@ -1026,22 +1052,29 @@
     }
 }
 
-
-@media (max-width: 375px) {
+@media (max-width: 382px) {
     .header_title h3{
-        top: 120px;
+        top: 90px;
     }
 
+    .support_header .header_bio p {
+        width: 300px;
+        margin-top: 100px;
+    }
+}
+
+
+@media (max-width: 376px) {
     .contributions {
         height: 1750px;
     }
 
     .contributions_bio p {
-        margin-top: 125px;
+        margin-top: 135px;
     }
 
-    .contributions_photo svg{
-        margin-top: 860px;
+    .contributions_photo img{
+        margin-top: 845px;
         margin-left: -70px;
     }
 

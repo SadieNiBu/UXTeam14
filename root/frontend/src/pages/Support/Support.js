@@ -1,5 +1,6 @@
 import './Support.css'
 import React, { useEffect } from 'react'
+import ContributionsPhoto from './contributionsphoto.png'
 import { Container, Row, Col } from "react-bootstrap"
 
 const Support = () => {
@@ -17,7 +18,7 @@ const Support = () => {
             <h3>Become a supporter for our team</h3>
           </div>
           <div className='header_bio'>
-            <p>Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst necaliquetid ullamcorper venenatis. Fermentum sulla craspor ttitore ismod nulla</p>
+            <p>Help UCF's C3 team continue to perform at their best and become a part of our legacy. UCF's C3 team is fueled by its donors and sponsors, which provides students crucial competition experience and memories that last for a lifetime.</p>
           </div>
           <div className='header_line'>
             <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,7 +48,7 @@ const Support = () => {
             <h1>WHAT YOU CAN DONATE</h1>
           </div>
           <div className='contributions_bio'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius<br />enim in eros elementum tristique.</p>
+            <p>You can help out the C3 team in more ways than one. No<br />contribution is ever too small.</p>
           </div>
          </div>
          <div className='contri-icon-div'>
@@ -85,25 +86,23 @@ const Support = () => {
               </svg>
             </div>
             <div className='contributions_text'>
-              <h4>Something</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit. Suspendisse varius enim in eros.</p>
+              <h4>Money</h4>
+              <p>You can donate any amount you are<br />able to by visiting the UCF Foundation.</p>
               <i></i>
-              <h4>Something</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit. Suspendisse varius enim in eros.</p>
+              <h4>Equipment</h4>
+              <p>Donate equipment to provide members with<br />hands-on experience with configuring devices.</p>
               <i></i>
-              <h4>Something</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit. Suspendisse varius enim in eros.</p>
+              <h4>Sponsoring the Team</h4>
+              <p>Become an official sponsor of the team, and<br />help carry our legacy of success forward.</p>
               <i></i>
-              <h4>Something</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur<br />adipiscing elit. Suspendisse varius enim in eros.</p>
+              <h4>Subscriptions to Services</h4>
+              <p>You are able to donate subscriptions to<br />services to help the team train on specific skills.</p>
             </div>
          </div>
         </Col>
         <Col>
           <div className='contributions_photo'>
-            <svg width="566" height="658" viewBox="0 0 566 658" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="566" height="658" fill="#D9D9D9"/>
-            </svg>
+            <img src={ContributionsPhoto} />
           </div>
         </Col>
       </Row>
