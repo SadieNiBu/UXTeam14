@@ -47,7 +47,6 @@ const createPhoto = async (req, res) => {
     }
   };  
 
-// Delete a photo
 const deletePhoto = async (req, res) => {
     const { id } = req.params;
 
@@ -56,22 +55,19 @@ const deletePhoto = async (req, res) => {
     }
 
     try {
-        // Find the photo by ID
-        const photo = await Photo.findById(id);
+        // Find and delete by ID
+        const photo = await Photo.findByIdAndDelete(id);
 
         if (!photo) {
             return res.status(404).json({ error: 'Photo not found' });
         }
 
-        // Delete image from Cloudinary
+        // Delete from cloudinary
         const cloudinaryResult = await cloudinary.uploader.destroy(photo.cloudinaryId);
 
         if (cloudinaryResult.result !== 'ok') {
             return res.status(400).json({ error: 'Failed to delete image from Cloudinary' });
         }
-
-        // Delete photo from database
-        await photo.remove();
 
         res.status(200).json({ message: 'Photo deleted successfully' });
     } catch (error) {
