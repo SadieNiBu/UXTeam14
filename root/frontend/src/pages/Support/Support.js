@@ -1,7 +1,9 @@
 import './Support.css'
+import HelpPhoto from './helpphoto.png'
 import React, { useEffect } from 'react'
-import ContributionsPhoto from './contributionsphoto.png'
 import { Container, Row, Col } from "react-bootstrap"
+import FoundationPhoto from './foundationphoto.png'
+import ContributionsPhoto from './contributionsphoto.png'
 
 const Support = () => {
 
@@ -118,16 +120,13 @@ const Support = () => {
             <h2>HOW YOUR CONTRIBUTION HELPS OUR TEAM</h2>
           </div>
           <div className='help_bio1'>
-            <p>Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam in in lorem platea mattis. Euismod aenean rhoncus scelerisque amet tincidunt<br />scelerisque aliquam. Luctus porttitor elit vel sapien, accumsan et id ut est. Posuere molestie in turpis quam. Scelerisque in viverra mi ut quisque. In<br />sollicitudin sapien, vel nulla quisque vitae. Scelerisque eget accumsan, non in. Posuere magna erat bibendum amet, nisi eu id.
-              <br /><br />Viverra at diam nunc non ornare. Sed ultricies pulvinar nunc, lacus sem. Tellus aliquam ut euismod cursus dui lectus. Ut amet, cras volutpat dui. A</p>
+            <p>Your contributions help to pay for equipment used to train C3 members, which keeps us sharp and ready for any challenge. Members are<br />able to learn valuable skills with these resources, which helps to further their education and development into an industry professional. Your<br />contributions also pay for travel and hotel costs, so we can give team members the opportunity to compete for their school on the national<br />stage.</p>
           </div>
           <div className='help_photo'>
-            <svg width="1080" height="320" viewBox="0 0 1080 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="1080" height="320" fill="#D9D9D9"/>
-            </svg>
+            <img src={HelpPhoto} />
           </div>
           <div className='help_bio2'>
-            <p>Et morbi vitae lobortis nam odio. Faucibus vitae vel neque nullam in in lorem platea mattis. Euismod aenean rhoncus scelerisque amet tincidunt<br />scelerisque aliquam. Luctus porttitor elit vel sapien, accumsan et id ut est. Posuere molestie in turpis quam. Scelerisque in viverra mi ut<br />quisque. In sollicitudin sapien, vel nulla quisque vitae. Scelerisque eget accumsan, non in. Posuere magna erat bibendum amet, nisi eu id.</p>
+            <p>For sponsorships with companies and organizations please contact:<br /><br />Thomas Bolick, Director of Development<br/>thomas.bolick@ucf.edu or 407-823-0125</p>
           </div>
         </Col>
       </Row>
@@ -145,7 +144,7 @@ const Support = () => {
             <h1>SEND US A DONATION</h1>
           </div>
           <div className='donation_bio'>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in<br />eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim<br />in eros. Lorem ipsum dolor sit amet, conse</p>
+            <p>You can donate to the C3 Team using the link below,<br />which takes you to the UCF Foundation. </p>
           </div>
           <div className='donation_btn'>
             <button class='btn btn-primary'>
@@ -155,9 +154,7 @@ const Support = () => {
         </Col>
         <Col>
           <div className='donation_photo'>
-            <svg width="429" height="517" viewBox="0 0 429 517" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="428.543" height="516.341" fill="#D9D9D9"/>
-            </svg>
+            <img src={FoundationPhoto} />
           </div>
         </Col>
       </Row>
