@@ -11,7 +11,6 @@ const PhotoDetails = ({ photo, refetchPhotos }) => {
     const handleImageChange = (e) => {
         const file = e.target.files[0];
         setImage(file);
-        setPreview(URL.createObjectURL(file));
     };
 
     const performDelete = async () => {

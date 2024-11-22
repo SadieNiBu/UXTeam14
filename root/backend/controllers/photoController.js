@@ -50,24 +50,35 @@ const createPhoto = async (req, res) => {
 // Delete a photo
 const deletePhoto = async (req, res) => {
     const { id } = req.params;
-  
-    try {
-      const photo = await Photo.findById(id);
-  
-      if (!photo) {
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
         return res.status(404).json({ error: 'Photo not found' });
-      }
-  
-      await cloudinary.uploader.destroy(photo.cloudinaryId);
-  
-      // Delete photo from database
-      await photo.remove();
-  
-      res.status(200).json({ message: 'Photo deleted successfully' });
-    } catch (error) {
-      res.status(400).json({ error: error.message });
     }
-  };  
+
+    try {
+        // Find the photo by ID
+        const photo = await Photo.findById(id);
+
+        if (!photo) {
+            return res.status(404).json({ error: 'Photo not found' });
+        }
+
+        // Delete image from Cloudinary
+        const cloudinaryResult = await cloudinary.uploader.destroy(photo.cloudinaryId);
+
+        if (cloudinaryResult.result !== 'ok') {
+            return res.status(400).json({ error: 'Failed to delete image from Cloudinary' });
+        }
+
+        // Delete photo from database
+        await photo.remove();
+
+        res.status(200).json({ message: 'Photo deleted successfully' });
+    } catch (error) {
+        console.error('Error deleting photo:', error);
+        res.status(400).json({ error: error.message });
+    }
+};
 
 // Update a photo
 const updatePhoto = async (req, res) => {
