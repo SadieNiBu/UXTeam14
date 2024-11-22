@@ -133,10 +133,10 @@ const About = () => {
               <div className='quote'>ABOUT STUDENT BENEFITS</div>
               <h1>SCHOLARSHIP OPPORTUNITIES</h1>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum 
-                tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero 
-                vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae 
-                risus tristique posuere.
+              UCF offers two scholarships that are particularly 
+              geared towards students interested in pursuing the 
+              cybersecurity field. These scholarships offer students 
+              incredible opportunities that will set them up for future success.
               </p>
               <svg xmlns="http://www.w3.org/2000/svg" width="100" height="5" viewBox="0 0 100 5" fill="none">
                 <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
@@ -150,9 +150,6 @@ const About = () => {
               </li>
               <li class="nav-item">
                 <a class="nav-link custom-tab-link" id="simple-tab-1" data-bs-toggle="tab" href="#simple-tabpanel-1" role="tab" aria-controls="simple-tabpanel-1" aria-selected="false" style={{ color: '#1D2130' }}>DoD CySP</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link custom-tab-link" id="simple-tab-2" data-bs-toggle="tab" href="#simple-tabpanel-2" role="tab" aria-controls="simple-tabpanel-2" aria-selected="false" style={{ color: '#525560' }}>Scholarship 3</a>
               </li>
             </ul>
             <div class="tab-content custom-tab-content" id="tab-content">
@@ -176,12 +173,6 @@ const About = () => {
                   <a href="https://cyber.cs.ucf.edu/cysp/" target="_blank" class="btn btn-primary">Learn More</a>
                 </div>
               </div>
-              <div class="tab-pane" id="simple-tabpanel-2" role="tabpanel" aria-labelledby="simple-tab-2">
-                Tab 3 selected
-                <div className='tab-button'>
-                  <a href="https://google.com/" target="_blank" class="btn btn-primary">Learn More</a>
-                </div>
-                </div>
             </div>
           </div>
         </div>
@@ -196,33 +187,33 @@ const About = () => {
           <div className='features'>
             <div className='feature'>
               <img src={building} class="picture" alt='Buildings'/>
-              <h4>Grant 1</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+              <h4>SFS Scholarship</h4>
+              <p>UCF has been awarded a nearly $2.9 million grant from the U.S. National Science Foundation for student scholarships.</p>
             </div>
             <div className='feature'>
               <img src={waves} class="picture" alt='Buildings'/>
-              <h4>Grant 2</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+              <h4>Cyber Innovation Lab</h4>
+              <p>Lockheed Martin donated $1.5 million to UCF to help create the facility and fund software and technology to support the lab.</p>
             </div>
             <div className='feature'>
               <img src={hand} class="picture" alt='Buildings'/>
-              <h4>Grant 3</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+              <h4>Cisco Advanced Security</h4>
+              <p>An $50,000 research award handed out for automation of improving software maintainability</p>
             </div>
             <div className='feature'>
               <img src={droplet} class="picture" alt='Buildings'/>
-              <h4>Grant 4</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+              <h4>Dean's Scholarship</h4>
+              <p>A scholarship for students persuing cybersecurity. EC-Council Univeristy covers 10% of a student's tuition.</p>
             </div>
             <div className='feature'>
               <img src={cat} class="picture" alt='Buildings'/>
-              <h4>Grant 5</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+              <h4>Maximum Effort</h4>
+              <p>A cybersecurity scholarship that supports students within the CECS. A student may receive $2,000 for tuition, textbooks, etc.</p>
             </div>
             <div className='feature'>
               <img src={plant} class="picture" alt='Buildings'/>
-              <h4>Grant 6</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+              <h4>CyberFlorida</h4>
+              <p>A $75,000 grant pertaining to the development of “Systematic Analytics for Securing the Internet-of-Things” within Florida</p>
             </div>
           </div>
         </div>
@@ -274,12 +265,12 @@ const About = () => {
             <div className='policy'>
               <div className='lead'>ABOUT OUR TRAVEL POLICY</div>
               <h3>Heading which concerns travel policy for competitions.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+              <p>UCF will pay for all travel and hotel costs for all the C3 members participating in a competition. All C3 members must abide by University Behavioral Policies during any competition.</p>
             </div>
             <div className='policy'>
               <div className='lead'>ABOUT: UNIFORM POLICY</div>
               <h3>Heading which concerns uniform policy for competitions.</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+              <p>All UCF C3 members must wear a UCF C3 team polo, khaki pants, black shoes, and a black belt during competitions. UCF supplies the C3 polo shirt for C3 team members. The black shoes, black belt and black socks are attire that need to be supplied by the members themselves.</p>
             </div>
           </div>
     </div>
