@@ -7,12 +7,21 @@ import { Navigation, Pagination } from 'swiper/modules'
 
 const Gallery = () => {
   const [ photos, setPhotos ] = useState(null)
-  const col1Photo1Id = "67321e9fecd81c154c11eb9d"
-  const col1Photo2Id = "67294852c57713e1168b3c8e"
-  const col2Photo1Id = "67294918c57713e1168b3c98"
-  const col2Photo2Id = "67294912c57713e1168b3c94"
-  const col3PhotoId = "67295aa3c57713e1168b3cd3"
-  const col4PhotoId = "67295aacc57713e1168b3cd7"
+
+  const col1Photos = [
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732257000/c3_uploads/g5y7swfm8j5lf2njtley.jpg",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732257000/c3_uploads/g5y7swfm8j5lf2njtley.jpg",
+  ];
+  const col2Photos = [
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732256990/c3_uploads/ma5vwwpxj4j8rw4y6bse.jpg",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732256990/c3_uploads/ma5vwwpxj4j8rw4y6bse.jpg",
+  ];
+  const col3Photos = [
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732256979/c3_uploads/yywxbe4abfckje13ognq.jpg",
+  ];
+  const col4Photos = [
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732256964/c3_uploads/ylacm5tkipidyyytuyzd.jpg",
+  ];
 
   useEffect ( () => {
     document.title = "C3 Team @ UCF | Gallery"
@@ -28,13 +37,6 @@ const Gallery = () => {
     fetchPhotos()
   }, [])
 
-  const col1Photo1 = photos ? photos.find(photo => photo._id === col1Photo1Id) : null
-  const col1Photo2 = photos ? photos.find(photo => photo._id === col1Photo2Id) : null
-  const col2Photo1 = photos ? photos.find(photo => photo._id === col2Photo1Id) : null
-  const col2Photo2 = photos ? photos.find(photo => photo._id === col2Photo2Id) : null
-  const col3Photo = photos ? photos.find(photo => photo._id === col3PhotoId) : null
-  const col4Photo = photos ? photos.find(photo => photo._id === col4PhotoId) : null
-
   return (
     <Container className='gallery-div'>
       <Row className='gallery-header text-center'>
@@ -47,20 +49,20 @@ const Gallery = () => {
         <Row>
           <Col className='group-1-header'>
             <h1>ISTS 2024</h1>
-            <p>Winning comes natrual to UCF's C3 team. Take a glance at just one<br />victory from our trip to RIT for the 2024 Information<br />Security Talent Search Competition.</p>
+            <p>Winning comes natural to UCF's C3 team. Take a glance at just one<br />victory from our trip to RIT for the 2024 Information<br />Security Talent Search Competition.</p>
             <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
             </svg>
             <div className='col-1-photo-group'>
               <div className='col-1-photo-1'>
                 <img 
-                src={col1Photo1 ? col1Photo1.image : ''}
+                src={col1Photos[0]}
                 className="img-fluid"
                 />
               </div>
               <div className='col-1-photo-2'>
                 <img 
-                src={col2Photo1 ? col2Photo1.image : ''}
+                src={col1Photos[1]}
                 className="img-fluid"
                 />
               </div>
@@ -72,13 +74,13 @@ const Gallery = () => {
           <div className='col-2-photo-group'>
               <div className='col-2-photo-1'>
                 <img
-                src={col1Photo2 ? col1Photo2.image : ''}
+                src={col2Photos[0]}
                 className="img-fluid"
                 />
               </div>
               <div className='col-2-photo-2'>
                 <img 
-                src={col2Photo2 ? col2Photo2.image : ''}
+                src={col2Photos[1]}
                 className="img-fluid"
                 />
               </div>
@@ -101,13 +103,13 @@ const Gallery = () => {
             <div className='group-2-container'>
             <Col className='col-3-photo' >
               <img 
-              src={col3Photo ? col3Photo.image : ''}
+              src={col3Photos[0]}
               className="img-fluid"
               />
             </Col>
             <Col className='col-4-photo' >
               <img 
-              src={col4Photo ? col4Photo.image : ''}
+              src={col4Photos[0]}
               className="img-fluid"
               />
             </Col>
@@ -141,7 +143,7 @@ const Gallery = () => {
       <Row className='photo-group-3'>
         <Col className='group-3-header'>
           <h1>Our Rich History</h1>
-          <p>Take a look through C3's illustrious past depicted through photos of our<br />team's best and brightest in their elemenet. Here at C3, we've established<br />a community of excellence that we hope reflects in these photos.</p>
+          <p>Take a look through C3's illustrious past depicted through photos of our<br />team's best and brightest in their element. Here at C3, we've established<br />a community of excellence that we hope reflects in these photos.</p>
           <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
           </ svg>
@@ -153,10 +155,10 @@ const Gallery = () => {
             pagination={{ type: 'fraction' }}
             modules={[Navigation, Pagination]}
             >
-          {photos.map((photo, index) => (
-          <SwiperSlide key={index}>
+          {photos.map((photo) => (
+          <SwiperSlide key={photo._id}>
             <div className='swiper-photo'>
-            <img src={photo.image} alt={`Slide ${index + 1}`} className="img-fluid" />
+            <img src={photo.imageUrl} alt={`Slide ${photo._id}`} className="img-fluid" />
             </div>
           </SwiperSlide>
           ))}
