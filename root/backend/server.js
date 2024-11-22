@@ -14,19 +14,24 @@ const articleRoutes = require('./routes/articles');
 const app = express();
 
 // Middleware
-app.use(express.json());
 
-app.use((req, res, next) => {
-    console.log(req.path, req.method); // Log all requests
-    next();
-});
-
+// CORS configuration
 app.use(cors({
     origin: 'https://cs.ucf.edu',
+    methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true,
     optionsSuccessStatus: 200
 }));
-app.options('*', cors());
 
+// Parse JSON bodies
+app.use(express.json());
+
+// Log middleware
+app.use((req, res, next) => {
+    console.log(`${req.method} ${req.path}`);
+    next();
+});
 
 // Routes
 app.use('/api/semesters', semesterRoutes);
@@ -35,16 +40,19 @@ app.use('/api/events', eventRoutes);
 app.use('/api/admin', adminRoutes);
 app.use('/api/photos', photoRoutes);
 app.use('/api/articles', articleRoutes);
-app.use('/uploads', express.static('uploads'));
 
 // Connect to MongoDB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true
+})
     .then(() => {
         // Listen for requests
-        app.listen(process.env.PORT, () => {
-            console.log('Server is running on port ' + process.env.PORT);
-          });
+        const PORT = process.env.PORT || 4000;
+        app.listen(PORT, () => {
+            console.log(`Server is running on port ${PORT}`);
+        });
     })
     .catch((error) => {
-        console.log(error);
+        console.error('MongoDB Connection Error:', error);
     });
