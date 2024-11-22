@@ -10,7 +10,7 @@ export const useSignup = () => {
         setIsLoading(true);
         setError(null);
 
-        const response = await fetch('/api/admin/signup', {
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/admin/signup', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({email, password})

@@ -2,6 +2,7 @@ const Photo = require('../models/Photo');
 const mongoose = require('mongoose');
 const path = require('path');
 const fs = require('fs');
+const cloudinary = require('../cloudinary')
 
 // Get all photos
 const getPhotos = async (req, res) => {
@@ -28,65 +29,76 @@ const getPhoto = async (req, res) => {
 
 // Create a new photo
 const createPhoto = async (req, res) => {
-    const image = req.file ? req.file.path : null; // Save file path if an image was uploaded
-    
     try {
-        const photo = await Photo.create({ image });
-        res.status(200).json(photo);
+      // Upload to Cloudinary
+      const result = await cloudinary.uploader.upload(req.file.path, {
+        folder: 'c3_uploads',
+      });
+  
+      // Create new photo in the database
+      const photo = await Photo.create({
+        imageUrl: result.secure_url,
+        cloudinaryId: result.public_id,
+      });
+  
+      res.status(200).json(photo);
     } catch (error) {
-        res.status(400).json({ error: error.message });
+      res.status(400).json({ error: error.message });
     }
-};
+  };  
 
 // Delete a photo
 const deletePhoto = async (req, res) => {
     const { id } = req.params;
-
-    if (!mongoose.Types.ObjectId.isValid(id)) {
+  
+    try {
+      const photo = await Photo.findById(id);
+  
+      if (!photo) {
         return res.status(404).json({ error: 'Photo not found' });
+      }
+  
+      await cloudinary.uploader.destroy(photo.cloudinaryId);
+  
+      // Delete photo from database
+      await photo.remove();
+  
+      res.status(200).json({ message: 'Photo deleted successfully' });
+    } catch (error) {
+      res.status(400).json({ error: error.message });
     }
-
-    const photo = await Photo.findOneAndDelete({ _id: id });
-
-    if (photo.image) {
-        const imagePath = path.join(__dirname, '..', photo.image);
-        fs.unlink(imagePath, (err) => {
-            if (err) {
-                console.error('Error deleting image file:', err);
-            } else {
-                console.log('Image file deleted successfully');
-            }
-        });
-    }
-
-    if (!photo) {
-        return res.status(404).json({ error: 'Photo not found' });
-    }
-
-    res.status(200).json(photo);
-};
+  };  
 
 // Update a photo
 const updatePhoto = async (req, res) => {
     const { id } = req.params;
-
-    if (!mongoose.Types.ObjectId.isValid(id)) {
+  
+    try {
+      // Find the existing photo
+      const photo = await Photo.findById(id);
+  
+      if (!photo) {
         return res.status(404).json({ error: 'Photo not found' });
+      }
+  
+      // Delete existing image from Cloudinary
+      await cloudinary.uploader.destroy(photo.cloudinaryId);
+  
+      // Upload new image
+      const result = await cloudinary.uploader.upload(req.file.path, {
+        folder: 'c3_uploads',
+      });
+  
+      // Update photo in the database
+      photo.imageUrl = result.secure_url;
+      photo.cloudinaryId = result.public_id;
+      await photo.save();
+  
+      res.status(200).json(photo);
+    } catch (error) {
+      res.status(400).json({ error: error.message });
     }
-    
-    const image = req.file ? req.file.path : undefined; // Use image file path if uploaded
-    
-    const updateData = { };
-    if (image) updateData.image = image; // Only update image if a new file is uploaded
-
-    const photo = await Photo.findOneAndUpdate({ _id: id }, updateData, { new: true });
-
-    if (!photo) {
-        return res.status(404).json({ error: 'Photo not found' });
-    }
-
-    res.status(200).json(photo);
-};
+  };  
 
 module.exports = {
     getPhotos,

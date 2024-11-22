@@ -7,11 +7,6 @@ const PhotoDetails = ({ photo, refetchPhotos }) => {
     const { admin } = useAuthContext();
     const [isEditing, setIsEditing] = useState(false);
     const [image, setImage] = useState(null);
-    const [preview, setPreview] = useState(photo.image ? `/${photo.image}` : null); // For image preview
-
-    useEffect(() => {
-        setPreview(photo.image ? `/${photo.image}` : null); // Update preview if image changes
-    }, [photo]);
 
     const handleImageChange = (e) => {
         const file = e.target.files[0];
@@ -68,16 +63,17 @@ const PhotoDetails = ({ photo, refetchPhotos }) => {
                     <input 
                         type="file"
                         onChange={handleImageChange} // Handle image file selection
+                        accept="image/*"
                     />
                     
-                    {preview && <img src={preview} alt="Preview" style={{ width: '100px', marginTop: '10px' }} />} {/* Display image preview */}
+                    {photo.imageUrl && <img src={photo.imageUrl} alt="Preview" style={{ width: '100px', marginTop: '10px' }} />} {/* Display image preview */}
 
                     <button type="submit">Save</button>
                     <button onClick={() => setIsEditing(false)}>Cancel</button>
                 </form>
             ) : (
                 <>
-                    {preview && <img src={preview} style={{ width: '100px' }} />} {/* Display current image */}
+                    {photo.imageUrl && <img src={photo.imageUrl} style={{ width: '100px' }} />} {/* Display current image */}
                     <button onClick={() => setIsEditing(true)}>Edit</button>
                     <span onClick={performDelete}>
                         <button>Delete</button>

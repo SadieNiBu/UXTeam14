@@ -52,6 +52,7 @@ const PhotoForm = ({ refetchPhotos }) => {
             <input 
                 type="file"
                 onChange={handleImageChange} // Handle file selection
+                accept="image/*"
             />
 
             <button>Add Photo</button>
