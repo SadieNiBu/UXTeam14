@@ -120,15 +120,29 @@ a {
 }
 
 /* Phone only */
-@media screen and (max-width: 600px) {
-    .hero .header h3 {
-        font-size: 35px;
+@media screen and (max-width: 400px) {
+    .hero .header {
+        top: 30%;
     }
+    .hero .header h3 {
+        font-size: 28px;
+    }
+}
+@media screen and (min-width: 401px) and (max-width: 600px) {
+    .hero .header {
+        top: 36%;
+    }
+    .hero .header h3 {
+        font-size: 33px;
+    }
+}
+@media screen and (max-width: 600px) {
     .hero .header p {
         margin-top: -6px;
     }
     .hero .header button {
         margin-top: -30px;
+        padding: 10px 22px;
     }
 }
 
@@ -178,6 +192,8 @@ a {
     .section-1 {
         background-size: contain;
         background-position: top;
+        padding-top: 15%;
+        padding-bottom: 15%;
     }
 }
 
@@ -258,6 +274,10 @@ a {
     .section-1 .wrapper .text {
         padding: 10%;
         padding-top: 0;
+        margin-left: -40px;
+    }
+    .section-1 .wrapper .text h1 {
+        font-size: 30px;
     }
 }
 
@@ -283,6 +303,17 @@ a {
     font-weight: 800;
     line-height: normal;
     margin-bottom: 45px;
+}
+
+@media screen and (max-width: 768px) {
+    .sponsors {
+        padding: 10%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .sponsors h1 {
+        font-size: 32px;
+    }
 }
 
 .logos {
@@ -365,6 +396,22 @@ a {
     color: white;
 }
 
+@media screen and (max-width: 768px) {
+    .competitions {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    .competitions .top p {
+        font-size: 18px;
+    }
+    .competitions .top h1 {
+        font-size: 30px;
+    }
+    .competitions .top button {
+        width: 100px;
+    }
+}
+
 @media screen and (max-width: 991px) {
     .competitions .top button {
         float: left;
@@ -392,14 +439,21 @@ a {
     width: 100%;
     height: 100%;
     max-width: 490px;
-    min-height: 463px;
 }
 
 .competitions .list .main img {
     grid-area: image;
-    width: 110%;
+    width: 100%;
     height: 100%;
     z-index: 0;
+}
+
+@media screen and (max-width: 500px) {
+    .competitions .list .main img {
+        grid-area: image;
+        width: 120%;
+        z-index: 0;
+    }
 }
 
 .competitions .list .main .date {
@@ -528,6 +582,30 @@ a {
     line-height: 28px; /* 175% */
 }
 
+@media screen and (max-width: 768px) {
+    .competitions .list .main .date {
+        width: 70px;
+        height: 70px;
+        padding: var(--Spacing-4, 4px) var(--Spacing-14, 14px);
+    }
+    .competitions .list .others .item {
+        max-width: 100vw;
+        max-height: 100%;
+    }
+    .competitions .list .others .item .date {
+        width: 60px;
+        height: 60px;
+    }
+    .competitions .list .others .item h5 {
+        margin-top: -0;
+        
+    }
+    .competitions .list .others .item p {
+        margin-left: 0;
+        margin-top: -30px;
+    }
+}
+
 .news {
     display: flex;
     flex-wrap: wrap;
@@ -605,7 +683,7 @@ a {
 
 .news__article {
     position: relative;
-    width: 410px;
+    max-width: 410px;
     height: 534px;
     flex-shrink: 0;
     background-color: var(--Light-Base-Color-White, #FFF);
@@ -627,7 +705,7 @@ a {
 .news__article__title {
     margin-top: 16px;
     margin-left: 22px;
-    width: 365.676px;
+    max-width: 365.676px;
     color: var(--Text-Title-Text, #333);
     /* Bold / H4 Heading */
     font-family: Inter;
@@ -687,6 +765,13 @@ a {
     line-height: normal;
 }
 
+@media screen and (max-width: 768px) {
+    .news {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+}
+
 .photos {
     display: flex;
     padding: 75px 100px;
@@ -699,6 +784,7 @@ a {
 
 @media screen and (max-width: 991px) {
     .photos {
+        padding: 10%;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -791,6 +877,13 @@ a {
     justify-content: center;
     gap: 10px;
     align-self: center;
+}
+
+@media screen and (max-width: 768px) {
+    .medium {
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
 }
 
 @media screen and (max-width: 1200px) {

@@ -86,13 +86,7 @@ const Home = () => {
             <path d="M1292 24.2105L1500 0L1014 1.0678L544 0L664 36L796 14L1032 0L1292 24.2105Z" fill="black"/>
         </svg>
       </div>
-      <div className='news__svg--blue'>
-        <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="511" viewBox="0 0 1500 511" fill="none">
-          <path d="M-1066.93 510L1857 1L-1727 510H-1066.93Z" fill="#0A58CA"/>
-          <path d="M1857 1L-483.237 510H-101.38L1857 1Z" fill="#0A58CA"/>
-          <path d="M1857 1L-1066.93 510H-1727L1857 1ZM1857 1L-483.237 510H-101.38L1857 1Z" stroke="#0A58CA"/>
-        </svg>
-      </div>
+      
       <div className='news'>
         <div className='news__header'>
           <div className='news__header__tagline'>
