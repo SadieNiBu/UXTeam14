@@ -322,13 +322,13 @@ html {
 
 .stories .story .content {
     max-width: 957px;
-    height: 598px;
+    max-height: 798px;
     background: var(--UCF-White, #FFF);
 }
 
 .stories .story .content p {
     padding-top: 71px;
-    padding-left: 168.58px;
+    padding-left: 100px;
     max-width: 529.566px;
     color: var(--Gray-800, #343A40);
     /* Lead/Text - Regular */
@@ -339,12 +339,11 @@ html {
 }
 
 .stories .story .content svg {
-    margin-top: 116.5px;
     margin-left: 448.63px;
 }
 
 .stories .story .content .author {
-    margin-left: 173.12px;
+    margin-left: 100px;
     height: 61.63px;
     max-width: 275px;
     gap: 3.628px;
@@ -368,15 +367,21 @@ html {
     line-height: normal;
 }
 
+.stories .competition-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding-top: 20px;
+}
+
 .stories button {
-    margin-top: 117px;
-    margin-left: 918px;
     display: flex;
     width: 120.631px;
     padding: 14.512px 21.768px;
     justify-content: center;
     align-items: center;
-    gap: 29.024px;
+    gap: 29px;
     border-radius: 21.768px;
     border: none;
     background: var(--UCF-Bright-Gold, #FFC904);
@@ -388,15 +393,26 @@ html {
     line-height: 23.582px; /* 185.714% */
 }
 
+.stories .btn-primary:disabled {
+    background-color: #6c757d; /* Bootstrap secondary color */
+    cursor: not-allowed;
+}
+
 .stories img {
-    margin-top: -450px;
+    margin-top: -40%;
     margin-left: 597px;
-    width: 442px;
-    height: 586px;
+    max-width: 442px;
+    max-height: 586px;
     flex-shrink: 0;
 }
 
-@media (max-width: 1024px) {
+@media only screen and (min-width: 1025px) and (max-width: 1301px) {
+    .stories .competition-buttons {
+        padding-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
     .stories {
         padding: 160px 20px;
         padding-bottom: 50px;
@@ -412,6 +428,7 @@ html {
 
     .stories .story .content {
         max-width: 100%;
+        max-height: 100%;
         height: auto; /* Allow height to adjust naturally */
         padding: 20px;
     }
