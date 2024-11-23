@@ -10,10 +10,14 @@ import logo5 from './Images/Logo5.svg'
 import logo6 from './Images/Logo6.svg'
 import placeholder from './Images/placeholder.jpg'
 import { Link, useMatch, useResolvedPath} from "react-router-dom"
+import HomeCompetitions from './HomeCompetitions'
+import HomeGallery from './HomeGallery'
 
 const Home = () => {
   const [articles, setArticles] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
+
+  const logo1 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732326073/image_31_hdyipr.png";
 
   useEffect(() => {
     document.title = "C3 Team @ UCF";
@@ -52,11 +56,8 @@ const Home = () => {
           <div className='text'>
             <div className='quote'>WE ARE ALWAYS UP</div>
             <h1>FOR A CHALLENGE</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-              Suspendisse varius enim in eros elementum tristique. 
-              Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, 
-              ut commodo diam libero vitae erat. Aenean faucibus nibh et justo 
-              cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            <p>
+              Our teams are always ready for whatever challenge comes their way. No obstacle is too big for us, as we analyze and problem solve our way through various challenges. 
             </p>
             <svg xmlns="http://www.w3.org/2000/svg" width="100" height="5" viewBox="0 0 100 5" fill="none">
               <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
@@ -71,47 +72,14 @@ const Home = () => {
         </svg>
         <div className='logos'>
           <img src={logo1} class="logo" alt='Logo 1' />
-          <img src={logo2} class="logo" alt='Logo 2' />
+          {/*<img src={logo2} class="logo" alt='Logo 2' />
           <img src={logo3} class="logo" alt='Logo 3' />
           <img src={logo4} class="logo" alt='Logo 4' />
           <img src={logo5} class="logo" alt='Logo 5' />
-          <img src={logo6} class="logo" alt='Logo 6' />
+          <img src={logo6} class="logo" alt='Logo 6' />*/}
         </div>
       </div>
-      <div className='competitions full-bleed--black'>
-        <div className='top'>
-          <p>Upcoming Competitions</p>
-          <h1>12 Competitions This Season</h1>
-          <button type="button" class="btn btn-primary"><CustomLink to='competition'>See More</CustomLink></button>
-        </div>
-        <div className='list'>
-          <div className='main'>
-            <img src={placeholder} class="photo" alt='Placeholder' />
-            <div className='date'>30th July</div>
-            <div className='description'>
-              <h5>Previous Competition Picture</h5>
-              <p>Proin cras id semper tellus euismod aenean est a egestas. Rutrum in ipsum vivamus nunc dignissim sit...</p>
-            </div>
-          </div>
-          <div className='others'>
-            <div className='item'>
-              <div className='date'>29 July</div>
-              <h5>Competition 1</h5>
-              <p> Proin cras id semper tellus euismod aenean est a egestas. Rutrum in ipsum vivamus nunc dignissim sit...</p>
-            </div>
-            <div className='item'>
-              <div className='date'>29 July</div>
-              <h5>Competition 2</h5>
-              <p> Proin cras id semper tellus euismod aenean est a egestas. Rutrum in ipsum vivamus nunc dignissim sit...</p>
-            </div>
-            <div className='item'>
-              <div className='date'>29 July</div>
-              <h5>Competition 3</h5>
-              <p> Proin cras id semper tellus euismod aenean est a egestas. Rutrum in ipsum vivamus nunc dignissim sit...</p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HomeCompetitions></HomeCompetitions>
       <div className='news__svg--black'>
         <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="36" viewBox="0 0 1500 36" fill="none">
             <path d="M0 2.30889e-05L454 24.2105L544 0L0 2.30889e-05Z" fill="black"/>
@@ -162,29 +130,14 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className='photos full-bleed--blue'>
-        <div className='photos__header'>
-          <p>Media Feature</p>
-          <h1>Photo Gallery</h1>
-        </div>
-        <div className='photos__main'>
-          <div className='photos__main__row'>
-            <img src={placeholder} class="photo" alt='Placeholder' />
-            <img src={placeholder} class="photo" alt='Placeholder' />
-          </div>
-          <div className='photos__main__row'>
-            <img src={placeholder} class="photo" alt='Placeholder' />
-            <img src={placeholder} class="photo" alt='Placeholder' />
-          </div>
-        </div>
-      </div>
+      <HomeGallery></HomeGallery>
       <div className='medium'>
         <div className='medium__yt'>
           <iframe width="640" height="491" src="https://www.youtube.com/embed/PLNluCohtZ4" title="Aspiring to Accomplished: UCF Student’s Cybersecurity Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <div className='medium__text'>
-          <h1>Medium Video Layout</h1>
-          <p>Commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          <h1>The Impact of C3 Membership</h1>
+          <p>Learn all about what C3 can offer with an inside perspective from a C3 team member.</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="6" viewBox="0 0 100 6" fill="none">
             <path d="M0 0.0175781H100V5.01758H0V0.0175781Z" fill="#FFC904"/>
           </svg>

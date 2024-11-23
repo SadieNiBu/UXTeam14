@@ -397,8 +397,8 @@ a {
 
 .competitions .list .main img {
     grid-area: image;
-    width: 100%;
-    height: auto;
+    width: 110%;
+    height: 100%;
     z-index: 0;
 }
 
@@ -751,6 +751,10 @@ a {
     align-self: stretch;
 }
 
+/* .photos__main__row img {
+    
+} */
+
 @media screen and (max-width: 991px) {
     .photos__main__row {
         flex-wrap: wrap;
@@ -799,7 +803,6 @@ a {
 }
 
 .medium__text h1 {
-    width: 488px;
     color: var(--Default-Black, #000);
     /* Bold/H1 Heading */
     font-family: Inter;
