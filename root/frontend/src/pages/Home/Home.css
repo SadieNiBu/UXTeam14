@@ -1,3 +1,12 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+.container, .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 a {
     /* Remove default underline for links */
     text-decoration: none;
@@ -20,6 +29,12 @@ a {
     --full-bleed-color--blue: var(--colors-blue-blue-600, #0A58CA);
     box-shadow: 0 0 0 100vmax var(--full-bleed-color--blue);
     clip-path: inset(0 -100vmax);
+}
+
+@media screen and (max-width: 1700px) {
+    .home-main {
+        overflow-x: hidden;
+    }
 }
 
 .hero {
@@ -190,10 +205,10 @@ a {
 
 @media (max-width: 768px) {
     .section-1 {
+        padding-top: 15%;
+        padding-bottom: 10%;
         background-size: contain;
         background-position: top;
-        padding-top: 15%;
-        padding-bottom: 15%;
     }
 }
 
@@ -206,9 +221,9 @@ a {
     flex-wrap: wrap;
     width: 100%;
     max-width: 1300px;
-    gap: 8%;
     justify-content: center;
     align-items: center;
+    gap: 8%;
 }
 
 .section-1 .wrapper img {
@@ -229,6 +244,7 @@ a {
 }
 
 .section-1 .wrapper .text .quote {
+    padding-top: 10%;
     color: var(--Secondary-Dark-Color, #54595E);
 
     /* Body/blockquote */
@@ -274,10 +290,17 @@ a {
     .section-1 .wrapper .text {
         padding: 10%;
         padding-top: 0;
+        padding-bottom: 0;
         margin-left: -40px;
     }
     .section-1 .wrapper .text h1 {
         font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .section-1 .wrapper {
+        gap: 0;
     }
 }
 
@@ -406,6 +429,7 @@ a {
     }
     .competitions .top h1 {
         font-size: 30px;
+        width: 130%;
     }
     .competitions .top button {
         width: 100px;
@@ -841,6 +865,32 @@ a {
     
 } */
 
+.photos button {
+    float: right;
+    height: 48px;
+    width: 184px;
+    border: none;
+    border-radius: 4px;
+    background: var(--UCF-Bright-Gold, #FFC904);
+
+    color: var(--Default-Black, #000);
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    list-style: none;
+    line-height: 28px; /* 175% */
+}
+
+.photos button:hover {
+    background-color: #000;
+}
+
+.photos button:hover a {
+    color: white;
+}
+
 @media screen and (max-width: 991px) {
     .photos__main__row {
         flex-wrap: wrap;
@@ -858,6 +908,7 @@ a {
     max-width: 1300px;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
 }
 
 .medium__yt {
@@ -881,8 +932,9 @@ a {
 
 @media screen and (max-width: 768px) {
     .medium {
-        padding-top: 10%;
+        padding-top: 0%;
         padding-bottom: 10%;
+        gap: 0;
     }
 }
 

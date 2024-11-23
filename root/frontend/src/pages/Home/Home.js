@@ -41,7 +41,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div>
+    <div className='home-main'>
       <div className='hero'>
         <img src={hero} class="picture" alt='UCF C3 Team' />
         <div className='header'>
@@ -126,15 +126,15 @@ const Home = () => {
       </div>
       <HomeGallery></HomeGallery>
       <div className='medium'>
-        <div className='medium__yt'>
-          <iframe width="640" height="491" src="https://www.youtube.com/embed/PLNluCohtZ4" title="Aspiring to Accomplished: UCF Student’s Cybersecurity Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
         <div className='medium__text'>
           <h1>The Impact of C3 Membership</h1>
           <p>Learn all about what C3 can offer with an inside perspective from a C3 team member.</p>
           <svg xmlns="http://www.w3.org/2000/svg" width="100" height="6" viewBox="0 0 100 6" fill="none">
             <path d="M0 0.0175781H100V5.01758H0V0.0175781Z" fill="#FFC904"/>
           </svg>
+        </div>
+        <div className='medium__yt'>
+          <iframe width="640" height="491" src="https://www.youtube.com/embed/PLNluCohtZ4" title="Aspiring to Accomplished: UCF Student’s Cybersecurity Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
       </div>
     </div>

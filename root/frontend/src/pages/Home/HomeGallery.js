@@ -1,5 +1,6 @@
 import './Home.css';
 import React, { useEffect, useState } from 'react';
+import { Link, useMatch, useResolvedPath} from "react-router-dom";
 
 const HomeGallery = () => {
   const [photos, setPhotos] = useState(null);
@@ -63,8 +64,24 @@ const HomeGallery = () => {
           />
         </div>
       </div>
+      <button type="button" className="btn btn-primary">
+        <CustomLink to="gallery">See More</CustomLink>
+      </button>
     </div>
   );
 };
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+  return (
+      <li className={isActive ? "active" : ""}>
+          <Link to={to} {...props}>
+              {children}
+          </Link>
+      </li>
+  )
+}
 
 export default HomeGallery;
