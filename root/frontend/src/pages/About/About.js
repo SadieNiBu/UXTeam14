@@ -197,8 +197,8 @@ const About = () => {
             </div>
             <div className='feature'>
               <img src={hand} class="picture" alt='Buildings'/>
-              <h4>Cisco Advanced Security</h4>
-              <p>An $50,000 research award handed out for automation of improving software maintainability</p>
+              <h4>Harris Cyber Fellowship</h4>
+              <p>$40,000 two-year fellowship to a graduate student preparing for a career in cybersecurity with connections with C3</p>
             </div>
             <div className='feature'>
               <img src={droplet} class="picture" alt='Buildings'/>
@@ -212,8 +212,8 @@ const About = () => {
             </div>
             <div className='feature'>
               <img src={plant} class="picture" alt='Buildings'/>
-              <h4>CyberFlorida</h4>
-              <p>A $75,000 grant pertaining to the development of “Systematic Analytics for Securing the Internet-of-Things” within Florida</p>
+              <h4>Raytheon Scholarship</h4>
+              <p>$1,000 scholarship awarded to an undergraduate student preparing for a career in cybersecurity with connections with C3</p>
             </div>
           </div>
         </div>

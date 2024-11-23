@@ -7,9 +7,14 @@ import TwentyTwo from './2022.png'
 import TwentyThree from './2023.png'
 import TwentyFour from './2024.png'
 import PresPic from './president.png'
+import NCCDC2020 from './nccdc2020.png'
+import NCCDC2021 from './nccdc2021.png'
+import NCCDC2022 from './nccdc2022.png'
+import NCCDC2024 from './nccdc2024.png'
 import firstPlace from './1st-place.png'
 import thirdPlace from './3rd-place.png'
 import secondPlace from './2nd-place.png'
+import Western3rd from './western3rd.png'
 import CompPhoto from './competitionlogo.png'
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
@@ -94,7 +99,7 @@ const Competition = () => {
               <h3>Competitions</h3>
             </div>
             <div className='top-competitions-text'>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius<br />enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor<br />interdum nulla, ut commodo diam libero vitae erat.</p>
+              <p>View our upcoming competitions and stay up to date with the C3 team.<br />Look through all of our past competitions and see how the team has<br />maintained its excellence over the years.</p>
             </div>
           </div>
         </Col>
@@ -105,7 +110,7 @@ const Competition = () => {
       <Row className='youtube'>
         <Col className='youtube-vid text-center'>
           <iframe
-          src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          src="https://www.youtube.com/embed/9JVTfQDNqIU?si=BcnHm9bcsVDi9wz0">
           </iframe>
         </Col>
         <Row className='youtube-textbox'>
@@ -114,14 +119,14 @@ const Competition = () => {
               <h1>It's just what we do</h1>
             </div>
             <div className='youtube-text'>
-              <p>Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper venenatis.<br />Fermentum. Nibh quisque suscipit fermentum netus nulla cras porttitor euismod nulla. Orci, dictumst nec aliquet id ullamcorper<br />venenatis. Fermentum.</p>
+              <p>Learn all about the National Collegiate Cyber Defense Competition, and how we continue to break records within this cyber<br />defense sphere. Our C3 team has the honor of boasting a record six NCCDC National Champion titles, all of<br />which were fought for and earned by our talented and dedicated members.</p>
             </div>
             <div className='youtube-btn'>
               <button class='btn btn-primary'><a href='https://www.youtube.com/watch?v=PLNluCohtZ4&t=58s'>Our YouTube</a></button>
             </div>
           </Col>
           <Col className='youtube-date'>
-            <p>July 6, 2024</p>
+            <p>Since 2014</p>
           </Col>
         </Row>
       </Row>
@@ -177,7 +182,7 @@ const Competition = () => {
         <Col className='sc-media'>
           <div className='sc-vid text-center'>
             <iframe
-            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+            src="https://www.youtube.com/embed/8CPYyUDzfp4?si=-AkZ5dYlzFtCwbGX">
             </iframe>
           </div>
           <div className='sc-img text-center'>
@@ -208,13 +213,13 @@ const Competition = () => {
               </div>
             </div>
             <div className='champs-num'>
-              <h1>5</h1>
+              <h1>6</h1>
             </div>
             <div className='champs-title'>
-              <h5>CCDC National<br />Championships</h5>
+              <h5>NCCDC National<br />Championships</h5>
             </div>
             <div className='champs-date'>
-              <p>2014, 2015, 2016, 2021, 2022</p>
+              <p>2014, 2015, 2016, 2021, 2022, 2024</p>
             </div>
           </Col>
           <Col className='runner-up-1 text-center'>
@@ -227,13 +232,13 @@ const Competition = () => {
               </div>
             </div>
             <div className='champs-num'>
-              <h1>3</h1>
+              <h1>4</h1>
             </div>
             <div className='champs-title'>
-              <h5>CCDC National<br />Runner-Up Finishes</h5>
+              <h5>DOE CyberForce<br />Championships</h5>
             </div>
             <div className='champs-date'>
-              <p>2018, 2019, 2020</p>
+              <p>2018, 2021, 2022, 2023</p>
             </div>
           </Col>
           <Col className='runner-up-2 text-center'>
@@ -249,7 +254,7 @@ const Competition = () => {
               <h1>3</h1>
             </div>
             <div className='champs-title'>
-              <h5>CCDC National<br />Runner-Up Finishes</h5>
+              <h5>NCCDC National<br />Runner-Ups</h5>
             </div>
             <div className='champs-date'>
               <p>2018, 2019, 2020</p>
@@ -259,28 +264,30 @@ const Competition = () => {
       </Row>
       <Row className='timeline'>
         <Col className='col-1'>
-          <h1 className='col-1-title'>CCDC@UCF OVER RECENT YEARS</h1>
+          <h1 className='col-1-title'>C3@UCF OVER RECENT YEARS</h1>
           <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
           </svg>
           <div className='col-1-video'>
               <h1>2024</h1>
-              <p> Proin cras id semper tellus euismod aenean est a egestas.<br />Rutrum in ipsum vivamus nunc dignissim sit.<br />Proin cras id s sit.....</p>
-              <iframe
-              src="https://www.youtube.com/embed/tgbNymZ7vqY">
-              </iframe>
+              <p>In the 2024 NCCDC, C3 won their sixth National<br />Championship title. This landmark event broke<br />records and set new ones!</p>
+              <img 
+              src={NCCDC2024}
+              />
           </div>
           <div className='col-2-video'>
               <h1>2022</h1>
-              <p> Proin cras id semper tellus euismod aenean est a egestas.<br />Rutrum in ipsum vivamus nunc dignissim sit.<br />Proin cras id s sit.....</p>
-              <img src={PresPic} />
+              <p>In the 2022 NCCDC, C3 won their fifth National<br />Championship title. This new record would<br />be broken soon...</p>
+              <img 
+              src={NCCDC2022}
+              />
           </div>
           <div className='col-3-video'>
-              <h1>2024</h1>
-              <p> Proin cras id semper tellus euismod aenean est a egestas.<br />Rutrum in ipsum vivamus nunc dignissim sit.<br />Proin cras id s sit.....</p>
-              <iframe
-              src="https://www.youtube.com/embed/tgbNymZ7vqY">
-              </iframe>
+              <h1>2020</h1>
+              <p>In the 2020 NCCDC, the C3 team came second place.<br />This was the third time the team came second<br />at this competition.</p>
+              <img 
+              src={NCCDC2020}
+              />
           </div>
         </Col>
         <Col className='timeline'>
@@ -322,16 +329,16 @@ const Competition = () => {
         </Col>
         <Col className='col-2'>
          <div className='col-4-video'>
-              <h1>2022</h1>
-              <p> Proin cras id semper tellus euismod aenean est a egestas.<br />Rutrum in ipsum vivamus nunc dignissim sit.<br />Proin cras id s sit.....</p>
-              <img src={PresPic} />
+              <h1>2023</h1>
+              <p>The UCF C3 team placed third in the Western Regional<br />CCDC Invitational in 2023. This marked the end of one<br />streak and the start of another.</p>
+              <img src={Western3rd} />
           </div>
           <div className='col-5-video'>
-              <h1>2024</h1>
-              <p> Proin cras id semper tellus euismod aenean est a egestas.<br />Rutrum in ipsum vivamus nunc dignissim sit.<br />Proin cras id s sit.....</p>
-              <iframe
-              src="https://www.youtube.com/embed/tgbNymZ7vqY">
-              </iframe>
+              <h1>2021</h1>
+              <p>In the 2021 NCCDC, C3 won their fourth National<br />Championship title. This was the start of a back<br />to back win streak for the team!</p>
+              <img 
+              src={NCCDC2021}
+              />
           </div>
         </Col>
       </Row>
