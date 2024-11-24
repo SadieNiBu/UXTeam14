@@ -96,7 +96,7 @@ const About = () => {
   ChartJS.register(centerTextPlugin)
 
   return (
-    <div>
+    <div className='about-main'>
       <div className='about__header'>
         <div className="wrapper">
           <div className="tagline">
