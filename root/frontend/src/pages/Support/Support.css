@@ -195,11 +195,11 @@
 .help_photo {
     position: absolute;
     top: 1920px;
-    left: 340px;
+    left: 485px;
 }
 
 .help_photo img {
-    width: 1080px;
+    width: 780px;
     height: 620px;
 }
 
@@ -583,7 +583,7 @@
     }
 }
 
-@media (max-width: 1104px) {
+@media (max-width: 1308px) {
     .support_body {
         height: 3350px;
     }
@@ -614,10 +614,11 @@
         position: relative;
         margin-top: -140px;
         margin-left: 120px;
+        left: 420px;
     }
     
     .help_photo img{
-        width: 800px;
+        width: 830px;
     }
     
     .help_bio2 p{
@@ -630,13 +631,13 @@
 
 @media (max-width: 991px) {
     .help_photo img{
-        width: 550px;
+        width: 595px;
     }
 }
 
 @media (max-width: 767px) {
     .help_photo img{
-        width: 390px;
+        width: 410px;
         height: 390px;
     }
 }
@@ -694,6 +695,13 @@
     .donation_photo img {
         margin-left: -350px;
         margin-top: 0px;
+    }
+
+    .help_photo {
+        position: relative;
+        margin-top: -140px;
+        margin-left: 120px;
+        left: 340px;
     }
 }
 

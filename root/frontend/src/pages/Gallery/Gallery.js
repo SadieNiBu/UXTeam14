@@ -9,18 +9,18 @@ const Gallery = () => {
   const [ photos, setPhotos ] = useState(null)
 
   const col1Photos = [
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732257000/c3_uploads/g5y7swfm8j5lf2njtley.jpg",
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732257000/c3_uploads/g5y7swfm8j5lf2njtley.jpg",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732470718/c3_uploads/d2nlhhu7vqavrzftqxav.png",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732470800/c3_uploads/bm1f5uh0uuvlk1ctf53j.png",
   ];
   const col2Photos = [
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732256990/c3_uploads/ma5vwwpxj4j8rw4y6bse.jpg",
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732256990/c3_uploads/ma5vwwpxj4j8rw4y6bse.jpg",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732470754/c3_uploads/khxa3mfnbk6gin5fopcw.png",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732470820/c3_uploads/zvfquimeufoygm8rdg4p.png",
   ];
   const col3Photos = [
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732256979/c3_uploads/yywxbe4abfckje13ognq.jpg",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732471130/c3_uploads/mmuokgbaa4hm4obaxpi9.png",
   ];
   const col4Photos = [
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732256964/c3_uploads/ylacm5tkipidyyytuyzd.jpg",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732471153/c3_uploads/s6vac5fuhoi1ikwq9pn9.png",
   ];
 
   useEffect ( () => {
