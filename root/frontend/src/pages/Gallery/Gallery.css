@@ -199,13 +199,13 @@
 .col-1-photo-1 img {
     width: 844px;
     height: 562px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .col-1-photo-2 img {
     width: 844px;
     height: 562px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .col-2-photo-group {
@@ -223,14 +223,14 @@
     margin-top: 0px;
     height: 650px;
     width: 40vw;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .col-2-photo-2 img {
     margin-top: 0px;
     height: 650px;
     width: 61vw;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .group-2-photos {
@@ -253,14 +253,35 @@
 .col-3-photo img {
     width: 814px;
     height: 492px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .col-4-photo img {
     width: 930px;
     height: 492px;
     padding-right: 110px;
-    object-fit: contain;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1500px) {
+    .col-1-photo-1 img {
+        object-fit: contain;
+    }
+    .col-1-photo-2 img {
+        object-fit: contain;
+    }
+    .col-2-photo-1 img {
+        object-fit: contain;
+    }
+    .col-2-photo-2 img {
+        object-fit: contain;
+    }
+    .col-3-photo img {
+        object-fit: contain;
+    }
+    .col-4-photo img {
+        object-fit: contain;
+    }
 }
 
 .swiper-row {
