@@ -82,9 +82,6 @@ const SemesterDetails = ({ semester, refetchSemesters }) => {
                     <p><strong>Semester: </strong>{sem}</p>
                     <p><strong>Year: </strong>{year}</p>
                     <button onClick={() => setIsEditing(true)}>Edit</button>
-                    <span onClick={performDelete}>
-                        <button>Delete</button>
-                    </span>
                 </>
             )}
         </div>
