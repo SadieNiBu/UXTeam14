@@ -1,3 +1,4 @@
+import '../styles.css'
 import { useState } from 'react'
 import { useLogin } from '../hooks/useLogin'
 
@@ -13,8 +14,9 @@ const Login = () => {
     }
 
     return(
+        <div className='login-container'>
         <form className='login' onSubmit={handleSubmit}>
-            <h3>Log in</h3>
+            <h1>Log in</h1>
 
             <label>Email:</label>
             <input 
@@ -32,6 +34,7 @@ const Login = () => {
             <button disabled={isLoading}>Log in</button>
             {error && <div className='error'>{error}</div>}
         </form>
+        </div>
     )
 }
 

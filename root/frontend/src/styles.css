@@ -515,3 +515,54 @@ body {
 .admin {
     padding: 0 1.2rem;
 }
+
+.login-container {
+    height: auto;
+}
+
+.login-container .login {
+    margin-top: 70px;
+    margin-bottom: 110px;
+}
+
+.login-container .login h1 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    font-size: 28px;
+    display: block;
+    color: #444;
+}
+
+.login-container .login label {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+    display: block;
+    color: #444;
+}
+
+.login-container .login input {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+.login-container .login button {
+    margin-top: 25px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    transition: background 0.3s;
+    background: var(--colors-blue-blue-600, #0A58CA);
+}
+
+.login-container .login button:hover {
+    background: black;
+}
