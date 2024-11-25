@@ -19,6 +19,18 @@ const Home = () => {
 
   const logo1 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732326073/image_31_hdyipr.png";
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+
   useEffect(() => {
     document.title = "C3 Team @ UCF";
 
@@ -42,7 +54,7 @@ const Home = () => {
 
   return (
     <div className='home-main'>
-      <div className='hero'>
+      <div className='hero hidden'>
         <img src={hero} class="picture" alt='UCF C3 Team' />
         <div className='header'>
           <h3>Meet UCF's Collegiate Cyber Defense Team</h3>
@@ -50,7 +62,7 @@ const Home = () => {
           <button type="button" class="btn btn-primary"><CustomLink to='/about'>See More</CustomLink></button>
         </div>
       </div>
-      <div className='section-1'>
+      <div className='section-1 hidden'>
         <div className='wrapper'>
           <img src={pic1} class="picture" alt='UCF C3 Team' />
           <div className='text'>
@@ -65,7 +77,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='sponsors full-bleed'>
+      <div className='sponsors full-bleed hidden'>
         <h1>Our Sponsors</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1" viewBox="0 0 1300 1" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L1300 0V1L0 1V0Z" fill="#212529"/>
@@ -87,7 +99,7 @@ const Home = () => {
         </svg>
       </div>
       
-      <div className='news'>
+      <div className='news hidden'>
         <div className='news__header'>
           <div className='news__header__tagline'>
             <svg xmlns="http://www.w3.org/2000/svg" width="72" height="3" viewBox="0 0 72 3" fill="none">
@@ -125,7 +137,7 @@ const Home = () => {
         </div>
       </div>
       <HomeGallery></HomeGallery>
-      <div className='medium'>
+      <div className='medium hidden'>
         <div className='medium__text'>
           <h1>The Impact of C3 Membership</h1>
           <p>Learn all about what C3 can offer with an inside perspective from a C3 team member.</p>
