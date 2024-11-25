@@ -199,6 +199,7 @@ body .socials a{
     border: none;
     width: 530px;
     height: 57px;
+    opacity: 0.8;
     border-bottom: solid;
     border-width: 1px;
 }

@@ -6,7 +6,7 @@ import SearchIcon from "./SearchIcon"
 export default function Navbar() {
     return <div className="nav-container">
         <nav className="navbar"> 
-        <Link to="/" className="site-logo">[logo img]</Link>
+        <Link to="/" className="site-logo">C3@UCF</Link>
         <div className="navbar-toggle">
             <span className="bar"></span>
             <span className="bar"></span>
