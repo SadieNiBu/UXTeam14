@@ -53,36 +53,26 @@ const Gallery = () => {
             <svg width="100" height="5" viewBox="0 0 100 5" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
             </svg>
-            <div className='col-1-photo-group'>
-              <div className='col-1-photo-1'>
-                <img 
-                src={col1Photos[0]}
-                className="img-fluid"
-                />
-              </div>
-              <div className='col-1-photo-2'>
-                <img 
-                src={col1Photos[1]}
-                className="img-fluid"
-                />
-              </div>
-            </div>
           </Col>
-          <Col className='group-1-date'>
-            <p>March 1, 2024</p>
-          </Col>
-          <div className='col-2-photo-group'>
-              <div className='col-2-photo-1'>
-                <img
-                src={col2Photos[0]}
-                className="img-fluid"
-                />
+            <div className='photo-grid-wrapper'>
+              <div className='column'>
+                <div className='photo photo-1'>
+                  <img 
+                  src={col1Photos[0]}
+                  />
+                </div>
+                <div className='photo photo-2'>
+                  <img 
+                  src={col1Photos[1]}
+                  />
+                </div>
               </div>
-              <div className='col-2-photo-2'>
-                <img 
-                src={col2Photos[1]}
-                className="img-fluid"
-                />
+              <div className='column'>
+                <div className='photo photo-3'>
+                  <img
+                  src={col2Photos[0]}
+                  />
+                </div>
               </div>
             </div>
         </Row>
@@ -96,24 +86,25 @@ const Gallery = () => {
             <path d="M0 0H100V5H0V0Z" fill="#FFC904"/>
             </svg>
           </Col>
-          <Col className='group-2-date'>
-            <p>April 25, 2024</p>
-          </Col>
           <Row className='group-2-photos'>
-            <div className='group-2-container'>
-            <Col className='col-3-photo' >
-              <img 
-              src={col3Photos[0]}
-              className="img-fluid"
-              />
-            </Col>
-            <Col className='col-4-photo' >
-              <img 
-              src={col4Photos[0]}
-              className="img-fluid"
-              />
-            </Col>
+          <div className='photo-grid-wrapper-2'>
+            <div className='column' >
+              <div className='photo photo-4'>
+                <img 
+                src={col3Photos[0]}
+                className="img-fluid"
+                />
+              </div>
             </div>
+            <div className='column' >
+              <div className='photo photo-5'>
+                <img 
+                src={col4Photos[0]}
+                className="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
           </Row>
         </Row>
       </Row>
