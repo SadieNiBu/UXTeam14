@@ -16,10 +16,14 @@ const memberSchema = new Schema({
         enum: ['Student', 'Coach'],
         required: true
     },
-    image: {
+    imageUrl: {
         type: String,
-        required: false
-    }
+        required: false,
+    },
+    cloudinaryId: {
+        type: String,
+        required: false,
+    },
 }, { timestamps: true });
 
 module.exports = mongoose.model('Member', memberSchema);

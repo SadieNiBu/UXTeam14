@@ -1,7 +1,5 @@
 const Photo = require('../models/Photo');
 const mongoose = require('mongoose');
-const path = require('path');
-const fs = require('fs');
 const cloudinary = require('../cloudinary')
 
 // Get all photos

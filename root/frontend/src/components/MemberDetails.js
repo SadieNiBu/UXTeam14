@@ -10,13 +10,13 @@ const MemberDetails = ({ member, refetchMembers }) => {
     const [role, setRole] = useState(member.role);
     const [classification, setClassification] = useState(member.classification || 'Student'); // Default to student
     const [image, setImage] = useState(null);
-    const [preview, setPreview] = useState(member.image ? `/${member.image}` : null); // For image preview
+    const [preview, setPreview] = useState(member.imageUrl || null);
 
     useEffect(() => {
         setName(member.name);
         setRole(member.role);
         setClassification(member.classification || 'Student');
-        setPreview(member.image ? `/${member.image}` : null); // Update preview if member image changes
+        setPreview(member.imageUrl || null);
     }, [member]);
 
     const handleImageChange = (e) => {

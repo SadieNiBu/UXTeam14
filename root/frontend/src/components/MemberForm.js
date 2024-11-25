@@ -83,6 +83,7 @@ const MemberForm = ({ refetchMembers }) => {
             <label>Member Image: </label>
             <input 
                 type="file"
+                accept="image/*"
                 onChange={handleImageChange} // Handle file selection
             />
 
