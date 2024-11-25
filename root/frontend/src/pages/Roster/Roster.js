@@ -43,11 +43,11 @@ const Roster = () => {
             </div>
             <div className="name">{member ? member.name : 'Default Name'}</div>
             <div className="role">{member ? member.role : 'Default Role'}</div>
-            <div className="social">
+            {{/* <div className="social">
               <img src={fbIcon} className="picture" alt="Facebook Icon" style={{ marginRight: '26.577px' }} />
               <img src={twIcon} className="picture" alt="Twitter Icon" style={{ marginRight: '26.577px' }} />
               <img src={liIcon} className="picture" alt="LinkedIn Icon" />
-            </div>
+            </div> */}}
           </div>
         </div>
       </div>
