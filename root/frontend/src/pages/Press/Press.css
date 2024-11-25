@@ -32,6 +32,17 @@
     gap: var(--Spacing-24, 24px);
 }
 
+@media screen and (max-width: 575px) {
+    .press {
+        padding: 0;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+    .press__header {
+        padding-left: 4%;
+    }
+}
+
 .press__header__tagline {
     display: flex;
     align-items: center;
