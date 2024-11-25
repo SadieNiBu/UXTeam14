@@ -23,9 +23,11 @@ const Home = () => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
-      } else {
+      } 
+      {/* Keep playing the animation:
+      else {
         entry.target.classList.remove('show');
-      }
+      }*/}
     });
   });
   const hiddenElements = document.querySelectorAll('.hidden');

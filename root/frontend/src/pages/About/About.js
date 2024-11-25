@@ -263,13 +263,13 @@ const About = () => {
       </div>
       <div className='policies' id='policies-anchor'>
             <div className='policy'>
-              <div className='lead'>ABOUT OUR TRAVEL POLICY</div>
-              <h3>Heading which concerns travel policy for competitions.</h3>
+              <div className='lead'>ABOUT: TRAVEL POLICY</div>
+              <h3>Travel Policy for Competitions</h3>
               <p>UCF will pay for all travel and hotel costs for all the C3 members participating in a competition. All C3 members must abide by University Behavioral Policies during any competition.</p>
             </div>
             <div className='policy'>
               <div className='lead'>ABOUT: UNIFORM POLICY</div>
-              <h3>Heading which concerns uniform policy for competitions.</h3>
+              <h3>Uniform Policy for Competitions</h3>
               <p>All UCF C3 members must wear a UCF C3 team polo, khaki pants, black shoes, and a black belt during competitions. UCF supplies the C3 polo shirt for C3 team members. The black shoes, black belt and black socks are attire that need to be supplied by the members themselves.</p>
             </div>
           </div>
