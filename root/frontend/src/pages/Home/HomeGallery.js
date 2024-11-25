@@ -12,18 +12,6 @@ const HomeGallery = () => {
     "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732325166/4_ljrwns.png",
   ];
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } else {
-        entry.target.classList.remove('show');
-      }
-    });
-  });
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observe(el));
-
   useEffect(() => {
     const fetchPhotos = async () => {
       const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/photos');
@@ -45,7 +33,7 @@ const HomeGallery = () => {
     .slice(0, 4); // Take the latest 4 photos
 
   return (
-    <div className='photos full-bleed--blue hidden'>
+    <div className='photos full-bleed--blue'>
       <div className='photos__header'>
         <p>Media</p>
         <h1>Photo Gallery</h1>

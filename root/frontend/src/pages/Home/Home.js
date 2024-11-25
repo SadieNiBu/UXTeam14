@@ -91,7 +91,9 @@ const Home = () => {
           <img src={logo6} class="logo" alt='Logo 6' />*/}
         </div>
       </div>
-      <HomeCompetitions></HomeCompetitions>
+      <div className='hidden'>
+        <HomeCompetitions></HomeCompetitions>
+      </div>
       <div className='news__svg--black'>
         <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="36" viewBox="0 0 1500 36" fill="none">
             <path d="M0 2.30889e-05L454 24.2105L544 0L0 2.30889e-05Z" fill="black"/>
@@ -136,7 +138,9 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <HomeGallery></HomeGallery>
+      <div className='hidden'>
+        <HomeGallery></HomeGallery>
+      </div>
       <div className='medium hidden'>
         <div className='medium__text'>
           <h1>The Impact of C3 Membership</h1>

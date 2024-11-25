@@ -26,18 +26,6 @@ const HomeCompetitions = () => {
         return <h1>Loading competitions...</h1>;
     }
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-          } else {
-            entry.target.classList.remove('show');
-          }
-        });
-      });
-    const hiddenElements = document.querySelectorAll('.hidden');
-    hiddenElements.forEach((el) => observer.observe(el));
-
     const currentDate = new Date();
     const totalUpcoming = events.filter(event => new Date(event.date) >= currentDate);
     const upcomingEvents = events
@@ -46,7 +34,7 @@ const HomeCompetitions = () => {
         .slice(0, 4);
 
     return (
-        <div className="competitions full-bleed--black hidden">
+        <div className="competitions full-bleed--black">
             <div className="top">
                 <p>Competitions</p>
                 <h1>{totalUpcoming.length} Upcoming Competitions</h1>
