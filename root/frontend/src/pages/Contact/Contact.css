@@ -199,12 +199,9 @@ body .socials a{
     border: none;
     width: 530px;
     height: 57px;
-    border: solid;
-    border-top: none;
-    border-right: none;
-    border-left: none;
+    opacity: 0.8;
+    border-bottom: solid;
     border-width: 1px;
-    border-color: #1D2130;
 }
 
 .contact_form input:focus {
@@ -307,7 +304,15 @@ body .socials a{
 @media (max-width: 1199px) {
     .info-div {
         position: relative;
-        margin-right: -105px;
+        margin-right: 0px;
+    }
+
+    body .message h3 {
+        margin-left: -310px;
+    }
+
+    body .message p {
+        margin-left: -310px;
     }
 
     .contact_form input {
@@ -350,168 +355,6 @@ body .socials a{
 }
 
 @media (max-width: 991px) {
-    body .divider {
-        /* Line */
-        position: absolute;
-        width: 72px;
-        height: 0px;
-        left: 110px;
-        top: 195.5px;
-    
-        /* Primary text */
-        border: 1px solid #1D2130;
-    
-        /* Line */
-        position: relative;
-        text-align: left;
-        margin-top: -90px;
-        margin-left: -215px;
-    }
-    
-    body .contact p {
-        top: 178px;
-        left: 306px;
-        width: 115px;
-        height: 36px;
-        font: #1D2130;
-        font-size: 21px;
-        font-weight: 400;
-        line-height: 36px;
-        position: relative;
-        margin-left: -320px;
-        font-family: 'Roboto', sans-serif;
-    }
-    
-    body .message h3 {
-        top: 237px;
-        left: 306px;
-        height: 140px;
-        font-size: 58px;
-        width: 480.45px;
-        font-weight: 700;
-        line-height: 70.19px;
-        font-family: 'Roboto', sans-serif;
-        position: relative;
-        margin-top: -65px;
-        margin-left: -320px;
-    }
-    
-    body .message p {
-        font: #1D2130;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 28px;
-        position: relative;
-        margin-top: -140px;
-        margin-left: -320px;
-        font-family: 'Roboto', sans-serif;
-        width: 350px;
-        opacity: 0.7;
-        height: 56px;
-        top: 387px;
-        left: 306px;
-    }
-    
-    .info-div {
-        position: relative;
-        margin-right: -105px;
-    }
-
-    .contact_form input {
-        border: none;
-        width: 400px;
-        height: 57px;
-        border-bottom: solid;
-        border-width: 1px;
-    }
-
-    .contact_form .first_input_col{
-        position: relative;
-        margin-top: 140px;
-        margin-left: -100px;
-    }
-
-    .contact_form .second_input_col{
-        position: relative;
-        margin-top: -205px;
-        margin-left: 360px !important;
-    }
-
-    .contact_form .text-message p {
-        position: relative;
-        margin-bottom: -10px;
-        padding-top: 20px;
-        margin-left: -100px;
-        opacity: 60%;
-        font-size: 12px;
-        margin-top: 10px;
-        color: #1D2130;
-        line-height: 19.2px;
-    }
-
-    .contact_form .text-message textarea {
-        position: relative;
-        margin-top: 20px;
-        margin-left: -100px;
-        resize: none;
-        border: solid;
-        border-width: 1px;
-        border-radius: 4px;
-        border-color: #1D2130;
-        width: 865px;
-    }
-
-    .contact_form .text-message button {
-        position: relative;
-        margin-left: 220px;
-        margin-top: 40px;
-        height: 51px;
-        width: 208px;
-        border: none;
-        border-radius: 4px;
-        color: black;
-        background-color: #FFC904;
-    }
-}
-
-@media (max-width: 893px) {
-    body {
-        height: 1650px;
-    }
-    
-    .contact-div {
-        margin-left: 0px;
-        margin-top: -5px;
-    }
-
-    body .contact p {
-        margin-left: -220px;
-    }
-
-    body .divider {
-        /* Line */
-        position: absolute;
-        width: 72px;
-        height: 0px;
-        left: 110px;
-        top: 195.5px;
-    
-        /* Primary text */
-        border: 1px solid #1D2130;
-    
-        /* Line */
-        position: relative;
-        text-align: left;
-        margin-top: -90px;
-        margin-left: -115px;
-    }
-
-    .info-div {
-        margin-top: 360px;
-        margin-right: 190px;
-        padding-left: 40px;
-    }
-
     .form-div {
         margin-top: 0px;
     }
@@ -573,6 +416,50 @@ body .socials a{
     }
 }
 
+@media (max-width: 1040px) {
+    body {
+        height: 1650px;
+    }
+    
+    .contact-div {
+        margin-left: 40px;
+        margin-top: -5px;
+    }
+
+    body .contact p {
+        margin-left: -210px;
+    }
+
+    body .divider {
+        /* Line */
+        position: absolute;
+        width: 72px;
+        height: 0px;
+        left: 110px;
+        top: 195.5px;
+    
+        /* Primary text */
+        border: 1px solid #1D2130;
+    
+        /* Line */
+        position: relative;
+        text-align: left;
+        margin-top: -90px;
+        margin-left: -110px;
+    }
+
+    .info-div {
+        margin-top: 360px;
+        margin-right: 500px;
+        padding-left: 90px;
+    }
+
+    .form-div {
+        margin-top: 0px;
+        margin-left: 50px;
+    }
+}
+
 @media (max-width: 767px) {
     body {
         height: 1650px;
@@ -598,7 +485,7 @@ body .socials a{
         position: relative;
         text-align: left;
         margin-top: -90px;
-        margin-left: -115px;
+        margin-left: -120px;
 
     }
 
@@ -610,6 +497,7 @@ body .socials a{
 
     .form-div {
         margin-top: 0px;
+        margin-left: 0px;
     }
 
     .contact_form input {
@@ -694,7 +582,7 @@ body .socials a{
         position: relative;
         text-align: left;
         margin-top: -90px;
-        margin-left: -115px;
+        margin-left: -120px;
 
     }
 
@@ -766,6 +654,47 @@ body .socials a{
     }
 }
 
+@media (max-width: 615px) {
+    body {
+        height: 1650px;
+    }
+    
+    .contact-div {
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+
+    body .divider {
+        /* Line */
+        position: absolute;
+        width: 72px;
+        height: 0px;
+        left: 110px;
+        top: 195.5px;
+    
+        /* Primary text */
+        border: 1px solid #1D2130;
+    
+        /* Line */
+        position: relative;
+        text-align: left;
+        margin-top: -90px;
+        margin-left: -120px;
+
+    }
+
+    .info-div {
+        margin-top: 360px;
+        margin-right: 190px;
+        padding-left: 70px;
+    }
+
+    .form-div {
+        margin-top: 0px;
+        margin-left: 70px;
+    }
+}
+
 @media (max-width: 574px) {
     body {
         height: 1650px;
@@ -791,7 +720,7 @@ body .socials a{
         position: relative;
         text-align: left;
         margin-top: -90px;
-        margin-left: -115px;
+        margin-left: -120px;
 
     }
 
