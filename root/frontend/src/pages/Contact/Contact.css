@@ -199,9 +199,12 @@ body .socials a{
     border: none;
     width: 530px;
     height: 57px;
-    opacity: 0.8;
-    border-bottom: solid;
+    border: solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     border-width: 1px;
+    border-color: #1D2130;
 }
 
 .contact_form input:focus {
