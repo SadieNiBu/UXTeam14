@@ -62,8 +62,8 @@ const Home = () => {
           <button type="button" class="btn btn-primary"><CustomLink to='/about'>See More</CustomLink></button>
         </div>
       </div>
-      <div className='section-1 hidden'>
-        <div className='wrapper'>
+      <div className='section-1'>
+        <div className='wrapper hidden'>
           <img src={pic1} class="picture" alt='UCF C3 Team' />
           <div className='text'>
             <div className='quote'>WE ARE ALWAYS UP</div>

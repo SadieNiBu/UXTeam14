@@ -221,6 +221,15 @@ a {
     }
 }
 
+@keyframes animateBackground {
+    0% {
+        background-size: 5%;
+    }
+    100% {
+        background-size: 55%;
+    }
+}
+
 .section-1 {
     display: flex;
     width: 100vw;
@@ -233,6 +242,7 @@ a {
     background-image: url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%221048%22%20height%3D%22817%22%20viewBox%3D%220%200%201048%20817%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M1047%20816L-8.45988%201L-21%20447.872L355.203%20670.324L271.603%20601.423L478.515%20615.203L710.507%20713.633L142.022%20341.568L1047%20816Z%22%20fill%3D%22%230A58CA%22%20stroke%3D%22%230A58CA%22/%3E%3C/svg%3E');
     background-repeat: no-repeat;
     background-size: contain;
+    animation: animateBackground 1s ease forwards;
 }
 
 @media (max-width: 768px) {
@@ -241,6 +251,7 @@ a {
         padding-bottom: 10%;
         background-size: contain;
         background-position: top;
+        animation: none;
     }
 }
 
