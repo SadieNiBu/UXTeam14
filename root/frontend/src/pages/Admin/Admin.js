@@ -28,6 +28,11 @@ const Admin = () => {
     const { articles, dispatch: articleDispatch } = useArticleContext()
     const { logout } = useLogout()
     const { admin } = useAuthContext()
+
+    const [showRoster, setShowRoster] = useState(false);
+    const [showEvents, setShowEvents] = useState(false);
+    const [showGallery, setShowGallery] = useState(false);
+    const [showArticles, setShowArticles] = useState(false);
     
     const fetchMembers = async () => {
         const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/members');
@@ -156,50 +161,95 @@ const Admin = () => {
     }, [admin])
 
     return (
-        <div className='admin-page'>
-            {admin && (
-                <div>
-                    <span>{admin.email}</span>
-                    <button onClick={handleClick}>Log out</button>
-                </div>
-            )}
-            <div className='admin-members'>
+        <div className="admin-page">
+          {admin && (
+            <div>
+              <span>{admin.email}</span>
+              <button onClick={handleClick}>Log out</button>
+            </div>
+          )}
+    
+          {/* Roster */}
+          <div className="admin-section">
+            <button onClick={() => setShowRoster(!showRoster)}>
+              Roster {showRoster ? '▲' : '▼'}
+            </button>
+            {showRoster && (
+              <div className="admin-members">
                 <h2>Roster</h2>
-                {members && members.map((member) => (
-                    <MemberDetails key={member._id} member={member} refetchMembers={fetchMembers} />
-                ))}
-            </div>
-            <MemberForm refetchMembers={fetchMembers} />
-            <div className='admin-events'>
+                {members &&
+                  members.map((member) => (
+                    <MemberDetails
+                      key={member._id}
+                      member={member}
+                      refetchMembers={fetchMembers}
+                    />
+                  ))}
+                <MemberForm refetchMembers={fetchMembers} />
+              </div>
+            )}
+          </div>
+    
+          {/* Events */}
+          <div className="admin-section">
+            <button onClick={() => setShowEvents(!showEvents)}>
+              Events {showEvents ? '▲' : '▼'}
+            </button>
+            {showEvents && (
+              <div className="admin-events">
                 <h2>Events</h2>
-                {events && events.map((event) => (
-                    <EventDetails key={event._id} event={event} refetchEvents={fetchEvents} />
-                ))}
-            </div>
-            <EventForm refetchEvents={fetchEvents} />
-            <div className='admin-gallery-photos'>
+                {events &&
+                  events.map((event) => (
+                    <EventDetails
+                      key={event._id}
+                      event={event}
+                      refetchEvents={fetchEvents}
+                    />
+                  ))}
+                <EventForm refetchEvents={fetchEvents} />
+              </div>
+            )}
+          </div>
+    
+          {/* Gallery */}
+          <div className="admin-section">
+            <button onClick={() => setShowGallery(!showGallery)}>
+              Gallery {showGallery ? '▲' : '▼'}
+            </button>
+            {showGallery && (
+              <div className="admin-gallery-photos">
                 <h2>Gallery</h2>
-                {photos && photos.map((photo) => (
-                    <PhotoDetails key={photo._id} photo={photo}/>
-                ))}
-            </div>
-            <PhotoForm refetchPhotos={fetchPhotos} />
-            <div className='admin-semester-info'>
-                <h2>Semester Info</h2>
-                {semesters && semesters.map((semester) => (
-                    <SemesterDetails key={semester._id} semester={semester} refetchSemesters={fetchSemesters}/>
-                ))}
-            </div>
-            
-            <div className='admin-articles'>
+                {photos &&
+                  photos.map((photo) => (
+                    <PhotoDetails key={photo._id} photo={photo} />
+                  ))}
+                <PhotoForm refetchPhotos={fetchPhotos} />
+              </div>
+            )}
+          </div>
+    
+          {/* Articles */}
+          <div className="admin-section">
+            <button onClick={() => setShowArticles(!showArticles)}>
+              Articles {showArticles ? '▲' : '▼'}
+            </button>
+            {showArticles && (
+              <div className="admin-articles">
                 <h2>Articles</h2>
-                {articles && articles.map((article) => (
-                    <ArticleDetails key={article._id} article={article} refetchArticles={fetchArticles}/>
-                ))}
-            </div>
-            <ArticleForm refetchArticles={fetchArticles} />
+                {articles &&
+                  articles.map((article) => (
+                    <ArticleDetails
+                      key={article._id}
+                      article={article}
+                      refetchArticles={fetchArticles}
+                    />
+                  ))}
+                <ArticleForm refetchArticles={fetchArticles} />
+              </div>
+            )}
+          </div>
         </div>
-    )
+    );
 }
 
 export default Admin
