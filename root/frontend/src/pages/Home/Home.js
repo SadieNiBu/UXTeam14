@@ -56,7 +56,7 @@ const Home = () => {
 
   return (
     <div className='home-main'>
-      <div className='hero hidden'>
+      <div className='hero'>
         <img src={hero} class="picture" alt='UCF C3 Team' />
         <div className='header'>
           <h3>Meet UCF's Collegiate Cyber Defense Team</h3>
@@ -65,7 +65,7 @@ const Home = () => {
         </div>
       </div>
       <div className='section-1'>
-        <div className='wrapper hidden'>
+        <div className='wrapper'>
           <img src={pic1} class="picture" alt='UCF C3 Team' />
           <div className='text'>
             <div className='quote'>WE ARE ALWAYS UP</div>
@@ -79,7 +79,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='sponsors full-bleed hidden'>
+      <div className='sponsors full-bleed'>
         <h1>Our Sponsors</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1" viewBox="0 0 1300 1" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L1300 0V1L0 1V0Z" fill="#212529"/>
@@ -93,7 +93,7 @@ const Home = () => {
           <img src={logo6} class="logo" alt='Logo 6' />*/}
         </div>
       </div>
-      <div className='hidden'>
+      <div>
         <HomeCompetitions></HomeCompetitions>
       </div>
       <div className='news__svg--black'>
@@ -103,7 +103,7 @@ const Home = () => {
         </svg>
       </div>
       
-      <div className='news hidden'>
+      <div className='news'>
         <div className='news__header'>
           <div className='news__header__tagline'>
             <svg xmlns="http://www.w3.org/2000/svg" width="72" height="3" viewBox="0 0 72 3" fill="none">
@@ -140,10 +140,10 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className='hidden'>
+      <div>
         <HomeGallery></HomeGallery>
       </div>
-      <div className='medium hidden'>
+      <div className='medium'>
         <div className='medium__text'>
           <h1>The Impact of C3 Membership</h1>
           <p>Learn all about what C3 can offer with an inside perspective from a C3 team member.</p>
