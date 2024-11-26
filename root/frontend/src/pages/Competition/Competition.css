@@ -51,10 +51,11 @@
     margin-left: calc(-50vw + 50%);
 }
 
-.youtube-vid iframe{
+.youtube-vid lite-youtube{
     width: 1077px;
     height: 486px;
     margin-top: 105px;
+    margin-inline: auto;
 }
 
 .youtube-textbox {
@@ -267,8 +268,8 @@
     vertical-align: middle;
 }
 
-.schedule .sc-vid iframe {
-    left: 10vw;
+.schedule .sc-vid lite-youtube {
+    left: 9vw;
     width: 30vw;
     height: 30vw;
 }
@@ -1184,7 +1185,7 @@ tbody tr td {
 }
 
 @media (max-width: 1108px) {
-    .youtube-vid iframe{
+    .youtube-vid lite-youtube{
         width: 877px;
         height: 386px;
         margin-top: 105px;
@@ -1209,7 +1210,7 @@ tbody tr td {
 }
 
 @media (max-width: 909px) {
-    .youtube-vid iframe{
+    .youtube-vid lite-youtube{
         width: 677px;
         height: 386px;
         margin-top: 105px;
@@ -1234,7 +1235,7 @@ tbody tr td {
 }
 
 @media (max-width: 702px) {
-    .youtube-vid iframe{
+    .youtube-vid lite-youtube{
         width: 477px;
         height: 396px;
         margin-top: 80px;
@@ -1260,7 +1261,7 @@ tbody tr td {
 }
 
 @media (max-width: 504px) {
-    .youtube-vid iframe{
+    .youtube-vid lite-youtube{
         width: 427px;
         height: 396px;
         margin-top: 80px;
@@ -1406,7 +1407,7 @@ tbody tr td {
         margin-right: auto;
     }
 
-    .schedule .sc-vid iframe {
+    .schedule .sc-vid lite-youtube {
         left: 0vw;
         width: 40vw;
         height: 40vw;
@@ -1459,7 +1460,7 @@ tbody tr td {
         margin-left: 23vw;
     }
 
-    .schedule .sc-vid iframe {
+    .schedule .sc-vid lite-youtube {
         margin-left: 4vw;
     }
 
@@ -3017,7 +3018,7 @@ tbody tr td {
         margin-left: -15px;
     }
 
-    .youtube-vid iframe {
+    .youtube-vid lite-youtube {
         width: 375px;
     }
 

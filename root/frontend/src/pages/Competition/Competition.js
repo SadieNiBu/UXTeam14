@@ -7,6 +7,7 @@ import TwentyTwo from './2022.png'
 import TwentyThree from './2023.png'
 import TwentyFour from './2024.png'
 import PresPic from './president.png'
+import '@justinribeiro/lite-youtube';
 import NCCDC2020 from './nccdc2020.png'
 import NCCDC2021 from './nccdc2021.png'
 import NCCDC2022 from './nccdc2022.png'
@@ -109,9 +110,9 @@ const Competition = () => {
       </Row>
       <Row className='youtube'>
         <Col className='youtube-vid text-center'>
-          <iframe
-          src="https://www.youtube.com/embed/9JVTfQDNqIU?si=BcnHm9bcsVDi9wz0">
-          </iframe>
+          <lite-youtube 
+          videoid="9JVTfQDNqIU">
+          </lite-youtube>
         </Col>
         <Row className='youtube-textbox'>
           <Col>
@@ -181,9 +182,9 @@ const Competition = () => {
         </Col>
         <Col className='sc-media'>
           <div className='sc-vid text-center'>
-            <iframe
-            src="https://www.youtube.com/embed/8CPYyUDzfp4?si=-AkZ5dYlzFtCwbGX">
-            </iframe>
+            <lite-youtube 
+            videoid="8CPYyUDzfp4">
+            </lite-youtube>
           </div>
           <div className='sc-img text-center'>
             <img src={PresPic} />

@@ -613,12 +613,13 @@
     .help_photo {
         position: relative;
         margin-top: -140px;
-        margin-left: 120px;
+        margin-left: 150px;
         left: 420px;
     }
     
     .help_photo img{
-        width: 830px;
+        width: 780px;
+        height: 620px;
     }
     
     .help_bio2 p{
@@ -632,6 +633,7 @@
 @media (max-width: 991px) {
     .help_photo img{
         width: 595px;
+        margin-left: -30px;
     }
 }
 
@@ -668,10 +670,6 @@
 }
 
 @media (max-width: 1405px) {
-    .donation-div {
-        margin-left: -250px;
-    }
-
     .donation_photo img {
         margin-left: -200px;
     }
@@ -700,14 +698,13 @@
     .help_photo {
         position: relative;
         margin-top: -140px;
-        margin-left: 120px;
-        left: 340px;
+        margin-left: 70px;
     }
 }
 
 @media (max-width: 1102px) {
     .donation-div {
-        margin-left: -230px;
+        margin-left: -200px;
     }
 
     .donation_photo img {
@@ -718,7 +715,7 @@
 
 @media (max-width: 991px) {
     .support_body {
-        height: 3800px;
+        height: 3720px;
     }
 
     .donation {
@@ -731,9 +728,9 @@
 
     .donation_photo img {
         margin-left: -800px;
-        margin-top: 500px;
+        margin-top: 450px;
         width: 498px;
-        height: 516px;
+        height: 500px;
     }
 }
 
@@ -769,7 +766,7 @@
 
 @media (max-width: 767px) {
     .support_body {
-        height: 4580px;
+        height: 4480px;
     }
 
     .donation {
@@ -792,7 +789,7 @@
 
     .donation_photo img {
         margin-left: -900px;
-        margin-top: 500px;
+        margin-top: 400px;
         width: 498px;
         height: 516px;
     }
@@ -800,7 +797,7 @@
 
 @media (max-width: 669px) {
     .support_body {
-        height: 4580px;
+        height: 4480px;
     }
 
     .donation {
@@ -824,7 +821,7 @@
 
 @media (max-width: 625px) {
     .support_body {
-        height: 4600px;
+        height: 4500px;
     }
 }
 
