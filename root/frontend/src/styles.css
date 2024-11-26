@@ -504,6 +504,14 @@ body {
     }
 }
 
+@media (max-width: 390px) {
+    .footer-btn {
+        margin-top: 55px;
+        margin-left: 6vw;
+        position: absolute;
+    }
+}
+
 .admin {
     padding: 0 1.2rem;
 }

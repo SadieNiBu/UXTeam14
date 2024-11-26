@@ -1054,41 +1054,50 @@
     .help_photo {
         position: relative;
         margin-top: -130px;
-        margin-left: 130px;
+        margin-left: 105px;
+    }
+
+    .help_photo img {
+        width: 398px;
+        height: 416px;
     }
 
     .support_body {
-        height: 4800px;
+        height: 4700px;
     }
 
     .donation-div {
-        margin-top: -1950px;
-        margin-left: -200px;
+        margin-top: -2050px;
+        margin-left: -175px;
     }
 
     .donation_photo img {
-        margin-top: 750px;
-        margin-left: -925px;
+        margin-top: 660px;
+        margin-left: -910px;
     }
 }
 
 @media (max-width: 414px) {
+    .help_photo {
+        margin-left: 98px;
+    }
+
     .support_body {
-        height: 4900px;
+        height: 4700px;
     }
 
     .donation-div {
-        margin-top: -1850px;
-        margin-left: -200px;
+        margin-top: -2050px;
+        margin-left: -175px;
     }
 
     .donation_photo img {
-        margin-top: 850px;
-        margin-left: -925px;
+        margin-top: 660px;
+        margin-left: -910px;
     }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 390px) {
     .support_header {
         height: 630px;
     }
@@ -1097,13 +1106,14 @@
         top: 695px;
     }
 
-
     .support_header .header_bio p {
-        margin-top: 150px;
+        margin-top: 100px;
+        margin-left: 5px;
     }
 
     .header_line {
-        margin-top: 250px;
+        margin-top: 230px;
+        margin-left: 5px;
     }
 
     .contributions {
@@ -1115,8 +1125,8 @@
     }
 
     .contributions_photo img{
-        margin-top: 845px;
-        margin-left: -70px;
+        margin-top: 840px;
+        margin-left: -65px;
     }
 
     .bottom_line_decor {
@@ -1128,20 +1138,29 @@
     }
 
     .help_photo {
-        margin-top: -130px;
         margin-left: 130px;
     }
 
+    .help_photo img {
+        width: 298px;
+        height: 316px;
+    }
+
     .support_body {
-        height: 5150px;
+        height: 4810px;
     }
 
     .donation-div {
-        margin-top: -1700px;
+        margin-top: -2050px;
     }
 
     .donation_photo img {
-        margin-top: 1000px;
-        margin-left: -945px;
+        margin-left: -920px;
+    }
+}
+
+@media (max-width: 375px) {
+    .contributions_photo img{
+        margin-left: -70px;
     }
 }
