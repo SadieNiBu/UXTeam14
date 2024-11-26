@@ -366,23 +366,13 @@ body {
 }
 
 .footer-btn {
-    margin-top: 80px;
-    margin-left: 260px;
+    margin-top: 55px;
+    margin-left: 350px;
     position: absolute;
 }
 
-.footer-btn button {
-    color: #000000;
-    font-weight: 400;
-    text-align: center;
-    list-style: none;
-    line-height: 18.75px;
-    padding: 13px 40px;
-    background-color: #FFFFFF;
-    font-family: 'Roboto', sans-serif;
-    gap: 10px;
-    border: 0;
-    border-radius: 30px 30px 30px 30px;
+.footer-btn img {
+    width: 70px;
 }
 
 .footer-btn a {
@@ -410,8 +400,8 @@ body {
 
 @media (max-width: 1399px) {
     .footer-btn {
-        margin-top: 80px;
-        margin-left: 200px;
+        margin-top: 55px;
+        margin-left: 290px;
         position: absolute;
     }
 
@@ -430,8 +420,8 @@ body {
 
 @media (max-width: 1199px) {
     .footer-btn {
-        margin-top: 80px;
-        margin-left: 140px;
+        margin-top: 55px;
+        margin-left: 230px;
         position: absolute;
     }
 
@@ -450,8 +440,8 @@ body {
 
 @media (max-width: 991px) {
     .footer-btn {
-        margin-top: 80px;
-        margin-left: 60px;
+        margin-top: 55px;
+        margin-left: 150px;
         position: absolute;
     }
 
@@ -478,8 +468,8 @@ body {
 
 @media (max-width: 767px) {
     .footer-btn {
-        margin-top: 80px;
-        margin-left: 10px;
+        margin-top: 55px;
+        margin-left: 90px;
         position: absolute;
     }
 
@@ -492,23 +482,25 @@ body {
     }
 }
 
-@media (max-width: 570px) {
-    .footer-btn {
-        margin-top: 80px;
-        margin-left: 0px;
+@media (max-width: 575px) {
+    .ucf-logo {
         position: absolute;
-        padding-left: auto;
-        padding-right: 10px;
+        margin-top: 70px;
+        margin-left: 20px;
     }
-}
-
-@media (max-width: 428px) {
+    
     .footer-btn {
-        margin-top: 80px;
-        margin-left: -9vw;
+        margin-top: 55px;
+        margin-left: 10vw;
         position: absolute;
-        padding-left: 0px;
-        padding-right: 0px;
+    }
+
+    .footer hr {
+        opacity: 1;
+        width: 87vw;
+        margin-left: 30px;
+        display: relative;
+        margin-top: 180px;
     }
 }
 
@@ -517,7 +509,7 @@ body {
 }
 
 .login-container {
-    height: auto;
+    height: 900px;
 }
 
 .login-container .login {

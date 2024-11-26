@@ -1,3 +1,4 @@
+import C3Logo from '../c3_black_bg.png'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import { HashLink } from 'react-router-hash-link'
 import { Container, Row, Col, Image, Nav } from "react-bootstrap"
@@ -34,7 +35,7 @@ export default function Footer () {
                </Col>
                <Col>
                     <div className="footer-btn text-center">
-                        <button><HashLink smooth to="/contact/#contact-anchor">Contact Us</HashLink></button>
+                        <img src={C3Logo}/>
                     </ div>
                </Col> 
             </Row>

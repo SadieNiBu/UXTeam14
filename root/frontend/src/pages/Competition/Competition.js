@@ -122,7 +122,7 @@ const Competition = () => {
               <p>Learn all about the National Collegiate Cyber Defense Competition, and how we continue to break records within this cyber<br />defense sphere. Our C3 team has the honor of boasting a record six NCCDC National Champion titles, all of<br />which were fought for and earned by our talented and dedicated members.</p>
             </div>
             <div className='youtube-btn'>
-              <button class='btn btn-primary'><a href='https://www.youtube.com/watch?v=PLNluCohtZ4&t=58s'>Our YouTube</a></button>
+              <button class='btn btn-primary'><a target="_blank" rel="noopener noreferrer" href='https://www.youtube.com/watch?v=PLNluCohtZ4&t=58s'>Our YouTube</a></button>
             </div>
           </Col>
           <Col className='youtube-date'>

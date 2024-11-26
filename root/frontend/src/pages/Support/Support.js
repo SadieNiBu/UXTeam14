@@ -148,7 +148,7 @@ const Support = () => {
           </div>
           <div className='donation_btn'>
             <button class='btn btn-primary'>
-             <a href='https://foundation.ucf.edu/givenow'>Donate</a>
+             <a target="_blank" rel="noopener noreferrer" href='https://foundation.ucf.edu/givenow'>Donate</a>
             </button>
           </div>
         </Col>

@@ -78,7 +78,7 @@ export default function Navbar() {
                 <CustomLink to="/contact">Contact</CustomLink>
             </li>
         </ul>
-        <div className="search-button"><SearchIcon className="search-icon"/></div>
+        <div className="search-button"></div>
     </nav>
     </div>
 }
