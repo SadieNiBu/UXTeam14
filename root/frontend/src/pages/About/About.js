@@ -2,7 +2,6 @@ import React, { useEffect } from 'react'
 import './About.css'
 import { Doughnut } from 'react-chartjs-2'
 import { Chart as ChartJS, ArcElement, Legend, Tooltip } from 'chart.js'
-import teamPhoto from './Team.png'
 import building from './Icons/Building.svg'
 import waves from './Icons/Waves.svg'
 import hand from './Icons/Hand.svg'
@@ -17,6 +16,8 @@ const About = () => {
   useEffect ( () => {
     document.title = "C3 Team @ UCF | About"
   })
+
+  const teamPhoto = "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732609800/Team_szgirv.png"
 
   const inStateCosts = [5954, 7370, 4700]
   const outStateCosts = [20980, 7094, 5358]

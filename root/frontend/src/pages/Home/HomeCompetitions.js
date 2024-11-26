@@ -7,7 +7,7 @@ import placeholder from './Images/placeholder.jpg';
 const HomeCompetitions = () => {
     const [events, setEvents] = useState(null);
 
-    const competitionMap = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732326120/4c71948dafb599fb63803efb2a0d9311_ejmi2u.png";
+    const competitionMap = "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/w_490/v1732326120/4c71948dafb599fb63803efb2a0d9311_ejmi2u.png";
 
     useEffect(() => {
         const fetchEvents = async () => {
@@ -49,6 +49,7 @@ const HomeCompetitions = () => {
                             <img
                                 src={competitionMap}
                                 className="photo"
+                                loading="lazy"
                                 alt={"Map of competition regions"}
                             />
                             <div className="date">

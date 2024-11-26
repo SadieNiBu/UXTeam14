@@ -1,38 +1,32 @@
-import React, { useEffect } from 'react'
+import React, { lazy, Suspense, useEffect } from 'react'
 import './Home.css'
-import hero from './Images/hero.jfif'
-import pic1 from './Images/section1.png'
-import logo1 from './Images/Logo1.svg'
-import logo2 from './Images/Logo2.svg'
-import logo3 from './Images/Logo3.svg'
-import logo4 from './Images/Logo4.svg'
-import logo5 from './Images/Logo5.svg'
-import logo6 from './Images/Logo6.svg'
 import placeholder from './Images/placeholder.jpg'
 import { Link, useMatch, useResolvedPath} from "react-router-dom"
-import HomeCompetitions from './HomeCompetitions'
-import HomeGallery from './HomeGallery'
 import '@justinribeiro/lite-youtube';
+
+const HomeCompetitions = lazy(() => import('./HomeCompetitions'));
+const HomeGallery = lazy(() => import('./HomeGallery'));
 
 const Home = () => {
   const [articles, setArticles] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
-  const logo1 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732326073/image_31_hdyipr.png";
+  const logo1 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732326073/image_31_hdyipr.png";
+  const pic1 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732604125/section1_d8znop.png";
 
-  const observer = new IntersectionObserver((entries) => {
+  {/* const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('show');
       } 
-      {/* Keep playing the animation:
+       Keep playing the animation:
       else {
         entry.target.classList.remove('show');
-      }*/}
+      }
     });
-  });
+  }); 
   const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observe(el));
+  hiddenElements.forEach((el) => observer.observe(el)); */}
 
   useEffect(() => {
     document.title = "C3 Team @ UCF";
@@ -58,7 +52,21 @@ const Home = () => {
   return (
     <div className='home-main'>
       <div className='hero'>
-        <img src={hero} class="picture" alt='UCF C3 Team' />
+        <picture>
+          <source
+            media="(max-width: 600px)"
+            srcset="https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/c_scale,w_600/v1732602884/hero_fkaqur.jpg"
+          />
+          <source
+            media="(max-width: 1200px)"
+            srcset="https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/c_scale,w_1200/v1732602884/hero_fkaqur.jpg"
+          />
+          <img
+            src="https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732602884/hero_fkaqur.jpg"
+            class="picture"
+            alt="UCF C3 Team"
+          />
+        </picture>
         <div className='header'>
           <h3>Meet UCF's Collegiate Cyber Defense Team</h3>
           <p>Where the best hackers go</p>
@@ -86,17 +94,12 @@ const Home = () => {
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L1300 0V1L0 1V0Z" fill="#212529"/>
         </svg>
         <div className='logos'>
-          <img src={logo1} class="logo" alt='Logo 1' />
-          {/*<img src={logo2} class="logo" alt='Logo 2' />
-          <img src={logo3} class="logo" alt='Logo 3' />
-          <img src={logo4} class="logo" alt='Logo 4' />
-          <img src={logo5} class="logo" alt='Logo 5' />
-          <img src={logo6} class="logo" alt='Logo 6' />*/}
+          <img src={logo1} loading="lazy" class="logo" alt='Logo 1' />
         </div>
       </div>
-      <div>
-        <HomeCompetitions></HomeCompetitions>
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <HomeCompetitions />
+      </Suspense>
       <div className='news__svg--black'>
         <svg xmlns="http://www.w3.org/2000/svg" width="1500" height="36" viewBox="0 0 1500 36" fill="none">
             <path d="M0 2.30889e-05L454 24.2105L544 0L0 2.30889e-05Z" fill="black"/>
@@ -120,7 +123,7 @@ const Home = () => {
           {!loading && articles.map((article) => (
             <div className='news__article' key={article._id}>
               <div className='news__article__image'>
-                <img src={article.image || placeholder} className="photo" alt={article.title} />
+                <img src={article.image || placeholder} className="photo" loading="lazy" alt={article.title} />
               </div>
               <div className='news__article__title'>{article.title}</div>
               <div className='news__article__info'>
@@ -141,9 +144,9 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div>
-        <HomeGallery></HomeGallery>
-      </div>
+      <Suspense fallback={<div>Loading...</div>}>
+        <HomeGallery />
+      </Suspense>
       <div className='medium'>
         <div className='medium__text'>
           <h1>The Impact of C3 Membership</h1>

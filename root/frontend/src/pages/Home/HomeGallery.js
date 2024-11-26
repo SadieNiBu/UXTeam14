@@ -6,10 +6,10 @@ const HomeGallery = () => {
   const [photos, setPhotos] = useState(null);
 
   const staticPhotos = [
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732325167/1_kvxndb.png",
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732325167/2_kf2udv.png",
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732325167/3_r08jka.png",
-    "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732325166/4_ljrwns.png",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732325167/1_kvxndb.png",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732325167/2_kf2udv.png",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732325167/3_r08jka.png",
+    "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732325166/4_ljrwns.png",
   ];
 
   useEffect(() => {
@@ -43,11 +43,13 @@ const HomeGallery = () => {
           <img
             src={staticPhotos[0] || 'placeholder.jpg'}
             className="photo"
+            loading="lazy"
             alt={'Image 1'}
           />
           <img
             src={staticPhotos[1] || 'placeholder.jpg'}
             className="photo"
+            loading="lazy"
             alt={'Image 2'}
           />
         </div>
@@ -55,11 +57,13 @@ const HomeGallery = () => {
           <img
             src={staticPhotos[2] || 'placeholder.jpg'}
             className="photo"
+            loading="lazy"
             alt={'Image 3'}
           />
           <img
             src={staticPhotos[3] || 'placeholder.jpg'}
             className="photo"
+            loading="lazy"
             alt={'Image 4'}
           />
         </div>
