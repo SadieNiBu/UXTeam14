@@ -196,11 +196,13 @@ body .socials a{
 }
 
 .contact_form input {
-    border: none;
     width: 530px;
     height: 57px;
     opacity: 0.8;
-    border-bottom: solid;
+    border: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-width: 1px;
 }
 
@@ -316,10 +318,12 @@ body .socials a{
     }
 
     .contact_form input {
-        border: none;
         width: 400px;
         height: 57px;
-        border-bottom: solid;
+        border: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-width: 1px;
     }
 
@@ -360,10 +364,12 @@ body .socials a{
     }
 
     .contact_form input {
-        border: none;
         width: 300px;
         height: 57px;
-        border-bottom: solid;
+        border: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-width: 1px;
     }
 
@@ -501,10 +507,12 @@ body .socials a{
     }
 
     .contact_form input {
-        border: none;
         width: 260px;
         height: 57px;
-        border-bottom: solid;
+        border: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-width: 1px;
     }
 
@@ -598,10 +606,12 @@ body .socials a{
     }
 
     .contact_form input {
-        border: none;
         width: 230px;
         height: 57px;
-        border-bottom: solid;
+        border: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-width: 1px;
     }
 
@@ -736,10 +746,12 @@ body .socials a{
     }
 
     .contact_form input {
-        border: none;
         width: 180px;
         height: 57px;
-        border-bottom: solid;
+        border: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-width: 1px;
     }
 
@@ -798,10 +810,12 @@ body .socials a{
     }
 
     .contact_form input {
-        border: none;
         width: 140px;
         height: 57px;
-        border-bottom: solid;
+        border: solid;
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-width: 1px;
     }
 
