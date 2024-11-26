@@ -184,8 +184,8 @@ body {
 
 @media (max-width: 893px) {
     .navbar {
-        width: 100%;
         z-index: 1;
+        width: 100%;
     }
 
     .nav-container {
@@ -201,37 +201,36 @@ body {
         position: absolute;
     }
 
-    .navbar-toggle .bar{
+    .navbar-toggle .bar {
         display: block;
     }
 
     .toggle-border {
+        width: 170%;
         margin-left: -130px;
         padding-bottom: 15px;
         border-spacing: 10px;
         border-top-width: 1px;
         border-top-style: solid;
-        width: 170%;
         max-width: none !important;
         border-top-color: #3D8BFD;
     }
 
-    .navbar-menu{
+    .navbar-menu {
+        top: 0;
         margin: 0;
-        top: 0px;
         width: 100%;
         z-index: -1;
-        display: grid;
         display: none;
         padding-top: 100px;
         position: absolute;
-        background: #000000;
-        padding-right: 15vw;
         padding-left: 15vw;
+        padding-right: 15vw;
+        background: #000000;
         grid-template-columns: auto;
     }
 
-    .navbar-toggle:hover + .navbar-menu, .navbar-menu:hover{
+    .navbar-menu.open {
         display: grid;
     }
 
@@ -245,22 +244,22 @@ body {
 
     .navbar-menu li {
         width: 100%;
-        margin-bottom: 3px;
+        font-weight: 400;
         line-height: 15px;
         text-align: center;
-        font-weight: 400;
+        margin-bottom: 3px;
     }
 
-    .navbar svg{
-        vertical-align: middle;
+    .navbar svg {
         display: none;
-      }
+        vertical-align: middle;
+    }
 
     .dropdown:hover .dropdown-content {
         display: none !important;
     }
 
-    .navbar-menu #element li, .dropdown #dropbtn{
+    .navbar-menu #element li, .dropdown #dropbtn {
         padding-bottom: 6px;
         border-bottom-width: 2px;
         border-bottom-style: solid !important;
@@ -270,18 +269,19 @@ body {
     .dropdown:not(:hover) #dropbtn li:not(:hover).active {
         padding-bottom: 6px;
         border-bottom-width: 2px;
-        border-bottom-style: none !important;
         border-bottom-color: #FFC904;
+        border-bottom-style: none !important;
     }
 
-    .navbar-menu #element a:hover, .dropdown #dropbtn a:hover, .navbar-menu #element a:focus, .dropdown #dropbtn a:focus{
+    .navbar-menu #element a:hover, .dropdown #dropbtn a:hover, .navbar-menu #element a:focus, .dropdown #dropbtn a:focus {
         padding-bottom: 6px;
         border-bottom-width: 2px;
-        border-bottom-style: solid !important;
         border-bottom-color: #FFC904;
         -webkit-text-stroke: 0.5px white;
+        border-bottom-style: solid !important;
     }
 }
+
 
 .navbar-menu a {
     color: white;

@@ -1,25 +1,35 @@
 import { Link, useMatch, useResolvedPath} from "react-router-dom"
 import { HashLink } from 'react-router-hash-link'
 import ChevronIcon from "./ChevronIcon"
-import SearchIcon from "./SearchIcon"
+import { useState } from "react";
 
 export default function Navbar() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const handleMenuToggle = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const handleLinkClick = () => {
+        setIsMenuOpen(false);
+    };
+
     return <div className="nav-container">
         <nav className="navbar"> 
         <Link to="/" className="site-logo">C3@UCF</Link>
-        <div className="navbar-toggle">
+        <div className="navbar-toggle" onClick={handleMenuToggle}>
             <span className="bar"></span>
             <span className="bar"></span>
             <span className="bar"></span>
         </div>
-        <ul className="navbar-menu">
+        <ul className={`navbar-menu ${isMenuOpen ? 'open' : ''}`}>
             <li id="element" className="first-toggle">
                 <div className="toggle-border"></div>
-                <CustomLink to="/">Home</CustomLink>
+                <CustomLink to="/" onClick={handleLinkClick}>Home</CustomLink>
             </li>
                 <div className="dropdown">
                     <div id="dropbtn">
-                        <CustomLink to="/about">About <ChevronIcon className="chevron-icon" /></CustomLink>
+                        <CustomLink to="/about" onClick={handleLinkClick}>About <ChevronIcon className="chevron-icon" /></CustomLink>
                     </div>
                     <div className="dropdown-content">
                         <li className="first-element" id="navelement">
@@ -35,7 +45,7 @@ export default function Navbar() {
                 </div>
             <div className="dropdown">
                 <div id="dropbtn" style={{zIndex: "1"}}>
-                    <CustomLink to="/roster">Team Roster <ChevronIcon className="chevron-icon" /></CustomLink>
+                    <CustomLink to="/roster" onClick={handleLinkClick}>Team Roster <ChevronIcon className="chevron-icon" /></CustomLink>
                 </div>
                 <div className="dropdown-content">
                     <li className="first-element" id="navelement">
@@ -51,7 +61,7 @@ export default function Navbar() {
             </div>
             <div className="dropdown">
                 <div id="dropbtn" style={{zIndex: "1"}}>
-                    <CustomLink to="/competition">Competition <ChevronIcon className="chevron-icon" /></CustomLink>
+                    <CustomLink to="/competition" onClick={handleLinkClick}>Competition <ChevronIcon className="chevron-icon" /></CustomLink>
                 </div>
                 <div className="dropdown-content">
                     <li className="first-element" id="navelement">
@@ -63,19 +73,19 @@ export default function Navbar() {
                 </div>
             </div>
             <li style={{zIndex: "1"}} id="element">
-                <CustomLink to="/press" >Press</CustomLink>
+                <CustomLink to="/press" onClick={handleLinkClick}>Press</CustomLink>
             </li>
             <li id="element">
-                <CustomLink to="/gallery">Gallery</CustomLink>
+                <CustomLink to="/gallery" onClick={handleLinkClick}>Gallery</CustomLink>
             </li>
             <li id="element">
-                <CustomLink to="/faq">FAQ</CustomLink>
+                <CustomLink to="/faq" onClick={handleLinkClick}>FAQ</CustomLink>
             </li>
             <li id="element">
-                <CustomLink to="/support">Support</CustomLink>
+                <CustomLink to="/support" onClick={handleLinkClick}>Support</CustomLink>
             </li>
             <li id="element">
-                <CustomLink to="/contact">Contact</CustomLink>
+                <CustomLink to="/contact" onClick={handleLinkClick}>Contact</CustomLink>
             </li>
         </ul>
         <div className="search-button"></div>
