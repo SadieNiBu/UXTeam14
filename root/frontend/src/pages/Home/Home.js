@@ -12,6 +12,7 @@ import placeholder from './Images/placeholder.jpg'
 import { Link, useMatch, useResolvedPath} from "react-router-dom"
 import HomeCompetitions from './HomeCompetitions'
 import HomeGallery from './HomeGallery'
+import '@justinribeiro/lite-youtube';
 
 const Home = () => {
   const [articles, setArticles] = React.useState([]);
@@ -151,9 +152,7 @@ const Home = () => {
             <path d="M0 0.0175781H100V5.01758H0V0.0175781Z" fill="#FFC904"/>
           </svg>
         </div>
-        <div className='medium__yt'>
-          <iframe width="640" height="491" src="https://www.youtube.com/embed/PLNluCohtZ4" title="Aspiring to Accomplished: UCF Student’s Cybersecurity Journey" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+        <lite-youtube videoid="PLNluCohtZ4"></lite-youtube>  
       </div>
     </div>
   )
