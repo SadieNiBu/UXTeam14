@@ -36,8 +36,31 @@ const CompetitionSchedule = () => {
     }
 
     const selectedYear = Number(semesters[0].year);
-    const filteredEvents = events.filter(event => new Date(event.date).getFullYear() === selectedYear);
-    
+    let filteredEvents = events.filter(event => new Date(event.date).getFullYear() === selectedYear);
+
+    const selectedSem = semesters[0].sem;
+    if (selectedSem === "FALL") {
+        filteredEvents = filteredEvents.filter(event => {
+            const month = new Date(event.date).getMonth();
+            return month >= 7 && month <= 11
+        })
+    }
+    if (selectedSem === "SPRING")
+    {
+        filteredEvents = filteredEvents.filter(event => {
+            const month = new Date(event.date).getMonth()
+            return month >= 0 && month <= 3
+        })
+    }
+    if (selectedSem === "SUMMER") {
+        filteredEvents = filteredEvents.filter(event => {
+            const month = new Date(event.date).getMonth()
+            return month >= 4 && month <= 7
+        })
+    }
+
+    console.log(filteredEvents)
+
     const sortedEvents = [...filteredEvents].sort((a, b) => new Date(a.date) - new Date(b.date));
 
     const startIndex = (currentPage - 1) * eventsPerPage
