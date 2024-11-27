@@ -1342,13 +1342,13 @@ tbody tr td {
     }
     
     .more-than .mid-pyramid img {
-        width: 104px;
+        width: 94px;
         height: 61px;
     }
     
     .more-than .low-pyramid img {
-        width: 84px;
-        height: 51px;
+        width: 64px;
+        height: 41px;
     }
 
     .more-than {
@@ -1363,13 +1363,13 @@ tbody tr td {
     }
     
     .more-than .mid-pyramid img {
-        width: 80px;
+        width: 70px;
         height: 51px;
     }
     
     .more-than .low-pyramid img {
-        width: 65px;
-        height: 41px;
+        width: 50px;
+        height: 38px;
     }
 
     .more-than {
@@ -1384,13 +1384,13 @@ tbody tr td {
     }
     
     .more-than .mid-pyramid img {
-        width: 70px;
-        height: 45px;
+        width: 55px;
+        height: 35px;
     }
     
     .more-than .low-pyramid img {
-        width: 55px;
-        height: 35px;
+        width: 35px;
+        height: 25px;
     }
 
     .more-than {
@@ -2712,7 +2712,7 @@ tbody tr td {
 
 @media (max-width: 468px) {
     .history {
-        height: 1100px;
+        height: 1150px;
     }
 
     .history-title h1 {
@@ -2720,7 +2720,7 @@ tbody tr td {
     }
 
     #comp-table {
-        margin-top: -10px;
+        margin-top: -50px;
     }
 
     .competitions-div {

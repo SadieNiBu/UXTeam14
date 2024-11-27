@@ -88,7 +88,7 @@
 
 .video-group {
     width: 100vw;
-    height: 1008px;
+    height: 930px;
     font-family: Inter;
     background-color: black;
     margin-left: calc(-50vw + 50%);
@@ -938,7 +938,7 @@
 
 @media (max-width: 622px) {
     .video-group {
-        height: 1108px;
+        height: 1008px;
     }
 
     .photo-group-3 {
