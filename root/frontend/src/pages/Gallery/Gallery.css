@@ -217,6 +217,21 @@
     width: 45vw;
 }
 
+@media (min-width: 1950px) {
+    .photo-group-1 {
+        height: 1800px;
+    }
+    .photo-group-2 {
+        height: 1139px;
+    }
+}
+
+@media (min-width: 1750px) and (max-width: 1949px) {
+    .photo-group-1 {
+        height: 1600px;
+    }
+}
+
 @media (max-width: 1590px) {
     .photo-group-1 {
         height: 1400px;
