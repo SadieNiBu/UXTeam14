@@ -1,3 +1,7 @@
+.competition-main {
+    max-width: 1900px;
+}
+
 .top {
     height: 604px;
     font-family: Inter;
@@ -279,6 +283,7 @@
     width: 30vw;
     height: 30vw;
     margin-top: 50px;
+    object-fit: contain;
 }
 
 .awards {
@@ -414,6 +419,7 @@
     height: 20vw;
     margin-top: 0.8vw;
     margin-left: 1.8vw;
+    object-fit: contain;
 }
 
 .col-2-video {
@@ -449,6 +455,7 @@
     height: 20vw;
     margin-top: 0.9vw;
     margin-left: 1.7vw;
+    object-fit: contain;
 }
 
 .col-3-video {
@@ -484,6 +491,7 @@
     height: 20vw;
     margin-top: 0.8vw;
     margin-left: 1.8vw;
+    object-fit: contain;
 }
 
 .col-2 {
@@ -523,6 +531,7 @@
     height: 20vw;
     margin-top: 0.9vw;
     margin-left: 1.7vw;
+    object-fit: contain;
 }
 
 .col-5-video {
@@ -558,6 +567,7 @@
     height: 20vw;
     margin-top: 0.8vw;
     margin-left: 1.8vw;
+    object-fit: contain;
 }
 
 .twenty-four img {
@@ -701,6 +711,12 @@ tbody tr{
 
 tbody tr td {
     padding-left: 10px;
+}
+
+@media screen and (min-width: 1750px) {
+    .col-3-video {
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 1495px) {

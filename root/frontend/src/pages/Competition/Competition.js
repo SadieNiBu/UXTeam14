@@ -82,7 +82,7 @@ const Competition = () => {
   const years = events ? [...new Set(events.map(event => new Date(event.date).getFullYear()))] : []
 
   return (
-    <Container>
+    <Container className='competition-main'>
       <Row className='top'>
         <Col className='top-title'>
           <div>
