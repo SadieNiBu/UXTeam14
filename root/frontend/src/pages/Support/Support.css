@@ -201,6 +201,7 @@
 .help_photo img {
     width: 780px;
     height: 620px;
+    object-fit: contain;
 }
 
 .help_bio2 p{
