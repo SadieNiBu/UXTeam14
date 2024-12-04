@@ -11,7 +11,7 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('SERVICE_ID', 'template_dyv226x', form.current, 'PUBLIC_KEY')
+    emailjs.sendForm('service_el37ov2', 'template_bdtok7t', form.current, 'jnlfFjPOionDmlQ2r')
     .then((result) => {
         console.log(result.text)
         alert("Your e-mail was sent, thank you for reaching out to the C3 team!")
