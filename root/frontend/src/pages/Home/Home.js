@@ -55,14 +55,14 @@ const Home = () => {
         <picture>
           <source
             media="(max-width: 600px)"
-            srcset="https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/c_scale,w_600/v1732602884/hero_fkaqur.jpg"
+            srcset="https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/c_scale,w_600/v1733283547/NCCDC__2024Winners_cropped-min_ulgot3.png"
           />
           <source
             media="(max-width: 1200px)"
-            srcset="https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/c_scale,w_1200/v1732602884/hero_fkaqur.jpg"
+            srcset="https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/c_scale,w_1200/v1733283547/NCCDC__2024Winners_cropped-min_ulgot3.png"
           />
           <img
-            src="https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732602884/hero_fkaqur.jpg"
+            src="https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1733283547/NCCDC__2024Winners_cropped-min_ulgot3.png"
             class="picture"
             alt="UCF C3 Team"
           />

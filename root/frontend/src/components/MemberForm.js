@@ -64,7 +64,7 @@ const MemberForm = ({ refetchMembers }) => {
                 value={name}
             />
 
-            <label>Member Role: </label>
+            <label>Member LinkedIn: </label>
             <input 
                 type="text"
                 onChange={(e) => setRole(e.target.value)}

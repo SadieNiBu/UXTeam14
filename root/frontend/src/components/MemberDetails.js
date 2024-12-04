@@ -80,7 +80,7 @@ const MemberDetails = ({ member, refetchMembers }) => {
                         onChange={(e) => setName(e.target.value)}
                     />
 
-                    <label>Role: </label>
+                    <label>LinkedIn: </label>
                     <input 
                         type="text"
                         value={role}
@@ -109,7 +109,7 @@ const MemberDetails = ({ member, refetchMembers }) => {
             ) : (
                 <>
                     <p><strong>Name: </strong>{name}</p>
-                    <p><strong>Role: </strong>{role}</p>
+                    <p><strong>LinkedIn: </strong>{role}</p>
                     <p><strong>Classification: </strong>{classification}</p>
                     {preview && <img src={preview} alt={name} style={{ width: '100px' }} />} {/* Display current image */}
                     <button onClick={() => setIsEditing(true)}>Edit</button>

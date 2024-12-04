@@ -42,12 +42,24 @@ const Roster = () => {
               />
             </div>
             <div className="name">{member ? member.name : 'Default Name'}</div>
-            <div className="role">{member ? member.role : 'Default Role'}</div>
-            {/* <div className="social">
-              <img src={fbIcon} className="picture" alt="Facebook Icon" style={{ marginRight: '26.577px' }} />
-              <img src={twIcon} className="picture" alt="Twitter Icon" style={{ marginRight: '26.577px' }} />
-              <img src={liIcon} className="picture" alt="LinkedIn Icon" />
-            </div> */}
+            <div className="role">
+              {member && member.role ? (
+                <a
+                  href={member.role}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${member.name}'s LinkedIn Profile`}
+                >
+                  <img
+                    src={liIcon}
+                    className="linkedin-icon"
+                    alt="LinkedIn Icon"
+                  />
+                </a>
+              ) : (
+                'Default Role'
+              )}
+            </div>
           </div>
         </div>
       </div>
