@@ -1,21 +1,14 @@
 import './Competition.css'
-import TopPic from './toppic.png'
 import Circle from './eclipse.png'
 import Twenty from './2020.png'
 import TwentyOne from './2021.png'
 import TwentyTwo from './2022.png'
 import TwentyThree from './2023.png'
 import TwentyFour from './2024.png'
-import PresPic from './president.png'
 import '@justinribeiro/lite-youtube';
-import NCCDC2020 from './nccdc2020.png'
-import NCCDC2021 from './nccdc2021.png'
-import NCCDC2022 from './nccdc2022.png'
-import NCCDC2024 from './nccdc2024.png'
 import firstPlace from './1st-place.png'
 import thirdPlace from './3rd-place.png'
 import secondPlace from './2nd-place.png'
-import Western3rd from './western3rd.png'
 import CompPhoto from './competitionlogo.png'
 import React, { useEffect, useState } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
@@ -31,6 +24,14 @@ const Competition = () => {
   const [ sortedEvents, setSortedEvents ] = useState([])
   
   const eventsPerPage = 9
+
+  const TopPic = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1733278283/toppic_jib7eq.png"
+  const PresPic = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1733278390/president_v9nna2.png"
+  const NCCDC2024 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1733278512/nccdc2024_ip1hky.png"
+  const Western3rd = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1732325166/4_ljrwns.png"
+  const NCCDC2022 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1733278673/nccdc2022_eoo5sx.png"
+  const NCCDC2021 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1733278761/nccdc2021_egcvco.png"
+  const NCCDC2020 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1733278790/nccdc2020_hxbh2u.png"
 
   useEffect ( () => {
     document.title = "C3 Team @ UCF | Competition"

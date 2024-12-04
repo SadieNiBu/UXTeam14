@@ -1,11 +1,11 @@
 import './Support.css'
-import HelpPhoto from './helpphoto.png'
 import React, { useEffect } from 'react'
 import { Container, Row, Col } from "react-bootstrap"
-import FoundationPhoto from './foundationphoto.png'
 
 const Support = () => {
   const ContributionsPhoto = "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1733262303/contributionsphoto-min_cclv9w.png";
+  const FoundationPhoto = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1733278041/foundationphoto_irgg4x.png"
+    const HelpPhoto = "https://res.cloudinary.com/dpvt0b5wd/image/upload/v1733278048/helpphoto_vedwsp.png"
 
   useEffect ( () => {
     document.title = "C3 Team @ UCF | Support"
