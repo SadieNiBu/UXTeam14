@@ -35,7 +35,7 @@ const Admin = () => {
     const [showArticles, setShowArticles] = useState(false);
     
     const fetchMembers = async () => {
-        const response = await fetch('http://129.80.134.40:4000/api/members');
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/members');
         const json = await response.json();
 
         if (response.ok) {
@@ -44,7 +44,7 @@ const Admin = () => {
     };
 
     const fetchPhotos = async () => {
-        const response = await fetch('http://129.80.134.40:4000/api/photos');
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/photos');
         const json = await response.json();
 
         if (response.ok) {
@@ -53,7 +53,7 @@ const Admin = () => {
     };
 
     const fetchSemesters = async () => {
-        const response = await fetch('http://129.80.134.40:4000/api/semesters');
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/semesters');
         const json = await response.json();
 
         if (response.ok) {
@@ -62,7 +62,7 @@ const Admin = () => {
     };
 
     const fetchEvents = async () => {
-        const response = await fetch('http://129.80.134.40:4000/api/events')
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/events')
         const json = await response.json()
 
         if (response.ok) {
@@ -71,7 +71,7 @@ const Admin = () => {
     };
 
     const fetchArticles = async () => {
-        const response = await fetch('http://129.80.134.40:4000/api/articles');
+        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/articles');
         const json = await response.json();
 
         if (response.ok) {
@@ -87,7 +87,7 @@ const Admin = () => {
         document.title = "C3 Team @ UCF | Admin"
 
         const fetchMembers = async () => {
-            const response = await fetch('http://129.80.134.40:4000/api/members', {
+            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/members', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }
@@ -100,7 +100,7 @@ const Admin = () => {
         }
 
         const fetchPhotos = async () => {
-            const response = await fetch('http://129.80.134.40:4000/api/photos', {
+            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/photos', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }
@@ -113,7 +113,7 @@ const Admin = () => {
         }
 
         const fetchEvents = async () => {
-            const response = await fetch('http://129.80.134.40:4000/api/events', {
+            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/events', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }
@@ -126,7 +126,7 @@ const Admin = () => {
         }
 
         const fetchSemesters = async () => {
-            const response = await fetch('http://129.80.134.40:4000/api/semesters', {
+            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/semesters', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }
@@ -139,7 +139,7 @@ const Admin = () => {
         }
 
         const fetchArticles = async () => {
-            const response = await fetch('http://129.80.134.40:4000/api/articles', {
+            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/articles', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }

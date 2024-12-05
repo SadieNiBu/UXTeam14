@@ -10,7 +10,7 @@ const CompetitionSchedule = () => {
 
     useEffect(() => {
         const fetchEvents = async () => {
-            const response = await fetch('http://129.80.134.40:4000/api/events')
+            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/events')
             const json = await response.json()
 
             if (response.ok) {
@@ -19,7 +19,7 @@ const CompetitionSchedule = () => {
         }
 
         const fetchSemesters = async () => {
-            const response = await fetch('http://129.80.134.40:4000/api/semesters')
+            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/semesters')
             const json = await response.json()
 
             if (response.ok) {
