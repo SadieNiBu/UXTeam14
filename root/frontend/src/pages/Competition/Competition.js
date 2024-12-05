@@ -37,7 +37,7 @@ const Competition = () => {
     document.title = "C3 Team @ UCF | Competition"
 
     const fetchEvents = async () => {
-      const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/events')
+      const response = await fetch('http://129.80.134.40:4000/api/events')
       const json = await response.json()
 
       if (response.ok) {
@@ -46,7 +46,7 @@ const Competition = () => {
     }
 
     const fetchSemesters = async () => {
-      const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/semesters')
+      const response = await fetch('http://129.80.134.40:4000/api/semesters')
       const json = await response.json()
 
       if (response.ok) {
