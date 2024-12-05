@@ -168,7 +168,7 @@
 .photo-grid-wrapper {
     position: absolute;
     margin-left: 90px;
-    margin-top: 350px;
+    margin-top: 340px;
     display: flex;
     gap: 20px;
 }
@@ -185,10 +185,12 @@
 
 .photo-1 img {
     width: 50vw;
+    height: 28vw;
 }
 
 .photo-2 img {
     width: 50vw;
+    height: 28vw;
 }
 
 .photo-3 {
@@ -197,11 +199,11 @@
 
 .photo-3 img {
     width: 35vw;
-    height: 67vw;
+    height: 57vw;
 }
 
 .photo-grid-wrapper-2 {
-    margin-top: -230px;
+    margin-top: -360px;
     position: absolute;
     margin-left: 90px;
     display: flex;
@@ -215,6 +217,35 @@
 
 .photo-5 img {
     width: 45vw;
+}
+
+@media (max-width: 1910px) {
+    .photo-1 img {
+        width: 50vw;
+        height: auto;
+    }
+    
+    .photo-2 img {
+        width: 50vw;
+        height: auto;
+    }
+    
+    .photo-3 {
+        margin-inline: auto;
+    }
+    
+    .photo-3 img {
+        width: 35vw;
+        height: 67vw;
+    }
+
+    .photo-grid-wrapper {
+        margin-top: 350px;
+    }
+
+    .photo-grid-wrapper-2 {
+        margin-top: -230px;
+    }
 }
 
 @media (min-width: 1950px) {
