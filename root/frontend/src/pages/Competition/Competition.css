@@ -366,19 +366,15 @@
     position: absolute;
 }
 
-@media (max-width: 1810px) {
-
-}
-
 .timeline {
     font-family: Inter;
-    height: 2800px;
+    height: 3200px;
 }
 
 .col-1-title {
     width: 50vw;
     margin-top: 158px;
-    margin-left: 0px;
+    margin-left: -300px;
     padding-left: 0vw;
     font-size: 40px;
 }
@@ -386,15 +382,15 @@
 .col-1 svg {
     width: 150px;
     margin-top: 50px;
-    margin-left: -20px;
+    margin-left: -320px;
     padding-left: 0vw;
 }
 
 .col-1-video {
     width: 30vw;
-    height: 35vw;
+    height: 30vw;
     margin-top: 100px;
-    margin-left: 0vw;
+    margin-left: -305px;
     background-color: #D3D3D3;
     border: 2px solid #B1C2F3
 }
@@ -428,9 +424,9 @@
 
 .col-2-video {
     width: 30vw;
-    height: 35vw;
+    height: 30vw;
     margin-top: 285px;
-    margin-left: 0vw;
+    margin-left: -305px;
     background-color: #D3D3D3;
     border: 2px solid #B1C2F3
 }
@@ -464,9 +460,9 @@
 
 .col-3-video {
     width: 30vw;
-    height: 35vw;
+    height: 30vw;
     margin-top: 285px;
-    margin-left: 0vw;
+    margin-left: -305px;
     background-color: #D3D3D3;
     border: 2px solid #B1C2F3
 }
@@ -504,9 +500,9 @@
 
 .col-4-video {
     width: 30vw;
-    height: 35vw;
+    height: 30vw;
     margin-top: 730px;
-    margin-left: -3vw;
+    margin-left: -120px;
     background-color: #D3D3D3;
     border: 2px solid #B1C2F3;
 }
@@ -540,9 +536,9 @@
 
 .col-5-video {
     width: 30vw;
-    height: 35vw;
+    height: 30vw;
     margin-top: 285px;
-    margin-left: -3vw;
+    margin-left: -120px;
     background-color: #D3D3D3;
     border: 2px solid #B1C2F3;
 }
@@ -572,6 +568,10 @@
     margin-top: 0.8vw;
     margin-left: 1.8vw;
     object-fit: contain;
+}
+
+.visual-timeline {
+    margin-left: -300px;
 }
 
 .twenty-four img {
@@ -744,6 +744,49 @@ tbody tr td {
 @media screen and (min-width: 1750px) {
     .col-3-video {
         margin-top: 100px;
+    }
+}
+
+@media (max-width: 1710px) {
+    .timeline {
+        height: 2800px;
+    }
+
+    .col-1-title {
+        margin-left: 0px;
+    }
+
+    .col-1 svg {
+        margin-left: -20px;
+    }
+
+    .col-1-video {
+        height: 35vw;
+        margin-left: 0vw;
+    }
+
+    .col-2-video {
+        height: 35vw;
+        margin-left: 0vw;
+    }
+
+    .col-3-video {
+        height: 35vw;
+        margin-left: 0vw;
+    }
+
+    .col-4-video {
+        height: 35vw;
+        margin-left: -3vw;
+    }
+
+    .col-5-video {
+        height: 35vw;
+        margin-left: -3vw;
+    }
+
+    .visual-timeline {
+        margin-left: 0px;
     }
 }
 
