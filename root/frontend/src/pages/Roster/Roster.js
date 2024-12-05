@@ -25,6 +25,8 @@ const Roster = () => {
 
   const coachMembers = members ? members.filter(member => member.classification === 'Coach') : [];
   const studentMembers = members ? members.filter(member => member.classification === 'Student') : [];
+
+  studentMembers.sort((a, b) => a.name.split(' ')[1].localeCompare(b.name.split(' ')[1]));
   
   const renderMemberCard = (member, isCoach = false) => {
     const defaultImage = smallMember;
