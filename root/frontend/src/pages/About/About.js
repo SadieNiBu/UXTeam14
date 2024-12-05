@@ -110,20 +110,20 @@ const About = () => {
 
         <div className="main-content">
           <div className="left-column">
-            <h4>UCF Collegiate Cyber Defense Competition Team</h4>
+            <h4>UCF Collegiate Cybersecurity Competition Team</h4>
           </div>
           <div className="right-column">
             <h5>A nationally recognized powerhouse in cybersecurity defense.</h5>
             <p className="description">
               Established in 2013, our team consistently excels in high-pressure environments, defending 
-              against complex cyber threats while managing real-world business tasks. UCF's CCDC team 
+              against complex cyber threats while managing real-world business tasks. UCF's C3 team 
               continues to set standards in cybersecurity, preparing students for the challenges of tomorrow.
             </p>
           </div>
         </div>
         
         <div className="picture">
-          <img src={teamPhoto} className="picture" alt="UCF CCDC Team" />
+          <img src={teamPhoto} className="picture" alt="UCF C3 Team" />
         </div>
       </div>
 

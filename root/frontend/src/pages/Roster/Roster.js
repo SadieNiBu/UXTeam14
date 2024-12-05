@@ -81,7 +81,7 @@ const Roster = () => {
         </div>
         <div className="main-content">
           <div className="left-column">
-            <h4>UCF Collegiate Cyber Defense Competition Team</h4>
+            <h4>UCF Collegiate Cybersecurity Competition Team</h4>
           </div>
           <div className="right-column">
             <h5>A nationally recognized powerhouse in cybersecurity defense.</h5>

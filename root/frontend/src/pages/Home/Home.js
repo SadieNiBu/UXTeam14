@@ -68,7 +68,7 @@ const Home = () => {
           />
         </picture>
         <div className='header'>
-          <h3>Meet UCF's Collegiate Cyber Defense Team</h3>
+          <h3>Meet UCF's Collegiate Cybersecurity Competition Team</h3>
           <p>Where the best hackers go</p>
           <button type="button" class="btn btn-primary"><CustomLink to='/about'>See More</CustomLink></button>
         </div>
