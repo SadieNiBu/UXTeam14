@@ -292,7 +292,7 @@ const Competition = () => {
               />
           </div>
         </Col>
-        <Col className='timeline'>
+        <Col>
           <div className='twenty-four text-center'>
             <img src={TwentyFour} />
           </div>

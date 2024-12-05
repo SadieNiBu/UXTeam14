@@ -59,13 +59,13 @@
     width: 1077px;
     height: 486px;
     margin-top: 105px;
-    margin-inline: auto;
+    margin-inline: 27.5vw;
 }
 
 .youtube-textbox {
     width: 1083px;
     height: 380px;
-    margin-inline: auto;
+    margin-inline: 28vw;
     background-color: white;
 }
 
@@ -179,7 +179,7 @@
 
 .schedule {
     width: 100vw;
-    height: 1298px;
+    height: 1598px;
     font-family: Inter;
     background-color: black;
     margin-left: calc(-50vw + 50%);
@@ -274,13 +274,13 @@
 
 .schedule .sc-vid lite-youtube {
     left: 9vw;
-    width: 30vw;
+    width: 31vw;
     height: 30vw;
 }
 
 .schedule .sc-img img {
     left: 10vw;
-    width: 30vw;
+    width: 30.5vw;
     height: 30vw;
     margin-top: 50px;
     object-fit: contain;
@@ -359,11 +359,15 @@
 }
 
 .bottom_line_decors {
-    top: 3838px;
+    top: 4138px;
     left: 220px;
     height: 28px;
     min-width: 1494px;
     position: absolute;
+}
+
+@media (max-width: 1810px) {
+
 }
 
 .timeline {
@@ -711,6 +715,30 @@ tbody tr{
 
 tbody tr td {
     padding-left: 10px;
+}
+
+@media (max-width: 2100px) {
+    .youtube-vid lite-youtube{
+        margin-inline: auto;
+    }
+    
+    .youtube-textbox {
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 1810px) {
+    .schedule {
+        height: 1298px;
+    }
+
+    .schedule .sc-vid lite-youtube {
+        width: 30vw;
+    }
+
+    .bottom_line_decors {
+        top: 3838px;
+    }
 }
 
 @media screen and (min-width: 1750px) {
