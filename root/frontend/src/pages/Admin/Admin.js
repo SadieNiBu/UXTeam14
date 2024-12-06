@@ -256,7 +256,7 @@ const Admin = () => {
               Semester {showSemesters ? '▲' : '▼'}
             </button>
             {showSemesters && (
-              <div className="admin-articles">
+              <div className="admin-sems">
                 <h2>Semester</h2>
                 {semesters &&
                   semesters.map((semester) => (
