@@ -33,6 +33,7 @@ const Admin = () => {
     const [showEvents, setShowEvents] = useState(false);
     const [showGallery, setShowGallery] = useState(false);
     const [showArticles, setShowArticles] = useState(false);
+    const [showSemesters, setShowSemesters] = useState(false);
     
     const fetchMembers = async () => {
         const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/members');
@@ -245,6 +246,26 @@ const Admin = () => {
                     />
                   ))}
                 <ArticleForm refetchArticles={fetchArticles} />
+              </div>
+            )}
+          </div>
+
+          {/* Semesters */}
+          <div className="admin-section">
+            <button onClick={() => setShowSemesters(!showSemesters)}>
+              Semester {showSemesters ? '▲' : '▼'}
+            </button>
+            {showSemesters && (
+              <div className="admin-articles">
+                <h2>Semester</h2>
+                {semesters &&
+                  semesters.map((semester) => (
+                    <SemesterDetails
+                      key={semester._id}
+                      semester={semester}
+                      refetchSemesters={fetchSemesters}
+                    />
+                  ))}
               </div>
             )}
           </div>
