@@ -36,7 +36,7 @@ const Admin = () => {
     const [showSemesters, setShowSemesters] = useState(false);
     
     const fetchMembers = async () => {
-        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/members');
+        const response = await fetch('https://213633.xyz/api/members');
         const json = await response.json();
 
         if (response.ok) {
@@ -45,7 +45,7 @@ const Admin = () => {
     };
 
     const fetchPhotos = async () => {
-        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/photos');
+        const response = await fetch('https://213633.xyz/api/photos');
         const json = await response.json();
 
         if (response.ok) {
@@ -54,7 +54,7 @@ const Admin = () => {
     };
 
     const fetchSemesters = async () => {
-        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/semesters');
+        const response = await fetch('https://213633.xyz/api/semesters');
         const json = await response.json();
 
         if (response.ok) {
@@ -63,7 +63,7 @@ const Admin = () => {
     };
 
     const fetchEvents = async () => {
-        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/events')
+        const response = await fetch('https://213633.xyz/api/events')
         const json = await response.json()
 
         if (response.ok) {
@@ -72,7 +72,7 @@ const Admin = () => {
     };
 
     const fetchArticles = async () => {
-        const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/articles');
+        const response = await fetch('https://213633.xyz/api/articles');
         const json = await response.json();
 
         if (response.ok) {
@@ -88,7 +88,7 @@ const Admin = () => {
         document.title = "C3 Team @ UCF | Admin"
 
         const fetchMembers = async () => {
-            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/members', {
+            const response = await fetch('https://213633.xyz/api/members', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }
@@ -101,7 +101,7 @@ const Admin = () => {
         }
 
         const fetchPhotos = async () => {
-            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/photos', {
+            const response = await fetch('https://213633.xyz/api/photos', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }
@@ -114,7 +114,7 @@ const Admin = () => {
         }
 
         const fetchEvents = async () => {
-            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/events', {
+            const response = await fetch('https://213633.xyz/api/events', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }
@@ -127,7 +127,7 @@ const Admin = () => {
         }
 
         const fetchSemesters = async () => {
-            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/semesters', {
+            const response = await fetch('https://213633.xyz/api/semesters', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }
@@ -140,7 +140,7 @@ const Admin = () => {
         }
 
         const fetchArticles = async () => {
-            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/articles', {
+            const response = await fetch('https://213633.xyz/api/articles', {
                 headers: {
                     Authorization: `Bearer ${admin.token}`
                 }

@@ -11,7 +11,7 @@ const HomeCompetitions = () => {
 
     useEffect(() => {
         const fetchEvents = async () => {
-            const response = await fetch('https://ucf-c3-team-website-api.onrender.com/api/events');
+            const response = await fetch('https://213633.xyz/api/events');
             const json = await response.json();
 
             if (response.ok) {
