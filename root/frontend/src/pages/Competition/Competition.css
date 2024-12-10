@@ -101,13 +101,14 @@
     width: 930px;
 }
 
-.youtube-btn button {
+.youtube-btn .btn {
     width: 178px;
     border: none;
     height: 58px;
     font-size: 16px;
     color: #343A40;
     font-weight: 500;
+    line-height: 42px;
     margin-left: 30px;
     margin-top: 155px;
     font-family: Inter;
@@ -115,13 +116,9 @@
     border-radius: 4px 4px 4px 4px;
 }
 
-.youtube-btn button:hover a{
+.youtube-btn .btn:hover {
+    background-color: black;
     color: white;
-}
-
-.youtube-btn a{
-    color: black;
-    text-decoration: none;
 }
 
 .more-than {
@@ -1334,7 +1331,7 @@ tbody tr td {
         margin-left: 250px;
     }
 
-    .youtube-btn button {
+    .youtube-btn .btn {
         margin-top: 205px;
     }
 }
@@ -1359,7 +1356,7 @@ tbody tr td {
         margin-left: 160px;
     }
 
-    .youtube-btn button {
+    .youtube-btn .btn {
         margin-top: 205px;
     }
 }
@@ -1385,7 +1382,7 @@ tbody tr td {
         margin-left: 60px;
     }
 
-    .youtube-btn button {
+    .youtube-btn .btn {
         margin-top: 250px;
     }
 }
@@ -1410,7 +1407,7 @@ tbody tr td {
         margin-left: 40px;
     }
 
-    .youtube-btn button {
+    .youtube-btn .btn {
         margin-top: 250px;
     }
 }
@@ -2910,7 +2907,7 @@ tbody tr td {
         padding-top: 150px;
     }
     
-    .youtube-btn button {
+    .youtube-btn .btn {
         margin-left: 0px;
     }
 

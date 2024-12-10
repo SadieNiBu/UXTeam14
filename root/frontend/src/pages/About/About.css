@@ -514,6 +514,13 @@
     padding: 0;
     max-width: 470px;
     min-height: 285px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 500px) {
+    .pricing .statistics .content .chart {
+        font-size: 20px;
+    }
 }
 
 .policies {
@@ -527,7 +534,7 @@
 
 @media screen and (max-width: 1200px) {
     .policies {
-        gap: 35px;
+        gap: 25px;
     }
 }
 

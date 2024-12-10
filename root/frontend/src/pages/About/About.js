@@ -76,11 +76,13 @@ const About = () => {
   const centerTextPlugin = {
     id: 'centerText',
     beforeDraw(chart) {
-      const { width, height, ctx } = chart
-      ctx.restore()
+      const { width, height, ctx, canvas } = chart
 
-      const fontSize = (height / 134).toFixed(2)
-      ctx.font = `${fontSize}em sans-serif`
+      const container = canvas.parentNode;
+      const fontSize = parseFloat(window.getComputedStyle(container).fontSize);
+
+      ctx.restore()
+      ctx.font = `${fontSize}px sans-serif`;
       ctx.textBaseline = 'middle'
       ctx.textAlign = 'center'
       

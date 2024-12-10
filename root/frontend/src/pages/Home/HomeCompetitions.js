@@ -82,9 +82,9 @@ const HomeCompetitions = () => {
             <div className="top">
                 <p>Competitions</p>
                 <h1>{totalUpcoming.length} Upcoming Competitions</h1>
-                <button type="button" className="btn btn-primary">
-                    <CustomLink to="competition">See More</CustomLink>
-                </button>
+                <Link to='competition' className="btn btn-primary">
+                    See More
+                </Link>
             </div>
             <div className="list">
                 <div className="main">
@@ -127,18 +127,5 @@ const HomeCompetitions = () => {
         </div>
     );
 };
-
-function CustomLink({ to, children, ...props }) {
-    const resolvedPath = useResolvedPath(to);
-    const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-    return (
-        <li className={isActive ? "active" : ""}>
-            <Link to={to} {...props}>
-                {children}
-            </Link>
-        </li>
-    );
-}
 
 export default HomeCompetitions;

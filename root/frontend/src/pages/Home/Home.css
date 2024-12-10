@@ -139,7 +139,7 @@ a {
     line-height: 26px; /* 130% */
 }
 
-.hero .header button {
+.hero .header .btn {
     display: flex;
     width: 178px;
     padding: 16px 32px;
@@ -161,11 +161,8 @@ a {
     list-style: none;
 }
 
-.hero .header button:hover {
+.hero .header .btn:hover {
     background-color: #0A58CA;
-}
-
-.hero .header button:hover a{
     color: white;
 }
 
@@ -190,7 +187,7 @@ a {
     .hero .header p {
         margin-top: -6px;
     }
-    .hero .header button {
+    .hero .header .btn {
         margin-top: -30px;
         padding: 10px 22px;
     }
@@ -203,7 +200,7 @@ a {
     .hero .header p {
         font-size: 16px;
     }
-    .hero .header button {
+    .hero .header .btn {
         width: 150px;
     }
 }
@@ -213,7 +210,7 @@ a {
     .hero .header h3 {
         font-size: 38px;
     }
-    .hero .header button {
+    .hero .header .btn {
         margin-top: -20px;
     }
 }
@@ -427,30 +424,23 @@ a {
     letter-spacing: -0.8px;
 }
 
-.competitions .top button {
+.competitions .top .btn {
     margin-top: -8.3%;
     float: right;
     height: 48px;
     width: 184px;
     border: none;
-    border-radius: 4px;
     background: var(--UCF-Bright-Gold, #FFC904);
 
     color: var(--Default-Black, #000);
-    text-align: center;
     font-family: Inter;
     font-size: 16px;
-    font-style: normal;
     font-weight: 600;
-    list-style: none;
-    line-height: 28px; /* 175% */
+    line-height: 33px; /* 175% */
 }
 
-.competitions .top button:hover {
+.competitions .top .btn:hover {
     background-color: #0A58CA;
-}
-
-.competitions .top button:hover a {
     color: white;
 }
 
@@ -467,13 +457,13 @@ a {
         font-size: 30px;
         width: 130%;
     }
-    .competitions .top button {
+    .competitions .top .btn {
         width: 100px;
     }
 }
 
 @media screen and (max-width: 991px) {
-    .competitions .top button {
+    .competitions .top .btn {
         float: left;
         margin-top: 0%;
     }
@@ -908,7 +898,7 @@ a {
     
 } */
 
-.photos button {
+.photos .btn {
     float: right;
     height: 48px;
     width: 184px;
@@ -923,14 +913,11 @@ a {
     font-style: normal;
     font-weight: 600;
     list-style: none;
-    line-height: 28px; /* 175% */
+    line-height: 33px; /* 175% */
 }
 
-.photos button:hover {
+.photos .btn:hover {
     background-color: #000;
-}
-
-.photos button:hover a {
     color: white;
 }
 

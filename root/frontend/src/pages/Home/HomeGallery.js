@@ -98,24 +98,11 @@ const HomeGallery = () => {
           />
         </div>
       </div>
-      <button type="button" className="btn btn-primary">
-        <CustomLink to="gallery">See More</CustomLink>
-      </button>
+      <Link to='gallery' className="btn btn-primary">
+        See More
+      </Link>
     </div>
   );
 };
-
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to);
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true });
-
-  return (
-    <li className={isActive ? 'active' : ''}>
-      <Link to={to} {...props}>
-        {children}
-      </Link>
-    </li>
-  );
-}
 
 export default HomeGallery;

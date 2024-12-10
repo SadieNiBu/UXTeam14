@@ -147,9 +147,7 @@ const Support = () => {
             <p>You can donate to the C3 Team using the link below,<br />which takes you to the UCF Foundation. </p>
           </div>
           <div className='donation_btn'>
-            <button class='btn btn-primary'>
-             <a target="_blank" rel="noopener noreferrer" href='https://foundation.ucf.edu/givenow'>Donate</a>
-            </button>
+             <a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href='https://foundation.ucf.edu/givenow'>Donate</a>
           </div>
         </Col>
         <Col>

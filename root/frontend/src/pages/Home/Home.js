@@ -64,7 +64,7 @@ const Home = () => {
         '-=0.5' // Overlap the animations
       )
       .fromTo(
-        headerRef.current.querySelector('button'),
+        headerRef.current.querySelector('.btn'),
         { opacity: 0, scale: 0.8 },
         { opacity: 1, scale: 1, duration: 1, ease: 'back.out(1.7)' },
         '-=0.5'
@@ -145,7 +145,9 @@ const Home = () => {
         <div className='header' ref={headerRef}>
           <h3>Meet UCF's Collegiate Cybersecurity Competition Team</h3>
           <p>Where the best hackers go</p>
-          <button type="button" class="btn btn-primary"><CustomLink to='/about'>See More</CustomLink></button>
+          <Link to='/about' className="btn btn-primary">
+            See More
+          </Link>
         </div>
       </div>
       <div className='section-1' ref={section1Ref}>
@@ -235,19 +237,5 @@ const Home = () => {
     </div>
   )
 }
-
-function CustomLink({ to, children, ...props }) {
-  const resolvedPath = useResolvedPath(to)
-  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
-
-  return (
-      <li className={isActive ? "active" : ""}>
-          <Link to={to} {...props}>
-              {children}
-          </Link>
-      </li>
-  )
-}
-
 
 export default Home
