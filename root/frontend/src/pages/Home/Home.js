@@ -1,32 +1,28 @@
-import React, { lazy, Suspense, useEffect } from 'react'
+import React, { lazy, Suspense, useEffect, useRef } from 'react'
 import './Home.css'
 import placeholder from './Images/placeholder.jpg'
 import { Link, useMatch, useResolvedPath} from "react-router-dom"
 import '@justinribeiro/lite-youtube';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const HomeCompetitions = lazy(() => import('./HomeCompetitions'));
 const HomeGallery = lazy(() => import('./HomeGallery'));
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
   const [articles, setArticles] = React.useState([]);
   const [loading, setLoading] = React.useState(true);
 
+  const heroRef = useRef(null);
+  const headerRef = useRef(null);
+  const section1Ref = useRef(null);
+  const sponsorsRef = useRef(null);
+  const newsRef = useRef(null);
+
   const logo1 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732326073/image_31_hdyipr.png";
   const pic1 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732604125/section1_d8znop.png";
-
-  {/* const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-      } 
-       Keep playing the animation:
-      else {
-        entry.target.classList.remove('show');
-      }
-    });
-  }); 
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el) => observer.observe(el)); */}
 
   useEffect(() => {
     document.title = "C3 Team @ UCF";
@@ -47,11 +43,90 @@ const Home = () => {
     };
 
     fetchArticles();
+
+    const headerAnimation = gsap.timeline({
+      scrollTrigger: {
+        trigger: heroRef.current, // Trigger animation when hero comes into view
+        start: 'top 75%',
+      },
+    });
+
+    headerAnimation
+      .fromTo(
+        headerRef.current.querySelector('h3'),
+        { opacity: 0, y: 20 },
+        { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
+      )
+      .fromTo(
+        headerRef.current.querySelector('p'),
+        { opacity: 0, x: -20 },
+        { opacity: 1, x: 0, duration: 1, ease: 'power3.out' },
+        '-=0.5' // Overlap the animations
+      )
+      .fromTo(
+        headerRef.current.querySelector('button'),
+        { opacity: 0, scale: 0.8 },
+        { opacity: 1, scale: 1, duration: 1, ease: 'back.out(1.7)' },
+        '-=0.5'
+      );
+
+    gsap.fromTo(
+      heroRef.current,
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: 'power3.out',
+      }
+    );
+
+    gsap.fromTo(
+      section1Ref.current,
+      { opacity: 0, x: -100 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1.2,
+        scrollTrigger: {
+          trigger: section1Ref.current,
+          start: 'top 90%',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      sponsorsRef.current,
+      { opacity: 0, scale: 0.8 },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        scrollTrigger: {
+          trigger: sponsorsRef.current,
+          start: 'top 85%',
+        },
+      }
+    );
+
+    gsap.fromTo(
+      newsRef.current,
+      { opacity: 0, y: 100 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        scrollTrigger: {
+          trigger: newsRef.current,
+          start: 'top 80%',
+        },
+      }
+    );
   }, []);
 
   return (
     <div className='home-main'>
-      <div className='hero'>
+      <div className='hero' ref={heroRef}>
         <picture>
           <source
             media="(max-width: 600px)"
@@ -67,13 +142,13 @@ const Home = () => {
             alt="UCF C3 Team"
           />
         </picture>
-        <div className='header'>
+        <div className='header' ref={headerRef}>
           <h3>Meet UCF's Collegiate Cybersecurity Competition Team</h3>
           <p>Where the best hackers go</p>
           <button type="button" class="btn btn-primary"><CustomLink to='/about'>See More</CustomLink></button>
         </div>
       </div>
-      <div className='section-1'>
+      <div className='section-1' ref={section1Ref}>
         <div className='wrapper'>
           <img src={pic1} class="picture" alt='UCF C3 Team' />
           <div className='text'>
@@ -88,7 +163,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className='sponsors full-bleed'>
+      <div className='sponsors full-bleed' ref={sponsorsRef}>
         <h1>Our Sponsors</h1>
         <svg xmlns="http://www.w3.org/2000/svg" width="1300" height="1" viewBox="0 0 1300 1" fill="none">
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0L1300 0V1L0 1V0Z" fill="#212529"/>
@@ -107,7 +182,7 @@ const Home = () => {
         </svg>
       </div>
       
-      <div className='news'>
+      <div className='news' ref={newsRef}>
         <div className='news__header'>
           <div className='news__header__tagline'>
             <svg xmlns="http://www.w3.org/2000/svg" width="72" height="3" viewBox="0 0 72 3" fill="none">
