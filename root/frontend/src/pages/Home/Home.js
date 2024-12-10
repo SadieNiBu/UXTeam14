@@ -21,6 +21,8 @@ const Home = () => {
   const sponsorsRef = useRef(null);
   const newsRef = useRef(null);
 
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
   const logo1 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732326073/image_31_hdyipr.png";
   const pic1 = "https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732604125/section1_d8znop.png";
 
@@ -44,85 +46,89 @@ const Home = () => {
 
     fetchArticles();
 
-    const headerAnimation = gsap.timeline({
-      scrollTrigger: {
-        trigger: heroRef.current, // Trigger animation when hero comes into view
-        start: 'top 75%',
-      },
-    });
+    console.log(isSafari);
 
-    headerAnimation
-      .fromTo(
-        headerRef.current.querySelector('h3'),
-        { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
-      )
-      .fromTo(
-        headerRef.current.querySelector('p'),
-        { opacity: 0, x: -20 },
-        { opacity: 1, x: 0, duration: 1, ease: 'power3.out' },
-        '-=0.5' // Overlap the animations
-      )
-      .fromTo(
-        headerRef.current.querySelector('.btn'),
-        { opacity: 0, scale: 0.8 },
-        { opacity: 1, scale: 1, duration: 1, ease: 'back.out(1.7)' },
-        '-=0.5'
+    if (!isSafari) {
+      const headerAnimation = gsap.timeline({
+        scrollTrigger: {
+          trigger: heroRef.current, // Trigger animation when hero comes into view
+          start: 'top 75%',
+        },
+      });
+
+      headerAnimation
+        .fromTo(
+          headerRef.current.querySelector('h3'),
+          { opacity: 0, y: 20 },
+          { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }
+        )
+        .fromTo(
+          headerRef.current.querySelector('p'),
+          { opacity: 0, x: -20 },
+          { opacity: 1, x: 0, duration: 1, ease: 'power3.out' },
+          '-=0.5' // Overlap the animations
+        )
+        .fromTo(
+          headerRef.current.querySelector('.btn'),
+          { opacity: 0, scale: 0.8 },
+          { opacity: 1, scale: 1, duration: 1, ease: 'back.out(1.7)' },
+          '-=0.5'
+        );
+
+      gsap.fromTo(
+        heroRef.current,
+        { opacity: 0, y: -50 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          ease: 'power3.out',
+        }
       );
 
-    gsap.fromTo(
-      heroRef.current,
-      { opacity: 0, y: -50 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1,
-        ease: 'power3.out',
-      }
-    );
+      gsap.fromTo(
+        section1Ref.current,
+        { opacity: 0, x: -100 },
+        {
+          opacity: 1,
+          x: 0,
+          duration: 1.2,
+          scrollTrigger: {
+            trigger: section1Ref.current,
+            start: 'top 90%',
+          },
+        }
+      );
 
-    gsap.fromTo(
-      section1Ref.current,
-      { opacity: 0, x: -100 },
-      {
-        opacity: 1,
-        x: 0,
-        duration: 1.2,
-        scrollTrigger: {
-          trigger: section1Ref.current,
-          start: 'top 90%',
-        },
-      }
-    );
+      gsap.fromTo(
+        sponsorsRef.current,
+        { opacity: 0, scale: 0.8 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          scrollTrigger: {
+            trigger: sponsorsRef.current,
+            start: 'top 85%',
+          },
+        }
+      );
 
-    gsap.fromTo(
-      sponsorsRef.current,
-      { opacity: 0, scale: 0.8 },
-      {
-        opacity: 1,
-        scale: 1,
-        duration: 1,
-        scrollTrigger: {
-          trigger: sponsorsRef.current,
-          start: 'top 85%',
-        },
-      }
-    );
-
-    gsap.fromTo(
-      newsRef.current,
-      { opacity: 0, y: 100 },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        scrollTrigger: {
-          trigger: newsRef.current,
-          start: 'top 80%',
-        },
-      }
-    );
-  }, []);
+      gsap.fromTo(
+        newsRef.current,
+        { opacity: 0, y: 100 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1.2,
+          scrollTrigger: {
+            trigger: newsRef.current,
+            start: 'top 80%',
+          },
+        }
+      );
+    }
+  }, [isSafari]);
 
   return (
     <div className='home-main'>

@@ -16,6 +16,8 @@ const HomeCompetitions = () => {
     const mainRef = useRef(null);
     const itemsRef = useRef([]);
 
+    const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
     useEffect(() => {
         const fetchEvents = async () => {
             const response = await fetch('https://213633.xyz/api/events');
@@ -30,7 +32,7 @@ const HomeCompetitions = () => {
     }, []);
 
     useEffect(() => {
-        if (events) {
+        if (events && !isSafari) {
             // Animate main section
             gsap.fromTo(
                 mainRef.current,

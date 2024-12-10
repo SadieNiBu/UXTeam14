@@ -10,6 +10,8 @@ const HomeGallery = () => {
   const [photos, setPhotos] = useState(null);
   const imageRefs = useRef([]);
 
+  const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+
   const staticPhotos = [
     'https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732325167/1_kvxndb.png',
     'https://res.cloudinary.com/dpvt0b5wd/image/upload/f_auto/v1732325167/2_kf2udv.png',
@@ -30,7 +32,7 @@ const HomeGallery = () => {
   }, []);
 
   useEffect(() => {
-    if (imageRefs.current.length > 0) {
+    if (imageRefs.current.length > 0 && !isSafari) {
       // Animate images with GSAP
       gsap.fromTo(
         imageRefs.current,
