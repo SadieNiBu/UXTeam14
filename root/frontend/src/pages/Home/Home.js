@@ -46,8 +46,6 @@ const Home = () => {
 
     fetchArticles();
 
-    console.log(isSafari);
-
     if (!isSafari) {
       const headerAnimation = gsap.timeline({
         scrollTrigger: {
